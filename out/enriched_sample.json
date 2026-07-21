@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "description": "Enriched worked-example records for the DDI knowledge base. Same schema as ddi_knowledge_base.json interactions, with mechanism/mechanism_categories populated from the DDInter 2.0 group layer and full provenance. Each record is one representative named pair from its interaction group.",
+    "source": "DDInter 2.0",
+    "retrieved": "2026-07-21"
+  },
+  "interactions": [
+    {
+      "id": "DDInter384__DDInter98",
+      "drug_a": {
+        "ddinter_id": "DDInter384",
+        "name": "Ciprofloxacin",
+        "drugbank_id": "DB00537",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter98",
+        "name": "Anisindione",
+        "drugbank_id": "DB01125",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "others"
+      ],
+      "mechanism": "Some quinolone antibiotics have been reported to potentiate the hypoprothrombinemic effect of warfarin and other coumarin anticoagulants. The exact mechanism is unknown but may involve inhibition of coumarin metabolism and/or depletion of certain clotting factors due to suppression of vitamin K-producing intestinal flora.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "211",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/211/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter1140__DDInter852",
+      "drug_a": {
+        "ddinter_id": "DDInter1140",
+        "name": "Mefloquine",
+        "drugbank_id": "DB00358",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter852",
+        "name": "Halofantrine",
+        "drugbank_id": "DB01218",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "synergistic_effect"
+      ],
+      "mechanism": "Coadministration of halofantrine and mefloquine may have additive prolonging effects on the QT interval. The risk of ventricular arrhythmias including ventricular tachycardia and torsade de pointes may be increased. Death has been reported with this combination.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "36",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/36/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter722__DDInter981",
+      "drug_a": {
+        "ddinter_id": "DDInter722",
+        "name": "Fentanyl",
+        "drugbank_id": "DB00813",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter981",
+        "name": "Isocarboxazid",
+        "drugbank_id": "DB01247",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "others"
+      ],
+      "mechanism": "Coadministration of monoamine oxidase inhibitors (MAOIs) with certain opioids has been associated with rare reports of severe and fatal adverse reactions. There appear to be two types of interaction, an excitatory and a depressive one. Symptoms of the excitatory reaction may include agitation, headache, diaphoresis, hyperpyrexia, flushing, shivering, myoclonus, rigidity, tremor, diarrhea, hypertension, tachycardia, seizures, and coma. The exact mechanism of interaction is unknown, but may involve excessive serotonergic activity in the central nervous system (i.e., serotonin syndrome). The interaction is unpredictable and has been reported primarily with meperidine or fentanyl and various MAOIs including phenelzine, tranylcypromine, linezolid, moclobemide, and selegiline. Fatal hyperpyrexia and hypertension have also been observed in animal studies with meperidine and phenelzine or furazolidone. In contrast, symptoms of the depressive reaction probably stem from potentiation of CNS effects by MAOIs and include respiratory depression, cyanosis, hypotension, and coma.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "74",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/74/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter1089__DDInter1479",
+      "drug_a": {
+        "ddinter_id": "DDInter1089",
+        "name": "Lopinavir",
+        "drugbank_id": "DB01601",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter1479",
+        "name": "Pitavastatin",
+        "drugbank_id": "DB08860",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "synergistic_effect"
+      ],
+      "mechanism": "Coadministration with lopinavir-ritonavir may significantly increase the plasma concentrations of pitavastatin. The mechanism of interaction has not been described. The proposed interaction is based on data with another HMG-CoA reductase inhibitor that has a similar pharmacokinetic profile to that of pitavastatin. Although not reported in the study, high levels of HMG-CoA reductase inhibitory activity in plasma is also associated with an increased risk of musculoskeletal toxicity. Myopathy manifested as muscle pain and/or weakness associated with grossly elevated creatine kinase exceeding ten times the upper limit of normal has been reported occasionally. Rhabdomyolysis has also occurred rarely, which may be accompanied by acute renal failure secondary to myoglobinuria and may result in death.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "34",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/34/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter1666__DDInter340",
+      "drug_a": {
+        "ddinter_id": "DDInter1666",
+        "name": "Sildenafil",
+        "drugbank_id": "DB00203",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter340",
+        "name": "Ceritinib",
+        "drugbank_id": "DB09063",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "metabolism"
+      ],
+      "mechanism": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of sildenafil, which is primarily metabolized by the isoenzyme. The possibility of prolonged and/or increased pharmacologic effects of sildenafil should be considered.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "14",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/14/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter981__DDInter512",
+      "drug_a": {
+        "ddinter_id": "DDInter981",
+        "name": "Isocarboxazid",
+        "drugbank_id": "DB01247",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter512",
+        "name": "Deutetrabenazine",
+        "drugbank_id": "DB12161",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "synergistic_effect"
+      ],
+      "mechanism": "Tetrabenazine may cause excitation and hypertension in patients treated with monoamine oxidase inhibitors (MAOIs). The proposed mechanism has not been fully established but may be related to interference with biogenic amine storage. In addition, tetrabenazine may have depressant effects and may exacerbate depression.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "25",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/25/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter1174__DDInter20",
+      "drug_a": {
+        "ddinter_id": "DDInter1174",
+        "name": "Methotrexate",
+        "drugbank_id": "DB00563",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter20",
+        "name": "Acetylsalicylic acid",
+        "drugbank_id": "DB00945",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "excretion"
+      ],
+      "mechanism": "Salicylates may interfere with the renal elimination of methotrexate and may displace it from binding sites. The pharmacologic effect and toxicity of methotrexate may be increased. Patients receiving high-dose methotrexate are at a greater risk of developing toxicity.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "812",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/812/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter1735__DDInter340",
+      "drug_a": {
+        "ddinter_id": "DDInter1735",
+        "name": "Tacrolimus",
+        "drugbank_id": "DB00864",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter340",
+        "name": "Ceritinib",
+        "drugbank_id": "DB09063",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "metabolism"
+      ],
+      "mechanism": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the blood concentrations of tacrolimus, which is primarily metabolized by the isoenzyme in both the intestine and liver. There have been numerous reports and pharmacokinetic studies in the medical literature of tacrolimus interaction with various potent CYP450 3A4 inhibitors, including azole antifungal agents, macrolide antibiotics, and protease inhibitors. Nephrotoxicity and other adverse effects (e.g., hyperkalemia, hyperglycemia, hemolytic anemia, hemolytic uremic syndrome, neurotoxicity) in association with significantly elevated tacrolimus blood levels have been reported, necessitating substantial reductions or interruptions in tacrolimus dosing.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "65",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/65/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter108__DDInter1945",
+      "drug_a": {
+        "ddinter_id": "DDInter108",
+        "name": "Apixaban",
+        "drugbank_id": "DB06605",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter1945",
+        "name": "Vorapaxar",
+        "drugbank_id": "DB09030",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "synergistic_effect"
+      ],
+      "mechanism": "Coadministration of vorapaxar with other agents that affect hemostasis such as anticoagulants may increase the risk of bleeding complications, including intracranial hemorrhage and fatal bleeding.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "90",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/90/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter31__DDInter553",
+      "drug_a": {
+        "ddinter_id": "DDInter31",
+        "name": "Adenosine",
+        "drugbank_id": "DB00640",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter553",
+        "name": "Digitoxin",
+        "drugbank_id": "DB01396",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "synergistic_effect"
+      ],
+      "mechanism": "The use of adenosine in patients receiving digitalis glycosides may increase the risk of ventricular fibrillation. Rare cases of ventricular fibrillation, including both resuscitated and fatal cases, have been reported following treatment with adenosine intravenous bolus injection for the rapid conversion of paroxysmal supraventricular tachycardias to a normal sinus rhythm. Most cases were associated with the concomitant use of digoxin or, less frequently, digoxin and verapamil. However, no causal relationship or drug-drug interaction has been established. Concomitant use of adenosine and digitalis glycosides may also increase the risk and/or severity of sinus bradycardia and heart block due to additive or synergistic depressant effects on the sinoatrial and atrioventricular nodes.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "433",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/433/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    },
+    {
+      "id": "DDInter66__DDInter779",
+      "drug_a": {
+        "ddinter_id": "DDInter66",
+        "name": "Amikacin",
+        "drugbank_id": "DB00479",
+        "rxcui": null
+      },
+      "drug_b": {
+        "ddinter_id": "DDInter779",
+        "name": "Foscarnet",
+        "drugbank_id": "DB00529",
+        "rxcui": null
+      },
+      "severity": "Major",
+      "mechanism_categories": [
+        "synergistic_effect"
+      ],
+      "mechanism": "The potential nephrotoxicity of foscarnet and aminoglycosides may be additive. Concomitant use of these drugs could also lead to additive hypokalemia, hypomagnesemia, and hypocalcemia, which may increase the foscarnet-related risks of QT prolongation and seizures.",
+      "management": null,
+      "source": "DDInter 2.0",
+      "source_group_id": "158",
+      "source_url": "https://ddinter2.scbdd.com/server/inter-detail/158/",
+      "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+    }
+  ]
+}

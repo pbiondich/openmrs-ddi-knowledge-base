@@ -1,0 +1,10 @@
+# Intermediate / scratch artifacts (regenerate with the build scripts)
+out/pairs.jsonl
+out/enrich.log
+*.html
+__pycache__/
+
+# Uncompressed full enriched KB (256 MB, over GitHub's 100 MB limit).
+# The gzipped copy (out/ddi_knowledge_base_enriched.json.gz) is committed instead;
+# gunzip it to regenerate this file.
+out/ddi_knowledge_base_enriched.json

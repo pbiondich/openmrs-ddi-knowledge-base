@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openmrs.org/schemas/ddi-interaction-1.0.json",
+  "title": "DDI Interaction Record",
+  "type": "object",
+  "required": [
+    "id",
+    "drug_a",
+    "drug_b",
+    "severity",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable key: sorted DDInter IDs joined by '__'."
+    },
+    "drug_a": {
+      "$ref": "#/$defs/drugref"
+    },
+    "drug_b": {
+      "$ref": "#/$defs/drugref"
+    },
+    "severity": {
+      "enum": [
+        "Major",
+        "Moderate",
+        "Minor",
+        "Unknown"
+      ]
+    },
+    "mechanism": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Free-text mechanism/effect description from DDInter 2.0. Null if not yet linked."
+    },
+    "management": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Management guidance. Null where DDInter does not supply discrete guidance (the common case)."
+    },
+    "mechanism_categories": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "antagonistic_effect",
+          "synergistic_effect",
+          "absorption",
+          "distribution",
+          "metabolism",
+          "excretion",
+          "others"
+        ]
+      }
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_group_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "citation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "drugref": {
+      "type": "object",
+      "required": [
+        "ddinter_id",
+        "name",
+        "rxcui"
+      ],
+      "properties": {
+        "ddinter_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "drugbank_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rxcui": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "RxNorm RxCUI; null until normalized per spec 4.2."
+        }
+      }
+    }
+  }
+}
