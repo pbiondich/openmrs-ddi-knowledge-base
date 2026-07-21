@@ -346,10 +346,6 @@
       "Dotatate gallium ga-68",
       "Lutetium Lu 177 dotatate"
     ],
-    "89785": [
-      "Methscopolamine",
-      "Scopolamine"
-    ],
     "1552337": [
       "Fosnetupitant",
       "Netupitant"
@@ -386,11 +382,6 @@
       "Thallous Chloride",
       "Thallous chloride tl-201"
     ],
-    "224905": [
-      "Trastuzumab",
-      "Trastuzumab deruxtecan",
-      "Trastuzumab emtansine"
-    ],
     "7980": [
       "Benzylpenicillin",
       "Benzylpenicillin (potassium)",
@@ -406,10 +397,6 @@
       "Influenza b virus b/austria/1359417/2021 live (attenuated) antigen",
       "Influenza b virus b/brisbane/60/2008 live (attenuated) antigen",
       "Influenza b virus b/phuket/3073/2013 bvr-1b antigen (propiolactone inactivated)"
-    ],
-    "16818": [
-      "Acitretin",
-      "Etretinate"
     ],
     "108118": [
       "Mometasone",
@@ -454,6 +441,11 @@
       "Amphetamine",
       "Dextroamphetamine"
     ],
+    "4103": [
+      "Estrone",
+      "Estrone sulfate",
+      "Estrone sulfate (topical)"
+    ],
     "8703": [
       "Fenofibrate",
       "Fenofibric acid"
@@ -472,10 +464,13 @@
       "Iodide I-131",
       "Iodine",
       "Iodine (topical)"
-    ],
-    "6057": [
-      "Isosorbide",
-      "Isosorbide mononitrate"
     ]
-  }
+  },
+  "group3_separated": [
+    "Trastuzumab deruxtecan",
+    "Trastuzumab emtansine",
+    "Scopolamine",
+    "Isosorbide mononitrate",
+    "Etretinate"
+  ]
 }
