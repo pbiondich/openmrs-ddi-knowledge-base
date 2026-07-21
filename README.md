@@ -16,6 +16,8 @@ All data lives in `out/`. Everything was generated on 2026-07-21 from DDInter 2.
 | `enriched_sample.json` | 11 worked examples showing the complete record shape, mechanism text and all, for clinically important Major interactions. | ~14 KB |
 | `interaction.schema.json` | JSON Schema (draft 2020-12) for a single interaction record. | ~2 KB |
 | `ciel_ddinter_coverage_summary.json` | Aggregate result of the CIEL bridge: how many CIEL drug concepts have DDInter interaction data (see the CIEL section below). | ~1 KB |
+| `ciel_rxnorm_crosswalk.json` | CIEL Drug concept (code + UUID + name) -> RxCUI(s), from the CIEL v2026-07-20 export. | ~1.2 MB |
+| `ciel_ddinter_coverage.json` | Per-drug covered / gap lists behind the coverage summary. | ~1 MB |
 
 `raw/` holds the eight source CSVs as downloaded. `enrich.py` / `build_enriched.py` regenerate the enriched KB; `rxnorm.py` does RxNorm normalization; `ciel_crosswalk.py` / `ciel_reconcile.py` / `ciel_coverage.py` build the CIEL bridge. The whole build is reproducible.
 
@@ -77,7 +79,7 @@ CIEL has 8,298 Drug-class concepts, of which 7,615 carry an RxNorm mapping. Matc
 
 The remaining 2,877 CIEL drugs with no DDInter record are, overwhelmingly, things you would not expect a DDI database to carry: allergenic extracts, insect venoms, herbal and enzyme preparations, a few niche biologics. So the gap is mostly legitimate absence, not missing coverage. Either way, per the spec, the module surfaces these as a knowledge gap, never as a false "no interaction found."
 
-The aggregate result lives in `out/ciel_ddinter_coverage_summary.json`. The full per-drug crosswalk and covered/gap lists are CIEL-derived, so they are kept out of this public repo pending confirmation of CIEL's redistribution terms (same caution as DDInter, issue #2); regenerate them locally with the scripts below.
+The aggregate result lives in `out/ciel_ddinter_coverage_summary.json`, the full CIEL concept -> RxCUI crosswalk in `out/ciel_rxnorm_crosswalk.json`, and the per-drug covered/gap lists in `out/ciel_ddinter_coverage.json`. CIEL is an OpenMRS community terminology, included here with the permission of its maintainer and attributed in [ATTRIBUTION.md](ATTRIBUTION.md).
 
 ### Regenerating the CIEL crosswalk
 
@@ -90,7 +92,7 @@ Then `ciel_crosswalk.py` builds the concept -> RxCUI crosswalk, `ciel_reconcile.
 
 ## What's still open
 
-Community review of the findings before folding any of this into the spec, and confirmation of DDInter's and CIEL's redistribution terms now that the repo is public. Beyond that, the remaining work is module integration: taking a live patient medication list (CIEL concept UUIDs) and running it through concept -> RxCUI -> interaction lookup inside Chart Search AI, which is now a wiring exercise rather than a data problem.
+Community review of the findings before folding any of this into the spec, and confirmation of DDInter's redistribution terms now that the repo is public (CIEL is included with its maintainer's permission). Beyond that, the remaining work is module integration: taking a live patient medication list (CIEL concept UUIDs) and running it through concept -> RxCUI -> interaction lookup inside Chart Search AI, which is now a wiring exercise rather than a data problem.
 
 ## Provenance and license
 
