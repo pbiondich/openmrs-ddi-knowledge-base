@@ -105,7 +105,27 @@
             "string",
             "null"
           ],
-          "description": "RxNorm RxCUI; null until normalized per spec 4.2."
+          "description": "RxNorm RxCUI resolved from the drug name via the NLM RxNorm API."
+        },
+        "rxnorm_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "RxNorm canonical name for the RxCUI (present on the top-level drugs[] list)."
+        },
+        "rxcui_match": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "exact",
+            "exact_stripped",
+            "approximate",
+            null
+          ],
+          "description": "How the RxCUI was resolved: exact name match, exact after stripping a dose-form qualifier, or a flagged approximate match."
         }
       }
     }

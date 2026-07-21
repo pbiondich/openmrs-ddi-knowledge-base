@@ -25,8 +25,8 @@ An interaction record looks like this:
 ```json
 {
   "id": "DDInter1089__DDInter1479",
-  "drug_a": { "ddinter_id": "DDInter1089", "name": "Lopinavir", "drugbank_id": "DB01601", "rxcui": null },
-  "drug_b": { "ddinter_id": "DDInter1479", "name": "Pitavastatin", "drugbank_id": "DB08860", "rxcui": null },
+  "drug_a": { "ddinter_id": "DDInter1089", "name": "Lopinavir", "drugbank_id": "DB01601", "rxcui": "195088" },
+  "drug_b": { "ddinter_id": "DDInter1479", "name": "Pitavastatin", "drugbank_id": "DB08860", "rxcui": "861634" },
   "severity": "Major",
   "mechanism": "Coadministration with lopinavir-ritonavir may significantly increase the plasma concentrations of pitavastatin...",
   "management": null,
@@ -60,9 +60,17 @@ None of these is a reason to walk away from DDInter. It's still the best open, m
 
 For the record, here's what the enriched set actually contains: 295,184 unique pairs, of which 252,766 (about 85%) carry mechanism text; the rest are pairs DDInter lists without a written description. Severity breaks down as roughly 189K Moderate, 51K Major, 12K Minor, and 42K Unknown. Where the bulk CSV's per-pair severity and the group-level severity disagreed, I kept the CSV value as authoritative; that happened on 260 pairs out of 160,235, so about 0.16%.
 
+## RxNorm normalization
+
+This is done. Every drug now carries an `rxcui`, resolved from its name through the NLM RxNorm API (spec section 4.2). That's what lets "Panadol" and "acetaminophen" land on the same identifier so an interaction isn't missed on a naming difference, and it's the hook the CIEL bridge needs to map a patient's charted meds to these records.
+
+All 2,283 drugs resolved: 2,151 (94%) by exact name match, 67 after stripping a dose-form qualifier like "(topical)", and 65 by a flagged approximate match. The approximate cases are almost all vaccines, biologics, and salts where DDInter's spelling differs slightly from RxNorm's, and each drug records how it was matched in `rxcui_match` so the lower-confidence ones can be reviewed rather than trusted blindly. The top-level `drugs[]` list also carries `rxnorm_name`, RxNorm's canonical name, for that audit.
+
+One honest caveat: `rxcui` is the first concept id RxNorm returns for the name, which is normally the ingredient. I didn't force every match to ingredient-level term type, so a handful may point at a more specific concept. The `rxnorm_name` field makes those easy to spot if we want to tighten it later.
+
 ## What's still open
 
-The `rxcui` fields are null throughout. Normalization against RxNorm is the next step (spec section 4.2), and it's what lets "Panadol" and "acetaminophen" resolve to the same drug so an interaction isn't missed on a naming difference. That's the natural next piece of work if we want this to plug into the CIEL bridge.
+Community review of the findings before folding any of this into the spec, and a confirmation of DDInter's redistribution terms now that the repo is public. Beyond that, the natural next step is wiring these RxCUIs to the CIEL concept dictionary so a real patient med list resolves against the knowledge base.
 
 ## Provenance and license
 

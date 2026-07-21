@@ -12,13 +12,13 @@
         "ddinter_id": "DDInter384",
         "name": "Ciprofloxacin",
         "drugbank_id": "DB00537",
-        "rxcui": null
+        "rxcui": "235851"
       },
       "drug_b": {
         "ddinter_id": "DDInter98",
         "name": "Anisindione",
         "drugbank_id": "DB01125",
-        "rxcui": null
+        "rxcui": "17941"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -37,13 +37,13 @@
         "ddinter_id": "DDInter1140",
         "name": "Mefloquine",
         "drugbank_id": "DB00358",
-        "rxcui": null
+        "rxcui": "6694"
       },
       "drug_b": {
         "ddinter_id": "DDInter852",
         "name": "Halofantrine",
         "drugbank_id": "DB01218",
-        "rxcui": null
+        "rxcui": "50749"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -62,13 +62,13 @@
         "ddinter_id": "DDInter722",
         "name": "Fentanyl",
         "drugbank_id": "DB00813",
-        "rxcui": null
+        "rxcui": "142436"
       },
       "drug_b": {
         "ddinter_id": "DDInter981",
         "name": "Isocarboxazid",
         "drugbank_id": "DB01247",
-        "rxcui": null
+        "rxcui": "6011"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -87,13 +87,13 @@
         "ddinter_id": "DDInter1089",
         "name": "Lopinavir",
         "drugbank_id": "DB01601",
-        "rxcui": null
+        "rxcui": "195088"
       },
       "drug_b": {
         "ddinter_id": "DDInter1479",
         "name": "Pitavastatin",
         "drugbank_id": "DB08860",
-        "rxcui": null
+        "rxcui": "861634"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -112,13 +112,13 @@
         "ddinter_id": "DDInter1666",
         "name": "Sildenafil",
         "drugbank_id": "DB00203",
-        "rxcui": null
+        "rxcui": "136411"
       },
       "drug_b": {
         "ddinter_id": "DDInter340",
         "name": "Ceritinib",
         "drugbank_id": "DB09063",
-        "rxcui": null
+        "rxcui": "1535457"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -137,13 +137,13 @@
         "ddinter_id": "DDInter981",
         "name": "Isocarboxazid",
         "drugbank_id": "DB01247",
-        "rxcui": null
+        "rxcui": "6011"
       },
       "drug_b": {
         "ddinter_id": "DDInter512",
         "name": "Deutetrabenazine",
         "drugbank_id": "DB12161",
-        "rxcui": null
+        "rxcui": "1876905"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -162,13 +162,13 @@
         "ddinter_id": "DDInter1174",
         "name": "Methotrexate",
         "drugbank_id": "DB00563",
-        "rxcui": null
+        "rxcui": "6851"
       },
       "drug_b": {
         "ddinter_id": "DDInter20",
         "name": "Acetylsalicylic acid",
         "drugbank_id": "DB00945",
-        "rxcui": null
+        "rxcui": "1191"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -187,13 +187,13 @@
         "ddinter_id": "DDInter1735",
         "name": "Tacrolimus",
         "drugbank_id": "DB00864",
-        "rxcui": null
+        "rxcui": "42316"
       },
       "drug_b": {
         "ddinter_id": "DDInter340",
         "name": "Ceritinib",
         "drugbank_id": "DB09063",
-        "rxcui": null
+        "rxcui": "1535457"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -212,13 +212,13 @@
         "ddinter_id": "DDInter108",
         "name": "Apixaban",
         "drugbank_id": "DB06605",
-        "rxcui": null
+        "rxcui": "1364430"
       },
       "drug_b": {
         "ddinter_id": "DDInter1945",
         "name": "Vorapaxar",
         "drugbank_id": "DB09030",
-        "rxcui": null
+        "rxcui": "1537034"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -237,13 +237,13 @@
         "ddinter_id": "DDInter31",
         "name": "Adenosine",
         "drugbank_id": "DB00640",
-        "rxcui": null
+        "rxcui": "296"
       },
       "drug_b": {
         "ddinter_id": "DDInter553",
         "name": "Digitoxin",
         "drugbank_id": "DB01396",
-        "rxcui": null
+        "rxcui": "3403"
       },
       "severity": "Major",
       "mechanism_categories": [
@@ -262,13 +262,13 @@
         "ddinter_id": "DDInter66",
         "name": "Amikacin",
         "drugbank_id": "DB00479",
-        "rxcui": null
+        "rxcui": "641"
       },
       "drug_b": {
         "ddinter_id": "DDInter779",
         "name": "Foscarnet",
         "drugbank_id": "DB00529",
-        "rxcui": null
+        "rxcui": "33562"
       },
       "severity": "Major",
       "mechanism_categories": [
