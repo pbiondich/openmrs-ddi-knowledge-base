@@ -1,0 +1,541 @@
+{"rxcui": "683", "name": "aminolevulinic acid"}
+{"rxcui": "70619", "name": "phenylacetate"}
+{"rxcui": "9009", "name": "pyrilamine"}
+{"rxcui": "618371", "name": "pentetate"}
+{"rxcui": "3247", "name": "desipramine"}
+{"rxcui": "1044584", "name": "tesamorelin"}
+{"rxcui": "6980", "name": "minocycline"}
+{"rxcui": "1622", "name": "bleomycin"}
+{"rxcui": "31555", "name": "nebivolol"}
+{"rxcui": "3992", "name": "epinephrine"}
+{"rxcui": "337068", "name": "methyl 5-aminolevulinate"}
+{"rxcui": "1156", "name": "asparaginase"}
+{"rxcui": "21249", "name": "clocortolone"}
+{"rxcui": "5084", "name": "halcinonide"}
+{"rxcui": "1520", "name": "betaxolol"}
+{"rxcui": "2177", "name": "cefadroxil"}
+{"rxcui": "47181", "name": "bismuth subcitrate"}
+{"rxcui": "684879", "name": "pyridoxine"}
+{"rxcui": "25037", "name": "cefdinir"}
+{"rxcui": "57258", "name": "tizanidine"}
+{"rxcui": "29439", "name": "medrysone"}
+{"rxcui": "845525", "name": "Japanese encephalitis virus vaccine, inactivated"}
+{"rxcui": "88014", "name": "rizatriptan"}
+{"rxcui": "7688", "name": "metaproterenol"}
+{"rxcui": "10391", "name": "tetracaine"}
+{"rxcui": "72625", "name": "duloxetine"}
+{"rxcui": "89785", "name": "methscopolamine"}
+{"rxcui": "9947", "name": "sotalol"}
+{"rxcui": "69120", "name": "tiotropium"}
+{"rxcui": "5036", "name": "guanethidine"}
+{"rxcui": "9789", "name": "silver nitrate"}
+{"rxcui": "6703", "name": "megestrol"}
+{"rxcui": "10255", "name": "suprofen"}
+{"rxcui": "4271", "name": "factor XIII"}
+{"rxcui": "36437", "name": "sertraline"}
+{"rxcui": "2288236", "name": "ozanimod"}
+{"rxcui": "52769", "name": "milrinone"}
+{"rxcui": "3640", "name": "doxycycline"}
+{"rxcui": "300195", "name": "tenofovir disoproxil"}
+{"rxcui": "6135", "name": "ketoconazole"}
+{"rxcui": "3108", "name": "dapsone"}
+{"rxcui": "3109", "name": "daunorubicin"}
+{"rxcui": "6852", "name": "methotrimeprazine"}
+{"rxcui": "1597609", "name": "ceftolozane"}
+{"rxcui": "4452", "name": "fludrocortisone"}
+{"rxcui": "6853", "name": "methoxamine"}
+{"rxcui": "4440", "name": "flavoxate"}
+{"rxcui": "1592257", "name": "levomefolate"}
+{"rxcui": "4500", "name": "flurandrenolide"}
+{"rxcui": "7531", "name": "nortriptyline"}
+{"rxcui": "1668221", "name": "vaccinia virus"}
+{"rxcui": "70561", "name": "palonosetron"}
+{"rxcui": "8727", "name": "progesterone"}
+{"rxcui": "62349", "name": "ethacrynate"}
+{"rxcui": "1040028", "name": "lurasidone"}
+{"rxcui": "2121751", "name": "solriamfetol"}
+{"rxcui": "6057", "name": "isosorbide"}
+{"rxcui": "2590", "name": "clobetasol"}
+{"rxcui": "28863", "name": "lofexidine"}
+{"rxcui": "1086769", "name": "vilazodone"}
+{"rxcui": "1546450", "name": "radium"}
+{"rxcui": "1012892", "name": "fingolimod"}
+{"rxcui": "8792", "name": "propylhexedrine"}
+{"rxcui": "6674", "name": "mechlorethamine"}
+{"rxcui": "319864", "name": "cisatracurium"}
+{"rxcui": "77492", "name": "tamsulosin"}
+{"rxcui": "25120", "name": "flunisolide"}
+{"rxcui": "1606218", "name": "daclatasvir"}
+{"rxcui": "3361", "name": "dicyclomine"}
+{"rxcui": "641", "name": "amikacin"}
+{"rxcui": "23410", "name": "dipivefrin"}
+{"rxcui": "4462", "name": "fluocinonide"}
+{"rxcui": "91311", "name": "diflorasone"}
+{"rxcui": "57308", "name": "topotecan"}
+{"rxcui": "9525", "name": "salicylic acid"}
+{"rxcui": "1303098", "name": "aclidinium"}
+{"rxcui": "203223", "name": "digoxin antibodies Fab fragments"}
+{"rxcui": "1364479", "name": "lomitapide"}
+{"rxcui": "2595243", "name": "pacritinib"}
+{"rxcui": "2387302", "name": "oxybate"}
+{"rxcui": "1306068", "name": "oxidronate"}
+{"rxcui": "7512", "name": "norepinephrine"}
+{"rxcui": "68139", "name": "rocuronium"}
+{"rxcui": "618425", "name": "nalidixate"}
+{"rxcui": "4986", "name": "chorionic gonadotropin"}
+{"rxcui": "35825", "name": "ganirelix"}
+{"rxcui": "60223", "name": "adapalene"}
+{"rxcui": "108088", "name": "alclometasone"}
+{"rxcui": "56946", "name": "paclitaxel"}
+{"rxcui": "743", "name": "amylase"}
+{"rxcui": "87636", "name": "fexofenadine"}
+{"rxcui": "6099", "name": "kanamycin"}
+{"rxcui": "2105628", "name": "larotrectinib"}
+{"rxcui": "2468231", "name": "SARS-CoV-2 (COVID-19) vaccine, mRNA spike protein"}
+{"rxcui": "2635", "name": "coal tar"}
+{"rxcui": "4171", "name": "etidocaine"}
+{"rxcui": "5691", "name": "imipramine"}
+{"rxcui": "2599", "name": "clonidine"}
+{"rxcui": "14448", "name": "3-iodobenzylguanidine"}
+{"rxcui": "7213", "name": "ipratropium"}
+{"rxcui": "2551", "name": "ciprofloxacin"}
+{"rxcui": "3268", "name": "dexfenfluramine"}
+{"rxcui": "28395", "name": "lactitol"}
+{"rxcui": "3008", "name": "cyclosporine"}
+{"rxcui": "1316105", "name": "herpesvirus 1, human"}
+{"rxcui": "8031", "name": "protease"}
+{"rxcui": "8299", "name": "physostigmine"}
+{"rxcui": "1670304", "name": "tipiracil"}
+{"rxcui": "7821", "name": "oxytetracycline"}
+{"rxcui": "2571095", "name": "tisotumab"}
+{"rxcui": "9793", "name": "silver sulfadiazine"}
+{"rxcui": "1310124", "name": "gallium"}
+{"rxcui": "134615", "name": "brimonidine"}
+{"rxcui": "25126", "name": "fluocinolone"}
+{"rxcui": "1005921", "name": "ulipristal"}
+{"rxcui": "8153", "name": "phentolamine"}
+{"rxcui": "3743", "name": "econazole"}
+{"rxcui": "37801", "name": "terbinafine"}
+{"rxcui": "1894", "name": "calcitriol"}
+{"rxcui": "4441", "name": "flecainide"}
+{"rxcui": "5093", "name": "haloperidol"}
+{"rxcui": "1608322", "name": "isavuconazonium"}
+{"rxcui": "62372", "name": "hyaluronate"}
+{"rxcui": "141626", "name": "colesevelam"}
+{"rxcui": "85248", "name": "alosetron"}
+{"rxcui": "19737", "name": "bromfenac"}
+{"rxcui": "29418", "name": "meclocycline"}
+{"rxcui": "8896", "name": "pseudoephedrine"}
+{"rxcui": "46041", "name": "alendronate"}
+{"rxcui": "746741", "name": "pramipexole"}
+{"rxcui": "31914", "name": "tiagabine"}
+{"rxcui": "6759", "name": "mepivacaine"}
+{"rxcui": "48203", "name": "clavulanate"}
+{"rxcui": "7247", "name": "naphazoline"}
+{"rxcui": "1037042", "name": "dabigatran etexilate"}
+{"rxcui": "1813", "name": "levobunolol"}
+{"rxcui": "8742", "name": "promazine"}
+{"rxcui": "1423803", "name": "glyceryl phosphate"}
+{"rxcui": "3041", "name": "cytarabine"}
+{"rxcui": "5293", "name": "hexachlorophene"}
+{"rxcui": "6813", "name": "methadone"}
+{"rxcui": "6984", "name": "minoxidil"}
+{"rxcui": "1091836", "name": "roflumilast"}
+{"rxcui": "6185", "name": "labetalol"}
+{"rxcui": "5033", "name": "guanabenz"}
+{"rxcui": "4021", "name": "ergonovine"}
+{"rxcui": "857974", "name": "saxagliptin"}
+{"rxcui": "4626", "name": "galactose"}
+{"rxcui": "6406", "name": "lipase"}
+{"rxcui": "4257", "name": "factor VIII"}
+{"rxcui": "55681", "name": "rimexolone"}
+{"rxcui": "734064", "name": "desvenlafaxine"}
+{"rxcui": "78678", "name": "Rauwolfia preparation"}
+{"rxcui": "2907", "name": "creatine"}
+{"rxcui": "1815", "name": "bupivacaine"}
+{"rxcui": "3289", "name": "dextromethorphan"}
+{"rxcui": "618060", "name": "thioctate"}
+{"rxcui": "8149", "name": "phenoxybenzamine"}
+{"rxcui": "1248798", "name": "peginesatide"}
+{"rxcui": "435", "name": "albuterol"}
+{"rxcui": "9601", "name": "scopolamine"}
+{"rxcui": "5690", "name": "imipenem"}
+{"rxcui": "35302", "name": "sirolimus"}
+{"rxcui": "7514", "name": "norethindrone"}
+{"rxcui": "34369", "name": "prednicarbate"}
+{"rxcui": "39786", "name": "venlafaxine"}
+{"rxcui": "6371", "name": "levamisole"}
+{"rxcui": "29787", "name": "methyl salicylate"}
+{"rxcui": "42635", "name": "dextran"}
+{"rxcui": "42355", "name": "fluvoxamine"}
+{"rxcui": "83515", "name": "eprosartan"}
+{"rxcui": "4493", "name": "fluoxetine"}
+{"rxcui": "10379", "name": "testosterone"}
+{"rxcui": "2977", "name": "cyclizine"}
+{"rxcui": "1540825", "name": "tedizolid"}
+{"rxcui": "6023", "name": "isoetharine"}
+{"rxcui": "50610", "name": "goserelin"}
+{"rxcui": "1605101", "name": "insulin isophane"}
+{"rxcui": "4110", "name": "ethambutol"}
+{"rxcui": "1364533", "name": "pyrophosphate"}
+{"rxcui": "2556617", "name": "piflufolastat"}
+{"rxcui": "26237", "name": "granisetron"}
+{"rxcui": "1723735", "name": "ixazomib"}
+{"rxcui": "3288", "name": "dextroamphetamine"}
+{"rxcui": "72143", "name": "raloxifene"}
+{"rxcui": "262100", "name": "rapacuronium"}
+{"rxcui": "10753", "name": "tretinoin"}
+{"rxcui": "1347", "name": "beclomethasone"}
+{"rxcui": "60207", "name": "dorzolamide"}
+{"rxcui": "8745", "name": "promethazine"}
+{"rxcui": "8718", "name": "procyclidine"}
+{"rxcui": "68149", "name": "mycophenolate mofetil"}
+{"rxcui": "4496", "name": "fluphenazine"}
+{"rxcui": "70589", "name": "benzoate"}
+{"rxcui": "35827", "name": "ketorolac"}
+{"rxcui": "283810", "name": "bimatoprost"}
+{"rxcui": "460132", "name": "darunavir"}
+{"rxcui": "3639", "name": "doxorubicin"}
+{"rxcui": "703", "name": "amiodarone"}
+{"rxcui": "8834", "name": "protein C"}
+{"rxcui": "4845", "name": "glucosamine"}
+{"rxcui": "81647", "name": "phenylbutyrate"}
+{"rxcui": "1596450", "name": "gentamicin"}
+{"rxcui": "22178", "name": "cytomegalovirus immune globulin"}
+{"rxcui": "2878", "name": "cortisone"}
+{"rxcui": "9639", "name": "selegiline"}
+{"rxcui": "1114326", "name": "indacaterol"}
+{"rxcui": "83947", "name": "tazarotene"}
+{"rxcui": "9068", "name": "quinidine"}
+{"rxcui": "214461", "name": "corticotropin-releasing hormone"}
+{"rxcui": "2356", "name": "chlordiazepoxide"}
+{"rxcui": "62427", "name": "ursodeoxycholate"}
+{"rxcui": "2588949", "name": "gozetotide"}
+{"rxcui": "100278", "name": "Lacticaseibacillus rhamnosus"}
+{"rxcui": "618771", "name": "gamma-aminobutyrate"}
+{"rxcui": "6646", "name": "maprotiline"}
+{"rxcui": "260101", "name": "oseltamivir"}
+{"rxcui": "1940332", "name": "enasidenib"}
+{"rxcui": "3255", "name": "desoximetasone"}
+{"rxcui": "42375", "name": "leuprolide"}
+{"rxcui": "114202", "name": "lactate"}
+{"rxcui": "6918", "name": "metoprolol"}
+{"rxcui": "1988390", "name": "latanoprostene bunod"}
+{"rxcui": "32968", "name": "clopidogrel"}
+{"rxcui": "1482502", "name": "eslicarbazepine"}
+{"rxcui": "18603", "name": "azelastine"}
+{"rxcui": "59943", "name": "imiquimod"}
+{"rxcui": "78903", "name": "capreomycin"}
+{"rxcui": "8785", "name": "propoxyphene"}
+{"rxcui": "24947", "name": "ferrous sulfate"}
+{"rxcui": "1657134", "name": "influenza B virus antigen"}
+{"rxcui": "6926", "name": "mexiletine"}
+{"rxcui": "2584304", "name": "asciminib"}
+{"rxcui": "2571854", "name": "ioflupane"}
+{"rxcui": "2596", "name": "clomiphene"}
+{"rxcui": "7454", "name": "nitrofurantoin"}
+{"rxcui": "353497", "name": "levobetaxolol"}
+{"rxcui": "4502", "name": "flurbiprofen"}
+{"rxcui": "2348", "name": "chloramphenicol"}
+{"rxcui": "2571074", "name": "maralixibat"}
+{"rxcui": "33738", "name": "pioglitazone"}
+{"rxcui": "1599832", "name": "C1 esterase inhibitor"}
+{"rxcui": "1368001", "name": "alogliptin"}
+{"rxcui": "1433212", "name": "levomilnacipran"}
+{"rxcui": "20610", "name": "cetirizine"}
+{"rxcui": "2231", "name": "cephalexin"}
+{"rxcui": "9071", "name": "quinine"}
+{"rxcui": "6809", "name": "metformin"}
+{"rxcui": "8132", "name": "pheniramine"}
+{"rxcui": "42347", "name": "bupropion"}
+{"rxcui": "21254", "name": "chlophedianol"}
+{"rxcui": "733", "name": "ampicillin"}
+{"rxcui": "194881", "name": "brinzolamide"}
+{"rxcui": "10759", "name": "triamcinolone"}
+{"rxcui": "6911", "name": "methysergide"}
+{"rxcui": "4249", "name": "factor IX"}
+{"rxcui": "2474340", "name": "clascoterone"}
+{"rxcui": "44281", "name": "cevimeline"}
+{"rxcui": "19831", "name": "budesonide"}
+{"rxcui": "3423", "name": "hydromorphone"}
+{"rxcui": "2353", "name": "clorazepate"}
+{"rxcui": "42955", "name": "levocarnitine"}
+{"rxcui": "7238", "name": "nalbuphine"}
+{"rxcui": "7980", "name": "penicillin G"}
+{"rxcui": "2382", "name": "proguanil"}
+{"rxcui": "8340", "name": "piperazine"}
+{"rxcui": "4385", "name": "fibrinogen"}
+{"rxcui": "1593128", "name": "meningococcal group B vaccine"}
+{"rxcui": "1011", "name": "lymphocyte immune globulin, anti-thymocyte globulin"}
+{"rxcui": "1649480", "name": "ivabradine"}
+{"rxcui": "84108", "name": "rosiglitazone"}
+{"rxcui": "50975", "name": "histrelin"}
+{"rxcui": "9392", "name": "ritodrine"}
+{"rxcui": "32915", "name": "teriparatide"}
+{"rxcui": "4832", "name": "glucagon"}
+{"rxcui": "8536", "name": "polymyxin B"}
+{"rxcui": "61381", "name": "olanzapine"}
+{"rxcui": "68091", "name": "dolasetron"}
+{"rxcui": "2221", "name": "cellulose"}
+{"rxcui": "1009", "name": "antithrombin III"}
+{"rxcui": "2582", "name": "clindamycin"}
+{"rxcui": "29365", "name": "calcipotriene"}
+{"rxcui": "704", "name": "amitriptyline"}
+{"rxcui": "5942", "name": "clioquinol"}
+{"rxcui": "2107310", "name": "prucalopride"}
+{"rxcui": "7005", "name": "mitoxantrone"}
+{"rxcui": "9143", "name": "ranitidine"}
+{"rxcui": "1552337", "name": "netupitant"}
+{"rxcui": "8686", "name": "prilocaine"}
+{"rxcui": "42736", "name": "dexrazoxane"}
+{"rxcui": "798279", "name": "Haemophilus influenzae type b, capsular polysaccharide inactivated tetanus toxoid conjugate vaccine"}
+{"rxcui": "7396", "name": "nicardipine"}
+{"rxcui": "11002", "name": "urea"}
+{"rxcui": "2591497", "name": "daridorexant"}
+{"rxcui": "2626723", "name": "anacaulase"}
+{"rxcui": "33272", "name": "phendimetrazine"}
+{"rxcui": "83816", "name": "delavirdine"}
+{"rxcui": "42547", "name": "aurothiomalate"}
+{"rxcui": "51499", "name": "irinotecan"}
+{"rxcui": "31565", "name": "nefazodone"}
+{"rxcui": "7895", "name": "papaverine"}
+{"rxcui": "642274", "name": "retapamulin"}
+{"rxcui": "6384", "name": "gonadorelin"}
+{"rxcui": "10395", "name": "tetracycline"}
+{"rxcui": "108118", "name": "mometasone"}
+{"rxcui": "71535", "name": "vecuronium"}
+{"rxcui": "1760", "name": "bromocriptine"}
+{"rxcui": "4256", "name": "factor VIIa"}
+{"rxcui": "4083", "name": "estradiol"}
+{"rxcui": "16521", "name": "adefovir"}
+{"rxcui": "2670", "name": "codeine"}
+{"rxcui": "2268307", "name": "enfortumab"}
+{"rxcui": "8704", "name": "prochlorperazine"}
+{"rxcui": "1418", "name": "benzoyl peroxide"}
+{"rxcui": "257844", "name": "mefenamate"}
+{"rxcui": "1364290", "name": "gadofosveset"}
+{"rxcui": "2116", "name": "carteolol"}
+{"rxcui": "18631", "name": "azithromycin"}
+{"rxcui": "3541", "name": "disopyramide"}
+{"rxcui": "17767", "name": "amlodipine"}
+{"rxcui": "59839", "name": "penciclovir"}
+{"rxcui": "1940643", "name": "neratinib"}
+{"rxcui": "7337", "name": "netilmicin"}
+{"rxcui": "1100072", "name": "abiraterone"}
+{"rxcui": "2198944", "name": "lefamulin"}
+{"rxcui": "6718", "name": "melphalan"}
+{"rxcui": "24464", "name": "ethaverine"}
+{"rxcui": "11274", "name": "von Willebrand factor"}
+{"rxcui": "5514", "name": "hydroxocobalamin"}
+{"rxcui": "35465", "name": "Rho(D) immune globulin"}
+{"rxcui": "2176312", "name": "bremelanotide"}
+{"rxcui": "42625", "name": "dehydrocholate"}
+{"rxcui": "24853", "name": "fenoldopam"}
+{"rxcui": "8770", "name": "propiomazine"}
+{"rxcui": "7934", "name": "paromomycin"}
+{"rxcui": "8701", "name": "procaine"}
+{"rxcui": "27084", "name": "homatropine"}
+{"rxcui": "1797118", "name": "dotatate"}
+{"rxcui": "1362699", "name": "indium"}
+{"rxcui": "3966", "name": "ephedrine"}
+{"rxcui": "4337", "name": "fentanyl"}
+{"rxcui": "30131", "name": "moexipril"}
+{"rxcui": "11473", "name": "pamidronate"}
+{"rxcui": "1244607", "name": "tafluprost"}
+{"rxcui": "3995", "name": "epirubicin"}
+{"rxcui": "10472", "name": "thimerosal"}
+{"rxcui": "72302", "name": "ropinirole"}
+{"rxcui": "9641", "name": "selenium"}
+{"rxcui": "1546458", "name": "picosulfurate"}
+{"rxcui": "2205637", "name": "trifarotene"}
+{"rxcui": "298665", "name": "nepafenac"}
+{"rxcui": "592464", "name": "articaine"}
+{"rxcui": "8700", "name": "procainamide"}
+{"rxcui": "11202", "name": "vincristine"}
+{"rxcui": "35780", "name": "ropivacaine"}
+{"rxcui": "798302", "name": "acellular pertussis vaccine, inactivated"}
+{"rxcui": "596724", "name": "anagrelide"}
+{"rxcui": "33408", "name": "phenyltoloxamine"}
+{"rxcui": "593411", "name": "sitagliptin"}
+{"rxcui": "35255", "name": "cisapride"}
+{"rxcui": "2571858", "name": "flortaucipir"}
+{"rxcui": "281", "name": "acyclovir"}
+{"rxcui": "407990", "name": "cinacalcet"}
+{"rxcui": "5542", "name": "17-alpha-hydroxyprogesterone"}
+{"rxcui": "689", "name": "aminophylline"}
+{"rxcui": "2360231", "name": "sacituzumab"}
+{"rxcui": "35208", "name": "quinapril"}
+{"rxcui": "6915", "name": "metoclopramide"}
+{"rxcui": "270", "name": "spectinomycin"}
+{"rxcui": "73032", "name": "remifentanil"}
+{"rxcui": "194", "name": "acetylcholine"}
+{"rxcui": "9061", "name": "quinacrine"}
+{"rxcui": "6922", "name": "metronidazole"}
+{"rxcui": "1368950", "name": "edetate calcium"}
+{"rxcui": "2105845", "name": "glasdegib"}
+{"rxcui": "8163", "name": "phenylephrine"}
+{"rxcui": "5492", "name": "hydrocortisone"}
+{"rxcui": "588250", "name": "milnacipran"}
+{"rxcui": "6027", "name": "isoflurophate"}
+{"rxcui": "2685", "name": "colestipol"}
+{"rxcui": "70602", "name": "glutamate"}
+{"rxcui": "40169", "name": "moricizine"}
+{"rxcui": "7812", "name": "oxymetazoline"}
+{"rxcui": "41126", "name": "fluticasone"}
+{"rxcui": "6069", "name": "ivermectin"}
+{"rxcui": "1514", "name": "betamethasone"}
+{"rxcui": "1223", "name": "atropine"}
+{"rxcui": "1767", "name": "brompheniramine"}
+{"rxcui": "5553", "name": "hydroxyzine"}
+{"rxcui": "23043", "name": "difluprednate"}
+{"rxcui": "8328", "name": "pilocarpine"}
+{"rxcui": "48937", "name": "dexmedetomidine"}
+{"rxcui": "42359", "name": "tocainide"}
+{"rxcui": "1091643", "name": "azilsartan"}
+{"rxcui": "620", "name": "amantadine"}
+{"rxcui": "2653", "name": "cocaine"}
+{"rxcui": "7299", "name": "neomycin"}
+{"rxcui": "39385", "name": "varicella-zoster immune globulin"}
+{"rxcui": "2396443", "name": "dodatate"}
+{"rxcui": "302285", "name": "conivaptan"}
+{"rxcui": "6754", "name": "meperidine"}
+{"rxcui": "6691", "name": "medroxyprogesterone"}
+{"rxcui": "5489", "name": "hydrocodone"}
+{"rxcui": "20859", "name": "chloroprocaine"}
+{"rxcui": "32937", "name": "paroxetine"}
+{"rxcui": "4089", "name": "estramustine"}
+{"rxcui": "1546275", "name": "iodide ion"}
+{"rxcui": "2393", "name": "chloroquine"}
+{"rxcui": "8754", "name": "propafenone"}
+{"rxcui": "10869", "name": "tropicamide"}
+{"rxcui": "732", "name": "amphotericin B"}
+{"rxcui": "31479", "name": "nalmefene"}
+{"rxcui": "8175", "name": "phenylpropanolamine"}
+{"rxcui": "618278", "name": "azelate"}
+{"rxcui": "662281", "name": "nilotinib"}
+{"rxcui": "3368", "name": "dienestrol"}
+{"rxcui": "6960", "name": "midazolam"}
+{"rxcui": "6901", "name": "methylphenidate"}
+{"rxcui": "1311633", "name": "thallium"}
+{"rxcui": "1886", "name": "caffeine"}
+{"rxcui": "8120", "name": "phenazopyridine"}
+{"rxcui": "42588", "name": "chenodeoxycholate"}
+{"rxcui": "8001", "name": "pentazocine"}
+{"rxcui": "220982", "name": "yohimbine"}
+{"rxcui": "9386", "name": "rimantadine"}
+{"rxcui": "644", "name": "amiloride"}
+{"rxcui": "1721560", "name": "osimertinib"}
+{"rxcui": "4262", "name": "factor X"}
+{"rxcui": "3755", "name": "edetic acid"}
+{"rxcui": "5973", "name": "ioxaglate"}
+{"rxcui": "7244", "name": "nandrolone"}
+{"rxcui": "2358", "name": "chlorhexidine"}
+{"rxcui": "1487514", "name": "umeclidinium"}
+{"rxcui": "68503", "name": "ziconotide"}
+{"rxcui": "38400", "name": "atomoxetine"}
+{"rxcui": "2449", "name": "choline"}
+{"rxcui": "25480", "name": "gabapentin"}
+{"rxcui": "4179", "name": "etoposide"}
+{"rxcui": "5224", "name": "heparin"}
+{"rxcui": "321952", "name": "pimecrolimus"}
+{"rxcui": "34905", "name": "proparacaine"}
+{"rxcui": "5333", "name": "histamine"}
+{"rxcui": "3616", "name": "dobutamine"}
+{"rxcui": "10824", "name": "metipranolol"}
+{"rxcui": "10122", "name": "strontium"}
+{"rxcui": "618597", "name": "eicosapentaenoate"}
+{"rxcui": "6459", "name": "liver extract"}
+{"rxcui": "1999420", "name": "macimorelin"}
+{"rxcui": "6130", "name": "ketamine"}
+{"rxcui": "8703", "name": "fenofibrate"}
+{"rxcui": "1300701", "name": "lorcaserin"}
+{"rxcui": "36514", "name": "sibutramine"}
+{"rxcui": "7243", "name": "naltrexone"}
+{"rxcui": "5521", "name": "hydroxychloroquine"}
+{"rxcui": "7617", "name": "octreotide"}
+{"rxcui": "723", "name": "amoxicillin"}
+{"rxcui": "6779", "name": "mesoridazine"}
+{"rxcui": "8886", "name": "protriptyline"}
+{"rxcui": "2403", "name": "chlorpromazine"}
+{"rxcui": "480", "name": "alfentanil"}
+{"rxcui": "1099933", "name": "adenovirus type 4 vaccine live"}
+{"rxcui": "7052", "name": "morphine"}
+{"rxcui": "263010", "name": "tositumomab"}
+{"rxcui": "2286", "name": "cetylpyridinium"}
+{"rxcui": "42627", "name": "deoxycholate"}
+{"rxcui": "6387", "name": "lidocaine"}
+{"rxcui": "3254", "name": "desonide"}
+{"rxcui": "1426872", "name": "hexyl 5-aminolevulinate"}
+{"rxcui": "66887", "name": "racepinephrine"}
+{"rxcui": "2055978", "name": "segesterone"}
+{"rxcui": "2597054", "name": "vipivotide tetraxetan"}
+{"rxcui": "49276", "name": "doxazosin"}
+{"rxcui": "224905", "name": "trastuzumab"}
+{"rxcui": "39841", "name": "xylometazoline"}
+{"rxcui": "233272", "name": "bexarotene"}
+{"rxcui": "73645", "name": "valacyclovir"}
+{"rxcui": "1986821", "name": "varicella zoster virus glycoprotein E"}
+{"rxcui": "4491", "name": "fluorometholone"}
+{"rxcui": "23088", "name": "dihydrocodeine"}
+{"rxcui": "10600", "name": "timolol"}
+{"rxcui": "40114", "name": "guanfacine"}
+{"rxcui": "83719", "name": "grepafloxacin"}
+{"rxcui": "3638", "name": "doxepin"}
+{"rxcui": "134547", "name": "bendamustine"}
+{"rxcui": "28872", "name": "lomefloxacin"}
+{"rxcui": "49737", "name": "esmolol"}
+{"rxcui": "2106338", "name": "amifampridine"}
+{"rxcui": "6854", "name": "methoxsalen"}
+{"rxcui": "23066", "name": "dihematoporphyrin ether"}
+{"rxcui": "3264", "name": "dexamethasone"}
+{"rxcui": "61609", "name": "arbutamine"}
+{"rxcui": "26225", "name": "ondansetron"}
+{"rxcui": "1193326", "name": "ruxolitinib"}
+{"rxcui": "38574", "name": "trichloroacetaldehyde"}
+{"rxcui": "14845", "name": "apraclonidine"}
+{"rxcui": "6719", "name": "memantine"}
+{"rxcui": "6932", "name": "miconazole"}
+{"rxcui": "8638", "name": "prednisolone"}
+{"rxcui": "35382", "name": "resorcinol"}
+{"rxcui": "5933", "name": "iodine"}
+{"rxcui": "3642", "name": "doxylamine"}
+{"rxcui": "3355", "name": "diclofenac"}
+{"rxcui": "149", "name": "acebutolol"}
+{"rxcui": "2709", "name": "colistin"}
+{"rxcui": "1045453", "name": "eribulin"}
+{"rxcui": "68446", "name": "pemetrexed"}
+{"rxcui": "5666", "name": "immunoglobulin G"}
+{"rxcui": "37798", "name": "terazosin"}
+{"rxcui": "81864", "name": "alitretinoin"}
+{"rxcui": "33767", "name": "pirbuterol"}
+{"rxcui": "1399", "name": "benzocaine"}
+{"rxcui": "3002", "name": "cyclophosphamide"}
+{"rxcui": "7242", "name": "naloxone"}
+{"rxcui": "4053", "name": "erythromycin"}
+{"rxcui": "8702", "name": "procarbazine"}
+{"rxcui": "7824", "name": "oxytocin"}
+{"rxcui": "6756", "name": "mephentermine"}
+{"rxcui": "3339", "name": "dibucaine"}
+{"rxcui": "3013", "name": "cyproheptadine"}
+{"rxcui": "40254", "name": "valproate"}
+{"rxcui": "1603350", "name": "panobinostat"}
+{"rxcui": "3827", "name": "enalapril"}
+{"rxcui": "68092", "name": "lanreotide"}
+{"rxcui": "1999", "name": "carbachol"}
+{"rxcui": "636827", "name": "guaiacolsulfonate"}
+{"rxcui": "6902", "name": "methylprednisolone"}
+{"rxcui": "1727455", "name": "alectinib"}
+{"rxcui": "73137", "name": "tirofiban"}
+{"rxcui": "3001", "name": "cyclopentolate"}
+{"rxcui": "135391", "name": "olopatadine"}
+{"rxcui": "274964", "name": "ciclesonide"}
+{"rxcui": "42682", "name": "etidronate"}
+{"rxcui": "306674", "name": "vardenafil"}
+{"rxcui": "7715", "name": "orphenadrine"}
+{"rxcui": "1992", "name": "capsaicin"}
+{"rxcui": "3498", "name": "diphenhydramine"}
+{"rxcui": "38782", "name": "triptorelin"}
+{"rxcui": "3418", "name": "dihydroergotamine"}
+{"rxcui": "8629", "name": "prazosin"}
+{"rxcui": "8787", "name": "propranolol"}
+{"rxcui": "3443", "name": "diltiazem"}
