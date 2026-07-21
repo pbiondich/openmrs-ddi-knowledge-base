@@ -63,7 +63,7 @@ The top-level `drugs[]` list carries the richer per-drug detail: `rxcui`, `rxnor
 Three public sources, layered so each does the job it is best at:
 
 - **DDInter 2.0** supplies the interactions: the pair, a severity, and a mechanism description. It is open-access, requires no implementer maintenance, and works offline. The full database (about 302K interactions) was assembled by walking DDInter's interaction groups, since the bulk CSV download carries only about half the pairs and no mechanism text.
-- **RxNorm** (NLM) supplies drug-name normalization. All 2,283 drugs resolved to an RxCUI, and each is then canonicalized to its RxNorm single-ingredient (`IN`) concept so the key is consistent for joining. Each drug records how it matched (`rxcui_match`) and its pre-canonical value (`rxcui_original`), so the work is auditable. The residual cases that cannot be auto-resolved (stereoisomer pairs that share an ingredient concept, salts, and flagged approximate matches) are listed in `out/rxcui_review.json` for review rather than guessed.
+- **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Each drug records how it matched (`rxcui_match`) and its pre-canonical value (`rxcui_original`), so the work is auditable. Distinct drugs that had been merged onto one identifier were separated under clinician review. The 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) are left as explicit gaps (`rxcui` null, `rxcui_status` set) rather than assigned a wrong identifier. The review trail is in `out/rxcui_review.json`.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
 No step requires an implementer to curate drug data by hand. The sources update outside the implementer's control; refreshing the bundle is a maintainer re-run on the release cycle. The build scripts (`enrich.py`, `build_enriched.py`, `rxnorm.py`, `ciel_crosswalk.py`, `ciel_reconcile.py`, `ciel_coverage.py`, `integrate_ciel.py`) reproduce every file. The CIEL crosswalk can be regenerated with the OCL CLI or the OCL export API and a token; no token or raw export is stored here.
@@ -75,8 +75,8 @@ No step requires an implementer to curate drug data by hand. The sources update 
 | Interactions | 295,184 pairs across 2,283 drugs |
 | Severity | 50,983 Major · 189,439 Moderate · 12,347 Minor · 42,415 Unknown |
 | Mechanism text | 252,766 interactions (86%) |
-| RxNorm normalization | 2,283 / 2,283 drugs (100%) |
-| CIEL bridge | 1,987 / 2,283 KB drugs (87%) carry a CIEL concept |
+| RxNorm normalization | 2,255 / 2,283 drugs to a current ingredient RxCUI (28 obsolete, low-relevance concepts left as explicit gaps) |
+| CIEL bridge | 1,986 / 2,283 KB drugs (87%) carry a CIEL concept |
 | CIEL formulary overlap | 4,258 of 7,615 RxNorm-mapped CIEL drugs (55.9%) have interaction data |
 
 The 55.9% is measured at the ingredient level: a naive exact-RxCUI match reports only 23%, because CIEL maps concepts to product-level RxCUIs while this knowledge base is ingredient-level, so both sides must be reduced to their RxNorm ingredient before matching.
@@ -88,7 +88,7 @@ Being honest about the edges matters more here than in most data, because the co
 - **It is not a management guide.** DDInter's text describes the mechanism and effect; it does not expose a discrete management recommendation, so `management` is null rather than filled with invented guidance.
 - **It is not complete in either direction.** About 14% of interactions have no written mechanism (DDInter lists the pair without a description), and 296 drugs that DDInter covers have no CIEL concept (recent approvals and supplements, mostly), while 44% of CIEL's RxNorm-mapped drugs have no DDInter interaction data (largely vaccines, venoms, and herbal preparations DDInter does not carry). A module must treat any absence as a gap, not a clearance.
 - **It is not a government-agency product.** DDInter is an academic database, peer-reviewed by pharmacists. That is a governance consideration for clinical deployment, not a data defect, and it is the one open sourcing question the design flags.
-- **A few RxCUIs remain ambiguous.** Drug RxCUIs are canonicalized to the RxNorm ingredient, but about 30 concepts are shared by more than one drug because RxNorm models them that way (stereoisomers such as omeprazole and esomeprazole, or vaccine naming variants). These are flagged in `out/rxcui_review.json`; a consuming module should treat them as needing clinical review rather than as clean one-to-one keys.
+- **A few RxCUIs are shared by design.** Drug RxCUIs are canonicalized to the RxNorm ingredient, and a clinician reviewed the cases where more than one drug shared an identifier. Genuinely distinct drugs that had been merged (for example the trastuzumab antibody-drug conjugates, or methscopolamine and scopolamine) were separated. The ~29 that remain shared are deliberate: stereoisomer and racemate pairs (omeprazole and esomeprazole, atropine and hyoscyamine) and prodrug/active-metabolite pairs, which share an interaction profile, plus formulation, salt, and vaccine-naming variants. The full review trail is in `out/rxcui_review.json`.
 
 ## Provenance and license
 

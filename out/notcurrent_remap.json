@@ -1,0 +1,175 @@
+{
+  "Liotrix": {
+    "rxcui": "10582",
+    "rxnorm_name": "levothyroxine",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Menotropins": {
+    "rxcui": "61148",
+    "rxnorm_name": "somatropin",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Tilmanocept": {
+    "rxcui": "2571856",
+    "rxnorm_name": "technetium",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Typhoid vaccine (inactivated)": {
+    "rxcui": "762595",
+    "rxnorm_name": "Salmonella typhi Ty21a live antigen",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Gadobenic acid": {
+    "rxcui": "692620",
+    "rxnorm_name": "gadobenate",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Gadoteric acid": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Gadoxetic acid": {
+    "rxcui": "802624",
+    "rxnorm_name": "gadoxetate",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Indium In-111 pentetate": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Bcg vaccine": {
+    "rxcui": "221050",
+    "rxnorm_name": "BCG, live, Tice strain",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Moderna covid-19 vaccine (6y+ bivalent booster)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Polycarbophil": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Daxibotulinumtoxina": {
+    "rxcui": "1712",
+    "rxnorm_name": "botulinum toxin type A",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Multivitamin with iron": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Multivitamin with iron and fluoride": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Multivitamin (prenatal)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Mixed respiratory vaccine": {
+    "rxcui": "2685002",
+    "rxnorm_name": "respiratory syncytial virus pre-fusion F glycoprotein mRNA",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Moderna COVID-19 Vaccine (6m-5y bivalent booster)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Moderna COVID-19 Vaccine (bivalent booster)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Moderna COVID-19 Vaccine (6m-5y)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Moderna COVID-19 Vaccine (6y-11y)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Moderna COVID-19 Vaccine (booster only)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "SARS-CoV-2 vaccine": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Skin test antigens (multiple)": {
+    "rxcui": "89854",
+    "rxnorm_name": "mumps skin test antigen",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Staphage lysate (spl)": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Lvp solution with potassium": {
+    "rxcui": "4850",
+    "rxnorm_name": "glucose",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Parenteral nutrition solution w/electrolytes": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Multivitamin with minerals": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Chaparral": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Multivitamin": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Multivitamin with fluoride": {
+    "rxcui": null,
+    "rxnorm_name": null,
+    "status": "no_current_match"
+  },
+  "Lvp solution with hypertonic saline": {
+    "rxcui": "9863",
+    "rxnorm_name": "sodium chloride",
+    "status": "Active",
+    "via": "IN"
+  },
+  "Parenteral nutrition solution": {
+    "rxcui": "10337",
+    "rxnorm_name": "taurine",
+    "status": "Active",
+    "via": "IN"
+  }
+}
