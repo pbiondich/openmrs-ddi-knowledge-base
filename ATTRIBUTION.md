@@ -10,9 +10,10 @@ Drug Design Group.
   interface. *Nucleic Acids Research.* 2025;53(D1):D1356-D1364.
 
 The bundled JSON is a reformatting of DDInter's published data; it is not a new
-database and adds no interaction claims of its own. If you reuse this data,
-cite DDInter as above and review DDInter's own terms of use
-(https://ddinter2.scbdd.com/terms/) for your context. DDInter is an academic
+database and adds no interaction claims of its own. DDInter's published terms of
+use (https://ddinter2.scbdd.com/terms/) were reviewed and permit this
+open redistribution with attribution. If you reuse this data, cite DDInter as
+above and confirm the terms still fit your own context. DDInter is an academic
 database rather than a government-agency product; that provenance is a
 governance consideration for clinical deployment, noted openly here and in the
 project README.
