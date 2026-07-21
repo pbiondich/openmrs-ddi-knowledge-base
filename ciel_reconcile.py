@@ -20,8 +20,12 @@ if os.path.exists(CACHE):
             pass
 
 def ingredients(rxcui):
-    # ingredient RxCUIs for a concept; if it's already an ingredient, returns itself
-    url = f"{RXBASE}/rxcui/{rxcui}/related.json?tty=IN+MIN+PIN"
+    # Single-ingredient (IN) RxCUIs for a concept. tty=IN decomposes a combination
+    # product into its component ingredients; it deliberately excludes MIN
+    # (multiple-ingredient) tokens, which would falsely bridge two distinct
+    # ingredients that co-occur in some combination product. If nothing relates,
+    # the concept is treated as its own ingredient.
+    url = f"{RXBASE}/rxcui/{rxcui}/related.json?tty=IN"
     out = subprocess.run(["curl", "-s", "--max-time", "30", url], capture_output=True, text=True).stdout
     ings = set()
     try:
@@ -75,7 +79,7 @@ for c in xw:
 total = len(xw)
 summary = {
     "generated_on": "2026-07-21",
-    "method": "Ingredient-level reconciliation: both CIEL RxCUIs and KB RxCUIs mapped to RxNorm ingredient RxCUIs (tty IN/MIN/PIN) before matching.",
+    "method": "Ingredient-level reconciliation: both CIEL RxCUIs and KB RxCUIs mapped to their RxNorm single-ingredient (tty=IN) RxCUIs before matching. Combination products decompose to component ingredients; multiple-ingredient (MIN) tokens are excluded so unrelated ingredients that co-occur in a combination are not falsely bridged.",
     "ciel_source": "CIEL v2026-07-20 (OCL export)",
     "ddinter_source": "DDInter 2.0",
     "ciel_drug_concepts_mapped_to_rxnorm": total,

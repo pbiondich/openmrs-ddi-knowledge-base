@@ -126,6 +126,27 @@
             null
           ],
           "description": "How the RxCUI was resolved: exact name match, exact after stripping a dose-form qualifier, or a flagged approximate match."
+        },
+        "ciel_concepts": {
+          "type": "array",
+          "description": "CIEL concepts linked to this drug at RxNorm ingredient level (present on the top-level drugs[] list). Each: {ciel_code, ciel_uuid, name}.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ciel_code": {
+                "type": "string"
+              },
+              "ciel_uuid": {
+                "type": "string"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
         }
       }
     }
