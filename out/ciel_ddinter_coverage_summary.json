@@ -1,0 +1,11 @@
+{
+  "generated_on": "2026-07-21",
+  "method": "Ingredient-level reconciliation: both CIEL RxCUIs and KB RxCUIs mapped to RxNorm ingredient RxCUIs (tty IN/MIN/PIN) before matching.",
+  "ciel_source": "CIEL v2026-07-20 (OCL export)",
+  "ddinter_source": "DDInter 2.0",
+  "ciel_drug_concepts_mapped_to_rxnorm": 7615,
+  "ciel_drugs_with_ddinter_interactions": 4738,
+  "ciel_drugs_without_ddinter_data": 2877,
+  "coverage_pct": 62.2,
+  "kb_ingredient_rxcuis": 5975
+}

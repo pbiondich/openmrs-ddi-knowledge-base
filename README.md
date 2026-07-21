@@ -15,8 +15,9 @@ All data lives in `out/`. Everything was generated on 2026-07-21 from DDInter 2.
 | `ddi_mechanisms.json` | The enrichment layer on its own: 8,466 interaction groups, each with a real mechanism description, severity, and mechanism-category flags. This is where the clinical text lives. | ~3.5 MB |
 | `enriched_sample.json` | 11 worked examples showing the complete record shape, mechanism text and all, for clinically important Major interactions. | ~14 KB |
 | `interaction.schema.json` | JSON Schema (draft 2020-12) for a single interaction record. | ~2 KB |
+| `ciel_ddinter_coverage_summary.json` | Aggregate result of the CIEL bridge: how many CIEL drug concepts have DDInter interaction data (see the CIEL section below). | ~1 KB |
 
-`raw/` holds the eight source CSVs as downloaded, and `enrich.py` / `build_enriched.py` regenerate the enriched KB, so the whole build is reproducible.
+`raw/` holds the eight source CSVs as downloaded. `enrich.py` / `build_enriched.py` regenerate the enriched KB; `rxnorm.py` does RxNorm normalization; `ciel_crosswalk.py` / `ciel_reconcile.py` / `ciel_coverage.py` build the CIEL bridge. The whole build is reproducible.
 
 ## The record shape
 
@@ -68,9 +69,28 @@ All 2,283 drugs resolved: 2,151 (94%) by exact name match, 67 after stripping a 
 
 One honest caveat: `rxcui` is the first concept id RxNorm returns for the name, which is normally the ingredient. I didn't force every match to ingredient-level term type, so a handful may point at a more specific concept. The `rxnorm_name` field makes those easy to spot if we want to tighten it later.
 
+## The CIEL bridge
+
+This is the link that makes the knowledge base usable from a real OpenMRS chart: a patient's medications are recorded as CIEL concepts, and CIEL maps those concepts to RxNorm, so CIEL concept -> RxCUI -> our interaction records. I pulled the full CIEL v2026-07-20 export from the Open Concept Lab and measured the overlap.
+
+CIEL has 8,298 Drug-class concepts, of which 7,615 carry an RxNorm mapping. Matching those against DDInter, **4,738 (62.2%) have interaction data** in this knowledge base. That number needs a caveat that cuts the honest way: a naive exact-RxCUI match only found 23%, because CIEL's drug concepts are mostly products and formulations that map to product-level RxCUIs, while this KB stores ingredient-level RxCUIs. Reconciling both sides down to their RxNorm ingredient (via the RxNorm `related` API) is what gets you to the real 62%.
+
+The remaining 2,877 CIEL drugs with no DDInter record are, overwhelmingly, things you would not expect a DDI database to carry: allergenic extracts, insect venoms, herbal and enzyme preparations, a few niche biologics. So the gap is mostly legitimate absence, not missing coverage. Either way, per the spec, the module surfaces these as a knowledge gap, never as a false "no interaction found."
+
+The aggregate result lives in `out/ciel_ddinter_coverage_summary.json`. The full per-drug crosswalk and covered/gap lists are CIEL-derived, so they are kept out of this public repo pending confirmation of CIEL's redistribution terms (same caution as DDInter, issue #2); regenerate them locally with the scripts below.
+
+### Regenerating the CIEL crosswalk
+
+The scripts pull CIEL from the Open Concept Lab. You need CIEL access (an OCL API token, which CIEL access is gated behind). Two ways in:
+
+- **OCL CLI** (recommended for reproducibility): use the CLI to export the CIEL source, then run `ciel_crosswalk.py` against the exported `export.json`.
+- **Direct export API**: `GET /orgs/CIEL/sources/CIEL/latest/export/` with an `Authorization: Token <token>` header returns a signed URL to the full source zip.
+
+Then `ciel_crosswalk.py` builds the concept -> RxCUI crosswalk, `ciel_reconcile.py` does the ingredient-level match against the KB, and `ciel_coverage.py` writes the coverage report. No token or CIEL data is stored in this repo.
+
 ## What's still open
 
-Community review of the findings before folding any of this into the spec, and a confirmation of DDInter's redistribution terms now that the repo is public. Beyond that, the natural next step is wiring these RxCUIs to the CIEL concept dictionary so a real patient med list resolves against the knowledge base.
+Community review of the findings before folding any of this into the spec, and confirmation of DDInter's and CIEL's redistribution terms now that the repo is public. Beyond that, the remaining work is module integration: taking a live patient medication list (CIEL concept UUIDs) and running it through concept -> RxCUI -> interaction lookup inside Chart Search AI, which is now a wiring exercise rather than a data problem.
 
 ## Provenance and license
 

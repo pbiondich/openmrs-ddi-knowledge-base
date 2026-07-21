@@ -8,3 +8,8 @@ __pycache__/
 # The gzipped copy (out/ddi_knowledge_base_enriched.json.gz) is committed instead;
 # gunzip it to regenerate this file.
 out/ddi_knowledge_base_enriched.json
+
+# CIEL-derived bulk data kept out of the public repo pending CIEL redistribution
+# terms (see issue #2). Regenerate with ciel_crosswalk.py + an OCL API token.
+out/ciel_rxnorm_crosswalk.json
+out/ciel_ddinter_coverage.json
