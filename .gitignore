@@ -8,3 +8,7 @@ __pycache__/
 # The gzipped copy (out/ddi_knowledge_base_enriched.json.gz) is committed instead;
 # gunzip it to regenerate this file.
 out/ddi_knowledge_base_enriched.json
+
+# Full chartsearchai drug-reference (180 MB raw, over GitHub's 100 MB limit).
+# Committed gzipped; regenerate with: python3 adapt_to_chartsearchai.py full
+dist/chartsearchai-drug-reference.json

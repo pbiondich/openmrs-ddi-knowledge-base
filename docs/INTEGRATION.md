@@ -71,6 +71,21 @@ Consistent with the V1 spec: no dosing (`ageBands`), no drug-allergy or drug-con
 
 The module has the test surface to prove the integration: `DrugSafetyValidatorTest`, `JsonDrugReferenceSourceTest`, and a `drug-safety-eval.json` eval set. The Phase 1 check is to load our generated file through the existing JSON source and run those against a handful of known-dangerous pairs from our data (warfarin plus an NSAID, simvastatin plus a strong CYP3A4 inhibitor) to confirm the validator fires with our notes and citations.
 
+## Phase 1 build (done)
+
+The adapter is `adapt_to_chartsearchai.py` (ATC codes derived by `derive_atc.py` via RxClass, cached in `out/atc_cache.jsonl`). It emits the module's `drug-reference.json` shape (`{entries: [...]}`, drug-centric, with `interactions[].{token, atc, note}`), parameterized by severity and formulary scope. Two artifacts are produced:
+
+| File | Scope | Contents |
+|---|---|---|
+| `dist/chartsearchai-drug-reference-demo.json` (~3.2 MB) | 16 well-known drugs | A quick-to-load set for testing the module end to end. |
+| `dist/chartsearchai-drug-reference.json.gz` (~14 MB gz) | full formulary, Major+Moderate | 1,907 entries, 386,987 interaction objects. Raw is ~180 MB, so it is stored gzipped and gitignored raw; regenerate with `python3 adapt_to_chartsearchai.py full`. |
+
+ATC codes were derived for 1,712 of the 1,907 entries; the rest are biologics, vaccines, and contrast agents that RxNorm does not place in ATC. Aliases include RxNorm and CIEL concept names (so `simvastatin` also matches its CIEL combination-product names).
+
+The ~180 MB raw full file is the concrete confirmation of the scale point above: a full drug-centric expansion is too large to bundle and load as a flat file, so an implementation should either scope the adapter to its own formulary or, better, adopt the Phase 2 pluggable source. The demo file is the artifact to actually load through the module's JSON source.
+
+Validation against known-dangerous pairs (all fire, at `Major`, with real mechanism notes and partner ATC): warfarin × ibuprofen, warfarin × aspirin, simvastatin × clarithromycin, methotrexate × ibuprofen, digoxin × amiodarone, ciprofloxacin × warfarin. One refinement noted for Phase 2: RxClass returns every ATC membership including combination products, so a few entries carry extra `atcCodes` beyond the drug's own ingredient class; preferring the ingredient-level ATC would tighten the class-based matching.
+
 ## Open questions for the module maintainers
 
 1. Is a bundled dataset of a few thousand scoped entries acceptable for Phase 1, or do they want the pluggable source (Phase 2) from the start?
