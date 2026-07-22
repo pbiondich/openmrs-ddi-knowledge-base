@@ -1,16 +1,16 @@
 """
-build_kb.py — the single build step.
+build_kb.py — validate the knowledge base and refresh the sample.
 
 The canonical source of truth is ddi_kb_compact.json (normalized: a mechanisms
 table stored once, a drugs table with RxCUI/ATC/CIEL, and interaction rows that
-reference both). This validates that source and emits the compressed final form
-plus a small readable sample. The hand-curated clinical decisions live in the
-source data, not in code, so this build is a deterministic projection of the
-canonical file.
+reference both). This validates that file (referential integrity + shape) and
+regenerates a small readable sample. The hand-curated clinical decisions live in
+the source data, not in code, so the compact file is the curated source of
+record rather than a rebuild output.
 
 Usage: python3 build_kb.py
 """
-import json, gzip, os, sys
+import json, os, sys
 
 SRC = "out/ddi_kb_compact.json"
 VALID_SEVERITY = {"Major", "Moderate", "Minor", "Unknown"}
@@ -49,10 +49,6 @@ shape = kb.get("metadata", {}).get("shape", {})
 if shape.get("drugs") != len(drugs) or shape.get("mechanisms") != len(mech) or shape.get("interactions") != len(inter):
     fail(f"metadata.shape {shape} != actual (drugs {len(drugs)}, mechanisms {len(mech)}, interactions {len(inter)})")
 
-# --- emit compressed final form ---
-with gzip.open(SRC + ".gz", "wt", encoding="utf-8") as f:
-    json.dump(kb, f, ensure_ascii=False)
-
 # --- emit a small readable sample (reconstructed rows) ---
 by_id = {d["id"]: d for d in drugs}
 sample = []
@@ -74,10 +70,9 @@ for _, _, s, _ in inter:
     sev[s] = sev.get(s, 0) + 1
 with_mech = sum(1 for _, _, _, g in inter if mech.get(g, {}).get("text"))
 raw = os.path.getsize(SRC) / 1e6
-gz = os.path.getsize(SRC + ".gz") / 1e6
 print("validation: OK (referential integrity + shape)")
 print(f"drugs {len(drugs)} | mechanisms {len(mech)} | interactions {len(inter)}")
 print(f"severity {sev}")
 print(f"interactions with mechanism text: {with_mech} ({100*with_mech//len(inter)}%)")
-print(f"final form: {SRC}.gz ({gz:.1f} MB)  | source: {SRC} ({raw:.1f} MB)")
+print(f"knowledge base: {SRC} ({raw:.1f} MB)")
 print("wrote out/sample.json")

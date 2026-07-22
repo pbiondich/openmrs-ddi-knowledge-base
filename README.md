@@ -6,7 +6,7 @@ It was built for the Chart Search AI DDI feature, but nothing about it is specif
 
 ## What it is
 
-The knowledge base is a single normalized JSON file, `ddi_kb_compact.json`, shipped as a ~2 MB compressed `.gz` as its distributable form. It holds three tables joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, and 295,184 interaction rows carrying severity and a mechanism reference. Two things make it usable inside OpenMRS rather than just a data dump:
+The knowledge base is a single normalized JSON file, `ddi_kb_compact.json` (~19 MB). It holds three tables joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, and 295,184 interaction rows carrying severity and a mechanism reference. Two things make it usable inside OpenMRS rather than just a data dump:
 
 - Every drug is resolved to an **RxNorm RxCUI**, so a drug named three different ways resolves to one identifier and an interaction is not missed on a spelling difference.
 - Every drug is cross-walked to the **CIEL concept dictionary**, so a medication recorded in a patient's chart maps directly to its interaction records.
@@ -27,16 +27,14 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 
 | File | What it is |
 |---|---|
-| `out/ddi_kb_compact.json.gz` | **The knowledge base** (compressed final form, ~2 MB). Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), and 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`. |
-| `out/ddi_kb_compact.json` | The same, uncompressed (~19 MB): the canonical, editable source of truth. `build_kb.py` validates it and rebuilds the `.gz`. |
+| `out/ddi_kb_compact.json` | **The knowledge base** (~19 MB): the canonical source of truth. Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), and 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`. `build_kb.py` validates it and refreshes the sample. |
 | `out/schema.json` | JSON Schema (draft 2020-12) for the compact format. |
 | `out/sample.json` | A few reconstructed interaction rows for quick inspection. |
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
 | `out/ciel_rxnorm_crosswalk.json` | CIEL Drug concept (code, UUID, name) to RxCUI(s). |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
 | `out/rxcui_review.json` | Record of the RxNorm canonicalization and clinician curation decisions. |
-| `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`). |
-| `dist/chartsearchai-drug-reference.json.gz` | Chart Search AI module format, full dataset. |
+| `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`). Run `adapt_to_chartsearchai.py full` to generate the full dataset (~180 MB, not committed). |
 
 ## The record shape
 
@@ -71,7 +69,7 @@ Three public sources, layered so each does the job it is best at:
 - **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
-No step requires an implementer to curate drug data by hand. The canonical source of truth is `ddi_kb_compact.json`; `build_kb.py` validates it (referential integrity plus shape) and emits the compressed final form and a sample, and `adapt_to_chartsearchai.py` projects it into the Chart Search AI module format. The one-time acquisition-and-curation pipeline that produced the canonical data — the DDInter group walk, RxNorm normalization and canonicalization, the clinician review, the CIEL crosswalk, and ATC derivation — is preserved in the git history and summarized in `out/rxcui_review.json`; because it embeds human clinical decisions, the compact file is the curated source of record rather than a rebuild output.
+No step requires an implementer to curate drug data by hand. The canonical source of truth is `ddi_kb_compact.json`; `build_kb.py` validates it (referential integrity plus shape) and refreshes a readable sample, and `adapt_to_chartsearchai.py` projects it into the Chart Search AI module format. The one-time acquisition-and-curation pipeline that produced the canonical data — the DDInter group walk, RxNorm normalization and canonicalization, the clinician review, the CIEL crosswalk, and ATC derivation — is preserved in the git history and summarized in `out/rxcui_review.json`; because it embeds human clinical decisions, the compact file is the curated source of record rather than a rebuild output.
 
 ## Coverage
 

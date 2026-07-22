@@ -4,7 +4,7 @@
 
 ## What this proposes
 
-A new `DrugReferenceSource` implementation, `DdiDrugReferenceSource`, selected by `chartsearchai.drugReference.sourceFormat=ddinter`, that backs the drug-reference feature with the full DDInter 2.0 interaction set instead of the hand-curated `drug-reference.json` seed. It reads a single normalized dataset (`ddi_kb_compact.json`, ~19 MB raw / 2 MB gzipped) that the data project publishes. It changes no existing behavior: `json` stays the default, and this is one more opt-in adapter behind the seam ADR Decision 24 already established.
+A new `DrugReferenceSource` implementation, `DdiDrugReferenceSource`, selected by `chartsearchai.drugReference.sourceFormat=ddinter`, that backs the drug-reference feature with the full DDInter 2.0 interaction set instead of the hand-curated `drug-reference.json` seed. It reads a single normalized dataset (`ddi_kb_compact.json`, a plain ~19 MB JSON) that the data project publishes. It changes no existing behavior: `json` stays the default, and this is one more opt-in adapter behind the seam ADR Decision 24 already established.
 
 The motivation is the problem the original Chart Search AI spec set out to solve: the curated seed covers a handful of drugs and returns nothing for the rest, and it pushes curation onto implementers. A public-source dataset removes both. DDInter is open-access, offline-capable, and maintenance-free; RxNorm and CIEL supply the identifiers the module already reasons over.
 
@@ -49,7 +49,7 @@ package org.openmrs.module.chartsearchai.reference;
  */
 public class DdiDrugReferenceSource implements DrugReferenceSource {
 
-    static final String CLASSPATH_DEFAULT = "/chartsearchai/ddi-kb-compact.json.gz";
+    static final String CLASSPATH_DEFAULT = "/chartsearchai/ddi-kb-compact.json";
 
     @Override
     public List<DrugReference> load() {
@@ -114,13 +114,13 @@ The data is DDInter 2.0 (open-access; its published terms were reviewed and perm
 
 ## Suggested rollout
 
-- **2a:** the `DdiDrugReferenceSource`, the bundled `ddi-kb-compact.json.gz`, and the `ddinter` branch in `DrugReferenceService`. No model change, no consumer change. This is the substance of the PR.
+- **2a:** the `DdiDrugReferenceSource`, the bundled `ddi-kb-compact.json`, and the `ddinter` branch in `DrugReferenceService`. No model change, no consumer change. This is the substance of the PR.
 - **2b:** the `severity` field and the CIEL-concept matcher, if wanted, as follow-ups once 2a lands.
 
 ## Open questions for the maintainers
 
-1. Bundle the ~2 MB (gzipped) dataset in the module, or ship a small default and resolve the full set via the GP path?
+1. Bundle the ~19 MB dataset in the module, or ship a small default and resolve the full set via the GP path?
 2. Is the normalized-load approach acceptable, or is the indexed-lookup interface evolution worth doing up front?
 3. Would you take the `severity` field and the optional CIEL matcher upstream (2b)?
 4. Preferred default scope for the shipped dataset: full, Major+Moderate, or a named formulary (CIEL, WHO EML)?
-5. Should the drug-reference reader learn to decompress `.gz` (the dataset is 2 MB gzipped, 19 MB raw), or would you rather bundle it raw?
+5. The published dataset is a plain ~19 MB JSON. Bundle it as-is, or would you rather compress it in the module jar (the reader would then need to decompress)?

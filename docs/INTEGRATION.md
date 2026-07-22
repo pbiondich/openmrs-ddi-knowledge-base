@@ -78,7 +78,7 @@ The adapter is `adapt_to_chartsearchai.py`. It reads the canonical `ddi_kb_compa
 | File | Scope | Contents |
 |---|---|---|
 | `dist/chartsearchai-drug-reference-demo.json` (~0.1 MB) | 16 well-known drugs, self-contained (interactions among the set only) | A quick-to-load set for testing the module end to end. |
-| `dist/chartsearchai-drug-reference.json.gz` (~14 MB gz) | full formulary, Major+Moderate | 1,907 entries, 386,987 interaction objects. Raw is ~180 MB, so it is stored gzipped and gitignored raw; regenerate with `python3 adapt_to_chartsearchai.py full`. |
+| `dist/chartsearchai-drug-reference.json` (~180 MB) | full formulary, Major+Moderate | 1,907 entries, 386,987 interaction objects. Not committed (regenerable); build with `python3 adapt_to_chartsearchai.py full`. |
 
 ATC codes were derived for 1,712 of the 1,907 entries; the rest are biologics, vaccines, and contrast agents that RxNorm does not place in ATC. Aliases include RxNorm and CIEL concept names (so `simvastatin` also matches its CIEL combination-product names).
 
