@@ -6,7 +6,7 @@ It was built for the Chart Search AI DDI feature, but nothing about it is specif
 
 ## What it is
 
-The knowledge base is a single normalized JSON file, `ddi_kb_compact.json` (~19 MB). It holds three tables joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, and 295,184 interaction rows carrying severity and a mechanism reference. Two things make it usable inside OpenMRS rather than just a data dump:
+The knowledge base is a single normalized JSON file, `ddi_knowledge_base.json` (~19 MB). It holds three tables joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, and 295,184 interaction rows carrying severity and a mechanism reference. Two things make it usable inside OpenMRS rather than just a data dump:
 
 - Every drug is resolved to an **RxNorm RxCUI**, so a drug named three different ways resolves to one identifier and an interaction is not missed on a spelling difference.
 - Every drug is cross-walked to the **CIEL concept dictionary**, so a medication recorded in a patient's chart maps directly to its interaction records.
@@ -27,8 +27,8 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 
 | File | What it is |
 |---|---|
-| `out/ddi_kb_compact.json` | **The knowledge base** (~19 MB): the canonical source of truth. Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), and 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`. `build_kb.py` validates it and refreshes the sample. |
-| `out/schema.json` | JSON Schema (draft 2020-12) for the compact format. |
+| `out/ddi_knowledge_base.json` | **The knowledge base** (~19 MB): the canonical source of truth. Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), and 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`. `build_kb.py` validates it and refreshes the sample. |
+| `out/schema.json` | JSON Schema (draft 2020-12) for the knowledge base JSON. |
 | `out/sample.json` | A few reconstructed interaction rows for quick inspection. |
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
@@ -69,12 +69,12 @@ Three public sources, layered so each does the job it is best at:
 - **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
-No step requires an implementer to curate drug data by hand, and the build is reproducible and offline. The committed `src/` inputs hold the facts fetched once from DDInter, RxNorm, RxClass, and CIEL, together with the clinician decisions captured as explicit data (`src/curation.json`: 5 separations, 4 remaps, 28 gaps). `build_kb.py` deterministically assembles `ddi_kb_compact.json` from those inputs: RxNorm base match, canonicalization to the single-ingredient (`IN`) concept, the clinician overrides, the CIEL ingredient-level bridge, and ATC. Because the human decisions are data rather than re-derived, the build reproduces the exact curated knowledge base — confirm with `python3 build_kb.py --check`. Only the one-time acquisition of `src/` (the network fetches from those four sources) lives outside the repo, in the git history.
+No step requires an implementer to curate drug data by hand, and the build is reproducible and offline. The committed `src/` inputs hold the facts fetched once from DDInter, RxNorm, RxClass, and CIEL, together with the clinician decisions captured as explicit data (`src/curation.json`: 5 separations, 4 remaps, 28 gaps). `build_kb.py` deterministically assembles `ddi_knowledge_base.json` from those inputs: RxNorm base match, canonicalization to the single-ingredient (`IN`) concept, the clinician overrides, the CIEL ingredient-level bridge, and ATC. Because the human decisions are data rather than re-derived, the build reproduces the exact curated knowledge base — confirm with `python3 build_kb.py --check`. Only the one-time acquisition of `src/` (the network fetches from those four sources) lives outside the repo, in the git history.
 
 ### Reproducing the build
 
 ```
-python3 build_kb.py            # src/ -> out/ddi_kb_compact.json (+ sample, CIEL index)
+python3 build_kb.py            # src/ -> out/ddi_knowledge_base.json (+ sample, CIEL index)
 python3 build_kb.py --check     # verify the rebuild matches the committed KB
 python3 adapt_to_chartsearchai.py demo   # project into the Chart Search AI module format
 ```

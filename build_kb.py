@@ -3,7 +3,7 @@ build_kb.py — reproducible build of the canonical DDI knowledge base.
 
 Deterministic, offline. Reads the committed source inputs in src/ (the frozen
 facts fetched once from DDInter / RxNorm / RxClass / CIEL, plus the clinician
-curation decisions) and assembles out/ddi_kb_compact.json — the normalized
+curation decisions) and assembles out/ddi_knowledge_base.json — the normalized
 knowledge base. No network access; the one-time acquisition of src/ is separate.
 
 Pipeline:
@@ -95,8 +95,8 @@ mechanisms = {gid: {"text": mech_src[gid]["mechanism"], "categories": mech_src[g
 
 kb = {
     "metadata": {
-        "schema_version": "1.0-compact",
-        "title": "OpenMRS DDI knowledge base (normalized/compact)",
+        "schema_version": "1.0",
+        "title": "OpenMRS DDI knowledge base (normalized)",
         "source": {"name": "DDInter 2.0", "url": "https://ddinter2.scbdd.com/",
                    "normalization": "RxNorm (NLM)", "bridge": "CIEL v2026-07-20"},
         "shape": {"drugs": len(drugs), "mechanisms": len(mechanisms), "interactions": len(interactions)},
@@ -109,7 +109,7 @@ kb = {
 }
 
 if "--check" in sys.argv:
-    cur = json.load(open("out/ddi_kb_compact.json"))
+    cur = json.load(open("out/ddi_knowledge_base.json"))
     ok = True
     for key in ("drugs", "mechanisms", "interactions"):
         if kb[key] != cur[key]:
@@ -122,7 +122,7 @@ if "--check" in sys.argv:
     print("VERIFY:", "reproduces the committed KB exactly" if ok else "DIFFERENCES FOUND")
     sys.exit(0 if ok else 1)
 
-json.dump(kb, open("out/ddi_kb_compact.json", "w"), ensure_ascii=False)
+json.dump(kb, open("out/ddi_knowledge_base.json", "w"), ensure_ascii=False)
 
 # CIEL reverse index: patient CIEL concept UUID -> KB drug(s)
 ciel_index = {}
@@ -139,6 +139,6 @@ sample = [{"drug_a": {"id": a, "name": by_id[a]["name"], "rxcui": by_id[a]["rxcu
            "drug_b": {"id": b, "name": by_id[b]["name"], "rxcui": by_id[b]["rxcui"]},
            "severity": s, "mechanism": mechanisms.get(g, {}).get("text"), "group_id": g}
           for a, b, s, g in interactions[:8]]
-json.dump({"note": "Illustrative reconstructed rows from ddi_kb_compact.json.", "interactions": sample},
+json.dump({"note": "Illustrative reconstructed rows from ddi_knowledge_base.json.", "interactions": sample},
           open("out/sample.json", "w"), ensure_ascii=False, indent=2)
-print(f"built out/ddi_kb_compact.json  drugs {len(drugs)} | mechanisms {len(mechanisms)} | interactions {len(interactions)}")
+print(f"built out/ddi_knowledge_base.json  drugs {len(drugs)} | mechanisms {len(mechanisms)} | interactions {len(interactions)}")

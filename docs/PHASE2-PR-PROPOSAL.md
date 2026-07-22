@@ -4,13 +4,13 @@
 
 ## What this proposes
 
-A new `DrugReferenceSource` implementation, `DdiDrugReferenceSource`, selected by `chartsearchai.drugReference.sourceFormat=ddinter`, that backs the drug-reference feature with the full DDInter 2.0 interaction set instead of the hand-curated `drug-reference.json` seed. It reads a single normalized dataset (`ddi_kb_compact.json`, a plain ~19 MB JSON) that the data project publishes. It changes no existing behavior: `json` stays the default, and this is one more opt-in adapter behind the seam ADR Decision 24 already established.
+A new `DrugReferenceSource` implementation, `DdiDrugReferenceSource`, selected by `chartsearchai.drugReference.sourceFormat=ddinter`, that backs the drug-reference feature with the full DDInter 2.0 interaction set instead of the hand-curated `drug-reference.json` seed. It reads a single normalized dataset (`ddi_knowledge_base.json`, a plain ~19 MB JSON) that the data project publishes. It changes no existing behavior: `json` stays the default, and this is one more opt-in adapter behind the seam ADR Decision 24 already established.
 
 The motivation is the problem the original Chart Search AI spec set out to solve: the curated seed covers a handful of drugs and returns nothing for the rest, and it pushes curation onto implementers. A public-source dataset removes both. DDInter is open-access, offline-capable, and maintenance-free; RxNorm and CIEL supply the identifiers the module already reasons over.
 
 ## The dataset the source reads
 
-The data project ships a normalized artifact designed to be consumed directly. It has three tables joined by id, so nothing is duplicated: mechanisms are stored once, drugs once, and interactions are compact rows that reference both.
+The data project ships a normalized artifact designed to be consumed directly. It has three tables joined by id, so nothing is duplicated: mechanisms are stored once, drugs once, and interactions are array rows that reference both.
 
 ```json
 {
@@ -43,13 +43,13 @@ package org.openmrs.module.chartsearchai.reference;
 
 /**
  * DrugReferenceSource backed by the normalized DDInter 2.0 dataset
- * (ddi_kb_compact.json): a mechanisms table, a drugs table (name, RxCUI, ATC,
+ * (ddi_knowledge_base.json): a mechanisms table, a drugs table (name, RxCUI, ATC,
  * CIEL), and interaction rows referencing both. Selected by sourceFormat=ddinter.
  * Fail-safe: any load problem degrades to an empty list, never an exception.
  */
 public class DdiDrugReferenceSource implements DrugReferenceSource {
 
-    static final String CLASSPATH_DEFAULT = "/chartsearchai/ddi-kb-compact.json";
+    static final String CLASSPATH_DEFAULT = "/chartsearchai/ddi-knowledge-base.json";
 
     @Override
     public List<DrugReference> load() {
@@ -73,7 +73,7 @@ It reuses the module's conventions exactly: the `ReferenceDataFiles.loadWithClas
 
 ### Mapping the tables to `DrugReference`
 
-| `DrugReference` field | From the compact dataset |
+| `DrugReference` field | From the knowledge base |
 |---|---|
 | `id` | drug `rxcui` (fallback `id`) |
 | `name` | drug `name` |
@@ -89,7 +89,7 @@ Because the interaction rows are symmetric drug references, each pair contribute
 
 ## Two model additions the data already supports (optional, additive)
 
-Neither is required for the source to work, and both are backward-compatible. We raise them because the compact dataset already carries the fields:
+Neither is required for the source to work, and both are backward-compatible. We raise them because the knowledge base already carries the fields:
 
 1. **`severity` on `Interaction`.** Severity is a first-class column on every interaction row (`Major` / `Moderate` / `Minor` / `Unknown`). Surfacing it as a field would let `DrugSafetyValidator` rank the non-blocking chips rather than fold severity into prose. Today it would only live inside `note`.
 2. **CIEL-concept order matching.** Each drug carries its CIEL concepts (code, uuid, name). Since an OpenMRS chart records orders as CIEL concepts, a CIEL-concept-keyed match is more precise than the ATC hop for this environment. It could be an optional matcher alongside the existing ATC one, not a replacement.
@@ -114,7 +114,7 @@ The data is DDInter 2.0 (open-access; its published terms were reviewed and perm
 
 ## Suggested rollout
 
-- **2a:** the `DdiDrugReferenceSource`, the bundled `ddi-kb-compact.json`, and the `ddinter` branch in `DrugReferenceService`. No model change, no consumer change. This is the substance of the PR.
+- **2a:** the `DdiDrugReferenceSource`, the bundled `ddi-knowledge-base.json`, and the `ddinter` branch in `DrugReferenceService`. No model change, no consumer change. This is the substance of the PR.
 - **2b:** the `severity` field and the CIEL-concept matcher, if wanted, as follow-ups once 2a lands.
 
 ## Open questions for the maintainers

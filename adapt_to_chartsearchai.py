@@ -1,7 +1,7 @@
 """
-Adapter: ddi_kb_compact.json -> openmrs-module-chartsearchai drug-reference.json
+Adapter: ddi_knowledge_base.json -> openmrs-module-chartsearchai drug-reference.json
 
-Reads the canonical compact knowledge base (mechanisms table + drugs table +
+Reads the canonical knowledge base (mechanisms table + drugs table +
 interaction rows) and emits the module's drug-centric DrugReference format
 (ADR Decision 24; consumed by JsonDrugReferenceSource with sourceFormat=json).
 See docs/INTEGRATION.md and docs/PHASE2-PR-PROPOSAL.md.
@@ -17,7 +17,7 @@ DEMO_DRUGS = {"warfarin","acetylsalicylic acid","ibuprofen","simvastatin","clari
               "methotrexate","digoxin","amiodarone","fluconazole","metformin","lisinopril",
               "spironolactone","tramadol","sertraline","omeprazole","ciprofloxacin"}
 
-kb = json.load(open("out/ddi_kb_compact.json"))
+kb = json.load(open("out/ddi_knowledge_base.json"))
 mech = kb["mechanisms"]
 drugs = {d["id"]: d for d in kb["drugs"]}
 
@@ -90,7 +90,7 @@ dataset = {
     "version": "1.0",
     "source": "DDInter 2.0, RxNorm, CIEL (openmrs-ddi-knowledge-base)",
     "description": ("Drug-drug interaction reference for chartsearchai, generated from the OpenMRS "
-                    "DDI knowledge base (ddi_kb_compact.json). Each entry lists a drug's interacting "
+                    "DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting "
                     "partners (Major/Moderate severity) with mechanism notes. Aliases include RxNorm "
                     "and CIEL concept names; atcCodes derived via RxNorm RxClass. Dosing and "
                     "contraindications are out of V1 scope."),
