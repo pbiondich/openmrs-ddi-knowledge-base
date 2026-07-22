@@ -79,8 +79,11 @@ for did, plist in partners.items():
     for pdid, sev, mech in plist:
         if pdid in seen:
             continue
-        seen.add(pdid)
         p = drugs[pdid]
+        # demo is self-contained: only interactions among the demo drugs
+        if included is not None and p["name"].lower() not in included:
+            continue
+        seen.add(pdid)
         obj = {"token": p["name"].lower(), "note": note_for(sev, mech)}
         pa = first_atc(p)
         if pa:
