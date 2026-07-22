@@ -79,6 +79,15 @@ python3 build_kb.py --check     # verify the rebuild matches the committed KB
 python3 adapt_to_chartsearchai.py demo   # project into the Chart Search AI module format
 ```
 
+`build_kb.py` is offline and deterministic. Refreshing a source input from its
+external service is a separate, network-facing step; `derive_atc.py` is the one
+kept in-repo (it rebuilds `src/atc_cache.jsonl` from RxNorm). It must produce
+**level-5** ATC substance codes (via RxNorm's `propName=ATC`, e.g. `C09AA03`),
+not level-4 subgroups (`C09AA`) — the Chart Search AI validator keys on level-5,
+and a level-4 code silently fires a false duplicate-therapy warning on the
+patient's own drug. `build_kb.py` enforces this: the build fails if any ATC code
+is not level-5, so the fix cannot regress through the pipeline.
+
 ## Coverage
 
 | Dimension | Figure |

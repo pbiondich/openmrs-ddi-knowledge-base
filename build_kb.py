@@ -88,6 +88,16 @@ for d in drugs_raw:
         "ciel": ciel_for(rx),
     })
 
+# --- invariant: ATC codes must be RxNorm level-5 substance codes (7 chars, e.g. C09AA03) ---
+# The chartsearchai validator's same-drug skip and order matcher key on level-5 codes; a level-4
+# subgroup (5 chars, e.g. C09AA) silently breaks them (false duplicate-therapy on the patient's
+# own drug). Fail the build here so a regression in derive_atc.py can never ship in the KB.
+bad_atc = sorted({c for d in drugs for c in d["atc"] if len(c) != 7})
+if bad_atc:
+    print("BUILD FAILED: ATC codes must be level-5 (7 chars); found non-level-5:", bad_atc[:10])
+    print("  Re-run derive_atc.py (uses RxNorm propName=ATC), not the level-4 RxClass endpoint.")
+    sys.exit(1)
+
 # --- mechanisms: used groups only, stored once ---
 used = {row[3] for row in interactions}
 mechanisms = {gid: {"text": mech_src[gid]["mechanism"], "categories": mech_src[gid]["mechanism_categories"]}
