@@ -12,7 +12,7 @@ The motivation is the one the original Chart Search AI spec set out to solve: th
 
 We built the data-only path first (Phase 1: generate a `drug-reference.json` in the existing format). It works, and it is the right way to validate the pipeline, but it does not scale: the full drug-centric expansion is about 180 MB as a flat file, because DDInter's per-group mechanism description is duplicated across every pair in the group. The size is note redundancy, not drug breadth, so scoping by formulary helps less than expected.
 
-A dedicated source fixes this at the root. There are only ~8,466 distinct mechanism descriptions behind those 295,000 pairs. Reading a compact representation and interning the shared mechanism strings bounds note memory to the unique set rather than the per-pair count, which is roughly a 35x reduction on the dominant cost. No 180 MB artifact, and the in-memory `List<DrugReference>` stays reasonable.
+A dedicated source fixes this at the root, and the fix is in the data, not a runtime trick. There are only 8,234 distinct mechanism descriptions behind those 295,000 pairs, so we normalized the dataset: mechanisms are stored once and interactions reference them by group id. The measured result is `ddi_kb_compact.json` at **18.9 MB raw (2.0 MB gzipped)**, against the 270 MB denormalized view and the 180 MB flat module-format expansion. The source loads the mechanism table into a map and hands every interaction note the same shared `String` instance, so in-memory note cost is bounded by the ~8,200 unique strings, not the 295,000 pairs. No 180 MB artifact, and the `List<DrugReference>` stays reasonable.
 
 ## Design
 
@@ -29,7 +29,7 @@ package org.openmrs.module.chartsearchai.reference;
  */
 public class DdiDrugReferenceSource implements DrugReferenceSource {
 
-    static final String CLASSPATH_DEFAULT = "/chartsearchai/ddi-knowledge-base.json.gz";
+    static final String CLASSPATH_DEFAULT = "/chartsearchai/ddi-kb-compact.json.gz";
 
     @Override
     public List<DrugReference> load() {
@@ -48,11 +48,11 @@ It reuses the module's existing conventions: the `ReferenceDataFiles.loadWithCla
 
 ### The bundled data
 
-Three artifacts ship with the module (or are pointed at via the GP), all produced offline by the data project and all static:
+The source reads one normalized artifact, produced offline by the data project and fully static: `ddi_kb_compact.json` (~19 MB raw, 2 MB gz). It already carries everything the source needs, joined by id:
 
-1. the compact DDInter knowledge base (our `ddi_knowledge_base_enriched.json.gz`, ~19 MB): pairs, severity, mechanism, RxCUIs;
-2. an RxCUI-to-ATC map, pre-derived from RxNorm RxClass; and
-3. the CIEL crosswalk (concept to RxCUI).
+1. a `mechanisms` table (stored once): text + mechanism categories, keyed by group id;
+2. a `drugs` table: name, RxCUI, RxNorm name, DrugBank id, the pre-derived ATC codes (from RxNorm RxClass), and the linked CIEL concepts (code, uuid, name); and
+3. an `interactions` list in compact array form (`[drug_a_id, drug_b_id, severity, group_id]`).
 
 The important constraint this respects: **nothing is fetched at runtime.** ATC is derived once, offline, in the data project and bundled as a map, so the module keeps its local-only, no-external-API posture. Refreshing the data is a maintainer re-bundle on the release cycle, exactly as the WHO ATC source already works.
 
@@ -69,7 +69,7 @@ Neither is required for the source to work, and both are backward-compatible (ne
 
 ## Scale, memory, and a possible interface evolution
 
-With mechanism interning, `load()` returning the full list is workable. If the maintainers would rather not hold the whole set in memory at all, a natural evolution is an optional indexed lookup on the source (resolve a `DrugReference` by token or RxCUI on demand) so the injector and validator pull only what a query needs. That is a larger change to the consumers, so we mention it as a direction, not a requirement; the interning approach needs no interface change.
+With the normalized dataset and shared mechanism strings, `load()` returning the full list is workable. If the maintainers would rather not hold the whole set in memory at all, a natural evolution is an optional indexed lookup on the source (resolve a `DrugReference` by token or RxCUI on demand) so the injector and validator pull only what a query needs. That is a larger change to the consumers, so we mention it as a direction, not a requirement; the normalized-load approach needs no interface change.
 
 ## Backward compatibility and safety
 

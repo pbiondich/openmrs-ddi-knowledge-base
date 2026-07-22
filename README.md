@@ -31,6 +31,7 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
 | `out/interaction.schema.json` | JSON Schema (draft 2020-12) for one interaction record. |
 | `out/ddi_knowledge_base.json` | The bulk-CSV-only subset (160,235 pairs, severity only), kept for comparison. |
+| `out/ddi_kb_compact.json` | Normalized/compact form (~19 MB): mechanisms stored once, interactions referencing them by id, plus a drugs table with ATC and CIEL. The read form for tooling and the Phase 2 module source; the enriched `.gz` is a denormalized view of the same facts. |
 | `out/ddi_mechanisms.json` | The 8,466 DDInter mechanism descriptions on their own. |
 | `out/ciel_rxnorm_crosswalk.json` | CIEL Drug concept (code, UUID, name) to RxCUI(s). |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |

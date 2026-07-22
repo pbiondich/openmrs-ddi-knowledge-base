@@ -12,3 +12,6 @@ out/ddi_knowledge_base_enriched.json
 # Full chartsearchai drug-reference (180 MB raw, over GitHub's 100 MB limit).
 # Committed gzipped; regenerate with: python3 adapt_to_chartsearchai.py full
 dist/chartsearchai-drug-reference.json
+
+# Compact dataset gz is regenerable from the committed raw (gzip out/ddi_kb_compact.json)
+out/ddi_kb_compact.json.gz
