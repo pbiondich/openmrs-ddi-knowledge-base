@@ -31,9 +31,9 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 | `out/schema.json` | JSON Schema (draft 2020-12) for the compact format. |
 | `out/sample.json` | A few reconstructed interaction rows for quick inspection. |
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
-| `out/ciel_rxnorm_crosswalk.json` | CIEL Drug concept (code, UUID, name) to RxCUI(s). |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
-| `out/rxcui_review.json` | Record of the RxNorm canonicalization and clinician curation decisions. |
+| `out/rxcui_review.json` | Human-readable record of the RxNorm canonicalization and clinician curation review. |
+| `src/` | The build inputs: DDInter facts (`drugs.jsonl`, `interactions.jsonl`, `ddi_mechanisms.json`), the RxNorm/RxClass/CIEL fetch results, and the clinician decisions (`curation.json`). `build_kb.py` turns these into the KB above. |
 | `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`). Run `adapt_to_chartsearchai.py full` to generate the full dataset (~180 MB, not committed). |
 
 ## The record shape
@@ -69,7 +69,15 @@ Three public sources, layered so each does the job it is best at:
 - **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
-No step requires an implementer to curate drug data by hand. The canonical source of truth is `ddi_kb_compact.json`; `build_kb.py` validates it (referential integrity plus shape) and refreshes a readable sample, and `adapt_to_chartsearchai.py` projects it into the Chart Search AI module format. The one-time acquisition-and-curation pipeline that produced the canonical data — the DDInter group walk, RxNorm normalization and canonicalization, the clinician review, the CIEL crosswalk, and ATC derivation — is preserved in the git history and summarized in `out/rxcui_review.json`; because it embeds human clinical decisions, the compact file is the curated source of record rather than a rebuild output.
+No step requires an implementer to curate drug data by hand, and the build is reproducible and offline. The committed `src/` inputs hold the facts fetched once from DDInter, RxNorm, RxClass, and CIEL, together with the clinician decisions captured as explicit data (`src/curation.json`: 5 separations, 4 remaps, 28 gaps). `build_kb.py` deterministically assembles `ddi_kb_compact.json` from those inputs: RxNorm base match, canonicalization to the single-ingredient (`IN`) concept, the clinician overrides, the CIEL ingredient-level bridge, and ATC. Because the human decisions are data rather than re-derived, the build reproduces the exact curated knowledge base — confirm with `python3 build_kb.py --check`. Only the one-time acquisition of `src/` (the network fetches from those four sources) lives outside the repo, in the git history.
+
+### Reproducing the build
+
+```
+python3 build_kb.py            # src/ -> out/ddi_kb_compact.json (+ sample, CIEL index)
+python3 build_kb.py --check     # verify the rebuild matches the committed KB
+python3 adapt_to_chartsearchai.py demo   # project into the Chart Search AI module format
+```
 
 ## Coverage
 

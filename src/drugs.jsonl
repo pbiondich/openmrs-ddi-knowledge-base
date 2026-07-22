@@ -1,0 +1,2283 @@
+{"id": "DDInter1", "name": "Abacavir", "drugbank_id": "DB01048"}
+{"id": "DDInter10", "name": "Acamprosate", "drugbank_id": "DB00659"}
+{"id": "DDInter100", "name": "Anthrax vaccine", "drugbank_id": "DB11003"}
+{"id": "DDInter1000", "name": "Ivosidenib", "drugbank_id": "DB14568"}
+{"id": "DDInter1001", "name": "Ixabepilone", "drugbank_id": "DB04845"}
+{"id": "DDInter1002", "name": "Ixazomib", "drugbank_id": "DB09570"}
+{"id": "DDInter1003", "name": "Ixekizumab", "drugbank_id": "DB11569"}
+{"id": "DDInter1004", "name": "Kanamycin", "drugbank_id": "DB01172"}
+{"id": "DDInter1005", "name": "Kaolin", "drugbank_id": "DB01575"}
+{"id": "DDInter1006", "name": "Kava", "drugbank_id": "DB01322"}
+{"id": "DDInter1007", "name": "Ketamine", "drugbank_id": "DB01221"}
+{"id": "DDInter1008", "name": "Ketoconazole", "drugbank_id": "DB01026"}
+{"id": "DDInter1009", "name": "Ketoprofen", "drugbank_id": "DB01009"}
+{"id": "DDInter101", "name": "Anti-inhibitor coagulant complex", "drugbank_id": "DB13151"}
+{"id": "DDInter1010", "name": "Ketorolac", "drugbank_id": "DB00465"}
+{"id": "DDInter1011", "name": "Ketorolac (ophthalmic)", "drugbank_id": "DB00465"}
+{"id": "DDInter1012", "name": "Ketotifen", "drugbank_id": "DB00920"}
+{"id": "DDInter1013", "name": "Labetalol", "drugbank_id": "DB00598"}
+{"id": "DDInter1014", "name": "Lacosamide", "drugbank_id": "DB06218"}
+{"id": "DDInter1015", "name": "Lactic acid", "drugbank_id": "DB04398"}
+{"id": "DDInter1016", "name": "Lactitol", "drugbank_id": "DB12942"}
+{"id": "DDInter1017", "name": "Lactobacillus acidophilus", "drugbank_id": "DB15823"}
+{"id": "DDInter1018", "name": "Lactulose", "drugbank_id": "DB00581"}
+{"id": "DDInter1019", "name": "Lamivudine", "drugbank_id": "DB00709"}
+{"id": "DDInter102", "name": "Antihemophilic factor, human recombinant", "drugbank_id": "DB00025"}
+{"id": "DDInter1020", "name": "Lamotrigine", "drugbank_id": "DB00555"}
+{"id": "DDInter1021", "name": "Lanreotide", "drugbank_id": "DB06791"}
+{"id": "DDInter1022", "name": "Lansoprazole", "drugbank_id": "DB00448"}
+{"id": "DDInter1023", "name": "Lanthanum carbonate", "drugbank_id": "DB06792"}
+{"id": "DDInter1024", "name": "Lapatinib", "drugbank_id": "DB01259"}
+{"id": "DDInter1025", "name": "Laronidase", "drugbank_id": "DB00090"}
+{"id": "DDInter1026", "name": "Larotrectinib", "drugbank_id": "DB14723"}
+{"id": "DDInter1027", "name": "Lasmiditan", "drugbank_id": "DB11732"}
+{"id": "DDInter1028", "name": "Latanoprost", "drugbank_id": "DB00654"}
+{"id": "DDInter1029", "name": "Latanoprost (ophthalmic)", "drugbank_id": "DB00654"}
+{"id": "DDInter103", "name": "Antilymphocyte immunoglobulin (horse)", "drugbank_id": "DB09312"}
+{"id": "DDInter1030", "name": "Latanoprostene bunod (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1031", "name": "Ledipasvir", "drugbank_id": "DB09027"}
+{"id": "DDInter1032", "name": "Lefamulin", "drugbank_id": "DB12825"}
+{"id": "DDInter1033", "name": "Leflunomide", "drugbank_id": "DB01097"}
+{"id": "DDInter1034", "name": "Lemborexant", "drugbank_id": "DB11951"}
+{"id": "DDInter1035", "name": "Lenalidomide", "drugbank_id": "DB00480"}
+{"id": "DDInter1036", "name": "Lenvatinib", "drugbank_id": "DB09078"}
+{"id": "DDInter1037", "name": "Lepirudin", "drugbank_id": "DB00001"}
+{"id": "DDInter1038", "name": "Lesinurad", "drugbank_id": "DB11560"}
+{"id": "DDInter1039", "name": "Letermovir", "drugbank_id": "DB12070"}
+{"id": "DDInter104", "name": "Antithrombin Alfa", "drugbank_id": "DB11166"}
+{"id": "DDInter1040", "name": "Letrozole", "drugbank_id": "DB01006"}
+{"id": "DDInter1041", "name": "Leucovorin", "drugbank_id": "DB00650"}
+{"id": "DDInter1042", "name": "Leuprolide", "drugbank_id": "DB00007"}
+{"id": "DDInter1043", "name": "Levacetylmethadol", "drugbank_id": "DB01227"}
+{"id": "DDInter1044", "name": "Levamisole", "drugbank_id": "DB00848"}
+{"id": "DDInter1045", "name": "Levamlodipine", "drugbank_id": "DB09237"}
+{"id": "DDInter1046", "name": "Levetiracetam", "drugbank_id": "DB01202"}
+{"id": "DDInter1047", "name": "Levmetamfetamine (nasal)", "drugbank_id": null}
+{"id": "DDInter1048", "name": "Levobetaxolol (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1049", "name": "Levobunolol", "drugbank_id": "DB01210"}
+{"id": "DDInter105", "name": "Antithrombin III human", "drugbank_id": "DB11598"}
+{"id": "DDInter1050", "name": "Levobunolol (ophthalmic)", "drugbank_id": "DB01210"}
+{"id": "DDInter1051", "name": "Levobupivacaine", "drugbank_id": "DB01002"}
+{"id": "DDInter1052", "name": "Levocarnitine", "drugbank_id": "DB00583"}
+{"id": "DDInter1053", "name": "Levocetirizine", "drugbank_id": "DB06282"}
+{"id": "DDInter1054", "name": "Levodopa", "drugbank_id": "DB01235"}
+{"id": "DDInter1055", "name": "Levofloxacin", "drugbank_id": "DB01137"}
+{"id": "DDInter1056", "name": "Levoleucovorin", "drugbank_id": "DB11596"}
+{"id": "DDInter1057", "name": "Levomefolic acid", "drugbank_id": "DB11256"}
+{"id": "DDInter1058", "name": "Levomefolic acid (calcium)", "drugbank_id": "DB11256"}
+{"id": "DDInter1059", "name": "Levomilnacipran", "drugbank_id": "DB08918"}
+{"id": "DDInter106", "name": "Antithymocyte immunoglobulin (rabbit)", "drugbank_id": "DB00098"}
+{"id": "DDInter1060", "name": "Levonordefrin", "drugbank_id": "DB06707"}
+{"id": "DDInter1061", "name": "Levonorgestrel", "drugbank_id": "DB00367"}
+{"id": "DDInter1062", "name": "Levorphanol", "drugbank_id": "DB00854"}
+{"id": "DDInter1063", "name": "Levosalbutamol", "drugbank_id": "DB13139"}
+{"id": "DDInter1064", "name": "Levothyroxine", "drugbank_id": "DB00451"}
+{"id": "DDInter1065", "name": "Licorice", "drugbank_id": "DB10675"}
+{"id": "DDInter1066", "name": "Lidocaine", "drugbank_id": "DB00281"}
+{"id": "DDInter1067", "name": "Lidocaine (ophthalmic)", "drugbank_id": "DB00281"}
+{"id": "DDInter1068", "name": "Lidocaine (topical)", "drugbank_id": "DB00281"}
+{"id": "DDInter1069", "name": "Linaclotide", "drugbank_id": "DB08890"}
+{"id": "DDInter107", "name": "Apalutamide", "drugbank_id": "DB11901"}
+{"id": "DDInter1070", "name": "Linagliptin", "drugbank_id": "DB08882"}
+{"id": "DDInter1071", "name": "Lincomycin", "drugbank_id": "DB01627"}
+{"id": "DDInter1072", "name": "Lindane", "drugbank_id": "DB00431"}
+{"id": "DDInter1073", "name": "Linezolid", "drugbank_id": "DB00601"}
+{"id": "DDInter1074", "name": "Liothyronine", "drugbank_id": "DB00279"}
+{"id": "DDInter1075", "name": "Liotrix", "drugbank_id": "DB01583"}
+{"id": "DDInter1076", "name": "Lipoic acid", "drugbank_id": "DB00166"}
+{"id": "DDInter1077", "name": "Liraglutide", "drugbank_id": "DB06655"}
+{"id": "DDInter1078", "name": "Lisdexamfetamine", "drugbank_id": "DB01255"}
+{"id": "DDInter1079", "name": "Lisinopril", "drugbank_id": "DB00722"}
+{"id": "DDInter108", "name": "Apixaban", "drugbank_id": "DB06605"}
+{"id": "DDInter1080", "name": "Lisocabtagene maraleucel", "drugbank_id": "DB16582"}
+{"id": "DDInter1081", "name": "Lithium carbonate", "drugbank_id": "DB14509"}
+{"id": "DDInter1082", "name": "Lixisenatide", "drugbank_id": "DB09265"}
+{"id": "DDInter1083", "name": "Lofexidine", "drugbank_id": "DB04948"}
+{"id": "DDInter1084", "name": "Lomefloxacin", "drugbank_id": "DB00978"}
+{"id": "DDInter1085", "name": "Lomitapide", "drugbank_id": "DB08827"}
+{"id": "DDInter1086", "name": "Lomustine", "drugbank_id": "DB01206"}
+{"id": "DDInter1087", "name": "Lonafarnib", "drugbank_id": "DB06448"}
+{"id": "DDInter1088", "name": "Loperamide", "drugbank_id": "DB00836"}
+{"id": "DDInter1089", "name": "Lopinavir", "drugbank_id": "DB01601"}
+{"id": "DDInter109", "name": "Apomorphine", "drugbank_id": "DB00714"}
+{"id": "DDInter1090", "name": "Loracarbef", "drugbank_id": "DB00447"}
+{"id": "DDInter1091", "name": "Loratadine", "drugbank_id": "DB00455"}
+{"id": "DDInter1092", "name": "Lorazepam", "drugbank_id": "DB00186"}
+{"id": "DDInter1093", "name": "Lorcaserin", "drugbank_id": "DB04871"}
+{"id": "DDInter1094", "name": "Lorlatinib", "drugbank_id": "DB12130"}
+{"id": "DDInter1095", "name": "Losartan", "drugbank_id": "DB00678"}
+{"id": "DDInter1096", "name": "Loteprednol (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1097", "name": "Loteprednol etabonate", "drugbank_id": "DB14596"}
+{"id": "DDInter1098", "name": "Lovastatin", "drugbank_id": "DB00227"}
+{"id": "DDInter1099", "name": "Loxapine", "drugbank_id": "DB00408"}
+{"id": "DDInter11", "name": "Acarbose", "drugbank_id": "DB00284"}
+{"id": "DDInter110", "name": "Apraclonidine", "drugbank_id": "DB00964"}
+{"id": "DDInter1100", "name": "Lubiprostone", "drugbank_id": "DB01046"}
+{"id": "DDInter1101", "name": "Lumacaftor", "drugbank_id": "DB09280"}
+{"id": "DDInter1102", "name": "Lumateperone", "drugbank_id": "DB06077"}
+{"id": "DDInter1103", "name": "Lumefantrine", "drugbank_id": "DB06708"}
+{"id": "DDInter1104", "name": "Lurasidone", "drugbank_id": "DB08815"}
+{"id": "DDInter1105", "name": "Lurbinectedin", "drugbank_id": "DB12674"}
+{"id": "DDInter1106", "name": "Lusutrombopag", "drugbank_id": "DB13125"}
+{"id": "DDInter1107", "name": "Lutein", "drugbank_id": "DB00137"}
+{"id": "DDInter1108", "name": "Lutetium Lu 177 dotatate", "drugbank_id": "DB13985"}
+{"id": "DDInter1109", "name": "Lyme disease vaccine (recombinant OspA)", "drugbank_id": "DB00045"}
+{"id": "DDInter111", "name": "Apremilast", "drugbank_id": "DB05676"}
+{"id": "DDInter1110", "name": "Macimorelin", "drugbank_id": "DB13074"}
+{"id": "DDInter1111", "name": "Macitentan", "drugbank_id": "DB08932"}
+{"id": "DDInter1112", "name": "Magaldrate", "drugbank_id": "DB08938"}
+{"id": "DDInter1113", "name": "Magnesium carbonate", "drugbank_id": "DB09481"}
+{"id": "DDInter1114", "name": "Magnesium chloride", "drugbank_id": "DB09407"}
+{"id": "DDInter1115", "name": "Magnesium citrate", "drugbank_id": "DB11110"}
+{"id": "DDInter1116", "name": "Magnesium gluconate", "drugbank_id": "DB13749"}
+{"id": "DDInter1117", "name": "Magnesium glycinate", "drugbank_id": "DB11189"}
+{"id": "DDInter1118", "name": "Magnesium hydroxide", "drugbank_id": "DB09104"}
+{"id": "DDInter1119", "name": "Magnesium oxide", "drugbank_id": "DB01377"}
+{"id": "DDInter112", "name": "Aprepitant", "drugbank_id": "DB00673"}
+{"id": "DDInter1120", "name": "Magnesium sulfate", "drugbank_id": "DB00653"}
+{"id": "DDInter1121", "name": "Manganese (chloride)", "drugbank_id": null}
+{"id": "DDInter1122", "name": "Manganese (sulfate)", "drugbank_id": null}
+{"id": "DDInter1123", "name": "Mannitol", "drugbank_id": "DB00742"}
+{"id": "DDInter1124", "name": "Maprotiline", "drugbank_id": "DB00934"}
+{"id": "DDInter1125", "name": "Maraviroc", "drugbank_id": "DB04835"}
+{"id": "DDInter1126", "name": "Mazindol", "drugbank_id": "DB00579"}
+{"id": "DDInter1127", "name": "Measles virus vaccine live attenuated", "drugbank_id": "DB10315"}
+{"id": "DDInter1128", "name": "Mebendazole", "drugbank_id": "DB00643"}
+{"id": "DDInter1129", "name": "Mebrofenin", "drugbank_id": "DB15779"}
+{"id": "DDInter113", "name": "Aprotinin", "drugbank_id": "DB06692"}
+{"id": "DDInter1130", "name": "Mecamylamine", "drugbank_id": "DB00657"}
+{"id": "DDInter1131", "name": "Mecasermin", "drugbank_id": "DB01277"}
+{"id": "DDInter1132", "name": "Mecasermin rinfabate", "drugbank_id": "DB14751"}
+{"id": "DDInter1133", "name": "Mechlorethamine", "drugbank_id": "DB00888"}
+{"id": "DDInter1134", "name": "Meclizine", "drugbank_id": "DB00737"}
+{"id": "DDInter1135", "name": "Meclofenamic acid", "drugbank_id": "DB00939"}
+{"id": "DDInter1136", "name": "Mecobalamin", "drugbank_id": "DB03614"}
+{"id": "DDInter1137", "name": "Medroxyprogesterone acetate", "drugbank_id": "DB00603"}
+{"id": "DDInter1138", "name": "Medrysone (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1139", "name": "Mefenamic acid", "drugbank_id": "DB00784"}
+{"id": "DDInter114", "name": "Arbutamine", "drugbank_id": "DB01102"}
+{"id": "DDInter1140", "name": "Mefloquine", "drugbank_id": "DB00358"}
+{"id": "DDInter1141", "name": "Megestrol acetate", "drugbank_id": "DB00351"}
+{"id": "DDInter1142", "name": "Melatonin", "drugbank_id": "DB01065"}
+{"id": "DDInter1143", "name": "Meloxicam", "drugbank_id": "DB00814"}
+{"id": "DDInter1144", "name": "Melphalan", "drugbank_id": "DB01042"}
+{"id": "DDInter1145", "name": "Melphalan flufenamide", "drugbank_id": "DB16627"}
+{"id": "DDInter1146", "name": "Memantine", "drugbank_id": "DB01043"}
+{"id": "DDInter1147", "name": "Meningococcal polysaccharide vaccine group C", "drugbank_id": "DB13890"}
+{"id": "DDInter1148", "name": "Menotropins", "drugbank_id": "DB00032"}
+{"id": "DDInter1149", "name": "Mepenzolate", "drugbank_id": "DB04843"}
+{"id": "DDInter115", "name": "Ardeparin", "drugbank_id": "DB00407"}
+{"id": "DDInter1150", "name": "Meperidine", "drugbank_id": "DB00454"}
+{"id": "DDInter1151", "name": "Mephentermine", "drugbank_id": "DB01365"}
+{"id": "DDInter1152", "name": "Mephenytoin", "drugbank_id": "DB00532"}
+{"id": "DDInter1153", "name": "Mepivacaine", "drugbank_id": "DB00961"}
+{"id": "DDInter1154", "name": "Meprobamate", "drugbank_id": "DB00371"}
+{"id": "DDInter1155", "name": "Mepyramine", "drugbank_id": "DB06691"}
+{"id": "DDInter1156", "name": "Mercaptopurine", "drugbank_id": "DB01033"}
+{"id": "DDInter1157", "name": "Meropenem", "drugbank_id": "DB00760"}
+{"id": "DDInter1158", "name": "Mesalazine", "drugbank_id": "DB00244"}
+{"id": "DDInter1159", "name": "Mesoridazine", "drugbank_id": "DB00933"}
+{"id": "DDInter116", "name": "Arformoterol", "drugbank_id": "DB01274"}
+{"id": "DDInter1160", "name": "Mestranol", "drugbank_id": "DB01357"}
+{"id": "DDInter1161", "name": "Metamfetamine", "drugbank_id": "DB01577"}
+{"id": "DDInter1162", "name": "Metaraminol", "drugbank_id": "DB00610"}
+{"id": "DDInter1163", "name": "Metaxalone", "drugbank_id": "DB00660"}
+{"id": "DDInter1164", "name": "Metformin", "drugbank_id": "DB00331"}
+{"id": "DDInter1165", "name": "Methacholine", "drugbank_id": "DB06709"}
+{"id": "DDInter1166", "name": "Methadone", "drugbank_id": "DB00333"}
+{"id": "DDInter1167", "name": "Methazolamide", "drugbank_id": "DB00703"}
+{"id": "DDInter1168", "name": "Methdilazine", "drugbank_id": "DB00902"}
+{"id": "DDInter1169", "name": "Methenamine", "drugbank_id": "DB06799"}
+{"id": "DDInter117", "name": "Argatroban", "drugbank_id": "DB00278"}
+{"id": "DDInter1170", "name": "Methimazole", "drugbank_id": "DB00763"}
+{"id": "DDInter1171", "name": "Methionine", "drugbank_id": "DB00134"}
+{"id": "DDInter1172", "name": "Methocarbamol", "drugbank_id": "DB00423"}
+{"id": "DDInter1173", "name": "Methohexital", "drugbank_id": "DB00474"}
+{"id": "DDInter1174", "name": "Methotrexate", "drugbank_id": "DB00563"}
+{"id": "DDInter1175", "name": "Methotrimeprazine", "drugbank_id": "DB01403"}
+{"id": "DDInter1176", "name": "Methoxamine", "drugbank_id": "DB00723"}
+{"id": "DDInter1177", "name": "Methoxsalen", "drugbank_id": "DB00553"}
+{"id": "DDInter1178", "name": "Methoxsalen (topical)", "drugbank_id": "DB00553"}
+{"id": "DDInter1179", "name": "Methoxyflurane", "drugbank_id": "DB01028"}
+{"id": "DDInter118", "name": "Aripiprazole", "drugbank_id": "DB01238"}
+{"id": "DDInter1180", "name": "Methscopolamine", "drugbank_id": "DB11315"}
+{"id": "DDInter1181", "name": "Methsuximide", "drugbank_id": "DB05246"}
+{"id": "DDInter1182", "name": "Methyl aminolevulinate (topical)", "drugbank_id": null}
+{"id": "DDInter1183", "name": "Methyl salicylate (topical)", "drugbank_id": null}
+{"id": "DDInter1184", "name": "Methylcellulose", "drugbank_id": "DB11228"}
+{"id": "DDInter1185", "name": "Methyldopa", "drugbank_id": "DB00968"}
+{"id": "DDInter1186", "name": "Methylene blue", "drugbank_id": "DB09241"}
+{"id": "DDInter1187", "name": "Methylergometrine", "drugbank_id": "DB00353"}
+{"id": "DDInter1188", "name": "Methylnaltrexone", "drugbank_id": "DB06800"}
+{"id": "DDInter1189", "name": "Methylphenidate", "drugbank_id": "DB00422"}
+{"id": "DDInter119", "name": "Armodafinil", "drugbank_id": "DB06413"}
+{"id": "DDInter1190", "name": "Methylphenobarbital", "drugbank_id": "DB00849"}
+{"id": "DDInter1191", "name": "Methylprednisolone", "drugbank_id": "DB00959"}
+{"id": "DDInter1192", "name": "Methylprednisolone (topical)", "drugbank_id": "DB00959"}
+{"id": "DDInter1193", "name": "Methyltestosterone", "drugbank_id": "DB06710"}
+{"id": "DDInter1194", "name": "Methysergide", "drugbank_id": "DB00247"}
+{"id": "DDInter1195", "name": "Meticillin", "drugbank_id": "DB01603"}
+{"id": "DDInter1196", "name": "Metipranolol (ophthalmic)", "drugbank_id": "DB01603"}
+{"id": "DDInter1197", "name": "Metoclopramide", "drugbank_id": "DB01233"}
+{"id": "DDInter1198", "name": "Metocurine", "drugbank_id": "DB01336"}
+{"id": "DDInter1199", "name": "Metolazone", "drugbank_id": "DB00524"}
+{"id": "DDInter12", "name": "Acebutolol", "drugbank_id": "DB01193"}
+{"id": "DDInter120", "name": "Arsenic trioxide", "drugbank_id": "DB01169"}
+{"id": "DDInter1200", "name": "Metoprolol", "drugbank_id": "DB00264"}
+{"id": "DDInter1201", "name": "Metreleptin", "drugbank_id": "DB09046"}
+{"id": "DDInter1202", "name": "Metronidazole", "drugbank_id": "DB00916"}
+{"id": "DDInter1203", "name": "Metronidazole (topical)", "drugbank_id": "DB00916"}
+{"id": "DDInter1204", "name": "Metyrapone", "drugbank_id": "DB01011"}
+{"id": "DDInter1205", "name": "Metyrosine", "drugbank_id": "DB00765"}
+{"id": "DDInter1206", "name": "Mexiletine", "drugbank_id": "DB00379"}
+{"id": "DDInter1207", "name": "Mezlocillin", "drugbank_id": "DB00948"}
+{"id": "DDInter1208", "name": "Micafungin", "drugbank_id": "DB01141"}
+{"id": "DDInter1209", "name": "Miconazole", "drugbank_id": "DB01110"}
+{"id": "DDInter121", "name": "Artemether", "drugbank_id": "DB06697"}
+{"id": "DDInter1210", "name": "Miconazole (topical)", "drugbank_id": "DB01110"}
+{"id": "DDInter1211", "name": "Microcrystalline cellulose", "drugbank_id": "DB14158"}
+{"id": "DDInter1212", "name": "Midazolam", "drugbank_id": "DB00683"}
+{"id": "DDInter1213", "name": "Midodrine", "drugbank_id": "DB00211"}
+{"id": "DDInter1214", "name": "Midostaurin", "drugbank_id": "DB06595"}
+{"id": "DDInter1215", "name": "Mifepristone", "drugbank_id": "DB00834"}
+{"id": "DDInter1216", "name": "Migalastat", "drugbank_id": "DB05018"}
+{"id": "DDInter1217", "name": "Miglitol", "drugbank_id": "DB00491"}
+{"id": "DDInter1218", "name": "Miglustat", "drugbank_id": "DB00419"}
+{"id": "DDInter1219", "name": "Milk thistle", "drugbank_id": "DB14375"}
+{"id": "DDInter122", "name": "Artesunate", "drugbank_id": "DB09274"}
+{"id": "DDInter1220", "name": "Milnacipran", "drugbank_id": "DB04896"}
+{"id": "DDInter1221", "name": "Milrinone", "drugbank_id": "DB00235"}
+{"id": "DDInter1222", "name": "Miltefosine", "drugbank_id": "DB09031"}
+{"id": "DDInter1223", "name": "Mineral oil", "drugbank_id": "DB11057"}
+{"id": "DDInter1224", "name": "Minocycline", "drugbank_id": "DB01017"}
+{"id": "DDInter1225", "name": "Minocycline (topical)", "drugbank_id": "DB01017"}
+{"id": "DDInter1226", "name": "Minoxidil", "drugbank_id": "DB00350"}
+{"id": "DDInter1227", "name": "Minoxidil (topical)", "drugbank_id": "DB00350"}
+{"id": "DDInter1228", "name": "Mipomersen", "drugbank_id": "DB05528"}
+{"id": "DDInter1229", "name": "Mirabegron", "drugbank_id": "DB08893"}
+{"id": "DDInter123", "name": "Articaine", "drugbank_id": "DB09009"}
+{"id": "DDInter1230", "name": "Mirtazapine", "drugbank_id": "DB00370"}
+{"id": "DDInter1231", "name": "Misoprostol", "drugbank_id": "DB00929"}
+{"id": "DDInter1232", "name": "Mitomycin", "drugbank_id": "DB00305"}
+{"id": "DDInter1233", "name": "Mitotane", "drugbank_id": "DB00648"}
+{"id": "DDInter1234", "name": "Mitoxantrone", "drugbank_id": "DB01204"}
+{"id": "DDInter1235", "name": "Mivacurium", "drugbank_id": "DB01226"}
+{"id": "DDInter1236", "name": "Modafinil", "drugbank_id": "DB00745"}
+{"id": "DDInter1237", "name": "Moexipril", "drugbank_id": "DB00691"}
+{"id": "DDInter1238", "name": "Mogamulizumab", "drugbank_id": "DB12498"}
+{"id": "DDInter1239", "name": "Molindone", "drugbank_id": "DB01618"}
+{"id": "DDInter124", "name": "Ascorbic acid", "drugbank_id": "DB00126"}
+{"id": "DDInter1240", "name": "Monomethyl fumarate", "drugbank_id": "DB14219"}
+{"id": "DDInter1241", "name": "Monopotassium phosphate", "drugbank_id": "DB09413"}
+{"id": "DDInter1242", "name": "Montelukast", "drugbank_id": "DB00471"}
+{"id": "DDInter1243", "name": "Moricizine", "drugbank_id": "DB00680"}
+{"id": "DDInter1244", "name": "Morphine", "drugbank_id": "DB00295"}
+{"id": "DDInter1245", "name": "Morphine (liposomal)", "drugbank_id": "DB00295"}
+{"id": "DDInter1246", "name": "Moxetumomab Pasudotox", "drugbank_id": null}
+{"id": "DDInter1247", "name": "Moxifloxacin", "drugbank_id": "DB00218"}
+{"id": "DDInter1248", "name": "Mumps virus strain B level jeryl lynn live antigen", "drugbank_id": "DB10316"}
+{"id": "DDInter1249", "name": "Mupirocin", "drugbank_id": "DB00410"}
+{"id": "DDInter125", "name": "Asenapine", "drugbank_id": "DB06216"}
+{"id": "DDInter1250", "name": "Muromonab", "drugbank_id": "DB00075"}
+{"id": "DDInter1251", "name": "Mycophenolate mofetil", "drugbank_id": "DB00688"}
+{"id": "DDInter1252", "name": "Mycophenolic acid", "drugbank_id": "DB01024"}
+{"id": "DDInter1253", "name": "Nabilone", "drugbank_id": "DB00486"}
+{"id": "DDInter1254", "name": "Nabumetone", "drugbank_id": "DB00461"}
+{"id": "DDInter1255", "name": "Nadolol", "drugbank_id": "DB01203"}
+{"id": "DDInter1256", "name": "Nafcillin", "drugbank_id": "DB00607"}
+{"id": "DDInter1257", "name": "Nalbuphine", "drugbank_id": "DB00844"}
+{"id": "DDInter1258", "name": "Naldemedine", "drugbank_id": "DB11691"}
+{"id": "DDInter1259", "name": "Nalidixic acid", "drugbank_id": "DB00779"}
+{"id": "DDInter126", "name": "Asparaginase Erwinia chrysanthemi", "drugbank_id": "DB08886"}
+{"id": "DDInter1260", "name": "Nalmefene", "drugbank_id": "DB06230"}
+{"id": "DDInter1261", "name": "Naloxegol", "drugbank_id": "DB09049"}
+{"id": "DDInter1262", "name": "Naloxone", "drugbank_id": "DB01183"}
+{"id": "DDInter1263", "name": "Naltrexone", "drugbank_id": "DB00704"}
+{"id": "DDInter1264", "name": "Naphazoline (nasal)", "drugbank_id": null}
+{"id": "DDInter1265", "name": "Naphazoline (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1266", "name": "Naproxen", "drugbank_id": "DB00788"}
+{"id": "DDInter1267", "name": "Naratriptan", "drugbank_id": "DB00952"}
+{"id": "DDInter1268", "name": "Natalizumab", "drugbank_id": "DB00108"}
+{"id": "DDInter1269", "name": "Nateglinide", "drugbank_id": "DB00731"}
+{"id": "DDInter127", "name": "Asparaginase Escherichia coli", "drugbank_id": "DB00023"}
+{"id": "DDInter1270", "name": "Naxitamab", "drugbank_id": "DB15965"}
+{"id": "DDInter1271", "name": "Nebivolol", "drugbank_id": "DB04861"}
+{"id": "DDInter1272", "name": "Necitumumab", "drugbank_id": "DB09559"}
+{"id": "DDInter1273", "name": "Nedocromil", "drugbank_id": "DB00716"}
+{"id": "DDInter1274", "name": "Nefazodone", "drugbank_id": "DB01149"}
+{"id": "DDInter1275", "name": "Nelarabine", "drugbank_id": "DB01280"}
+{"id": "DDInter1276", "name": "Nelfinavir", "drugbank_id": "DB00220"}
+{"id": "DDInter1277", "name": "Neomycin", "drugbank_id": "DB00994"}
+{"id": "DDInter1278", "name": "Neomycin (topical)", "drugbank_id": "DB00994"}
+{"id": "DDInter1279", "name": "Neostigmine", "drugbank_id": "DB01400"}
+{"id": "DDInter128", "name": "Astemizole", "drugbank_id": "DB00637"}
+{"id": "DDInter1280", "name": "Nepafenac (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1281", "name": "Neratinib", "drugbank_id": "DB11828"}
+{"id": "DDInter1282", "name": "Nesiritide", "drugbank_id": "DB04899"}
+{"id": "DDInter1283", "name": "Netilmicin", "drugbank_id": "DB00955"}
+{"id": "DDInter1284", "name": "Netupitant", "drugbank_id": "DB09048"}
+{"id": "DDInter1285", "name": "Nevirapine", "drugbank_id": "DB00238"}
+{"id": "DDInter1286", "name": "Niacin", "drugbank_id": "DB00627"}
+{"id": "DDInter1287", "name": "Nicardipine", "drugbank_id": "DB00622"}
+{"id": "DDInter1288", "name": "Niclosamide", "drugbank_id": "DB06803"}
+{"id": "DDInter1289", "name": "Nicotinamide", "drugbank_id": "DB02701"}
+{"id": "DDInter129", "name": "Atazanavir", "drugbank_id": "DB01072"}
+{"id": "DDInter1290", "name": "Nicotine", "drugbank_id": "DB00184"}
+{"id": "DDInter1291", "name": "Nifedipine", "drugbank_id": "DB01115"}
+{"id": "DDInter1292", "name": "Nifurtimox", "drugbank_id": "DB11820"}
+{"id": "DDInter1293", "name": "Nilotinib", "drugbank_id": "DB04868"}
+{"id": "DDInter1294", "name": "Nilutamide", "drugbank_id": "DB00665"}
+{"id": "DDInter1295", "name": "Nimodipine", "drugbank_id": "DB00393"}
+{"id": "DDInter1296", "name": "Nintedanib", "drugbank_id": "DB09079"}
+{"id": "DDInter1297", "name": "Niraparib", "drugbank_id": "DB11793"}
+{"id": "DDInter1298", "name": "Nisoldipine", "drugbank_id": "DB00401"}
+{"id": "DDInter1299", "name": "Nitazoxanide", "drugbank_id": "DB00507"}
+{"id": "DDInter13", "name": "Acenocoumarol", "drugbank_id": "DB01418"}
+{"id": "DDInter130", "name": "Atenolol", "drugbank_id": "DB00335"}
+{"id": "DDInter1300", "name": "Nitisinone", "drugbank_id": "DB00348"}
+{"id": "DDInter1301", "name": "Nitrazepam", "drugbank_id": "DB01595"}
+{"id": "DDInter1302", "name": "Nitric Oxide", "drugbank_id": "DB00435"}
+{"id": "DDInter1303", "name": "Nitrofurantoin", "drugbank_id": "DB00698"}
+{"id": "DDInter1304", "name": "Nitroglycerin", "drugbank_id": "DB00727"}
+{"id": "DDInter1305", "name": "Nitroprusside", "drugbank_id": "DB00325"}
+{"id": "DDInter1306", "name": "Nitrous acid", "drugbank_id": "DB09112"}
+{"id": "DDInter1307", "name": "Nitrous oxide", "drugbank_id": "DB06690"}
+{"id": "DDInter1308", "name": "Nivolumab", "drugbank_id": "DB09035"}
+{"id": "DDInter1309", "name": "Nizatidine", "drugbank_id": "DB00585"}
+{"id": "DDInter131", "name": "Atezolizumab", "drugbank_id": "DB11595"}
+{"id": "DDInter1310", "name": "Norelgestromin", "drugbank_id": "DB06713"}
+{"id": "DDInter1311", "name": "Norepinephrine", "drugbank_id": "DB00368"}
+{"id": "DDInter1312", "name": "Norethisterone", "drugbank_id": "DB00717"}
+{"id": "DDInter1313", "name": "Norfloxacin", "drugbank_id": "DB01059"}
+{"id": "DDInter1314", "name": "Norgestimate", "drugbank_id": "DB00957"}
+{"id": "DDInter1315", "name": "Norgestrel", "drugbank_id": "DB09389"}
+{"id": "DDInter1316", "name": "Nortriptyline", "drugbank_id": "DB00540"}
+{"id": "DDInter1317", "name": "Novobiocin", "drugbank_id": "DB01051"}
+{"id": "DDInter1318", "name": "Nystatin", "drugbank_id": "DB00646"}
+{"id": "DDInter1319", "name": "Obeticholic acid", "drugbank_id": "DB05990"}
+{"id": "DDInter132", "name": "Atomoxetine", "drugbank_id": "DB00289"}
+{"id": "DDInter1320", "name": "Obinutuzumab", "drugbank_id": "DB08935"}
+{"id": "DDInter1321", "name": "Ocrelizumab", "drugbank_id": "DB11988"}
+{"id": "DDInter1322", "name": "Octasulfur (topical)", "drugbank_id": null}
+{"id": "DDInter1323", "name": "Octreotide", "drugbank_id": "DB00104"}
+{"id": "DDInter1324", "name": "Ofatumumab", "drugbank_id": "DB06650"}
+{"id": "DDInter1325", "name": "Ofloxacin", "drugbank_id": "DB01165"}
+{"id": "DDInter1326", "name": "Olanzapine", "drugbank_id": "DB00334"}
+{"id": "DDInter1327", "name": "Olaparib", "drugbank_id": "DB09074"}
+{"id": "DDInter1328", "name": "Olaratumab", "drugbank_id": "DB06043"}
+{"id": "DDInter1329", "name": "Oliceridine", "drugbank_id": "DB14881"}
+{"id": "DDInter133", "name": "Atorvastatin", "drugbank_id": "DB01076"}
+{"id": "DDInter1330", "name": "Olmesartan", "drugbank_id": "DB00275"}
+{"id": "DDInter1331", "name": "Olodaterol", "drugbank_id": "DB09080"}
+{"id": "DDInter1332", "name": "Olopatadine", "drugbank_id": "DB00768"}
+{"id": "DDInter1333", "name": "Olopatadine (nasal)", "drugbank_id": null}
+{"id": "DDInter1334", "name": "Olsalazine", "drugbank_id": "DB01250"}
+{"id": "DDInter1335", "name": "Omacetaxine mepesuccinate", "drugbank_id": "DB04865"}
+{"id": "DDInter1336", "name": "Omadacycline", "drugbank_id": "DB12455"}
+{"id": "DDInter1337", "name": "Omalizumab", "drugbank_id": "DB00043"}
+{"id": "DDInter1338", "name": "Ombitasvir", "drugbank_id": "DB09296"}
+{"id": "DDInter1339", "name": "Omega-3 fatty acids", "drugbank_id": "DB11133"}
+{"id": "DDInter134", "name": "Atovaquone", "drugbank_id": "DB01117"}
+{"id": "DDInter1340", "name": "Omeprazole", "drugbank_id": "DB00338"}
+{"id": "DDInter1341", "name": "Onasemnogene abeparvovec", "drugbank_id": "DB15528"}
+{"id": "DDInter1342", "name": "Ondansetron", "drugbank_id": "DB00904"}
+{"id": "DDInter1343", "name": "Opicapone", "drugbank_id": "DB11632"}
+{"id": "DDInter1344", "name": "Opium", "drugbank_id": "DB11130"}
+{"id": "DDInter1345", "name": "Oprelvekin", "drugbank_id": "DB00038"}
+{"id": "DDInter1346", "name": "Orciprenaline", "drugbank_id": "DB00816"}
+{"id": "DDInter1347", "name": "Oritavancin", "drugbank_id": "DB04911"}
+{"id": "DDInter1348", "name": "Orlistat", "drugbank_id": "DB01083"}
+{"id": "DDInter1349", "name": "Orphenadrine", "drugbank_id": "DB01173"}
+{"id": "DDInter135", "name": "Atracurium", "drugbank_id": "DB13295"}
+{"id": "DDInter1350", "name": "Oseltamivir", "drugbank_id": "DB00198"}
+{"id": "DDInter1351", "name": "Osilodrostat", "drugbank_id": "DB11837"}
+{"id": "DDInter1352", "name": "Osimertinib", "drugbank_id": "DB09330"}
+{"id": "DDInter1353", "name": "Ospemifene", "drugbank_id": "DB04938"}
+{"id": "DDInter1354", "name": "Oxacillin", "drugbank_id": "DB00713"}
+{"id": "DDInter1355", "name": "Oxaliplatin", "drugbank_id": "DB00526"}
+{"id": "DDInter1356", "name": "Oxamniquine", "drugbank_id": "DB01096"}
+{"id": "DDInter1357", "name": "Oxandrolone", "drugbank_id": "DB00621"}
+{"id": "DDInter1358", "name": "Oxaprozin", "drugbank_id": "DB00991"}
+{"id": "DDInter1359", "name": "Oxazepam", "drugbank_id": "DB00842"}
+{"id": "DDInter136", "name": "Atropine", "drugbank_id": "DB00572"}
+{"id": "DDInter1360", "name": "Oxcarbazepine", "drugbank_id": "DB00776"}
+{"id": "DDInter1361", "name": "Oxidronic acid", "drugbank_id": "DB14159"}
+{"id": "DDInter1362", "name": "Oxitriptan", "drugbank_id": "DB02959"}
+{"id": "DDInter1363", "name": "Oxtriphylline", "drugbank_id": "DB01303"}
+{"id": "DDInter1364", "name": "Oxybuprocaine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1365", "name": "Oxybutynin", "drugbank_id": "DB01062"}
+{"id": "DDInter1366", "name": "Oxycodone", "drugbank_id": "DB00497"}
+{"id": "DDInter1367", "name": "Oxygen", "drugbank_id": "DB09140"}
+{"id": "DDInter1368", "name": "Oxymetazoline (nasal)", "drugbank_id": null}
+{"id": "DDInter1369", "name": "Oxymetazoline (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter137", "name": "Atropine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1370", "name": "Oxymetazoline (topical)", "drugbank_id": null}
+{"id": "DDInter1371", "name": "Oxymetholone", "drugbank_id": "DB06412"}
+{"id": "DDInter1372", "name": "Oxymorphone", "drugbank_id": "DB01192"}
+{"id": "DDInter1373", "name": "Oxyquinoline (topical)", "drugbank_id": null}
+{"id": "DDInter1374", "name": "Oxytetracycline", "drugbank_id": "DB00595"}
+{"id": "DDInter1375", "name": "Oxytocin", "drugbank_id": "DB00107"}
+{"id": "DDInter1376", "name": "Ozanimod", "drugbank_id": "DB12612"}
+{"id": "DDInter1377", "name": "Paclitaxel", "drugbank_id": "DB01229"}
+{"id": "DDInter1378", "name": "Paclitaxel (protein-bound)", "drugbank_id": null}
+{"id": "DDInter1379", "name": "Palbociclib", "drugbank_id": "DB09073"}
+{"id": "DDInter138", "name": "Attapulgite", "drugbank_id": "DB01574"}
+{"id": "DDInter1380", "name": "Palifermin", "drugbank_id": "DB00039"}
+{"id": "DDInter1381", "name": "Paliperidone", "drugbank_id": "DB01267"}
+{"id": "DDInter1382", "name": "Palonosetron", "drugbank_id": "DB00377"}
+{"id": "DDInter1383", "name": "Pamidronic acid", "drugbank_id": "DB00282"}
+{"id": "DDInter1384", "name": "Pancrelipase", "drugbank_id": "DB00085"}
+{"id": "DDInter1385", "name": "Pancuronium", "drugbank_id": "DB01337"}
+{"id": "DDInter1386", "name": "Panitumumab", "drugbank_id": "DB01269"}
+{"id": "DDInter1387", "name": "Panobinostat", "drugbank_id": "DB06603"}
+{"id": "DDInter1388", "name": "Pantoprazole", "drugbank_id": "DB00213"}
+{"id": "DDInter1389", "name": "Papaverine", "drugbank_id": "DB01113"}
+{"id": "DDInter139", "name": "Auranofin", "drugbank_id": "DB00995"}
+{"id": "DDInter1390", "name": "Papaya", "drugbank_id": "DB10658"}
+{"id": "DDInter1391", "name": "Paraldehyde", "drugbank_id": "DB09117"}
+{"id": "DDInter1392", "name": "Paramethadione", "drugbank_id": "DB00617"}
+{"id": "DDInter1393", "name": "Parathyroid hormone", "drugbank_id": "DB05829"}
+{"id": "DDInter1394", "name": "Paricalcitol", "drugbank_id": "DB00910"}
+{"id": "DDInter1395", "name": "Paritaprevir", "drugbank_id": "DB09297"}
+{"id": "DDInter1396", "name": "Paromomycin", "drugbank_id": "DB01421"}
+{"id": "DDInter1397", "name": "Paroxetine", "drugbank_id": "DB00715"}
+{"id": "DDInter1398", "name": "Pasireotide", "drugbank_id": "DB06663"}
+{"id": "DDInter1399", "name": "Patiromer", "drugbank_id": "DB09263"}
+{"id": "DDInter14", "name": "Acetaminophen", "drugbank_id": "DB00316"}
+{"id": "DDInter140", "name": "Aurothioglucose", "drugbank_id": "DB09121"}
+{"id": "DDInter1400", "name": "Pazopanib", "drugbank_id": "DB06589"}
+{"id": "DDInter1401", "name": "Pectin", "drugbank_id": "DB11158"}
+{"id": "DDInter1402", "name": "Pegademase", "drugbank_id": "DB00061"}
+{"id": "DDInter1403", "name": "Pegaptanib (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1404", "name": "Pegaspargase", "drugbank_id": "DB00059"}
+{"id": "DDInter1405", "name": "Pegfilgrastim", "drugbank_id": "DB00019"}
+{"id": "DDInter1406", "name": "Peginesatide", "drugbank_id": "DB08894"}
+{"id": "DDInter1407", "name": "Peginterferon alfa-2a", "drugbank_id": "DB00008"}
+{"id": "DDInter1408", "name": "Peginterferon alfa-2b", "drugbank_id": "DB00022"}
+{"id": "DDInter1409", "name": "Peginterferon beta-1a", "drugbank_id": "DB09122"}
+{"id": "DDInter141", "name": "Avanafil", "drugbank_id": "DB06237"}
+{"id": "DDInter1410", "name": "Pegloticase", "drugbank_id": "DB09208"}
+{"id": "DDInter1411", "name": "Pegvaliase", "drugbank_id": "DB12839"}
+{"id": "DDInter1412", "name": "Pegvisomant", "drugbank_id": "DB00082"}
+{"id": "DDInter1413", "name": "Pembrolizumab", "drugbank_id": "DB09037"}
+{"id": "DDInter1414", "name": "Pemetrexed", "drugbank_id": "DB00642"}
+{"id": "DDInter1415", "name": "Pemigatinib", "drugbank_id": "DB15102"}
+{"id": "DDInter1416", "name": "Pemoline", "drugbank_id": "DB01230"}
+{"id": "DDInter1417", "name": "Penbutolol", "drugbank_id": "DB01359"}
+{"id": "DDInter1418", "name": "Penciclovir (topical)", "drugbank_id": null}
+{"id": "DDInter1419", "name": "Penicillamine", "drugbank_id": "DB00859"}
+{"id": "DDInter142", "name": "Avapritinib", "drugbank_id": "DB15233"}
+{"id": "DDInter1420", "name": "Pentamidine", "drugbank_id": "DB00738"}
+{"id": "DDInter1421", "name": "Pentazocine", "drugbank_id": "DB00652"}
+{"id": "DDInter1422", "name": "Pentetic acid", "drugbank_id": "DB14007"}
+{"id": "DDInter1423", "name": "Pentobarbital", "drugbank_id": "DB00312"}
+{"id": "DDInter1424", "name": "Pentosan polysulfate", "drugbank_id": "DB00686"}
+{"id": "DDInter1425", "name": "Pentostatin", "drugbank_id": "DB00552"}
+{"id": "DDInter1426", "name": "Pentoxifylline", "drugbank_id": "DB00806"}
+{"id": "DDInter1427", "name": "Pentoxyverine", "drugbank_id": "DB11186"}
+{"id": "DDInter1428", "name": "Perampanel", "drugbank_id": "DB08883"}
+{"id": "DDInter1429", "name": "Perflutren", "drugbank_id": "DB00556"}
+{"id": "DDInter143", "name": "Avatrombopag", "drugbank_id": "DB11995"}
+{"id": "DDInter1430", "name": "Pergolide", "drugbank_id": "DB01186"}
+{"id": "DDInter1431", "name": "Perindopril", "drugbank_id": "DB00790"}
+{"id": "DDInter1432", "name": "Perphenazine", "drugbank_id": "DB00850"}
+{"id": "DDInter1433", "name": "Pertussis vaccine", "drugbank_id": "DB15274"}
+{"id": "DDInter1434", "name": "Pertuzumab", "drugbank_id": "DB06366"}
+{"id": "DDInter1435", "name": "Pexidartinib", "drugbank_id": "DB12978"}
+{"id": "DDInter1436", "name": "Pfizer-BioNTech Covid-19 Vaccine", "drugbank_id": null}
+{"id": "DDInter1437", "name": "Phenacemide", "drugbank_id": "DB01121"}
+{"id": "DDInter1438", "name": "Phenazopyridine", "drugbank_id": "DB01438"}
+{"id": "DDInter1439", "name": "Phendimetrazine", "drugbank_id": "DB01579"}
+{"id": "DDInter144", "name": "Avelumab", "drugbank_id": "DB11945"}
+{"id": "DDInter1440", "name": "Phenelzine", "drugbank_id": "DB00780"}
+{"id": "DDInter1441", "name": "Phenindamine", "drugbank_id": "DB01619"}
+{"id": "DDInter1442", "name": "Phenobarbital", "drugbank_id": "DB01174"}
+{"id": "DDInter1443", "name": "Phenolphthalein", "drugbank_id": "DB04824"}
+{"id": "DDInter1444", "name": "Phenoxybenzamine", "drugbank_id": "DB00925"}
+{"id": "DDInter1445", "name": "Phenoxymethylpenicillin", "drugbank_id": "DB00417"}
+{"id": "DDInter1446", "name": "Phensuximide", "drugbank_id": "DB00832"}
+{"id": "DDInter1447", "name": "Phentermine", "drugbank_id": "DB00191"}
+{"id": "DDInter1448", "name": "Phentolamine", "drugbank_id": "DB00692"}
+{"id": "DDInter1449", "name": "Phenyl salicylate", "drugbank_id": "DB11071"}
+{"id": "DDInter145", "name": "Avibactam", "drugbank_id": "DB09060"}
+{"id": "DDInter1450", "name": "Phenylacetic acid", "drugbank_id": "DB09269"}
+{"id": "DDInter1451", "name": "Phenylbutazone", "drugbank_id": "DB00812"}
+{"id": "DDInter1452", "name": "Phenylbutyric acid", "drugbank_id": "DB06819"}
+{"id": "DDInter1453", "name": "Phenylephrine", "drugbank_id": "DB00388"}
+{"id": "DDInter1454", "name": "Phenylephrine (nasal)", "drugbank_id": null}
+{"id": "DDInter1455", "name": "Phenylephrine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1456", "name": "Phenylephrine (otic)", "drugbank_id": null}
+{"id": "DDInter1457", "name": "Phenylephrine (topical)", "drugbank_id": null}
+{"id": "DDInter1458", "name": "Phenylpropanolamine", "drugbank_id": "DB00397"}
+{"id": "DDInter1459", "name": "Phenyltoloxamine", "drugbank_id": "DB11160"}
+{"id": "DDInter146", "name": "Axicabtagene ciloleucel", "drugbank_id": "DB13915"}
+{"id": "DDInter1460", "name": "Phenytoin", "drugbank_id": "DB00252"}
+{"id": "DDInter1461", "name": "Phylloquinone", "drugbank_id": "DB01022"}
+{"id": "DDInter1462", "name": "Physostigmine", "drugbank_id": "DB00981"}
+{"id": "DDInter1463", "name": "Physostigmine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1464", "name": "Picosulfuric acid", "drugbank_id": "DB09268"}
+{"id": "DDInter1465", "name": "Pilocarpine", "drugbank_id": "DB01085"}
+{"id": "DDInter1466", "name": "Pilocarpine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1467", "name": "Pimavanserin", "drugbank_id": "DB05316"}
+{"id": "DDInter1468", "name": "Pimecrolimus", "drugbank_id": "DB00337"}
+{"id": "DDInter1469", "name": "Pimecrolimus (topical)", "drugbank_id": null}
+{"id": "DDInter147", "name": "Axitinib", "drugbank_id": "DB06626"}
+{"id": "DDInter1470", "name": "Pimozide", "drugbank_id": "DB01100"}
+{"id": "DDInter1471", "name": "Pindolol", "drugbank_id": "DB00960"}
+{"id": "DDInter1472", "name": "Pioglitazone", "drugbank_id": "DB01132"}
+{"id": "DDInter1473", "name": "Pipecuronium", "drugbank_id": "DB01338"}
+{"id": "DDInter1474", "name": "Piperacillin", "drugbank_id": "DB00319"}
+{"id": "DDInter1475", "name": "Piperazine", "drugbank_id": "DB00592"}
+{"id": "DDInter1476", "name": "Pirbuterol", "drugbank_id": "DB01291"}
+{"id": "DDInter1477", "name": "Pirfenidone", "drugbank_id": "DB04951"}
+{"id": "DDInter1478", "name": "Piroxicam", "drugbank_id": "DB00554"}
+{"id": "DDInter1479", "name": "Pitavastatin", "drugbank_id": "DB08860"}
+{"id": "DDInter148", "name": "Azacitidine", "drugbank_id": "DB00928"}
+{"id": "DDInter1480", "name": "Pitolisant", "drugbank_id": "DB11642"}
+{"id": "DDInter1481", "name": "Plantago seed", "drugbank_id": "DB11097"}
+{"id": "DDInter1482", "name": "Plazomicin", "drugbank_id": "DB12615"}
+{"id": "DDInter1483", "name": "Plecanatide", "drugbank_id": "DB13170"}
+{"id": "DDInter1484", "name": "Plicamycin", "drugbank_id": "DB06810"}
+{"id": "DDInter1485", "name": "Polatuzumab vedotin", "drugbank_id": "DB12240"}
+{"id": "DDInter1486", "name": "Poliovirus type 1 antigen (formaldehyde inactivated)", "drugbank_id": "DB10795"}
+{"id": "DDInter1487", "name": "Polyethylene glycol (3350 with electrolytes)", "drugbank_id": null}
+{"id": "DDInter1488", "name": "Polyethylene glycol (3350)", "drugbank_id": null}
+{"id": "DDInter1489", "name": "Polymyxin B", "drugbank_id": "DB00781"}
+{"id": "DDInter149", "name": "Azatadine", "drugbank_id": "DB00719"}
+{"id": "DDInter1490", "name": "Polythiazide", "drugbank_id": "DB01324"}
+{"id": "DDInter1491", "name": "Pomalidomide", "drugbank_id": "DB08910"}
+{"id": "DDInter1492", "name": "Ponatinib", "drugbank_id": "DB08901"}
+{"id": "DDInter1493", "name": "Porfimer sodium", "drugbank_id": "DB00707"}
+{"id": "DDInter1494", "name": "Posaconazole", "drugbank_id": "DB01263"}
+{"id": "DDInter1495", "name": "Potassium acetate", "drugbank_id": "DB14498"}
+{"id": "DDInter1496", "name": "Potassium bicarbonate", "drugbank_id": "DB11098"}
+{"id": "DDInter1497", "name": "Potassium chloride", "drugbank_id": "DB00761"}
+{"id": "DDInter1498", "name": "Potassium citrate", "drugbank_id": "DB09125"}
+{"id": "DDInter1499", "name": "Potassium gluconate", "drugbank_id": "DB13620"}
+{"id": "DDInter15", "name": "Acetazolamide", "drugbank_id": "DB00819"}
+{"id": "DDInter150", "name": "Azathioprine", "drugbank_id": "DB00993"}
+{"id": "DDInter1500", "name": "Potassium Iodide", "drugbank_id": "DB06715"}
+{"id": "DDInter1501", "name": "Potassium perchlorate", "drugbank_id": "DB09418"}
+{"id": "DDInter1502", "name": "Pralatrexate", "drugbank_id": "DB06813"}
+{"id": "DDInter1503", "name": "Pralidoxime", "drugbank_id": "DB00733"}
+{"id": "DDInter1504", "name": "Pralsetinib", "drugbank_id": "DB15822"}
+{"id": "DDInter1505", "name": "Pramipexole", "drugbank_id": "DB00413"}
+{"id": "DDInter1506", "name": "Pramlintide", "drugbank_id": "DB01278"}
+{"id": "DDInter1507", "name": "Prasterone enantate", "drugbank_id": "DB16625"}
+{"id": "DDInter1508", "name": "Prasugrel", "drugbank_id": "DB06209"}
+{"id": "DDInter1509", "name": "Pravastatin", "drugbank_id": "DB00175"}
+{"id": "DDInter151", "name": "Azelaic acid", "drugbank_id": "DB00548"}
+{"id": "DDInter1510", "name": "Praziquantel", "drugbank_id": "DB01058"}
+{"id": "DDInter1511", "name": "Prazosin", "drugbank_id": "DB00457"}
+{"id": "DDInter1512", "name": "Prednicarbate (topical)", "drugbank_id": null}
+{"id": "DDInter1513", "name": "Prednisolone", "drugbank_id": "DB00860"}
+{"id": "DDInter1514", "name": "Prednisolone (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1515", "name": "Prednisone", "drugbank_id": "DB00635"}
+{"id": "DDInter1516", "name": "Pregabalin", "drugbank_id": "DB00230"}
+{"id": "DDInter1517", "name": "Pretomanid", "drugbank_id": "DB05154"}
+{"id": "DDInter1518", "name": "Prilocaine", "drugbank_id": "DB00750"}
+{"id": "DDInter1519", "name": "Prilocaine (topiclal)", "drugbank_id": null}
+{"id": "DDInter152", "name": "Azelaic acid (topical)", "drugbank_id": null}
+{"id": "DDInter1520", "name": "Primaquine", "drugbank_id": "DB01087"}
+{"id": "DDInter1521", "name": "Primidone", "drugbank_id": "DB00794"}
+{"id": "DDInter1522", "name": "Probenecid", "drugbank_id": "DB01032"}
+{"id": "DDInter1523", "name": "Probucol", "drugbank_id": "DB01599"}
+{"id": "DDInter1524", "name": "Procainamide", "drugbank_id": "DB01035"}
+{"id": "DDInter1525", "name": "Procaine", "drugbank_id": "DB00721"}
+{"id": "DDInter1526", "name": "Procarbazine", "drugbank_id": "DB01168"}
+{"id": "DDInter1527", "name": "Prochlorperazine", "drugbank_id": "DB00433"}
+{"id": "DDInter1528", "name": "Procyclidine", "drugbank_id": "DB00387"}
+{"id": "DDInter1529", "name": "Progesterone", "drugbank_id": "DB00396"}
+{"id": "DDInter153", "name": "Azelastine", "drugbank_id": "DB00972"}
+{"id": "DDInter1530", "name": "Progesterone (topical)", "drugbank_id": null}
+{"id": "DDInter1531", "name": "Proguanil", "drugbank_id": "DB01131"}
+{"id": "DDInter1532", "name": "Promazine", "drugbank_id": "DB00420"}
+{"id": "DDInter1533", "name": "Promethazine", "drugbank_id": "DB01069"}
+{"id": "DDInter1534", "name": "Propafenone", "drugbank_id": "DB01182"}
+{"id": "DDInter1535", "name": "Propantheline", "drugbank_id": "DB00782"}
+{"id": "DDInter1536", "name": "Proparacaine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1537", "name": "Propiomazine", "drugbank_id": "DB00777"}
+{"id": "DDInter1538", "name": "Propofol", "drugbank_id": "DB00818"}
+{"id": "DDInter1539", "name": "Propranolol", "drugbank_id": "DB00571"}
+{"id": "DDInter154", "name": "Azelastine (nasal)", "drugbank_id": null}
+{"id": "DDInter1540", "name": "Propylhexedrine (nasal)", "drugbank_id": null}
+{"id": "DDInter1541", "name": "Propylthiouracil", "drugbank_id": "DB00550"}
+{"id": "DDInter1542", "name": "Protein C", "drugbank_id": "DB11312"}
+{"id": "DDInter1543", "name": "Protriptyline", "drugbank_id": "DB00344"}
+{"id": "DDInter1544", "name": "Prucalopride", "drugbank_id": "DB06480"}
+{"id": "DDInter1545", "name": "Pseudoephedrine", "drugbank_id": "DB00852"}
+{"id": "DDInter1546", "name": "Pyrantel", "drugbank_id": "DB11156"}
+{"id": "DDInter1547", "name": "Pyrazinamide", "drugbank_id": "DB00339"}
+{"id": "DDInter1548", "name": "Pyridostigmine", "drugbank_id": "DB00545"}
+{"id": "DDInter1549", "name": "Pyridoxine", "drugbank_id": "DB00165"}
+{"id": "DDInter155", "name": "Azelastine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1550", "name": "Pyrimethamine", "drugbank_id": "DB00205"}
+{"id": "DDInter1551", "name": "Pyrophosphoric acid", "drugbank_id": "DB04160"}
+{"id": "DDInter1552", "name": "Quazepam", "drugbank_id": "DB01589"}
+{"id": "DDInter1553", "name": "Quetiapine", "drugbank_id": "DB01224"}
+{"id": "DDInter1554", "name": "Quinapril", "drugbank_id": "DB00881"}
+{"id": "DDInter1555", "name": "Quinestrol", "drugbank_id": "DB04575"}
+{"id": "DDInter1556", "name": "Quinidine", "drugbank_id": "DB00908"}
+{"id": "DDInter1557", "name": "Quinine", "drugbank_id": "DB00468"}
+{"id": "DDInter1558", "name": "Quinupristin", "drugbank_id": "DB01369"}
+{"id": "DDInter1559", "name": "Rabeprazole", "drugbank_id": "DB01129"}
+{"id": "DDInter156", "name": "Azilsartan medoxomil", "drugbank_id": "DB08822"}
+{"id": "DDInter1560", "name": "Racepinephrine", "drugbank_id": "DB11124"}
+{"id": "DDInter1561", "name": "Radium Ra 223 dichloride", "drugbank_id": "DB08913"}
+{"id": "DDInter1562", "name": "Raloxifene", "drugbank_id": "DB00481"}
+{"id": "DDInter1563", "name": "Raltegravir", "drugbank_id": "DB06817"}
+{"id": "DDInter1564", "name": "Ramelteon", "drugbank_id": "DB00980"}
+{"id": "DDInter1565", "name": "Ramipril", "drugbank_id": "DB00178"}
+{"id": "DDInter1566", "name": "Ramucirumab", "drugbank_id": "DB05578"}
+{"id": "DDInter1567", "name": "Ranibizumab (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1568", "name": "Ranitidine", "drugbank_id": "DB00863"}
+{"id": "DDInter1569", "name": "Ranitidine (bismuth citrate)", "drugbank_id": null}
+{"id": "DDInter157", "name": "Azithromycin", "drugbank_id": "DB00207"}
+{"id": "DDInter1570", "name": "Ranolazine", "drugbank_id": "DB00243"}
+{"id": "DDInter1571", "name": "Rapacuronium", "drugbank_id": "DB04834"}
+{"id": "DDInter1572", "name": "Rasagiline", "drugbank_id": "DB01367"}
+{"id": "DDInter1573", "name": "Rasburicase", "drugbank_id": "DB00049"}
+{"id": "DDInter1574", "name": "Ravulizumab", "drugbank_id": "DB11580"}
+{"id": "DDInter1575", "name": "Regadenoson", "drugbank_id": "DB06213"}
+{"id": "DDInter1576", "name": "Regorafenib", "drugbank_id": "DB08896"}
+{"id": "DDInter1577", "name": "Relugolix", "drugbank_id": "DB11853"}
+{"id": "DDInter1578", "name": "Remdesivir", "drugbank_id": "DB14761"}
+{"id": "DDInter1579", "name": "Remifentanil", "drugbank_id": "DB00899"}
+{"id": "DDInter158", "name": "Aztreonam", "drugbank_id": "DB00355"}
+{"id": "DDInter1580", "name": "Remimazolam", "drugbank_id": "DB12404"}
+{"id": "DDInter1581", "name": "Repaglinide", "drugbank_id": "DB00912"}
+{"id": "DDInter1582", "name": "Reserpine", "drugbank_id": "DB00206"}
+{"id": "DDInter1583", "name": "Resorcinol (topical)", "drugbank_id": null}
+{"id": "DDInter1584", "name": "Retapamulin (topical)", "drugbank_id": null}
+{"id": "DDInter1585", "name": "Reteplase", "drugbank_id": "DB00015"}
+{"id": "DDInter1586", "name": "Revefenacin", "drugbank_id": "DB11855"}
+{"id": "DDInter1587", "name": "Ribavirin", "drugbank_id": "DB00811"}
+{"id": "DDInter1588", "name": "Ribociclib", "drugbank_id": "DB11730"}
+{"id": "DDInter1589", "name": "Rifabutin", "drugbank_id": "DB00615"}
+{"id": "DDInter159", "name": "Bacampicillin", "drugbank_id": "DB01602"}
+{"id": "DDInter1590", "name": "Rifampicin", "drugbank_id": "DB01045"}
+{"id": "DDInter1591", "name": "Rifamycin", "drugbank_id": "DB11753"}
+{"id": "DDInter1592", "name": "Rifapentine", "drugbank_id": "DB01201"}
+{"id": "DDInter1593", "name": "Rifaximin", "drugbank_id": "DB01220"}
+{"id": "DDInter1594", "name": "Rilonacept", "drugbank_id": "DB06372"}
+{"id": "DDInter1595", "name": "Rilpivirine", "drugbank_id": "DB08864"}
+{"id": "DDInter1596", "name": "Riluzole", "drugbank_id": "DB00740"}
+{"id": "DDInter1597", "name": "Rimantadine", "drugbank_id": "DB00478"}
+{"id": "DDInter1598", "name": "Rimegepant", "drugbank_id": "DB12457"}
+{"id": "DDInter1599", "name": "Rimexolone (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter16", "name": "Acetohexamide", "drugbank_id": "DB00414"}
+{"id": "DDInter160", "name": "Bacillus calmette-guerin substrain tice live antigen", "drugbank_id": "DB10343"}
+{"id": "DDInter1600", "name": "Riociguat", "drugbank_id": "DB08931"}
+{"id": "DDInter1601", "name": "Ripretinib", "drugbank_id": "DB14840"}
+{"id": "DDInter1602", "name": "Risankizumab", "drugbank_id": "DB14762"}
+{"id": "DDInter1603", "name": "Risdiplam", "drugbank_id": "DB15305"}
+{"id": "DDInter1604", "name": "Risedronic acid", "drugbank_id": "DB00884"}
+{"id": "DDInter1605", "name": "Risperidone", "drugbank_id": "DB00734"}
+{"id": "DDInter1606", "name": "Ritodrine", "drugbank_id": "DB00867"}
+{"id": "DDInter1607", "name": "Ritonavir", "drugbank_id": "DB00503"}
+{"id": "DDInter1608", "name": "Rituximab", "drugbank_id": "DB00073"}
+{"id": "DDInter1609", "name": "Rivaroxaban", "drugbank_id": "DB06228"}
+{"id": "DDInter161", "name": "Bacitracin", "drugbank_id": "DB00626"}
+{"id": "DDInter1610", "name": "Rivastigmine", "drugbank_id": "DB00989"}
+{"id": "DDInter1611", "name": "Rizatriptan", "drugbank_id": "DB00953"}
+{"id": "DDInter1612", "name": "Rocuronium", "drugbank_id": "DB00728"}
+{"id": "DDInter1613", "name": "Rofecoxib", "drugbank_id": "DB00533"}
+{"id": "DDInter1614", "name": "Roflumilast", "drugbank_id": "DB01656"}
+{"id": "DDInter1615", "name": "Rolapitant", "drugbank_id": "DB09291"}
+{"id": "DDInter1616", "name": "Romidepsin", "drugbank_id": "DB06176"}
+{"id": "DDInter1617", "name": "Romiplostim", "drugbank_id": "DB05332"}
+{"id": "DDInter1618", "name": "Romosozumab", "drugbank_id": "DB11866"}
+{"id": "DDInter1619", "name": "Ropinirole", "drugbank_id": "DB00268"}
+{"id": "DDInter162", "name": "Baclofen", "drugbank_id": "DB00181"}
+{"id": "DDInter1620", "name": "Ropivacaine", "drugbank_id": "DB00296"}
+{"id": "DDInter1621", "name": "Rosiglitazone", "drugbank_id": "DB00412"}
+{"id": "DDInter1622", "name": "Rosuvastatin", "drugbank_id": "DB01098"}
+{"id": "DDInter1623", "name": "Rotavirus vaccine", "drugbank_id": "DB10276"}
+{"id": "DDInter1624", "name": "Rotigotine", "drugbank_id": "DB05271"}
+{"id": "DDInter1625", "name": "Rubella virus vaccine", "drugbank_id": "DB10317"}
+{"id": "DDInter1626", "name": "Rucaparib", "drugbank_id": "DB12332"}
+{"id": "DDInter1627", "name": "Rufinamide", "drugbank_id": "DB06201"}
+{"id": "DDInter1628", "name": "Ruxolitinib", "drugbank_id": "DB08877"}
+{"id": "DDInter1629", "name": "Sacituzumab govitecan", "drugbank_id": "DB12893"}
+{"id": "DDInter163", "name": "Baloxavir marboxil", "drugbank_id": "DB13997"}
+{"id": "DDInter1630", "name": "Sacubitril", "drugbank_id": "DB09292"}
+{"id": "DDInter1631", "name": "Safinamide", "drugbank_id": "DB06654"}
+{"id": "DDInter1632", "name": "Salbutamol", "drugbank_id": "DB01001"}
+{"id": "DDInter1633", "name": "Salicylic acid (sodium)", "drugbank_id": null}
+{"id": "DDInter1634", "name": "Salicylic acid (topical)", "drugbank_id": null}
+{"id": "DDInter1635", "name": "Salmeterol", "drugbank_id": "DB00938"}
+{"id": "DDInter1636", "name": "Salmon calcitonin", "drugbank_id": "DB00017"}
+{"id": "DDInter1637", "name": "Salsalate", "drugbank_id": "DB01399"}
+{"id": "DDInter1638", "name": "Samarium (153Sm) lexidronam", "drugbank_id": "DB05273"}
+{"id": "DDInter1639", "name": "Sapropterin", "drugbank_id": "DB00360"}
+{"id": "DDInter164", "name": "Balsalazide", "drugbank_id": "DB01014"}
+{"id": "DDInter1640", "name": "Saquinavir", "drugbank_id": "DB01232"}
+{"id": "DDInter1641", "name": "Sarecycline", "drugbank_id": "DB12035"}
+{"id": "DDInter1642", "name": "Sargramostim", "drugbank_id": "DB00020"}
+{"id": "DDInter1643", "name": "Sarilumab", "drugbank_id": "DB11767"}
+{"id": "DDInter1644", "name": "Satralizumab", "drugbank_id": "DB15762"}
+{"id": "DDInter1645", "name": "Saw palmetto", "drugbank_id": "DB14360"}
+{"id": "DDInter1646", "name": "Saxagliptin", "drugbank_id": "DB06335"}
+{"id": "DDInter1647", "name": "Scopolamine", "drugbank_id": "DB00747"}
+{"id": "DDInter1648", "name": "Scopolamine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1649", "name": "Secnidazole", "drugbank_id": "DB12834"}
+{"id": "DDInter165", "name": "Baricitinib", "drugbank_id": "DB11817"}
+{"id": "DDInter1650", "name": "Secobarbital", "drugbank_id": "DB00418"}
+{"id": "DDInter1651", "name": "Secretin human", "drugbank_id": "DB09532"}
+{"id": "DDInter1652", "name": "Secukinumab", "drugbank_id": "DB09029"}
+{"id": "DDInter1653", "name": "Selegiline", "drugbank_id": "DB01037"}
+{"id": "DDInter1654", "name": "Selenium", "drugbank_id": "DB11135"}
+{"id": "DDInter1655", "name": "Selenium Sulfide", "drugbank_id": "DB00971"}
+{"id": "DDInter1656", "name": "Selexipag", "drugbank_id": "DB11362"}
+{"id": "DDInter1657", "name": "Selinexor", "drugbank_id": "DB11942"}
+{"id": "DDInter1658", "name": "Selpercatinib", "drugbank_id": "DB15685"}
+{"id": "DDInter1659", "name": "Selumetinib", "drugbank_id": "DB11689"}
+{"id": "DDInter166", "name": "Basiliximab", "drugbank_id": "DB00074"}
+{"id": "DDInter1660", "name": "Semaglutide", "drugbank_id": "DB13928"}
+{"id": "DDInter1661", "name": "Sermorelin", "drugbank_id": "DB00010"}
+{"id": "DDInter1662", "name": "Sertraline", "drugbank_id": "DB01104"}
+{"id": "DDInter1663", "name": "Sevelamer", "drugbank_id": "DB00658"}
+{"id": "DDInter1664", "name": "Sevoflurane", "drugbank_id": "DB01236"}
+{"id": "DDInter1665", "name": "Sibutramine", "drugbank_id": "DB01105"}
+{"id": "DDInter1666", "name": "Sildenafil", "drugbank_id": "DB00203"}
+{"id": "DDInter1667", "name": "Silodosin", "drugbank_id": "DB06207"}
+{"id": "DDInter1668", "name": "Siltuximab", "drugbank_id": "DB09036"}
+{"id": "DDInter1669", "name": "Silver (topical)", "drugbank_id": null}
+{"id": "DDInter167", "name": "Bazedoxifene", "drugbank_id": "DB06401"}
+{"id": "DDInter1670", "name": "Silver nitrate (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1671", "name": "Silver nitrate (topical)", "drugbank_id": null}
+{"id": "DDInter1672", "name": "Silver sulfadiazine (topical)", "drugbank_id": null}
+{"id": "DDInter1673", "name": "Simeprevir", "drugbank_id": "DB06290"}
+{"id": "DDInter1674", "name": "Simethicone", "drugbank_id": "DB09512"}
+{"id": "DDInter1675", "name": "Simvastatin", "drugbank_id": "DB00641"}
+{"id": "DDInter1676", "name": "Siponimod", "drugbank_id": "DB12371"}
+{"id": "DDInter1677", "name": "Sipuleucel-T", "drugbank_id": "DB06688"}
+{"id": "DDInter1678", "name": "Sirolimus", "drugbank_id": "DB00877"}
+{"id": "DDInter1679", "name": "Sitagliptin", "drugbank_id": "DB01261"}
+{"id": "DDInter168", "name": "Beclomethasone dipropionate", "drugbank_id": "DB00394"}
+{"id": "DDInter1680", "name": "Smallpox (Vaccinia) Vaccine, Live", "drugbank_id": "DB14711"}
+{"id": "DDInter1681", "name": "Sodium acetate", "drugbank_id": "DB09395"}
+{"id": "DDInter1682", "name": "Sodium aurothiomalate", "drugbank_id": "DB09276"}
+{"id": "DDInter1683", "name": "Sodium bicarbonate", "drugbank_id": "DB01390"}
+{"id": "DDInter1684", "name": "Sodium cellulose phosphate", "drugbank_id": "DB06776"}
+{"id": "DDInter1685", "name": "Sodium chloride", "drugbank_id": "DB09153"}
+{"id": "DDInter1686", "name": "Sodium citrate", "drugbank_id": "DB09154"}
+{"id": "DDInter1687", "name": "Sodium ferric gluconate complex", "drugbank_id": "DB09517"}
+{"id": "DDInter1688", "name": "Sodium glycerophosphate", "drugbank_id": "DB09561"}
+{"id": "DDInter1689", "name": "Sodium iodide", "drugbank_id": "DB11119"}
+{"id": "DDInter169", "name": "Beclomethasone dipropionate (nasal)", "drugbank_id": null}
+{"id": "DDInter1690", "name": "Sodium oxybate", "drugbank_id": "DB09072"}
+{"id": "DDInter1691", "name": "Sodium phosphate, monobasic", "drugbank_id": "DB09449"}
+{"id": "DDInter1692", "name": "Sodium phosphate, monobasic (p32)", "drugbank_id": null}
+{"id": "DDInter1693", "name": "Sodium sulfate", "drugbank_id": "DB09472"}
+{"id": "DDInter1694", "name": "Sodium zirconium cyclosilicate", "drugbank_id": "DB14048"}
+{"id": "DDInter1695", "name": "Sofosbuvir", "drugbank_id": "DB08934"}
+{"id": "DDInter1696", "name": "Solifenacin", "drugbank_id": "DB01591"}
+{"id": "DDInter1697", "name": "Solriamfetol", "drugbank_id": "DB14754"}
+{"id": "DDInter1698", "name": "Somapacitan", "drugbank_id": "DB15093"}
+{"id": "DDInter1699", "name": "Somatotropin", "drugbank_id": "DB00052"}
+{"id": "DDInter17", "name": "Acetohydroxamic acid", "drugbank_id": "DB00551"}
+{"id": "DDInter170", "name": "Bedaquiline", "drugbank_id": "DB08903"}
+{"id": "DDInter1700", "name": "Somatrem", "drugbank_id": "DB09098"}
+{"id": "DDInter1701", "name": "Sonidegib", "drugbank_id": "DB09143"}
+{"id": "DDInter1702", "name": "Sorafenib", "drugbank_id": "DB00398"}
+{"id": "DDInter1703", "name": "Sorbitol", "drugbank_id": "DB01638"}
+{"id": "DDInter1704", "name": "Sotalol", "drugbank_id": "DB00489"}
+{"id": "DDInter1705", "name": "Sparfloxacin", "drugbank_id": "DB01208"}
+{"id": "DDInter1706", "name": "Spectinomycin", "drugbank_id": "DB00919"}
+{"id": "DDInter1707", "name": "Spironolactone", "drugbank_id": "DB00421"}
+{"id": "DDInter1708", "name": "St. John's Wort", "drugbank_id": "DB01323"}
+{"id": "DDInter1709", "name": "Stanozolol", "drugbank_id": "DB06718"}
+{"id": "DDInter171", "name": "Belantamab mafodotin", "drugbank_id": "DB15719"}
+{"id": "DDInter1710", "name": "Stavudine", "drugbank_id": "DB00649"}
+{"id": "DDInter1711", "name": "Stiripentol", "drugbank_id": "DB09118"}
+{"id": "DDInter1712", "name": "Streptokinase", "drugbank_id": "DB00086"}
+{"id": "DDInter1713", "name": "Streptomycin", "drugbank_id": "DB01082"}
+{"id": "DDInter1714", "name": "Streptozocin", "drugbank_id": "DB00428"}
+{"id": "DDInter1715", "name": "Strontium chloride Sr-89", "drugbank_id": "DB09498"}
+{"id": "DDInter1716", "name": "Succinylcholine", "drugbank_id": "DB00202"}
+{"id": "DDInter1717", "name": "Sucralfate", "drugbank_id": "DB00364"}
+{"id": "DDInter1718", "name": "Sufentanil", "drugbank_id": "DB00708"}
+{"id": "DDInter1719", "name": "Sugammadex", "drugbank_id": "DB06206"}
+{"id": "DDInter172", "name": "Belatacept", "drugbank_id": "DB06681"}
+{"id": "DDInter1720", "name": "Sulfacetamide (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1721", "name": "Sulfadiazine", "drugbank_id": "DB00359"}
+{"id": "DDInter1722", "name": "Sulfadoxine", "drugbank_id": "DB01299"}
+{"id": "DDInter1723", "name": "Sulfamethizole", "drugbank_id": "DB00576"}
+{"id": "DDInter1724", "name": "Sulfamethoxazole", "drugbank_id": "DB01015"}
+{"id": "DDInter1725", "name": "Sulfasalazine", "drugbank_id": "DB00795"}
+{"id": "DDInter1726", "name": "Sulfinpyrazone", "drugbank_id": "DB01138"}
+{"id": "DDInter1727", "name": "Sulfisoxazole", "drugbank_id": "DB00263"}
+{"id": "DDInter1728", "name": "Sulfur hexafluoride", "drugbank_id": "DB11104"}
+{"id": "DDInter1729", "name": "Sulindac", "drugbank_id": "DB00605"}
+{"id": "DDInter173", "name": "Belimumab", "drugbank_id": "DB08879"}
+{"id": "DDInter1730", "name": "Sumatriptan", "drugbank_id": "DB00669"}
+{"id": "DDInter1731", "name": "Sunitinib", "drugbank_id": "DB01268"}
+{"id": "DDInter1732", "name": "Suprofen (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1733", "name": "Suvorexant", "drugbank_id": "DB09034"}
+{"id": "DDInter1734", "name": "Tacrine", "drugbank_id": "DB00382"}
+{"id": "DDInter1735", "name": "Tacrolimus", "drugbank_id": "DB00864"}
+{"id": "DDInter1736", "name": "Tadalafil", "drugbank_id": "DB00820"}
+{"id": "DDInter1737", "name": "Tafamidis", "drugbank_id": "DB11644"}
+{"id": "DDInter1738", "name": "Tafasitamab", "drugbank_id": "DB15044"}
+{"id": "DDInter1739", "name": "Tafenoquine", "drugbank_id": "DB06608"}
+{"id": "DDInter174", "name": "Belinostat", "drugbank_id": "DB05015"}
+{"id": "DDInter1740", "name": "Tafluprost (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1741", "name": "Tagraxofusp", "drugbank_id": "DB14731"}
+{"id": "DDInter1742", "name": "Talazoparib", "drugbank_id": "DB11760"}
+{"id": "DDInter1743", "name": "Talimogene laherparepvec", "drugbank_id": "DB13896"}
+{"id": "DDInter1744", "name": "Tamoxifen", "drugbank_id": "DB00675"}
+{"id": "DDInter1745", "name": "Tamsulosin", "drugbank_id": "DB00706"}
+{"id": "DDInter1746", "name": "Tapentadol", "drugbank_id": "DB06204"}
+{"id": "DDInter1747", "name": "Tasimelteon", "drugbank_id": "DB09071"}
+{"id": "DDInter1748", "name": "Tazarotene", "drugbank_id": "DB00799"}
+{"id": "DDInter1749", "name": "Tazarotene (topical)", "drugbank_id": "DB00799"}
+{"id": "DDInter175", "name": "Belladonna", "drugbank_id": "DB13913"}
+{"id": "DDInter1750", "name": "Tazemetostat", "drugbank_id": "DB12887"}
+{"id": "DDInter1751", "name": "Tazobactam", "drugbank_id": "DB01606"}
+{"id": "DDInter1752", "name": "Tedizolid", "drugbank_id": "DB14569"}
+{"id": "DDInter1753", "name": "Teduglutide", "drugbank_id": "DB08900"}
+{"id": "DDInter1754", "name": "Tegaserod", "drugbank_id": "DB01079"}
+{"id": "DDInter1755", "name": "Telaprevir", "drugbank_id": "DB05521"}
+{"id": "DDInter1756", "name": "Telavancin", "drugbank_id": "DB06402"}
+{"id": "DDInter1757", "name": "Telbivudine", "drugbank_id": "DB01265"}
+{"id": "DDInter1758", "name": "Telithromycin", "drugbank_id": "DB00976"}
+{"id": "DDInter1759", "name": "Telmisartan", "drugbank_id": "DB00966"}
+{"id": "DDInter176", "name": "Bempedoic acid", "drugbank_id": "DB11936"}
+{"id": "DDInter1760", "name": "Telotristat ethyl", "drugbank_id": "DB12095"}
+{"id": "DDInter1761", "name": "Temazepam", "drugbank_id": "DB00231"}
+{"id": "DDInter1762", "name": "Temozolomide", "drugbank_id": "DB00853"}
+{"id": "DDInter1763", "name": "Temsirolimus", "drugbank_id": "DB06287"}
+{"id": "DDInter1764", "name": "Tenecteplase", "drugbank_id": "DB00031"}
+{"id": "DDInter1765", "name": "Teniposide", "drugbank_id": "DB00444"}
+{"id": "DDInter1766", "name": "Teprotumumab", "drugbank_id": "DB06343"}
+{"id": "DDInter1767", "name": "Terazosin", "drugbank_id": "DB01162"}
+{"id": "DDInter1768", "name": "Terbinafine", "drugbank_id": "DB00857"}
+{"id": "DDInter1769", "name": "Terbutaline", "drugbank_id": "DB00871"}
+{"id": "DDInter177", "name": "Benazepril", "drugbank_id": "DB00542"}
+{"id": "DDInter1770", "name": "Terfenadine", "drugbank_id": "DB00342"}
+{"id": "DDInter1771", "name": "Teriflunomide", "drugbank_id": "DB08880"}
+{"id": "DDInter1772", "name": "Teriparatide", "drugbank_id": "DB06285"}
+{"id": "DDInter1773", "name": "Tesamorelin", "drugbank_id": "DB08869"}
+{"id": "DDInter1774", "name": "Testolactone", "drugbank_id": "DB00894"}
+{"id": "DDInter1775", "name": "Testosterone", "drugbank_id": "DB00624"}
+{"id": "DDInter1776", "name": "Testosterone (topical)", "drugbank_id": "DB00624"}
+{"id": "DDInter1777", "name": "Tetanus Immune Globulin", "drugbank_id": null}
+{"id": "DDInter1778", "name": "Tetrabenazine", "drugbank_id": "DB04844"}
+{"id": "DDInter1779", "name": "Tetracaine", "drugbank_id": "DB09085"}
+{"id": "DDInter178", "name": "Bendamustine", "drugbank_id": "DB06769"}
+{"id": "DDInter1780", "name": "Tetracaine (ophthalmic)", "drugbank_id": "DB09085"}
+{"id": "DDInter1781", "name": "Tetracaine (topical)", "drugbank_id": "DB09085"}
+{"id": "DDInter1782", "name": "Tetracosactide", "drugbank_id": "DB01284"}
+{"id": "DDInter1783", "name": "Tetracycline", "drugbank_id": "DB00759"}
+{"id": "DDInter1784", "name": "Tetracycline (topical)", "drugbank_id": "DB00759"}
+{"id": "DDInter1785", "name": "Tetraferric tricitrate decahydrate", "drugbank_id": "DB14520"}
+{"id": "DDInter1786", "name": "Tetrofosmin", "drugbank_id": "DB11180"}
+{"id": "DDInter1787", "name": "Tetryzoline (nasal)", "drugbank_id": null}
+{"id": "DDInter1788", "name": "Tetryzoline (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1789", "name": "Thalidomide", "drugbank_id": "DB01041"}
+{"id": "DDInter179", "name": "Bendroflumethiazide", "drugbank_id": "DB00436"}
+{"id": "DDInter1790", "name": "Thallous Chloride", "drugbank_id": null}
+{"id": "DDInter1791", "name": "Theophylline", "drugbank_id": "DB00277"}
+{"id": "DDInter1792", "name": "Thiabendazole", "drugbank_id": "DB00730"}
+{"id": "DDInter1793", "name": "Thiethylperazine", "drugbank_id": "DB00372"}
+{"id": "DDInter1794", "name": "Thimerosal (topical)", "drugbank_id": null}
+{"id": "DDInter1795", "name": "Thiopental", "drugbank_id": "DB00599"}
+{"id": "DDInter1796", "name": "Thioridazine", "drugbank_id": "DB00679"}
+{"id": "DDInter1797", "name": "Thiotepa", "drugbank_id": "DB04572"}
+{"id": "DDInter1798", "name": "Thiothixene", "drugbank_id": "DB01623"}
+{"id": "DDInter1799", "name": "Thyroid, porcine", "drugbank_id": "DB09100"}
+{"id": "DDInter18", "name": "Acetylcholine", "drugbank_id": "DB03128"}
+{"id": "DDInter180", "name": "Benzalkonium (topical)", "drugbank_id": null}
+{"id": "DDInter1800", "name": "Thyrotropin alfa", "drugbank_id": "DB00024"}
+{"id": "DDInter1801", "name": "Tiagabine", "drugbank_id": "DB00906"}
+{"id": "DDInter1802", "name": "Ticagrelor", "drugbank_id": "DB08816"}
+{"id": "DDInter1803", "name": "Ticarcillin", "drugbank_id": "DB01607"}
+{"id": "DDInter1804", "name": "Ticlopidine", "drugbank_id": "DB00208"}
+{"id": "DDInter1805", "name": "Tigecycline", "drugbank_id": "DB00560"}
+{"id": "DDInter1806", "name": "Tildrakizumab", "drugbank_id": "DB14004"}
+{"id": "DDInter1807", "name": "Tilmanocept", "drugbank_id": "DB15373"}
+{"id": "DDInter1808", "name": "Tiludronic acid", "drugbank_id": "DB01133"}
+{"id": "DDInter1809", "name": "Timolol", "drugbank_id": "DB00373"}
+{"id": "DDInter181", "name": "Benzatropine", "drugbank_id": "DB00245"}
+{"id": "DDInter1810", "name": "Timolol (ophthalmic)", "drugbank_id": "DB00373"}
+{"id": "DDInter1811", "name": "Tinidazole", "drugbank_id": "DB00911"}
+{"id": "DDInter1812", "name": "Tinzaparin", "drugbank_id": "DB06822"}
+{"id": "DDInter1813", "name": "Tioconazole", "drugbank_id": "DB01007"}
+{"id": "DDInter1814", "name": "Tioguanine", "drugbank_id": "DB00352"}
+{"id": "DDInter1815", "name": "Tiotropium", "drugbank_id": "DB01409"}
+{"id": "DDInter1816", "name": "Tipiracil", "drugbank_id": "DB09343"}
+{"id": "DDInter1817", "name": "Tipranavir", "drugbank_id": "DB00932"}
+{"id": "DDInter1818", "name": "Tirofiban", "drugbank_id": "DB00775"}
+{"id": "DDInter1819", "name": "Tisagenlecleucel", "drugbank_id": "DB13881"}
+{"id": "DDInter182", "name": "Benzhydrocodone", "drugbank_id": "DB15465"}
+{"id": "DDInter1820", "name": "Tivozanib", "drugbank_id": "DB11800"}
+{"id": "DDInter1821", "name": "Tizanidine", "drugbank_id": "DB00697"}
+{"id": "DDInter1822", "name": "Tobramycin", "drugbank_id": "DB00684"}
+{"id": "DDInter1823", "name": "Tocainide", "drugbank_id": "DB01056"}
+{"id": "DDInter1824", "name": "Tocilizumab", "drugbank_id": "DB06273"}
+{"id": "DDInter1825", "name": "Tofacitinib", "drugbank_id": "DB08895"}
+{"id": "DDInter1826", "name": "Tolazamide", "drugbank_id": "DB00839"}
+{"id": "DDInter1827", "name": "Tolazoline", "drugbank_id": "DB00797"}
+{"id": "DDInter1828", "name": "Tolbutamide", "drugbank_id": "DB01124"}
+{"id": "DDInter1829", "name": "Tolcapone", "drugbank_id": "DB00323"}
+{"id": "DDInter183", "name": "Benznidazole", "drugbank_id": "DB11989"}
+{"id": "DDInter1830", "name": "Tolevamer", "drugbank_id": "DB01344"}
+{"id": "DDInter1831", "name": "Tolmetin", "drugbank_id": "DB00500"}
+{"id": "DDInter1832", "name": "Tolterodine", "drugbank_id": "DB01036"}
+{"id": "DDInter1833", "name": "Tolvaptan", "drugbank_id": "DB06212"}
+{"id": "DDInter1834", "name": "Topiramate", "drugbank_id": "DB00273"}
+{"id": "DDInter1835", "name": "Topotecan", "drugbank_id": "DB01030"}
+{"id": "DDInter1836", "name": "Torasemide", "drugbank_id": "DB00214"}
+{"id": "DDInter1837", "name": "Toremifene", "drugbank_id": "DB00539"}
+{"id": "DDInter1838", "name": "Tositumomab", "drugbank_id": "DB00081"}
+{"id": "DDInter1839", "name": "Tositumomab (I-131)", "drugbank_id": null}
+{"id": "DDInter184", "name": "Benzocaine (topical)", "drugbank_id": null}
+{"id": "DDInter1840", "name": "Trabectedin", "drugbank_id": "DB05109"}
+{"id": "DDInter1841", "name": "Tramadol", "drugbank_id": "DB00193"}
+{"id": "DDInter1842", "name": "Trametinib", "drugbank_id": "DB08911"}
+{"id": "DDInter1843", "name": "Trandolapril", "drugbank_id": "DB00519"}
+{"id": "DDInter1844", "name": "Tranexamic acid", "drugbank_id": "DB00302"}
+{"id": "DDInter1845", "name": "Tranylcypromine", "drugbank_id": "DB00752"}
+{"id": "DDInter1846", "name": "Trastuzumab", "drugbank_id": "DB00072"}
+{"id": "DDInter1847", "name": "Trastuzumab deruxtecan", "drugbank_id": "DB14962"}
+{"id": "DDInter1848", "name": "Trastuzumab emtansine", "drugbank_id": "DB05773"}
+{"id": "DDInter1849", "name": "Travoprost", "drugbank_id": "DB00287"}
+{"id": "DDInter185", "name": "Benzonatate", "drugbank_id": "DB00868"}
+{"id": "DDInter1850", "name": "Travoprost (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1851", "name": "Trazodone", "drugbank_id": "DB00656"}
+{"id": "DDInter1852", "name": "Treprostinil", "drugbank_id": "DB00374"}
+{"id": "DDInter1853", "name": "Tretinoin", "drugbank_id": "DB00755"}
+{"id": "DDInter1854", "name": "Tretinoin (topical)", "drugbank_id": "DB00755"}
+{"id": "DDInter1855", "name": "Triamcinolone", "drugbank_id": "DB00620"}
+{"id": "DDInter1856", "name": "Triamcinolone (nasal)", "drugbank_id": "DB00620"}
+{"id": "DDInter1857", "name": "Triamcinolone (ophthalmic)", "drugbank_id": "DB00620"}
+{"id": "DDInter1858", "name": "Triamcinolone (topical)", "drugbank_id": "DB00620"}
+{"id": "DDInter1859", "name": "Triamterene", "drugbank_id": "DB00384"}
+{"id": "DDInter186", "name": "Benzoyl peroxide (topical)", "drugbank_id": null}
+{"id": "DDInter1860", "name": "Triazolam", "drugbank_id": "DB00897"}
+{"id": "DDInter1861", "name": "Trichlormethiazide", "drugbank_id": "DB01021"}
+{"id": "DDInter1862", "name": "Trichophyton mentagrophytes", "drugbank_id": "DB10446"}
+{"id": "DDInter1863", "name": "Triclabendazole", "drugbank_id": "DB12245"}
+{"id": "DDInter1864", "name": "Triethylenetetramine", "drugbank_id": "DB06824"}
+{"id": "DDInter1865", "name": "Trifarotene (topical)", "drugbank_id": null}
+{"id": "DDInter1866", "name": "Trifluoperazine", "drugbank_id": "DB00831"}
+{"id": "DDInter1867", "name": "Triflupromazine", "drugbank_id": "DB00508"}
+{"id": "DDInter1868", "name": "Trifluridine", "drugbank_id": "DB00432"}
+{"id": "DDInter1869", "name": "Triheptanoin", "drugbank_id": "DB11677"}
+{"id": "DDInter187", "name": "Benzphetamine", "drugbank_id": "DB00865"}
+{"id": "DDInter1870", "name": "Trihexyphenidyl", "drugbank_id": "DB00376"}
+{"id": "DDInter1871", "name": "Trimethadione", "drugbank_id": "DB00347"}
+{"id": "DDInter1872", "name": "Trimethaphan", "drugbank_id": "DB01116"}
+{"id": "DDInter1873", "name": "Trimethobenzamide", "drugbank_id": "DB00662"}
+{"id": "DDInter1874", "name": "Trimethoprim", "drugbank_id": "DB00440"}
+{"id": "DDInter1875", "name": "Trimetrexate", "drugbank_id": "DB01157"}
+{"id": "DDInter1876", "name": "Trimipramine", "drugbank_id": "DB00726"}
+{"id": "DDInter1877", "name": "Trioxsalen", "drugbank_id": "DB04571"}
+{"id": "DDInter1878", "name": "Tripelennamine", "drugbank_id": "DB00792"}
+{"id": "DDInter1879", "name": "Triprolidine", "drugbank_id": "DB00427"}
+{"id": "DDInter188", "name": "Benzthiazide", "drugbank_id": "DB00562"}
+{"id": "DDInter1880", "name": "Triptorelin", "drugbank_id": "DB06825"}
+{"id": "DDInter1881", "name": "Troglitazone", "drugbank_id": "DB00197"}
+{"id": "DDInter1882", "name": "Troleandomycin", "drugbank_id": "DB13179"}
+{"id": "DDInter1883", "name": "Tromethamine", "drugbank_id": "DB03754"}
+{"id": "DDInter1884", "name": "Tropicamide", "drugbank_id": "DB00809"}
+{"id": "DDInter1885", "name": "Tropicamide (ophthalmic)", "drugbank_id": "DB00809"}
+{"id": "DDInter1886", "name": "Trospium", "drugbank_id": "DB00209"}
+{"id": "DDInter1887", "name": "Trovafloxacin", "drugbank_id": "DB00685"}
+{"id": "DDInter1888", "name": "Tryptophan", "drugbank_id": "DB00150"}
+{"id": "DDInter1889", "name": "Tuberculin purified protein derivative", "drugbank_id": "DB11601"}
+{"id": "DDInter189", "name": "Benzylpenicillin", "drugbank_id": "DB01053"}
+{"id": "DDInter1890", "name": "Tubocurarine", "drugbank_id": "DB01199"}
+{"id": "DDInter1891", "name": "Tucatinib", "drugbank_id": "DB11652"}
+{"id": "DDInter1892", "name": "Turmeric", "drugbank_id": "DB14276"}
+{"id": "DDInter1893", "name": "Typhoid vaccine (inactivated)", "drugbank_id": null}
+{"id": "DDInter1894", "name": "Typhoid vaccine (live)", "drugbank_id": null}
+{"id": "DDInter1895", "name": "Tyropanoic acid", "drugbank_id": "DB09340"}
+{"id": "DDInter1896", "name": "Ubrogepant", "drugbank_id": "DB15328"}
+{"id": "DDInter1897", "name": "Ulipristal", "drugbank_id": "DB08867"}
+{"id": "DDInter1898", "name": "Ulobetasol (topical)", "drugbank_id": "DB08867"}
+{"id": "DDInter1899", "name": "Umeclidinium", "drugbank_id": "DB09076"}
+{"id": "DDInter19", "name": "Acetylcysteine", "drugbank_id": "DB06151"}
+{"id": "DDInter190", "name": "Benzylpenicillin (potassium)", "drugbank_id": "DB01053"}
+{"id": "DDInter1900", "name": "Unoprostone (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1901", "name": "Upadacitinib", "drugbank_id": "DB15091"}
+{"id": "DDInter1902", "name": "Uracil mustard", "drugbank_id": "DB00791"}
+{"id": "DDInter1903", "name": "Urea", "drugbank_id": "DB03904"}
+{"id": "DDInter1904", "name": "Urofollitropin", "drugbank_id": "DB00094"}
+{"id": "DDInter1905", "name": "Urokinase", "drugbank_id": "DB00013"}
+{"id": "DDInter1906", "name": "Ursodeoxycholic acid", "drugbank_id": "DB01586"}
+{"id": "DDInter1907", "name": "Ustekinumab", "drugbank_id": "DB05679"}
+{"id": "DDInter1908", "name": "Valaciclovir", "drugbank_id": "DB00577"}
+{"id": "DDInter1909", "name": "Valbenazine", "drugbank_id": "DB11915"}
+{"id": "DDInter191", "name": "Benzylpenicillin (sodium)", "drugbank_id": "DB01053"}
+{"id": "DDInter1910", "name": "Valdecoxib", "drugbank_id": "DB00580"}
+{"id": "DDInter1911", "name": "Valerian", "drugbank_id": "DB13196"}
+{"id": "DDInter1912", "name": "Valganciclovir", "drugbank_id": "DB01610"}
+{"id": "DDInter1913", "name": "Valproic acid", "drugbank_id": "DB00313"}
+{"id": "DDInter1914", "name": "Valrubicin", "drugbank_id": "DB00385"}
+{"id": "DDInter1915", "name": "Valsartan", "drugbank_id": "DB00177"}
+{"id": "DDInter1916", "name": "Vancomycin", "drugbank_id": "DB00512"}
+{"id": "DDInter1917", "name": "Vandetanib", "drugbank_id": "DB05294"}
+{"id": "DDInter1918", "name": "Vardenafil", "drugbank_id": "DB00862"}
+{"id": "DDInter1919", "name": "Varenicline", "drugbank_id": "DB01273"}
+{"id": "DDInter192", "name": "Bepridil", "drugbank_id": "DB01244"}
+{"id": "DDInter1920", "name": "Varicella Zoster Vaccine (Recombinant)", "drugbank_id": null}
+{"id": "DDInter1921", "name": "Vasopressin", "drugbank_id": "DB00067"}
+{"id": "DDInter1922", "name": "Vecuronium", "drugbank_id": "DB01339"}
+{"id": "DDInter1923", "name": "Vedolizumab", "drugbank_id": "DB09033"}
+{"id": "DDInter1924", "name": "Velpatasvir", "drugbank_id": "DB11613"}
+{"id": "DDInter1925", "name": "Vemurafenib", "drugbank_id": "DB08881"}
+{"id": "DDInter1926", "name": "Venetoclax", "drugbank_id": "DB11581"}
+{"id": "DDInter1927", "name": "Venlafaxine", "drugbank_id": "DB00285"}
+{"id": "DDInter1928", "name": "Verapamil", "drugbank_id": "DB00661"}
+{"id": "DDInter1929", "name": "Verteporfin", "drugbank_id": "DB00460"}
+{"id": "DDInter193", "name": "Berotralstat", "drugbank_id": "DB15982"}
+{"id": "DDInter1930", "name": "Vibegron", "drugbank_id": "DB14895"}
+{"id": "DDInter1931", "name": "Vibrio cholerae CVD 103-HgR strain live antigen", "drugbank_id": "DB14443"}
+{"id": "DDInter1932", "name": "Vibrio cholerae CVD 103-HgR strain live antigen (live)", "drugbank_id": "DB14443"}
+{"id": "DDInter1933", "name": "Vigabatrin", "drugbank_id": "DB01080"}
+{"id": "DDInter1934", "name": "Vilanterol", "drugbank_id": "DB09082"}
+{"id": "DDInter1935", "name": "Vilazodone", "drugbank_id": "DB06684"}
+{"id": "DDInter1936", "name": "Vinblastine", "drugbank_id": "DB00570"}
+{"id": "DDInter1937", "name": "Vincristine", "drugbank_id": "DB00541"}
+{"id": "DDInter1938", "name": "Vincristine (liposome)", "drugbank_id": "DB00541"}
+{"id": "DDInter1939", "name": "Vinorelbine", "drugbank_id": "DB00361"}
+{"id": "DDInter194", "name": "Beta carotene", "drugbank_id": "DB06755"}
+{"id": "DDInter1940", "name": "Vismodegib", "drugbank_id": "DB08828"}
+{"id": "DDInter1941", "name": "Vitamin A", "drugbank_id": "DB00162"}
+{"id": "DDInter1942", "name": "Vitamin D", "drugbank_id": "DB11094"}
+{"id": "DDInter1943", "name": "Vitamin E", "drugbank_id": "DB00163"}
+{"id": "DDInter1944", "name": "Von Willebrand Factor Human", "drugbank_id": null}
+{"id": "DDInter1945", "name": "Vorapaxar", "drugbank_id": "DB09030"}
+{"id": "DDInter1946", "name": "Voriconazole", "drugbank_id": "DB00582"}
+{"id": "DDInter1947", "name": "Vorinostat", "drugbank_id": "DB02546"}
+{"id": "DDInter1948", "name": "Vortioxetine", "drugbank_id": "DB09068"}
+{"id": "DDInter1949", "name": "Voxelotor", "drugbank_id": "DB14975"}
+{"id": "DDInter195", "name": "Betamethasone", "drugbank_id": "DB00443"}
+{"id": "DDInter1950", "name": "Voxilaprevir", "drugbank_id": "DB12026"}
+{"id": "DDInter1951", "name": "Warfarin", "drugbank_id": "DB00682"}
+{"id": "DDInter1952", "name": "Xylometazoline (nasal)", "drugbank_id": null}
+{"id": "DDInter1953", "name": "Yellow Fever Vaccine", "drugbank_id": null}
+{"id": "DDInter1954", "name": "Yohimbine", "drugbank_id": "DB01392"}
+{"id": "DDInter1955", "name": "Zafirlukast", "drugbank_id": "DB00549"}
+{"id": "DDInter1956", "name": "Zalcitabine", "drugbank_id": "DB00943"}
+{"id": "DDInter1957", "name": "Zaleplon", "drugbank_id": "DB00962"}
+{"id": "DDInter1958", "name": "Zanamivir", "drugbank_id": "DB00558"}
+{"id": "DDInter1959", "name": "Zanubrutinib", "drugbank_id": "DB15035"}
+{"id": "DDInter196", "name": "Betamethasone (topical)", "drugbank_id": "DB00443"}
+{"id": "DDInter1960", "name": "Ziconotide", "drugbank_id": "DB06283"}
+{"id": "DDInter1961", "name": "Zidovudine", "drugbank_id": "DB00495"}
+{"id": "DDInter1962", "name": "Zileuton", "drugbank_id": "DB00744"}
+{"id": "DDInter1963", "name": "Zinc acetate", "drugbank_id": "DB14487"}
+{"id": "DDInter1964", "name": "Zinc chloride", "drugbank_id": "DB14533"}
+{"id": "DDInter1965", "name": "Zinc gluconate", "drugbank_id": "DB11248"}
+{"id": "DDInter1966", "name": "Zinc sulfate", "drugbank_id": "DB09322"}
+{"id": "DDInter1967", "name": "Ziprasidone", "drugbank_id": "DB00246"}
+{"id": "DDInter1968", "name": "Zoledronic acid", "drugbank_id": "DB00399"}
+{"id": "DDInter1969", "name": "Zolmitriptan", "drugbank_id": "DB00315"}
+{"id": "DDInter197", "name": "Betaxolol", "drugbank_id": "DB00195"}
+{"id": "DDInter1970", "name": "Zolpidem", "drugbank_id": "DB00425"}
+{"id": "DDInter1971", "name": "Zonisamide", "drugbank_id": "DB00909"}
+{"id": "DDInter1972", "name": "Zopiclone", "drugbank_id": "DB01198"}
+{"id": "DDInter1973", "name": "Allogeneic processed thymus tissue", "drugbank_id": "DB16736"}
+{"id": "DDInter1974", "name": "Bcg vaccine", "drugbank_id": null}
+{"id": "DDInter1975", "name": "Idecabtagene vicleucel", "drugbank_id": "DB16665"}
+{"id": "DDInter1976", "name": "Cat's claw", "drugbank_id": null}
+{"id": "DDInter1977", "name": "Cortisone", "drugbank_id": "DB14681"}
+{"id": "DDInter1978", "name": "Dengue tetravalent vaccine, live", "drugbank_id": "DB14764"}
+{"id": "DDInter1979", "name": "Deucravacitinib", "drugbank_id": "DB16650"}
+{"id": "DDInter198", "name": "Betaxolol (ophthalmic)", "drugbank_id": "DB00195"}
+{"id": "DDInter1980", "name": "Eflapegrastim", "drugbank_id": "DB15001"}
+{"id": "DDInter1981", "name": "Fexinidazole", "drugbank_id": "DB12265"}
+{"id": "DDInter1982", "name": "Haemophilus influenzae type b strain 20752 capsular polysaccharide tetanus toxoid conjugate antigen (hboc)", "drugbank_id": null}
+{"id": "DDInter1983", "name": "Haemophilus influenzae type b strain 20752 capsular polysaccharide tetanus toxoid conjugate antigen (prp-omp) ", "drugbank_id": null}
+{"id": "DDInter1984", "name": "Haemophilus influenzae type b strain 20752 capsular polysaccharide tetanus toxoid conjugate antigen (prp-t)", "drugbank_id": null}
+{"id": "DDInter1985", "name": "Histoplasmin", "drugbank_id": null}
+{"id": "DDInter1986", "name": "Haemophilus influenzae type b strain 20752 capsular polysaccharide tetanus toxoid conjugate antigen", "drugbank_id": null}
+{"id": "DDInter1987", "name": "Astrazeneca covid-19 vaccine", "drugbank_id": null}
+{"id": "DDInter1988", "name": "Acetylcarbromal (ingredient)", "drugbank_id": null}
+{"id": "DDInter1989", "name": "Acetylcholine (ophthalmic)", "drugbank_id": "DB03128"}
+{"id": "DDInter199", "name": "Bethanechol", "drugbank_id": "DB01019"}
+{"id": "DDInter1990", "name": "Adagrasib", "drugbank_id": "DB15568"}
+{"id": "DDInter1991", "name": "Apraclonidine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter1992", "name": "Bexagliflozin", "drugbank_id": "DB12236"}
+{"id": "DDInter1993", "name": "Black cohosh", "drugbank_id": "DB13975"}
+{"id": "DDInter1994", "name": "Daclizumab", "drugbank_id": "DB00111"}
+{"id": "DDInter1995", "name": "Daridorexant", "drugbank_id": "DB15031"}
+{"id": "DDInter1996", "name": "Dexchlorpheniramine", "drugbank_id": "DB13679"}
+{"id": "DDInter1997", "name": "Difelikefalin", "drugbank_id": "DB11938"}
+{"id": "DDInter1998", "name": "Asciminib", "drugbank_id": "DB12597"}
+{"id": "DDInter1999", "name": "Avacopan", "drugbank_id": "DB15011"}
+{"id": "DDInter2", "name": "Abaloparatide", "drugbank_id": "DB05084"}
+{"id": "DDInter20", "name": "Acetylsalicylic acid", "drugbank_id": "DB00945"}
+{"id": "DDInter200", "name": "Betrixaban", "drugbank_id": "DB12364"}
+{"id": "DDInter2000", "name": "Belzutifan", "drugbank_id": "DB15463"}
+{"id": "DDInter2001", "name": "Influenza b virus b/austria/1359417/2021 live (attenuated) antigen", "drugbank_id": null}
+{"id": "DDInter2002", "name": "Influenza a virus a/california/7/2009 x-179a (h1n1) antigen (formaldehyde inactivated)", "drugbank_id": null}
+{"id": "DDInter2003", "name": "Influenza b virus b/brisbane/60/2008 live (attenuated) antigen", "drugbank_id": null}
+{"id": "DDInter2004", "name": "Japanese encephalitis virus strain sa 14-14-2 antigen (formaldehyde inactivated)", "drugbank_id": "DB10769"}
+{"id": "DDInter2005", "name": "Lactobacillus reuteri", "drugbank_id": "DB14224"}
+{"id": "DDInter2006", "name": "Lenacapavir", "drugbank_id": "DB15673"}
+{"id": "DDInter2007", "name": "Levoketoconazole", "drugbank_id": "DB05667"}
+{"id": "DDInter2008", "name": "Lonapegsomatropin", "drugbank_id": "DB16220"}
+{"id": "DDInter2009", "name": "Mavacamten", "drugbank_id": "DB14921"}
+{"id": "DDInter201", "name": "Bevacizumab", "drugbank_id": "DB00112"}
+{"id": "DDInter2010", "name": "Neisseria meningitidis group a capsular polysaccharide diphtheria toxoid conjugate antigen", "drugbank_id": "DB10798"}
+{"id": "DDInter2011", "name": "Neisseria meningitidis serogroup b nhba fusion protein antigen", "drugbank_id": "DB10783"}
+{"id": "DDInter2012", "name": "Mibefradil", "drugbank_id": "DB01388"}
+{"id": "DDInter2013", "name": "Mirvetuximab soravtansine", "drugbank_id": "DB12489"}
+{"id": "DDInter2014", "name": "Mitapivat", "drugbank_id": "DB16236"}
+{"id": "DDInter2015", "name": "Mobocertinib", "drugbank_id": "DB16390"}
+{"id": "DDInter2016", "name": "Mosunetuzumab", "drugbank_id": "DB15434"}
+{"id": "DDInter2017", "name": "Olutasidenib", "drugbank_id": "DB16267"}
+{"id": "DDInter2018", "name": "Janssen covid-19 vaccine", "drugbank_id": null}
+{"id": "DDInter2019", "name": "Moderna covid-19 vaccine", "drugbank_id": null}
+{"id": "DDInter202", "name": "Bexarotene", "drugbank_id": "DB00307"}
+{"id": "DDInter2020", "name": "Nuvaxovid", "drugbank_id": "DB15810"}
+{"id": "DDInter2021", "name": "Moderna covid-19 vaccine (6y+ bivalent booster)", "drugbank_id": null}
+{"id": "DDInter2022", "name": "Modified vaccinia ankara", "drugbank_id": "DB15483"}
+{"id": "DDInter2023", "name": "Abrocitinib", "drugbank_id": "DB14973"}
+{"id": "DDInter2024", "name": "Etretinate", "drugbank_id": "DB00926"}
+{"id": "DDInter2025", "name": "Candesartan", "drugbank_id": "DB13919"}
+{"id": "DDInter2026", "name": "Enalaprilat", "drugbank_id": "DB09477"}
+{"id": "DDInter2027", "name": "Evening primrose oil", "drugbank_id": "DB11358"}
+{"id": "DDInter2028", "name": "Anifrolumab", "drugbank_id": "DB11976"}
+{"id": "DDInter2029", "name": "Brincidofovir", "drugbank_id": "DB12151"}
+{"id": "DDInter203", "name": "Bexarotene (topical)", "drugbank_id": "DB00307"}
+{"id": "DDInter2030", "name": "Ciltacabtagene autoleucel", "drugbank_id": "DB16738"}
+{"id": "DDInter2031", "name": "Corticorelin", "drugbank_id": "DB05394"}
+{"id": "DDInter2032", "name": "Efgartigimod alfa", "drugbank_id": "DB15270"}
+{"id": "DDInter2033", "name": "Elivaldogene autotemcel", "drugbank_id": "DB16746"}
+{"id": "DDInter2034", "name": "Fluocinolone acetonide (ophthalmic)", "drugbank_id": "DB00591"}
+{"id": "DDInter2035", "name": "Loncastuximab tesirine", "drugbank_id": "DB16222"}
+{"id": "DDInter2036", "name": "Lutetium lu-177 vipivotide tetraxetan", "drugbank_id": null}
+{"id": "DDInter2037", "name": "Pacritinib", "drugbank_id": "DB11697"}
+{"id": "DDInter2038", "name": "Pirtobrutinib", "drugbank_id": null}
+{"id": "DDInter2039", "name": "Ponesimod", "drugbank_id": "DB12016"}
+{"id": "DDInter204", "name": "Bicalutamide", "drugbank_id": "DB01128"}
+{"id": "DDInter2040", "name": "Respiratory syncytial virus immune globulin (human)", "drugbank_id": null}
+{"id": "DDInter2041", "name": "Sirolimus (protein-bound)", "drugbank_id": null}
+{"id": "DDInter2042", "name": "Sirolimus (topical)", "drugbank_id": null}
+{"id": "DDInter2043", "name": "Atogepant", "drugbank_id": "DB16098"}
+{"id": "DDInter2044", "name": "Finerenone", "drugbank_id": "DB16165"}
+{"id": "DDInter2045", "name": "Ganaxolone", "drugbank_id": "DB05087"}
+{"id": "DDInter2046", "name": "Infigratinib", "drugbank_id": "DB11886"}
+{"id": "DDInter2047", "name": "Roflumilast (topical)", "drugbank_id": null}
+{"id": "DDInter2048", "name": "Sparsentan", "drugbank_id": "DB12548"}
+{"id": "DDInter2049", "name": "Teclistamab", "drugbank_id": "DB16655"}
+{"id": "DDInter205", "name": "Bictegravir", "drugbank_id": "DB11799"}
+{"id": "DDInter2050", "name": "Tepotinib", "drugbank_id": "DB15133"}
+{"id": "DDInter2051", "name": "Tisotumab vedotin", "drugbank_id": "DB16732"}
+{"id": "DDInter2052", "name": "Belumosudil", "drugbank_id": "DB16703"}
+{"id": "DDInter2053", "name": "Chlorotrianisene", "drugbank_id": "DB00269"}
+{"id": "DDInter2054", "name": "Elacestrant", "drugbank_id": "DB06374"}
+{"id": "DDInter2055", "name": "Hydroxyprogesterone caproate", "drugbank_id": "DB06789"}
+{"id": "DDInter2056", "name": "Ibrexafungerp", "drugbank_id": "DB12471"}
+{"id": "DDInter2057", "name": "Maribavir", "drugbank_id": "DB06234"}
+{"id": "DDInter2058", "name": "Mometasone", "drugbank_id": "DB00764"}
+{"id": "DDInter2059", "name": "Ferric maltol", "drugbank_id": "DB15598"}
+{"id": "DDInter206", "name": "Bifidobacterium longum infantis", "drugbank_id": "DB14222"}
+{"id": "DDInter2060", "name": "Dihydroxyaluminum sodium carbonate", "drugbank_id": "DB15825"}
+{"id": "DDInter2061", "name": "Chloroprocaine (ophthalmic)", "drugbank_id": "DB01161"}
+{"id": "DDInter2062", "name": "Iomeprol", "drugbank_id": "DB11705"}
+{"id": "DDInter2063", "name": "Bitolterol", "drugbank_id": "DB00901"}
+{"id": "DDInter2064", "name": "Furazolidone", "drugbank_id": "DB00614"}
+{"id": "DDInter2065", "name": "Ephedra", "drugbank_id": null}
+{"id": "DDInter2066", "name": "Methyclothiazide", "drugbank_id": "DB00232"}
+{"id": "DDInter2067", "name": "Methoxy polyethylene glycol-epoetin beta", "drugbank_id": "DB09107"}
+{"id": "DDInter2068", "name": "Ferric pyrophosphate", "drugbank_id": "DB09147"}
+{"id": "DDInter2069", "name": "Dermatophagoides farinae", "drugbank_id": "DB10400"}
+{"id": "DDInter207", "name": "Bimatoprost", "drugbank_id": "DB00905"}
+{"id": "DDInter2070", "name": "Magnesium salicylate", "drugbank_id": "DB01397"}
+{"id": "DDInter2071", "name": "Anthoxanthum odoratum pollen", "drugbank_id": "DB10404"}
+{"id": "DDInter2072", "name": "Peanut", "drugbank_id": "DB10553"}
+{"id": "DDInter2073", "name": "Phleum pratense pollen", "drugbank_id": "DB10394"}
+{"id": "DDInter2074", "name": "Calcium saccharate", "drugbank_id": "DB13962"}
+{"id": "DDInter2075", "name": "Heme iron polypeptide", "drugbank_id": "DB11067"}
+{"id": "DDInter2076", "name": "Magnesium aspartate", "drugbank_id": "DB13359"}
+{"id": "DDInter2077", "name": "Magnesium lactate", "drugbank_id": "DB14515"}
+{"id": "DDInter2078", "name": "Procaine benzylpenicillin", "drugbank_id": "DB09320"}
+{"id": "DDInter2079", "name": "Dabigatran etexilate", "drugbank_id": "DB06695"}
+{"id": "DDInter208", "name": "Bimatoprost (ophthalmic)", "drugbank_id": "DB00905"}
+{"id": "DDInter2080", "name": "Dirithromycin", "drugbank_id": "DB00954"}
+{"id": "DDInter2081", "name": "Guar gum", "drugbank_id": "DB13446"}
+{"id": "DDInter2082", "name": "Iodamide", "drugbank_id": "DB08948"}
+{"id": "DDInter2083", "name": "Ioxaglic acid", "drugbank_id": "DB09313"}
+{"id": "DDInter2084", "name": "Metrizamide", "drugbank_id": "DB01578"}
+{"id": "DDInter2085", "name": "Salicylic acid", "drugbank_id": "DB00936"}
+{"id": "DDInter2086", "name": "Thiosalicylic acid", "drugbank_id": "DB14026"}
+{"id": "DDInter2087", "name": "Tenofovir disoproxil", "drugbank_id": "DB00300"}
+{"id": "DDInter2088", "name": "Tenofovir alafenamide", "drugbank_id": "DB09299"}
+{"id": "DDInter2089", "name": "Voclosporin", "drugbank_id": "DB11693"}
+{"id": "DDInter209", "name": "Bimatoprost (topical ophthalmic)", "drugbank_id": "DB00905"}
+{"id": "DDInter2090", "name": "Gabapentin enacarbil", "drugbank_id": "DB08872"}
+{"id": "DDInter2091", "name": "Carbachol (ophthalmic)", "drugbank_id": "DB01197"}
+{"id": "DDInter2092", "name": "Ethaverine (ingredient)", "drugbank_id": null}
+{"id": "DDInter2093", "name": "Rauwolfia serpentina root", "drugbank_id": "DB09363"}
+{"id": "DDInter2094", "name": "Saccharomyces cerevisiae", "drugbank_id": "DB10447"}
+{"id": "DDInter2095", "name": "Streptococcus pneumoniae type 1 capsular polysaccharide diphtheria crm197 protein conjugate antigen", "drugbank_id": null}
+{"id": "DDInter2096", "name": "Streptococcus pneumoniae type 23f capsular polysaccharide antigen", "drugbank_id": "DB10340"}
+{"id": "DDInter2097", "name": "Rabies virus inactivated antigen, b", "drugbank_id": null}
+{"id": "DDInter2098", "name": "Rabies virus inactivated antigen, a", "drugbank_id": null}
+{"id": "DDInter2099", "name": "Ropeginterferon alfa-2b", "drugbank_id": "DB15119"}
+{"id": "DDInter21", "name": "Acitretin", "drugbank_id": "DB00459"}
+{"id": "DDInter210", "name": "Binimetinib", "drugbank_id": "DB11967"}
+{"id": "DDInter2100", "name": "Tick-borne encephalitis vaccine (whole virus, inactivated, pediatric)", "drugbank_id": null}
+{"id": "DDInter2101", "name": "Tick-borne encephalitis vaccine (whole virus, inactivated)", "drugbank_id": "DB16611"}
+{"id": "DDInter2102", "name": "Daprodustat", "drugbank_id": "DB11682"}
+{"id": "DDInter2103", "name": "Horse chestnut", "drugbank_id": "DB13195"}
+{"id": "DDInter2104", "name": "Ga 68 psma-11", "drugbank_id": null}
+{"id": "DDInter2105", "name": "Mometasone furoate", "drugbank_id": "DB14512"}
+{"id": "DDInter2106", "name": "Clascoterone (topical)", "drugbank_id": null}
+{"id": "DDInter2107", "name": "Bordetella pertussis toxoid antigen (glutaraldehyde inactivated)", "drugbank_id": "DB10787"}
+{"id": "DDInter2108", "name": "Futibatinib", "drugbank_id": "DB15149"}
+{"id": "DDInter2109", "name": "Tralokinumab", "drugbank_id": "DB12169"}
+{"id": "DDInter211", "name": "Biperiden", "drugbank_id": "DB00810"}
+{"id": "DDInter2110", "name": "Tozinameran (12y+)", "drugbank_id": null}
+{"id": "DDInter2111", "name": "Tozinameran (5y-11y)", "drugbank_id": null}
+{"id": "DDInter2112", "name": "Tozinameran (6m-4y)", "drugbank_id": null}
+{"id": "DDInter2113", "name": "Arginine", "drugbank_id": "DB00125"}
+{"id": "DDInter2114", "name": "Citrulline", "drugbank_id": "DB00155"}
+{"id": "DDInter2115", "name": "Sotorasib", "drugbank_id": "DB15569"}
+{"id": "DDInter2116", "name": "Oteseconazole", "drugbank_id": "DB13055"}
+{"id": "DDInter2117", "name": "Influenza b virus b/phuket/3073/2013 bvr-1b antigen (propiolactone inactivated)", "drugbank_id": null}
+{"id": "DDInter2118", "name": "Anacaulase (topical)", "drugbank_id": null}
+{"id": "DDInter2119", "name": "Angelica sinensis root", "drugbank_id": "DB14336"}
+{"id": "DDInter212", "name": "Bisacodyl", "drugbank_id": "DB09020"}
+{"id": "DDInter2120", "name": "Fenugreek", "drugbank_id": null}
+{"id": "DDInter2121", "name": "Lecanemab", "drugbank_id": "DB14580"}
+{"id": "DDInter2122", "name": "Plasminogen", "drugbank_id": "DB16701"}
+{"id": "DDInter2123", "name": "Potassium guaiacolsulfonate", "drugbank_id": "DB13735"}
+{"id": "DDInter2124", "name": "Senna leaf", "drugbank_id": "DB15889"}
+{"id": "DDInter2125", "name": "Gallium citrate ga-67", "drugbank_id": null}
+{"id": "DDInter2126", "name": "Menaquinone", "drugbank_id": "DB15381"}
+{"id": "DDInter2127", "name": "Maralixibat", "drugbank_id": "DB16226"}
+{"id": "DDInter2128", "name": "Odevixibat", "drugbank_id": "DB16261"}
+{"id": "DDInter2129", "name": "Spesolimab", "drugbank_id": "DB15626"}
+{"id": "DDInter213", "name": "Bismuth subcitrate potassium", "drugbank_id": "DB09275"}
+{"id": "DDInter2130", "name": "Teplizumab", "drugbank_id": "DB06606"}
+{"id": "DDInter2131", "name": "Ublituximab", "drugbank_id": "DB11850"}
+{"id": "DDInter2132", "name": "Ragweed pollen extract", "drugbank_id": "DB05368"}
+{"id": "DDInter2133", "name": "Dasiglucagon", "drugbank_id": "DB15226"}
+{"id": "DDInter2134", "name": "Gadopiclenol", "drugbank_id": "DB17084"}
+{"id": "DDInter2135", "name": "Green tea leaf", "drugbank_id": "DB14307"}
+{"id": "DDInter2136", "name": "Viloxazine", "drugbank_id": "DB09185"}
+{"id": "DDInter2137", "name": "Etranacogene dezaparvovec", "drugbank_id": "DB16791"}
+{"id": "DDInter2138", "name": "Typhoid vaccine live", "drugbank_id": null}
+{"id": "DDInter2139", "name": "Quinacrine", "drugbank_id": "DB01103"}
+{"id": "DDInter214", "name": "Bismuth subgallate", "drugbank_id": "DB13909"}
+{"id": "DDInter2140", "name": "Tezepelumab", "drugbank_id": "DB15090"}
+{"id": "DDInter2141", "name": "Trichophyton rubrum", "drugbank_id": "DB10915"}
+{"id": "DDInter2142", "name": "Mometasone (nasal)", "drugbank_id": "DB00764"}
+{"id": "DDInter2143", "name": "Tebentafusp", "drugbank_id": "DB15283"}
+{"id": "DDInter2144", "name": "Tirzepatide", "drugbank_id": "DB15171"}
+{"id": "DDInter2145", "name": "Tecovirimat", "drugbank_id": "DB12020"}
+{"id": "DDInter2146", "name": "Cyclosporine (ophthalmic)", "drugbank_id": "DB00091"}
+{"id": "DDInter2147", "name": "Nandrolone", "drugbank_id": "DB13169"}
+{"id": "DDInter2148", "name": "Betibeglogene autotemcel", "drugbank_id": "DB16900"}
+{"id": "DDInter2149", "name": "Umbralisib", "drugbank_id": "DB14989"}
+{"id": "DDInter215", "name": "Bismuth subsalicylate", "drugbank_id": "DB01294"}
+{"id": "DDInter2150", "name": "Indocyanine green", "drugbank_id": "DB16024"}
+{"id": "DDInter2151", "name": "Dotatate gallium ga-68", "drugbank_id": null}
+{"id": "DDInter2152", "name": "Fluoroestradiol f-18", "drugbank_id": null}
+{"id": "DDInter2153", "name": "Diosmin", "drugbank_id": "DB08995"}
+{"id": "DDInter2154", "name": "Prasterone", "drugbank_id": "DB01708"}
+{"id": "DDInter2155", "name": "Nfluenza a virus a/vietnam/1194/2004 (h5n1) antigen", "drugbank_id": null}
+{"id": "DDInter2156", "name": "Typhoid vi polysaccharide vaccine", "drugbank_id": null}
+{"id": "DDInter2157", "name": "Yersinia pestis 195/p antigen (formaldehyde inactivated)", "drugbank_id": "DB15461"}
+{"id": "DDInter2158", "name": "Yeast", "drugbank_id": "DB11017"}
+{"id": "DDInter2159", "name": "Varicella zoster vaccine (live/attenuated)", "drugbank_id": "DB10318"}
+{"id": "DDInter216", "name": "Bisoprolol", "drugbank_id": "DB00612"}
+{"id": "DDInter2160", "name": "Dostarlimab", "drugbank_id": "DB15627"}
+{"id": "DDInter2161", "name": "Polycarbophil", "drugbank_id": "DB09311"}
+{"id": "DDInter2162", "name": "Piflufolastat f 18", "drugbank_id": null}
+{"id": "DDInter2163", "name": "Bamlanivimab", "drugbank_id": "DB15718"}
+{"id": "DDInter2164", "name": "Tozinameran", "drugbank_id": "DB15696"}
+{"id": "DDInter2165", "name": "Bebtelovimab", "drugbank_id": "DB16755"}
+{"id": "DDInter2166", "name": "Sotrovimab", "drugbank_id": "DB16355"}
+{"id": "DDInter2167", "name": "Devil's claw", "drugbank_id": null}
+{"id": "DDInter2168", "name": "Ubidecarenone", "drugbank_id": "DB09270"}
+{"id": "DDInter2169", "name": "Daxibotulinumtoxina", "drugbank_id": null}
+{"id": "DDInter217", "name": "Bivalirudin", "drugbank_id": "DB00006"}
+{"id": "DDInter2170", "name": "Aducanumab", "drugbank_id": "DB12274"}
+{"id": "DDInter2171", "name": "Alirocumab", "drugbank_id": "DB09302"}
+{"id": "DDInter2172", "name": "Amivantamab", "drugbank_id": "DB16695"}
+{"id": "DDInter2173", "name": "Asfotase alfa", "drugbank_id": "DB09105"}
+{"id": "DDInter2174", "name": "Benralizumab", "drugbank_id": "DB12023"}
+{"id": "DDInter2175", "name": "Bezlotoxumab", "drugbank_id": "DB13140"}
+{"id": "DDInter2176", "name": "Crizanlizumab", "drugbank_id": "DB15271"}
+{"id": "DDInter2177", "name": "Haemophilus influenzae type b capsular polysaccharide meningococcal outer membrane protein conjugate antigen", "drugbank_id": null}
+{"id": "DDInter2178", "name": "Fosdenopterin", "drugbank_id": "DB16628"}
+{"id": "DDInter2179", "name": "Meclocycline sulfosalicylate (topical)", "drugbank_id": null}
+{"id": "DDInter218", "name": "Black widow spider antivenin (equine)", "drugbank_id": "DB14113"}
+{"id": "DDInter2180", "name": "Beractant", "drugbank_id": "DB06761"}
+{"id": "DDInter2181", "name": "Calfactant", "drugbank_id": "DB06415"}
+{"id": "DDInter2182", "name": "Medical Cannabis", "drugbank_id": "DB14009"}
+{"id": "DDInter2183", "name": "Pheniramine", "drugbank_id": "DB01620"}
+{"id": "DDInter2184", "name": "Cinnamon", "drugbank_id": "DB10520"}
+{"id": "DDInter2185", "name": "Leniolisib", "drugbank_id": "DB16217"}
+{"id": "DDInter2186", "name": "Aluminium (carbonate)", "drugbank_id": null}
+{"id": "DDInter2187", "name": "Iron (bisglycinate)", "drugbank_id": "DB01592"}
+{"id": "DDInter2188", "name": "Iron (polysaccharide)", "drugbank_id": "DB01592"}
+{"id": "DDInter2189", "name": "Magnesium malate", "drugbank_id": "DB15555"}
+{"id": "DDInter219", "name": "Bleomycin", "drugbank_id": "DB00290"}
+{"id": "DDInter2190", "name": "Magnesium cation (threonate)", "drugbank_id": "DB09481"}
+{"id": "DDInter2191", "name": "Magnesium trisilicate", "drugbank_id": "DB09281"}
+{"id": "DDInter2192", "name": "Magnesium cation (amino acids chelate)", "drugbank_id": "DB09481"}
+{"id": "DDInter2193", "name": "Multivitamin with iron", "drugbank_id": null}
+{"id": "DDInter2194", "name": "Multivitamin with iron and fluoride", "drugbank_id": null}
+{"id": "DDInter2195", "name": "Multivitamin (prenatal)", "drugbank_id": null}
+{"id": "DDInter2196", "name": "Red yeast rice", "drugbank_id": null}
+{"id": "DDInter2197", "name": "Omaveloxolone", "drugbank_id": "DB12513"}
+{"id": "DDInter2198", "name": "Segesterone", "drugbank_id": "DB14584"}
+{"id": "DDInter2199", "name": "Trofinetide", "drugbank_id": "DB06045"}
+{"id": "DDInter22", "name": "Aclidinium", "drugbank_id": "DB08897"}
+{"id": "DDInter220", "name": "Blinatumomab", "drugbank_id": "DB09052"}
+{"id": "DDInter2200", "name": "Influenza B virus B/Phuket/3073/2013 live (attenuated) antigen", "drugbank_id": "DB11036"}
+{"id": "DDInter2201", "name": "Vericiguat", "drugbank_id": "DB15456"}
+{"id": "DDInter2202", "name": "Vosoritide", "drugbank_id": "DB11928"}
+{"id": "DDInter2203", "name": "Serdexmethylphenidate", "drugbank_id": "DB16629"}
+{"id": "DDInter2204", "name": "Bacillus coagulans", "drugbank_id": null}
+{"id": "DDInter2205", "name": "Streptococcus thermophilus", "drugbank_id": "DB16548"}
+{"id": "DDInter2206", "name": "Barley malt", "drugbank_id": "DB10980"}
+{"id": "DDInter2207", "name": "Zavegepant", "drugbank_id": "DB15688"}
+{"id": "DDInter2208", "name": "Corynebacterium diphtheriae toxoid antigen (formaldehyde inactivated)", "drugbank_id": "DB10584"}
+{"id": "DDInter2209", "name": "Etynodiol", "drugbank_id": "DB13866"}
+{"id": "DDInter221", "name": "Boceprevir", "drugbank_id": "DB08873"}
+{"id": "DDInter2210", "name": "Estetrol", "drugbank_id": "DB12235"}
+{"id": "DDInter2211", "name": "Lactobacillus delbrueckii bulgaricus", "drugbank_id": "DB16540"}
+{"id": "DDInter2212", "name": "Lactobacillus rhamnosus", "drugbank_id": null}
+{"id": "DDInter2213", "name": "Lactobacillus rhamnosus GG", "drugbank_id": null}
+{"id": "DDInter2214", "name": "Mixed respiratory vaccine", "drugbank_id": null}
+{"id": "DDInter2215", "name": "Streptococcus pneumoniae type 4 capsular polysaccharide diphtheria CRM197 protein conjugate antigen", "drugbank_id": "DB10286"}
+{"id": "DDInter2216", "name": "Streptococcus pneumoniae type 6B capsular polysaccharide diphtheria CRM197 protein conjugate antigen", "drugbank_id": "DB10287"}
+{"id": "DDInter2217", "name": "Oral Polio Vaccine", "drugbank_id": "DB15864"}
+{"id": "DDInter2218", "name": "Moderna COVID-19 Vaccine (6m-5y bivalent booster)", "drugbank_id": null}
+{"id": "DDInter2219", "name": "Moderna COVID-19 Vaccine (bivalent booster)", "drugbank_id": null}
+{"id": "DDInter222", "name": "Bortezomib", "drugbank_id": "DB00188"}
+{"id": "DDInter2220", "name": "Tozinameran (tris-sucrose)", "drugbank_id": null}
+{"id": "DDInter2221", "name": "Moderna COVID-19 Vaccine (6m-5y)", "drugbank_id": null}
+{"id": "DDInter2222", "name": "Moderna COVID-19 Vaccine (6y-11y)", "drugbank_id": null}
+{"id": "DDInter2223", "name": "Moderna COVID-19 Vaccine (booster only)", "drugbank_id": null}
+{"id": "DDInter2224", "name": "SARS-CoV-2 vaccine", "drugbank_id": "DB16427"}
+{"id": "DDInter2225", "name": "Skin test antigens (multiple)", "drugbank_id": null}
+{"id": "DDInter2226", "name": "Staphage lysate (spl)", "drugbank_id": null}
+{"id": "DDInter2227", "name": "Trilaciclib", "drugbank_id": "DB15442"}
+{"id": "DDInter2228", "name": "Samidorphan", "drugbank_id": "DB12543"}
+{"id": "DDInter2229", "name": "Tauroursodeoxycholic acid", "drugbank_id": "DB08834"}
+{"id": "DDInter223", "name": "Bosentan", "drugbank_id": "DB00559"}
+{"id": "DDInter2230", "name": "Thallous chloride tl-201", "drugbank_id": null}
+{"id": "DDInter2231", "name": "Nirmatrelvir", "drugbank_id": "DB16691"}
+{"id": "DDInter2232", "name": "Streptococcus pneumoniae type 15b capsular polysaccharide antigen", "drugbank_id": "DB10333"}
+{"id": "DDInter2233", "name": "Streptococcus pneumoniae type 9v capsular polysaccharide antigen", "drugbank_id": "DB10328"}
+{"id": "DDInter2234", "name": "Diphtheria antitoxin", "drugbank_id": null}
+{"id": "DDInter2235", "name": "Maltodextrin", "drugbank_id": "DB12583"}
+{"id": "DDInter2236", "name": "Lvp solution with potassium", "drugbank_id": null}
+{"id": "DDInter2237", "name": "Parenteral nutrition solution w/electrolytes", "drugbank_id": null}
+{"id": "DDInter2238", "name": "Viper antivenom", "drugbank_id": "DB14114"}
+{"id": "DDInter2239", "name": "Multivitamin with minerals", "drugbank_id": null}
+{"id": "DDInter224", "name": "Bosutinib", "drugbank_id": "DB06616"}
+{"id": "DDInter2240", "name": "Terlipressin", "drugbank_id": "DB02638"}
+{"id": "DDInter2241", "name": "Chaparral", "drugbank_id": null}
+{"id": "DDInter2242", "name": "Comfrey", "drugbank_id": null}
+{"id": "DDInter2243", "name": "Pennyroyal", "drugbank_id": null}
+{"id": "DDInter2244", "name": "Phencyclidine", "drugbank_id": "DB03575"}
+{"id": "DDInter2245", "name": "Margetuximab", "drugbank_id": "DB14967"}
+{"id": "DDInter2246", "name": "Multivitamin", "drugbank_id": null}
+{"id": "DDInter2247", "name": "Multivitamin with fluoride", "drugbank_id": null}
+{"id": "DDInter2248", "name": "Ruxolitinib (topical)", "drugbank_id": null}
+{"id": "DDInter2249", "name": "Liver derivative complex", "drugbank_id": null}
+{"id": "DDInter225", "name": "Botulinum toxin type A", "drugbank_id": "DB00083"}
+{"id": "DDInter2250", "name": "Tyrosine", "drugbank_id": "DB00135"}
+{"id": "DDInter2251", "name": "Lvp solution with hypertonic saline", "drugbank_id": null}
+{"id": "DDInter2252", "name": "Pegcetacoplan", "drugbank_id": "DB16694"}
+{"id": "DDInter2253", "name": "Sutimlimab", "drugbank_id": "DB14996"}
+{"id": "DDInter2254", "name": "Prothrombin", "drugbank_id": "DB11311"}
+{"id": "DDInter2255", "name": "Ibalizumab", "drugbank_id": "DB12698"}
+{"id": "DDInter2256", "name": "Povidone-iodine", "drugbank_id": "DB06812"}
+{"id": "DDInter2257", "name": "Succimer", "drugbank_id": "DB00566"}
+{"id": "DDInter2258", "name": "Eptinezumab", "drugbank_id": "DB14040"}
+{"id": "DDInter2259", "name": "Erenumab", "drugbank_id": "DB14039"}
+{"id": "DDInter226", "name": "Botulinum Toxin Type B", "drugbank_id": null}
+{"id": "DDInter2260", "name": "Evinacumab", "drugbank_id": "DB15354"}
+{"id": "DDInter2261", "name": "Evolocumab", "drugbank_id": "DB09303"}
+{"id": "DDInter2262", "name": "Fremanezumab", "drugbank_id": "DB14041"}
+{"id": "DDInter2263", "name": "Galcanezumab", "drugbank_id": "DB14042"}
+{"id": "DDInter2264", "name": "Idarucizumab", "drugbank_id": "DB09264"}
+{"id": "DDInter2265", "name": "Lanadelumab", "drugbank_id": "DB14597"}
+{"id": "DDInter2266", "name": "Luspatercept", "drugbank_id": "DB12281"}
+{"id": "DDInter2267", "name": "Mepolizumab", "drugbank_id": "DB06612"}
+{"id": "DDInter2268", "name": "Palivizumab", "drugbank_id": "DB00110"}
+{"id": "DDInter2269", "name": "Reslizumab", "drugbank_id": "DB06602"}
+{"id": "DDInter227", "name": "Bremelanotide", "drugbank_id": "DB11653"}
+{"id": "DDInter2270", "name": "Soybean oil", "drugbank_id": "DB09422"}
+{"id": "DDInter2271", "name": "Parenteral nutrition solution", "drugbank_id": null}
+{"id": "DDInter2272", "name": "Peanut oil", "drugbank_id": "DB13964"}
+{"id": "DDInter2273", "name": "Gallium Ga-68 gozetotide", "drugbank_id": "DB16019"}
+{"id": "DDInter2274", "name": "Vonoprazan", "drugbank_id": "DB11739"}
+{"id": "DDInter2275", "name": "Sulbactam", "drugbank_id": "DB09324"}
+{"id": "DDInter2276", "name": "Flortaucipir F-18", "drugbank_id": "DB14914"}
+{"id": "DDInter2277", "name": "Vilobelimab", "drugbank_id": "DB16416"}
+{"id": "DDInter2278", "name": "Pafolacianine", "drugbank_id": "DB15413"}
+{"id": "DDInter2279", "name": "gamma-Hydroxybutyric acid (potassium oxybate)", "drugbank_id": null}
+{"id": "DDInter228", "name": "Brentuximab vedotin", "drugbank_id": "DB08870"}
+{"id": "DDInter2280", "name": "gamma-Hydroxybutyric acid (magnesium oxybate)", "drugbank_id": null}
+{"id": "DDInter2281", "name": "gamma-Hydroxybutyric acid (calcium oxybate)", "drugbank_id": null}
+{"id": "DDInter2282", "name": "Potassium sulfate", "drugbank_id": "DB14499"}
+{"id": "DDInter2283", "name": "Pibrentasvir", "drugbank_id": "DB13878"}
+{"id": "DDInter229", "name": "Bretylium", "drugbank_id": "DB01158"}
+{"id": "DDInter23", "name": "Acrivastine", "drugbank_id": "DB09488"}
+{"id": "DDInter230", "name": "Brexanolone", "drugbank_id": "DB11859"}
+{"id": "DDInter231", "name": "Brexpiprazole", "drugbank_id": "DB09128"}
+{"id": "DDInter232", "name": "Brexucabtagene autoleucel", "drugbank_id": "DB15699"}
+{"id": "DDInter233", "name": "Brigatinib", "drugbank_id": "DB12267"}
+{"id": "DDInter234", "name": "Brimonidine", "drugbank_id": "DB00484"}
+{"id": "DDInter235", "name": "Brimonidine (ophthalmic)", "drugbank_id": "DB00484"}
+{"id": "DDInter236", "name": "Brimonidine (topical)", "drugbank_id": "DB00484"}
+{"id": "DDInter237", "name": "Brinzolamide", "drugbank_id": "DB01194"}
+{"id": "DDInter238", "name": "Brinzolamide (ophthalmic)", "drugbank_id": "DB01194"}
+{"id": "DDInter239", "name": "Brivaracetam", "drugbank_id": "DB05541"}
+{"id": "DDInter24", "name": "Activated charcoal", "drugbank_id": "DB09278"}
+{"id": "DDInter240", "name": "Brodalumab", "drugbank_id": "DB11776"}
+{"id": "DDInter241", "name": "Bromfenac", "drugbank_id": "DB00963"}
+{"id": "DDInter242", "name": "Bromfenac (ophthalmic)", "drugbank_id": "DB00963"}
+{"id": "DDInter243", "name": "Bromocriptine", "drugbank_id": "DB01200"}
+{"id": "DDInter244", "name": "Bromotheophylline", "drugbank_id": "DB14018"}
+{"id": "DDInter245", "name": "Brompheniramine", "drugbank_id": "DB00835"}
+{"id": "DDInter246", "name": "Budesonide", "drugbank_id": "DB01222"}
+{"id": "DDInter247", "name": "Budesonide (nasal)", "drugbank_id": "DB01222"}
+{"id": "DDInter248", "name": "Bumetanide", "drugbank_id": "DB00887"}
+{"id": "DDInter249", "name": "Bupivacaine", "drugbank_id": "DB00297"}
+{"id": "DDInter25", "name": "Acyclovir", "drugbank_id": "DB00787"}
+{"id": "DDInter250", "name": "Bupivacaine (liposome)", "drugbank_id": "DB00297"}
+{"id": "DDInter251", "name": "Buprenorphine", "drugbank_id": "DB00921"}
+{"id": "DDInter252", "name": "Bupropion", "drugbank_id": "DB01156"}
+{"id": "DDInter253", "name": "Burosumab", "drugbank_id": "DB14012"}
+{"id": "DDInter254", "name": "Buspirone", "drugbank_id": "DB00490"}
+{"id": "DDInter255", "name": "Busulfan", "drugbank_id": "DB01008"}
+{"id": "DDInter256", "name": "Butabarbital", "drugbank_id": "DB00237"}
+{"id": "DDInter257", "name": "Butalbital", "drugbank_id": "DB00241"}
+{"id": "DDInter258", "name": "Butorphanol", "drugbank_id": "DB00611"}
+{"id": "DDInter259", "name": "Cabazitaxel", "drugbank_id": "DB06772"}
+{"id": "DDInter26", "name": "Acyclovir (topical)", "drugbank_id": "DB00787"}
+{"id": "DDInter260", "name": "Cabergoline", "drugbank_id": "DB00248"}
+{"id": "DDInter261", "name": "Cabotegravir", "drugbank_id": "DB11751"}
+{"id": "DDInter262", "name": "Cabozantinib", "drugbank_id": "DB08875"}
+{"id": "DDInter263", "name": "Caffeine", "drugbank_id": "DB00201"}
+{"id": "DDInter264", "name": "Calaspargase pegol", "drugbank_id": "DB14730"}
+{"id": "DDInter265", "name": "Calcifediol", "drugbank_id": "DB00146"}
+{"id": "DDInter266", "name": "Calcipotriol", "drugbank_id": "DB02300"}
+{"id": "DDInter267", "name": "Calcipotriol (topical)", "drugbank_id": "DB02300"}
+{"id": "DDInter268", "name": "Calcitriol", "drugbank_id": "DB00136"}
+{"id": "DDInter269", "name": "Calcitriol (topical)", "drugbank_id": "DB00136"}
+{"id": "DDInter27", "name": "Adalimumab", "drugbank_id": "DB00051"}
+{"id": "DDInter270", "name": "Calcium acetate", "drugbank_id": "DB00258"}
+{"id": "DDInter271", "name": "Calcium carbonate", "drugbank_id": "DB06724"}
+{"id": "DDInter272", "name": "Calcium chloride", "drugbank_id": "DB01164"}
+{"id": "DDInter273", "name": "Calcium citrate", "drugbank_id": "DB11093"}
+{"id": "DDInter274", "name": "Calcium glubionate anhydrous", "drugbank_id": "DB13142"}
+{"id": "DDInter275", "name": "Calcium glucoheptonate", "drugbank_id": "DB00326"}
+{"id": "DDInter276", "name": "Calcium gluconate", "drugbank_id": "DB11126"}
+{"id": "DDInter277", "name": "Calcium glycerophosphate", "drugbank_id": "DB11264"}
+{"id": "DDInter278", "name": "Calcium lactate", "drugbank_id": "DB13231"}
+{"id": "DDInter279", "name": "Calcium Phosphate", "drugbank_id": "DB11348"}
+{"id": "DDInter28", "name": "Adapalene", "drugbank_id": "DB00210"}
+{"id": "DDInter280", "name": "Canagliflozin", "drugbank_id": "DB08907"}
+{"id": "DDInter281", "name": "Canakinumab", "drugbank_id": "DB06168"}
+{"id": "DDInter282", "name": "Candida albicans", "drugbank_id": "DB10429"}
+{"id": "DDInter283", "name": "Cangrelor", "drugbank_id": "DB06441"}
+{"id": "DDInter284", "name": "Cannabidiol", "drugbank_id": "DB09061"}
+{"id": "DDInter285", "name": "Capecitabine", "drugbank_id": "DB01101"}
+{"id": "DDInter286", "name": "Caplacizumab", "drugbank_id": "DB06081"}
+{"id": "DDInter287", "name": "Capmatinib", "drugbank_id": "DB11791"}
+{"id": "DDInter288", "name": "Capreomycin", "drugbank_id": "DB00314"}
+{"id": "DDInter289", "name": "Capromab pendetide", "drugbank_id": "DB00089"}
+{"id": "DDInter29", "name": "Adapalene (topical)", "drugbank_id": "DB00210"}
+{"id": "DDInter290", "name": "Capsaicin (topical)", "drugbank_id": null}
+{"id": "DDInter291", "name": "Capsicum", "drugbank_id": "DB10897"}
+{"id": "DDInter292", "name": "Captopril", "drugbank_id": "DB01197"}
+{"id": "DDInter293", "name": "Carbamazepine", "drugbank_id": "DB00564"}
+{"id": "DDInter294", "name": "Carbamoylcholine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter295", "name": "Carbenicillin", "drugbank_id": "DB00578"}
+{"id": "DDInter296", "name": "Carbidopa", "drugbank_id": "DB00190"}
+{"id": "DDInter297", "name": "Carbinoxamine", "drugbank_id": "DB00748"}
+{"id": "DDInter298", "name": "Carboplatin", "drugbank_id": "DB00958"}
+{"id": "DDInter299", "name": "Carfilzomib", "drugbank_id": "DB08889"}
+{"id": "DDInter3", "name": "Abametapir (topical)", "drugbank_id": null}
+{"id": "DDInter30", "name": "Adefovir dipivoxil", "drugbank_id": "DB00718"}
+{"id": "DDInter300", "name": "Cariprazine", "drugbank_id": "DB06016"}
+{"id": "DDInter301", "name": "Carisoprodol", "drugbank_id": "DB00395"}
+{"id": "DDInter302", "name": "Carmustine", "drugbank_id": "DB00262"}
+{"id": "DDInter303", "name": "Carteolol", "drugbank_id": "DB00521"}
+{"id": "DDInter304", "name": "Carteolol (ophthalmic)", "drugbank_id": "DB00521"}
+{"id": "DDInter305", "name": "Carvedilol", "drugbank_id": "DB01136"}
+{"id": "DDInter306", "name": "Caspofungin", "drugbank_id": "DB00520"}
+{"id": "DDInter307", "name": "Castor oil", "drugbank_id": "DB11113"}
+{"id": "DDInter308", "name": "Cedazuridine", "drugbank_id": "DB15694"}
+{"id": "DDInter309", "name": "Cefaclor", "drugbank_id": "DB00833"}
+{"id": "DDInter31", "name": "Adenosine", "drugbank_id": "DB00640"}
+{"id": "DDInter310", "name": "Cefadroxil", "drugbank_id": "DB01140"}
+{"id": "DDInter311", "name": "Cefalotin", "drugbank_id": "DB00456"}
+{"id": "DDInter312", "name": "Cefamandole", "drugbank_id": "DB01326"}
+{"id": "DDInter313", "name": "Cefapirin", "drugbank_id": "DB01139"}
+{"id": "DDInter314", "name": "Cefazolin", "drugbank_id": "DB01327"}
+{"id": "DDInter315", "name": "Cefdinir", "drugbank_id": "DB00535"}
+{"id": "DDInter316", "name": "Cefditoren", "drugbank_id": "DB01066"}
+{"id": "DDInter317", "name": "Cefepime", "drugbank_id": "DB01413"}
+{"id": "DDInter318", "name": "Cefiderocol", "drugbank_id": "DB14879"}
+{"id": "DDInter319", "name": "Cefixime", "drugbank_id": "DB00671"}
+{"id": "DDInter32", "name": "Afatinib", "drugbank_id": "DB08916"}
+{"id": "DDInter320", "name": "Cefmetazole", "drugbank_id": "DB00274"}
+{"id": "DDInter321", "name": "Cefonicid", "drugbank_id": "DB01328"}
+{"id": "DDInter322", "name": "Cefoperazone", "drugbank_id": "DB01329"}
+{"id": "DDInter323", "name": "Cefotaxime", "drugbank_id": "DB00493"}
+{"id": "DDInter324", "name": "Cefotetan", "drugbank_id": "DB01330"}
+{"id": "DDInter325", "name": "Cefoxitin", "drugbank_id": "DB01331"}
+{"id": "DDInter326", "name": "Cefpodoxime", "drugbank_id": "DB01416"}
+{"id": "DDInter327", "name": "Cefprozil", "drugbank_id": "DB01150"}
+{"id": "DDInter328", "name": "Cefradine", "drugbank_id": "DB01333"}
+{"id": "DDInter329", "name": "Ceftaroline fosamil", "drugbank_id": "DB06590"}
+{"id": "DDInter33", "name": "Aflibercept", "drugbank_id": "DB08885"}
+{"id": "DDInter330", "name": "Ceftazidime", "drugbank_id": "DB00438"}
+{"id": "DDInter331", "name": "Ceftibuten", "drugbank_id": "DB01415"}
+{"id": "DDInter332", "name": "Ceftizoxime", "drugbank_id": "DB01332"}
+{"id": "DDInter333", "name": "Ceftolozane", "drugbank_id": "DB09050"}
+{"id": "DDInter334", "name": "Ceftriaxone", "drugbank_id": "DB01212"}
+{"id": "DDInter335", "name": "Cefuroxime", "drugbank_id": "DB01112"}
+{"id": "DDInter336", "name": "Celecoxib", "drugbank_id": "DB00482"}
+{"id": "DDInter337", "name": "Cemiplimab", "drugbank_id": "DB14707"}
+{"id": "DDInter338", "name": "Cenobamate", "drugbank_id": "DB06119"}
+{"id": "DDInter339", "name": "Cephalexin", "drugbank_id": "DB00567"}
+{"id": "DDInter34", "name": "Agalsidase beta", "drugbank_id": "DB00103"}
+{"id": "DDInter340", "name": "Ceritinib", "drugbank_id": "DB09063"}
+{"id": "DDInter341", "name": "Cerivastatin", "drugbank_id": "DB00439"}
+{"id": "DDInter342", "name": "Certolizumab pegol", "drugbank_id": "DB08904"}
+{"id": "DDInter343", "name": "Cetirizine", "drugbank_id": "DB00341"}
+{"id": "DDInter344", "name": "Cetuximab", "drugbank_id": "DB00002"}
+{"id": "DDInter345", "name": "Cetylpyridinium (topical)", "drugbank_id": null}
+{"id": "DDInter346", "name": "Cevimeline", "drugbank_id": "DB00185"}
+{"id": "DDInter347", "name": "Chamomile", "drugbank_id": "DB14357"}
+{"id": "DDInter348", "name": "Chenodeoxycholic acid", "drugbank_id": "DB06777"}
+{"id": "DDInter349", "name": "Chloral hydrate", "drugbank_id": "DB01563"}
+{"id": "DDInter35", "name": "Albendazole", "drugbank_id": "DB00518"}
+{"id": "DDInter350", "name": "Chlorambucil", "drugbank_id": "DB00291"}
+{"id": "DDInter351", "name": "Chloramphenicol", "drugbank_id": "DB00446"}
+{"id": "DDInter352", "name": "Chloramphenicol (ophthalmic)", "drugbank_id": "DB00446"}
+{"id": "DDInter353", "name": "Chloramphenicol (otic)", "drugbank_id": "DB00446"}
+{"id": "DDInter354", "name": "Chlorcyclizine", "drugbank_id": "DB08936"}
+{"id": "DDInter355", "name": "Chlordiazepoxide", "drugbank_id": "DB00475"}
+{"id": "DDInter356", "name": "Chlorhexidine", "drugbank_id": "DB00878"}
+{"id": "DDInter357", "name": "Chlormezanone", "drugbank_id": "DB01178"}
+{"id": "DDInter358", "name": "Chloroprocaine", "drugbank_id": "DB01161"}
+{"id": "DDInter359", "name": "Chloroquine", "drugbank_id": "DB00608"}
+{"id": "DDInter36", "name": "Albiglutide", "drugbank_id": "DB09043"}
+{"id": "DDInter360", "name": "Chlorothiazide", "drugbank_id": "DB00880"}
+{"id": "DDInter361", "name": "Chlorphenesin", "drugbank_id": "DB00856"}
+{"id": "DDInter362", "name": "Chlorpheniramine", "drugbank_id": "DB01114"}
+{"id": "DDInter363", "name": "Chlorpromazine", "drugbank_id": "DB00477"}
+{"id": "DDInter364", "name": "Chlorpropamide", "drugbank_id": "DB00672"}
+{"id": "DDInter365", "name": "Chlorthalidone", "drugbank_id": "DB00310"}
+{"id": "DDInter366", "name": "Chlorzoxazone", "drugbank_id": "DB00356"}
+{"id": "DDInter367", "name": "Cholecalciferol", "drugbank_id": "DB00169"}
+{"id": "DDInter368", "name": "Cholestyramine", "drugbank_id": "DB01432"}
+{"id": "DDInter369", "name": "Cholic Acid", "drugbank_id": "DB02659"}
+{"id": "DDInter37", "name": "Alclometasone (topical)", "drugbank_id": null}
+{"id": "DDInter370", "name": "Choline salicylate", "drugbank_id": "DB14006"}
+{"id": "DDInter371", "name": "Chondroitin sulfate", "drugbank_id": "DB09301"}
+{"id": "DDInter372", "name": "Chorionic Gonadotropin (Human)", "drugbank_id": "DB09126"}
+{"id": "DDInter373", "name": "Chromic chloride", "drugbank_id": "DB09129"}
+{"id": "DDInter374", "name": "Chromium picolinate", "drugbank_id": "DB11255"}
+{"id": "DDInter375", "name": "Ciclesonide", "drugbank_id": "DB01410"}
+{"id": "DDInter376", "name": "Ciclesonide (nasal)", "drugbank_id": "DB01410"}
+{"id": "DDInter377", "name": "Ciclopirox", "drugbank_id": "DB01188"}
+{"id": "DDInter378", "name": "Cidofovir", "drugbank_id": "DB00369"}
+{"id": "DDInter379", "name": "Cilostazol", "drugbank_id": "DB01166"}
+{"id": "DDInter38", "name": "Aldesleukin", "drugbank_id": "DB00041"}
+{"id": "DDInter380", "name": "Cimetidine", "drugbank_id": "DB00501"}
+{"id": "DDInter381", "name": "Cinacalcet", "drugbank_id": "DB01012"}
+{"id": "DDInter382", "name": "Cinchocaine (topical)", "drugbank_id": null}
+{"id": "DDInter383", "name": "Cinoxacin", "drugbank_id": "DB00827"}
+{"id": "DDInter384", "name": "Ciprofloxacin", "drugbank_id": "DB00537"}
+{"id": "DDInter385", "name": "Cisapride", "drugbank_id": "DB00604"}
+{"id": "DDInter386", "name": "Cisatracurium", "drugbank_id": "DB00565"}
+{"id": "DDInter387", "name": "Cisplatin", "drugbank_id": "DB00515"}
+{"id": "DDInter388", "name": "Citalopram", "drugbank_id": "DB00215"}
+{"id": "DDInter389", "name": "Citicoline", "drugbank_id": "DB12153"}
+{"id": "DDInter39", "name": "Alectinib", "drugbank_id": "DB11363"}
+{"id": "DDInter390", "name": "Citric acid", "drugbank_id": "DB04272"}
+{"id": "DDInter391", "name": "Citrus bioflavonoids", "drugbank_id": "DB14586"}
+{"id": "DDInter392", "name": "Cladribine", "drugbank_id": "DB00242"}
+{"id": "DDInter393", "name": "Clarithromycin", "drugbank_id": "DB01211"}
+{"id": "DDInter394", "name": "Clavulanic acid", "drugbank_id": "DB00766"}
+{"id": "DDInter395", "name": "Clemastine", "drugbank_id": "DB00283"}
+{"id": "DDInter396", "name": "Clevidipine", "drugbank_id": "DB04920"}
+{"id": "DDInter397", "name": "Clidinium", "drugbank_id": "DB00771"}
+{"id": "DDInter398", "name": "Clindamycin", "drugbank_id": "DB01190"}
+{"id": "DDInter399", "name": "Clindamycin (topical)", "drugbank_id": "DB01190"}
+{"id": "DDInter4", "name": "Abarelix", "drugbank_id": "DB00106"}
+{"id": "DDInter40", "name": "Alefacept", "drugbank_id": "DB00092"}
+{"id": "DDInter400", "name": "Clioquinol (topical)", "drugbank_id": null}
+{"id": "DDInter401", "name": "Clobazam", "drugbank_id": "DB00349"}
+{"id": "DDInter402", "name": "Clobetasol", "drugbank_id": "DB11750"}
+{"id": "DDInter403", "name": "Clobetasol (topical)", "drugbank_id": "DB11750"}
+{"id": "DDInter404", "name": "Clocortolone (topical)", "drugbank_id": null}
+{"id": "DDInter405", "name": "Clofarabine", "drugbank_id": "DB00631"}
+{"id": "DDInter406", "name": "Clofazimine", "drugbank_id": "DB00845"}
+{"id": "DDInter407", "name": "Clofedanol", "drugbank_id": "DB04837"}
+{"id": "DDInter408", "name": "Clofibrate", "drugbank_id": "DB00636"}
+{"id": "DDInter409", "name": "Clomifene", "drugbank_id": "DB00882"}
+{"id": "DDInter41", "name": "Alemtuzumab", "drugbank_id": "DB00087"}
+{"id": "DDInter410", "name": "Clomipramine", "drugbank_id": "DB01242"}
+{"id": "DDInter411", "name": "Clonazepam", "drugbank_id": "DB01068"}
+{"id": "DDInter412", "name": "Clonidine", "drugbank_id": "DB00575"}
+{"id": "DDInter413", "name": "Clopidogrel", "drugbank_id": "DB00758"}
+{"id": "DDInter414", "name": "Clorazepic acid", "drugbank_id": "DB00628"}
+{"id": "DDInter415", "name": "Clostridium tetani toxoid antigen (formaldehyde inactivated)", "drugbank_id": "DB10583"}
+{"id": "DDInter416", "name": "Clotrimazole", "drugbank_id": "DB00257"}
+{"id": "DDInter417", "name": "Clove", "drugbank_id": "DB10672"}
+{"id": "DDInter418", "name": "Cloxacillin", "drugbank_id": "DB01147"}
+{"id": "DDInter419", "name": "Clozapine", "drugbank_id": "DB00363"}
+{"id": "DDInter42", "name": "Alendronic acid", "drugbank_id": "DB00630"}
+{"id": "DDInter420", "name": "Coagulation Factor IX Human", "drugbank_id": "DB13152"}
+{"id": "DDInter421", "name": "Coagulation factor VIIa Recombinant Human", "drugbank_id": "DB00036"}
+{"id": "DDInter422", "name": "Coagulation factor X human", "drugbank_id": "DB13148"}
+{"id": "DDInter423", "name": "Coal tar (topical)", "drugbank_id": null}
+{"id": "DDInter424", "name": "Cobicistat", "drugbank_id": "DB09065"}
+{"id": "DDInter425", "name": "Cobimetinib", "drugbank_id": "DB05239"}
+{"id": "DDInter426", "name": "Cocaine (nasal)", "drugbank_id": null}
+{"id": "DDInter427", "name": "Cocaine (topical)", "drugbank_id": null}
+{"id": "DDInter428", "name": "Coccidioides immitis spherule", "drugbank_id": "DB11294"}
+{"id": "DDInter429", "name": "Codeine", "drugbank_id": "DB00318"}
+{"id": "DDInter43", "name": "Alfentanil", "drugbank_id": "DB00802"}
+{"id": "DDInter430", "name": "Coenzyme M", "drugbank_id": "DB09110"}
+{"id": "DDInter431", "name": "Colchicine", "drugbank_id": "DB01394"}
+{"id": "DDInter432", "name": "Colesevelam", "drugbank_id": "DB00930"}
+{"id": "DDInter433", "name": "Colestipol", "drugbank_id": "DB00375"}
+{"id": "DDInter434", "name": "Colistimethate", "drugbank_id": "DB01111"}
+{"id": "DDInter435", "name": "Collagenase clostridium histolyticum", "drugbank_id": "DB00048"}
+{"id": "DDInter436", "name": "Collagenase clostridium histolyticum (topical)", "drugbank_id": "DB00048"}
+{"id": "DDInter437", "name": "Conestat alfa", "drugbank_id": "DB09228"}
+{"id": "DDInter438", "name": "Conivaptan", "drugbank_id": "DB00872"}
+{"id": "DDInter439", "name": "Conjugated estrogens", "drugbank_id": "DB00286"}
+{"id": "DDInter44", "name": "Alfuzosin", "drugbank_id": "DB00346"}
+{"id": "DDInter440", "name": "Conjugated estrogens (topical)", "drugbank_id": "DB00286"}
+{"id": "DDInter441", "name": "Copanlisib", "drugbank_id": "DB12483"}
+{"id": "DDInter442", "name": "Copper gluconate", "drugbank_id": "DB11246"}
+{"id": "DDInter443", "name": "Copper oxodotreotide Cu-64", "drugbank_id": "DB15873"}
+{"id": "DDInter444", "name": "Coral snake (micrurus fulvius) immune globulin antivenin (equine)", "drugbank_id": "DB13883"}
+{"id": "DDInter445", "name": "Corticotropin", "drugbank_id": "DB01285"}
+{"id": "DDInter446", "name": "Cranberry", "drugbank_id": "DB10631"}
+{"id": "DDInter447", "name": "Creatine", "drugbank_id": "DB00148"}
+{"id": "DDInter448", "name": "Crizotinib", "drugbank_id": "DB08865"}
+{"id": "DDInter449", "name": "Cromoglicic acid", "drugbank_id": "DB01003"}
+{"id": "DDInter45", "name": "Alimemazine", "drugbank_id": "DB01246"}
+{"id": "DDInter450", "name": "Crotalus scutulatus antivenin", "drugbank_id": "DB13891"}
+{"id": "DDInter451", "name": "Cyanocobalamin", "drugbank_id": "DB00115"}
+{"id": "DDInter452", "name": "Cyclandelate", "drugbank_id": "DB04838"}
+{"id": "DDInter453", "name": "Cyclizine", "drugbank_id": "DB01176"}
+{"id": "DDInter454", "name": "Cyclobenzaprine", "drugbank_id": "DB00924"}
+{"id": "DDInter455", "name": "Cyclopentolate (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter456", "name": "Cyclophosphamide", "drugbank_id": "DB00531"}
+{"id": "DDInter457", "name": "Cycloserine", "drugbank_id": "DB00260"}
+{"id": "DDInter458", "name": "Cyclosporine", "drugbank_id": "DB00091"}
+{"id": "DDInter459", "name": "Cyproheptadine", "drugbank_id": "DB00434"}
+{"id": "DDInter46", "name": "Aliskiren", "drugbank_id": "DB09026"}
+{"id": "DDInter460", "name": "Cytarabine", "drugbank_id": "DB00987"}
+{"id": "DDInter461", "name": "Cytarabine (liposomal)", "drugbank_id": "DB00987"}
+{"id": "DDInter462", "name": "Dabrafenib", "drugbank_id": "DB08912"}
+{"id": "DDInter463", "name": "Dacarbazine", "drugbank_id": "DB00851"}
+{"id": "DDInter464", "name": "Daclatasvir", "drugbank_id": "DB09102"}
+{"id": "DDInter465", "name": "Dacomitinib", "drugbank_id": "DB11963"}
+{"id": "DDInter466", "name": "Dactinomycin", "drugbank_id": "DB00970"}
+{"id": "DDInter467", "name": "Dalbavancin", "drugbank_id": "DB06219"}
+{"id": "DDInter468", "name": "Dalfampridine", "drugbank_id": "DB06637"}
+{"id": "DDInter469", "name": "Dalfopristin", "drugbank_id": "DB01764"}
+{"id": "DDInter47", "name": "Alitretinoin (topical)", "drugbank_id": null}
+{"id": "DDInter470", "name": "Dalteparin", "drugbank_id": "DB06779"}
+{"id": "DDInter471", "name": "Danaparoid", "drugbank_id": "DB06754"}
+{"id": "DDInter472", "name": "Danazol", "drugbank_id": "DB01406"}
+{"id": "DDInter473", "name": "Dantrolene", "drugbank_id": "DB01219"}
+{"id": "DDInter474", "name": "Dapagliflozin", "drugbank_id": "DB06292"}
+{"id": "DDInter475", "name": "Dapsone", "drugbank_id": "DB00250"}
+{"id": "DDInter476", "name": "Dapsone (topical)", "drugbank_id": "DB00250"}
+{"id": "DDInter477", "name": "Daptomycin", "drugbank_id": "DB00080"}
+{"id": "DDInter478", "name": "Daratumumab", "drugbank_id": "DB09331"}
+{"id": "DDInter479", "name": "Darbepoetin alfa", "drugbank_id": "DB00012"}
+{"id": "DDInter48", "name": "Allopurinol", "drugbank_id": "DB00437"}
+{"id": "DDInter480", "name": "Darifenacin", "drugbank_id": "DB00496"}
+{"id": "DDInter481", "name": "Darolutamide", "drugbank_id": "DB12941"}
+{"id": "DDInter482", "name": "Darunavir", "drugbank_id": "DB01264"}
+{"id": "DDInter483", "name": "Dasabuvir", "drugbank_id": "DB09183"}
+{"id": "DDInter484", "name": "Dasatinib", "drugbank_id": "DB01254"}
+{"id": "DDInter485", "name": "Daunorubicin", "drugbank_id": "DB00694"}
+{"id": "DDInter486", "name": "Daunorubicin (liposomal)", "drugbank_id": "DB00694"}
+{"id": "DDInter487", "name": "Decitabine", "drugbank_id": "DB01262"}
+{"id": "DDInter488", "name": "Deferasirox", "drugbank_id": "DB01609"}
+{"id": "DDInter489", "name": "Deferiprone", "drugbank_id": "DB08826"}
+{"id": "DDInter49", "name": "Almotriptan", "drugbank_id": "DB00918"}
+{"id": "DDInter490", "name": "Deferoxamine", "drugbank_id": "DB00746"}
+{"id": "DDInter491", "name": "Defibrotide", "drugbank_id": "DB04932"}
+{"id": "DDInter492", "name": "Deflazacort", "drugbank_id": "DB11921"}
+{"id": "DDInter493", "name": "Degarelix", "drugbank_id": "DB06699"}
+{"id": "DDInter494", "name": "Dehydrocholic acid", "drugbank_id": "DB11622"}
+{"id": "DDInter495", "name": "Delafloxacin", "drugbank_id": "DB11943"}
+{"id": "DDInter496", "name": "Delavirdine", "drugbank_id": "DB00705"}
+{"id": "DDInter497", "name": "Demecarium (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter498", "name": "Demeclocycline", "drugbank_id": "DB00618"}
+{"id": "DDInter499", "name": "Denileukin diftitox", "drugbank_id": "DB00004"}
+{"id": "DDInter5", "name": "Abatacept", "drugbank_id": "DB01281"}
+{"id": "DDInter50", "name": "Aloe Vera Leaf", "drugbank_id": null}
+{"id": "DDInter500", "name": "Denosumab", "drugbank_id": "DB06643"}
+{"id": "DDInter501", "name": "Deoxycholic acid", "drugbank_id": "DB03619"}
+{"id": "DDInter502", "name": "Deserpidine", "drugbank_id": "DB01089"}
+{"id": "DDInter503", "name": "Desflurane", "drugbank_id": "DB01189"}
+{"id": "DDInter504", "name": "Desipramine", "drugbank_id": "DB01151"}
+{"id": "DDInter505", "name": "Desirudin", "drugbank_id": "DB11095"}
+{"id": "DDInter506", "name": "Desloratadine", "drugbank_id": "DB00967"}
+{"id": "DDInter507", "name": "Desmopressin", "drugbank_id": "DB00035"}
+{"id": "DDInter508", "name": "Desogestrel", "drugbank_id": "DB00304"}
+{"id": "DDInter509", "name": "Desonide (topical)", "drugbank_id": null}
+{"id": "DDInter51", "name": "Alogliptin", "drugbank_id": "DB06203"}
+{"id": "DDInter510", "name": "Desoximetasone (topical)", "drugbank_id": null}
+{"id": "DDInter511", "name": "Desvenlafaxine", "drugbank_id": "DB06700"}
+{"id": "DDInter512", "name": "Deutetrabenazine", "drugbank_id": "DB12161"}
+{"id": "DDInter513", "name": "Dexamethasone", "drugbank_id": "DB01234"}
+{"id": "DDInter514", "name": "Dexamethasone (nasal)", "drugbank_id": "DB01234"}
+{"id": "DDInter515", "name": "Dexamethasone (ophthalmic)", "drugbank_id": "DB01234"}
+{"id": "DDInter516", "name": "Dexamethasone (topical)", "drugbank_id": "DB01234"}
+{"id": "DDInter517", "name": "Dexbrompheniramine", "drugbank_id": "DB00405"}
+{"id": "DDInter518", "name": "Dexfenfluramine", "drugbank_id": "DB01191"}
+{"id": "DDInter519", "name": "Dexlansoprazole", "drugbank_id": "DB05351"}
+{"id": "DDInter52", "name": "Alosetron", "drugbank_id": "DB00969"}
+{"id": "DDInter520", "name": "Dexmedetomidine", "drugbank_id": "DB00633"}
+{"id": "DDInter521", "name": "Dexmethylphenidate", "drugbank_id": "DB06701"}
+{"id": "DDInter522", "name": "Dexrazoxane", "drugbank_id": "DB00380"}
+{"id": "DDInter523", "name": "Dextran (-1)", "drugbank_id": null}
+{"id": "DDInter524", "name": "Dextran (high molecular weight)", "drugbank_id": null}
+{"id": "DDInter525", "name": "Dextran (low molecular weight)", "drugbank_id": null}
+{"id": "DDInter526", "name": "Dextroamphetamine", "drugbank_id": "DB01576"}
+{"id": "DDInter527", "name": "Dextromethorphan", "drugbank_id": "DB00514"}
+{"id": "DDInter528", "name": "Dextropropoxyphene", "drugbank_id": "DB00647"}
+{"id": "DDInter529", "name": "Dextrose, unspecified form", "drugbank_id": "DB09341"}
+{"id": "DDInter53", "name": "Alpelisib", "drugbank_id": "DB12015"}
+{"id": "DDInter530", "name": "Dextrothyroxine", "drugbank_id": "DB00509"}
+{"id": "DDInter531", "name": "Dezocine", "drugbank_id": "DB01209"}
+{"id": "DDInter532", "name": "Diamorphine", "drugbank_id": "DB01452"}
+{"id": "DDInter533", "name": "Diatrizoate", "drugbank_id": "DB00271"}
+{"id": "DDInter534", "name": "Diazepam", "drugbank_id": "DB00829"}
+{"id": "DDInter535", "name": "Diazoxide", "drugbank_id": "DB01119"}
+{"id": "DDInter536", "name": "Dichloralphenazone", "drugbank_id": "DB01495"}
+{"id": "DDInter537", "name": "Diclofenac", "drugbank_id": "DB00586"}
+{"id": "DDInter538", "name": "Diclofenac (ophthalmic)", "drugbank_id": "DB00586"}
+{"id": "DDInter539", "name": "Diclofenac (topical)", "drugbank_id": "DB00586"}
+{"id": "DDInter54", "name": "Alprazolam", "drugbank_id": "DB00404"}
+{"id": "DDInter540", "name": "Diclofenamide", "drugbank_id": "DB01144"}
+{"id": "DDInter541", "name": "Dicloxacillin", "drugbank_id": "DB00485"}
+{"id": "DDInter542", "name": "Dicoumarol", "drugbank_id": "DB00266"}
+{"id": "DDInter543", "name": "Dicyclomine", "drugbank_id": "DB00804"}
+{"id": "DDInter544", "name": "Didanosine", "drugbank_id": "DB00900"}
+{"id": "DDInter545", "name": "Dienestrol (topical)", "drugbank_id": null}
+{"id": "DDInter546", "name": "Dienogest", "drugbank_id": "DB09123"}
+{"id": "DDInter547", "name": "Diethylpropion", "drugbank_id": "DB00937"}
+{"id": "DDInter548", "name": "Diethylstilbestrol", "drugbank_id": "DB00255"}
+{"id": "DDInter549", "name": "Difenoxin", "drugbank_id": "DB01501"}
+{"id": "DDInter55", "name": "Alprostadil", "drugbank_id": "DB00770"}
+{"id": "DDInter550", "name": "Diflorasone (topical)", "drugbank_id": null}
+{"id": "DDInter551", "name": "Diflunisal", "drugbank_id": "DB00861"}
+{"id": "DDInter552", "name": "Difluprednate (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter553", "name": "Digitoxin", "drugbank_id": "DB01396"}
+{"id": "DDInter554", "name": "Digoxin", "drugbank_id": "DB00390"}
+{"id": "DDInter555", "name": "Digoxin Immune Fab (Ovine)", "drugbank_id": "DB00076"}
+{"id": "DDInter556", "name": "Dihydrocodeine", "drugbank_id": "DB01551"}
+{"id": "DDInter557", "name": "Dihydroergotamine", "drugbank_id": "DB00320"}
+{"id": "DDInter558", "name": "Dihydrotachysterol", "drugbank_id": "DB01070"}
+{"id": "DDInter559", "name": "Diiodohydroxyquinoline", "drugbank_id": "DB09115"}
+{"id": "DDInter56", "name": "Alteplase", "drugbank_id": "DB00009"}
+{"id": "DDInter560", "name": "Diiodohydroxyquinoline (topical)", "drugbank_id": "DB09115"}
+{"id": "DDInter561", "name": "Diltiazem", "drugbank_id": "DB00343"}
+{"id": "DDInter562", "name": "Dimenhydrinate", "drugbank_id": "DB00985"}
+{"id": "DDInter563", "name": "Dimercaprol", "drugbank_id": "DB06782"}
+{"id": "DDInter564", "name": "Dimethyl fumarate", "drugbank_id": "DB08908"}
+{"id": "DDInter565", "name": "Dimethyl sulfoxide", "drugbank_id": "DB01093"}
+{"id": "DDInter566", "name": "Dinoprostone", "drugbank_id": "DB00917"}
+{"id": "DDInter567", "name": "Dinoprostone (topical)", "drugbank_id": "DB00917"}
+{"id": "DDInter568", "name": "Dinutuximab", "drugbank_id": "DB09077"}
+{"id": "DDInter569", "name": "Diphenhydramine", "drugbank_id": "DB01075"}
+{"id": "DDInter57", "name": "Altretamine", "drugbank_id": "DB00488"}
+{"id": "DDInter570", "name": "Diphenhydramine (topical)", "drugbank_id": "DB01075"}
+{"id": "DDInter571", "name": "Diphenoxylate", "drugbank_id": "DB01081"}
+{"id": "DDInter572", "name": "Dipivefrin (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter573", "name": "Dipyridamole", "drugbank_id": "DB00975"}
+{"id": "DDInter574", "name": "Diroximel fumarate", "drugbank_id": "DB14783"}
+{"id": "DDInter575", "name": "Disopyramide", "drugbank_id": "DB00280"}
+{"id": "DDInter576", "name": "Disulfiram", "drugbank_id": "DB00822"}
+{"id": "DDInter577", "name": "Dobutamine", "drugbank_id": "DB00841"}
+{"id": "DDInter578", "name": "Docetaxel", "drugbank_id": "DB01248"}
+{"id": "DDInter579", "name": "Docusate", "drugbank_id": "DB11089"}
+{"id": "DDInter58", "name": "Aluminum hydroxide", "drugbank_id": "DB06723"}
+{"id": "DDInter580", "name": "Dofetilide", "drugbank_id": "DB00204"}
+{"id": "DDInter581", "name": "Dolasetron", "drugbank_id": "DB00757"}
+{"id": "DDInter582", "name": "Dolutegravir", "drugbank_id": "DB08930"}
+{"id": "DDInter583", "name": "Donepezil", "drugbank_id": "DB00843"}
+{"id": "DDInter584", "name": "Dopamine", "drugbank_id": "DB00988"}
+{"id": "DDInter585", "name": "Doravirine", "drugbank_id": "DB12301"}
+{"id": "DDInter586", "name": "Doripenem", "drugbank_id": "DB06211"}
+{"id": "DDInter587", "name": "Dornase alfa", "drugbank_id": "DB00003"}
+{"id": "DDInter588", "name": "Dorzolamide (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter589", "name": "Dotatate", "drugbank_id": "DB14554"}
+{"id": "DDInter59", "name": "Alvimopan", "drugbank_id": "DB06274"}
+{"id": "DDInter590", "name": "Doxacurium", "drugbank_id": "DB01135"}
+{"id": "DDInter591", "name": "Doxapram", "drugbank_id": "DB00561"}
+{"id": "DDInter592", "name": "Doxazosin", "drugbank_id": "DB00590"}
+{"id": "DDInter593", "name": "Doxepin", "drugbank_id": "DB01142"}
+{"id": "DDInter594", "name": "Doxepin (topical)", "drugbank_id": "DB01142"}
+{"id": "DDInter595", "name": "Doxercalciferol", "drugbank_id": "DB06410"}
+{"id": "DDInter596", "name": "Doxorubicin", "drugbank_id": "DB00997"}
+{"id": "DDInter597", "name": "Doxorubicin (liposomal)", "drugbank_id": "DB00997"}
+{"id": "DDInter598", "name": "Doxycycline", "drugbank_id": "DB00254"}
+{"id": "DDInter599", "name": "Doxycycline (topical)", "drugbank_id": "DB00254"}
+{"id": "DDInter6", "name": "Abciximab", "drugbank_id": "DB00054"}
+{"id": "DDInter60", "name": "Amantadine", "drugbank_id": "DB00915"}
+{"id": "DDInter600", "name": "Doxylamine", "drugbank_id": "DB00366"}
+{"id": "DDInter601", "name": "Dronabinol", "drugbank_id": "DB00470"}
+{"id": "DDInter602", "name": "Dronedarone", "drugbank_id": "DB04855"}
+{"id": "DDInter603", "name": "Droperidol", "drugbank_id": "DB00450"}
+{"id": "DDInter604", "name": "Drospirenone", "drugbank_id": "DB01395"}
+{"id": "DDInter605", "name": "Drotrecogin alfa", "drugbank_id": "DB00055"}
+{"id": "DDInter606", "name": "Droxidopa", "drugbank_id": "DB06262"}
+{"id": "DDInter607", "name": "Dulaglutide", "drugbank_id": "DB09045"}
+{"id": "DDInter608", "name": "Duloxetine", "drugbank_id": "DB00476"}
+{"id": "DDInter609", "name": "Dupilumab", "drugbank_id": "DB12159"}
+{"id": "DDInter61", "name": "Ambenonium", "drugbank_id": "DB01122"}
+{"id": "DDInter610", "name": "Durvalumab", "drugbank_id": "DB11714"}
+{"id": "DDInter611", "name": "Dutasteride", "drugbank_id": "DB01126"}
+{"id": "DDInter612", "name": "Duvelisib", "drugbank_id": "DB11952"}
+{"id": "DDInter613", "name": "Dyphylline", "drugbank_id": "DB00651"}
+{"id": "DDInter614", "name": "Echinacea", "drugbank_id": "DB14240"}
+{"id": "DDInter615", "name": "Echothiophate (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter616", "name": "Econazole", "drugbank_id": "DB01127"}
+{"id": "DDInter617", "name": "Econazole (topical)", "drugbank_id": "DB01127"}
+{"id": "DDInter618", "name": "Eculizumab", "drugbank_id": "DB01257"}
+{"id": "DDInter619", "name": "Edetate calcium disodium anhydrous", "drugbank_id": "DB14598"}
+{"id": "DDInter62", "name": "Ambrisentan", "drugbank_id": "DB06403"}
+{"id": "DDInter620", "name": "Edetate disodium anhydrous", "drugbank_id": "DB14600"}
+{"id": "DDInter621", "name": "Edoxaban", "drugbank_id": "DB09075"}
+{"id": "DDInter622", "name": "Edrophonium", "drugbank_id": "DB01010"}
+{"id": "DDInter623", "name": "Efalizumab", "drugbank_id": "DB00095"}
+{"id": "DDInter624", "name": "Efavirenz", "drugbank_id": "DB00625"}
+{"id": "DDInter625", "name": "Elagolix", "drugbank_id": "DB11979"}
+{"id": "DDInter626", "name": "Elbasvir", "drugbank_id": "DB11574"}
+{"id": "DDInter627", "name": "Eletriptan", "drugbank_id": "DB00216"}
+{"id": "DDInter628", "name": "Elexacaftor", "drugbank_id": "DB15444"}
+{"id": "DDInter629", "name": "Eliglustat", "drugbank_id": "DB09039"}
+{"id": "DDInter63", "name": "Amcinonide", "drugbank_id": "DB00288"}
+{"id": "DDInter630", "name": "Elotuzumab", "drugbank_id": "DB06317"}
+{"id": "DDInter631", "name": "Eltrombopag", "drugbank_id": "DB06210"}
+{"id": "DDInter632", "name": "Eluxadoline", "drugbank_id": "DB09272"}
+{"id": "DDInter633", "name": "Elvitegravir", "drugbank_id": "DB09101"}
+{"id": "DDInter634", "name": "Emapalumab", "drugbank_id": "DB14724"}
+{"id": "DDInter635", "name": "Emicizumab", "drugbank_id": "DB13923"}
+{"id": "DDInter636", "name": "Empagliflozin", "drugbank_id": "DB09038"}
+{"id": "DDInter637", "name": "Emtricitabine", "drugbank_id": "DB00879"}
+{"id": "DDInter638", "name": "Enalapril", "drugbank_id": "DB00584"}
+{"id": "DDInter639", "name": "Enasidenib", "drugbank_id": "DB13874"}
+{"id": "DDInter64", "name": "Amifampridine", "drugbank_id": "DB11640"}
+{"id": "DDInter640", "name": "Encorafenib", "drugbank_id": "DB11718"}
+{"id": "DDInter641", "name": "Enflurane", "drugbank_id": "DB00228"}
+{"id": "DDInter642", "name": "Enfortumab vedotin", "drugbank_id": "DB13007"}
+{"id": "DDInter643", "name": "Enfuvirtide", "drugbank_id": "DB00109"}
+{"id": "DDInter644", "name": "Enoxacin", "drugbank_id": "DB00467"}
+{"id": "DDInter645", "name": "Enoxaparin", "drugbank_id": "DB01225"}
+{"id": "DDInter646", "name": "Entacapone", "drugbank_id": "DB00494"}
+{"id": "DDInter647", "name": "Entecavir", "drugbank_id": "DB00442"}
+{"id": "DDInter648", "name": "Entrectinib", "drugbank_id": "DB11986"}
+{"id": "DDInter649", "name": "Enzalutamide", "drugbank_id": "DB08899"}
+{"id": "DDInter65", "name": "Amifostine", "drugbank_id": "DB01143"}
+{"id": "DDInter650", "name": "Ephedrine", "drugbank_id": "DB01364"}
+{"id": "DDInter651", "name": "Ephedrine (nasal)", "drugbank_id": "DB01364"}
+{"id": "DDInter652", "name": "Epinephrine", "drugbank_id": "DB00668"}
+{"id": "DDInter653", "name": "Epinephrine (ophthalmic)", "drugbank_id": "DB00668"}
+{"id": "DDInter654", "name": "Epinephrine (topical)", "drugbank_id": "DB00668"}
+{"id": "DDInter655", "name": "Epirubicin", "drugbank_id": "DB00445"}
+{"id": "DDInter656", "name": "Eplerenone", "drugbank_id": "DB00700"}
+{"id": "DDInter657", "name": "Epoprostenol", "drugbank_id": "DB01240"}
+{"id": "DDInter658", "name": "Eprosartan", "drugbank_id": "DB00876"}
+{"id": "DDInter659", "name": "Eptifibatide", "drugbank_id": "DB00063"}
+{"id": "DDInter66", "name": "Amikacin", "drugbank_id": "DB00479"}
+{"id": "DDInter660", "name": "Eravacycline", "drugbank_id": "DB12329"}
+{"id": "DDInter661", "name": "Erdafitinib", "drugbank_id": "DB12147"}
+{"id": "DDInter662", "name": "Ergocalciferol", "drugbank_id": "DB00153"}
+{"id": "DDInter663", "name": "Ergoloid mesylate", "drugbank_id": "DB01049"}
+{"id": "DDInter664", "name": "Ergometrine", "drugbank_id": "DB01253"}
+{"id": "DDInter665", "name": "Ergotamine", "drugbank_id": "DB00696"}
+{"id": "DDInter666", "name": "Eribulin", "drugbank_id": "DB08871"}
+{"id": "DDInter667", "name": "Erlotinib", "drugbank_id": "DB00530"}
+{"id": "DDInter668", "name": "Ertapenem", "drugbank_id": "DB00303"}
+{"id": "DDInter669", "name": "Ertugliflozin", "drugbank_id": "DB11827"}
+{"id": "DDInter67", "name": "Amikacin (liposome)", "drugbank_id": "DB00479"}
+{"id": "DDInter670", "name": "Erythromycin", "drugbank_id": "DB00199"}
+{"id": "DDInter671", "name": "Erythropoietin", "drugbank_id": "DB00016"}
+{"id": "DDInter672", "name": "Escitalopram", "drugbank_id": "DB01175"}
+{"id": "DDInter673", "name": "Esketamine", "drugbank_id": "DB11823"}
+{"id": "DDInter674", "name": "Eslicarbazepine", "drugbank_id": "DB14575"}
+{"id": "DDInter675", "name": "Esmolol", "drugbank_id": "DB00187"}
+{"id": "DDInter676", "name": "Esomeprazole", "drugbank_id": "DB00736"}
+{"id": "DDInter677", "name": "Estazolam", "drugbank_id": "DB01215"}
+{"id": "DDInter678", "name": "Esterified estrogens", "drugbank_id": "DB09381"}
+{"id": "DDInter679", "name": "Estradiol", "drugbank_id": "DB00783"}
+{"id": "DDInter68", "name": "Amiloride", "drugbank_id": "DB00594"}
+{"id": "DDInter680", "name": "Estradiol (topical)", "drugbank_id": "DB00783"}
+{"id": "DDInter681", "name": "Estramustine", "drugbank_id": "DB01196"}
+{"id": "DDInter682", "name": "Estrone", "drugbank_id": "DB00655"}
+{"id": "DDInter683", "name": "Estrone sulfate", "drugbank_id": "DB04574"}
+{"id": "DDInter684", "name": "Estrone sulfate (topical)", "drugbank_id": "DB04574"}
+{"id": "DDInter685", "name": "Eszopiclone", "drugbank_id": "DB00402"}
+{"id": "DDInter686", "name": "Etacrynic acid", "drugbank_id": "DB00903"}
+{"id": "DDInter687", "name": "Etanercept", "drugbank_id": "DB00005"}
+{"id": "DDInter688", "name": "Etelcalcetide", "drugbank_id": "DB12865"}
+{"id": "DDInter689", "name": "Ethambutol", "drugbank_id": "DB00330"}
+{"id": "DDInter69", "name": "Aminobenzoic acid", "drugbank_id": "DB02362"}
+{"id": "DDInter690", "name": "Ethanol", "drugbank_id": "DB00898"}
+{"id": "DDInter691", "name": "Ethchlorvynol", "drugbank_id": "DB00189"}
+{"id": "DDInter692", "name": "Ethinylestradiol", "drugbank_id": "DB00977"}
+{"id": "DDInter693", "name": "Ethiodized oil", "drugbank_id": "DB00965"}
+{"id": "DDInter694", "name": "Ethionamide", "drugbank_id": "DB00609"}
+{"id": "DDInter695", "name": "Ethosuximide", "drugbank_id": "DB00593"}
+{"id": "DDInter696", "name": "Ethotoin", "drugbank_id": "DB00754"}
+{"id": "DDInter697", "name": "Etidocaine", "drugbank_id": "DB08987"}
+{"id": "DDInter698", "name": "Etidronic acid", "drugbank_id": "DB01077"}
+{"id": "DDInter699", "name": "Etodolac", "drugbank_id": "DB00749"}
+{"id": "DDInter7", "name": "Abemaciclib", "drugbank_id": "DB12001"}
+{"id": "DDInter70", "name": "Aminocaproic acid", "drugbank_id": "DB00513"}
+{"id": "DDInter700", "name": "Etomidate", "drugbank_id": "DB00292"}
+{"id": "DDInter701", "name": "Etonogestrel", "drugbank_id": "DB00294"}
+{"id": "DDInter702", "name": "Etoposide", "drugbank_id": "DB00773"}
+{"id": "DDInter703", "name": "Etravirine", "drugbank_id": "DB06414"}
+{"id": "DDInter704", "name": "Everolimus", "drugbank_id": "DB01590"}
+{"id": "DDInter705", "name": "Exemestane", "drugbank_id": "DB00990"}
+{"id": "DDInter706", "name": "Exenatide", "drugbank_id": "DB01276"}
+{"id": "DDInter707", "name": "Ezetimibe", "drugbank_id": "DB00973"}
+{"id": "DDInter708", "name": "Ezogabine", "drugbank_id": "DB04953"}
+{"id": "DDInter709", "name": "Factor IX Complex (Human)", "drugbank_id": "DB11330"}
+{"id": "DDInter71", "name": "Aminoglutethimide", "drugbank_id": "DB00357"}
+{"id": "DDInter710", "name": "Factor XIII (human)", "drugbank_id": "DB12909"}
+{"id": "DDInter711", "name": "Famciclovir", "drugbank_id": "DB00426"}
+{"id": "DDInter712", "name": "Famotidine", "drugbank_id": "DB00927"}
+{"id": "DDInter713", "name": "Febuxostat", "drugbank_id": "DB04854"}
+{"id": "DDInter714", "name": "Fedratinib", "drugbank_id": "DB12500"}
+{"id": "DDInter715", "name": "Felbamate", "drugbank_id": "DB00949"}
+{"id": "DDInter716", "name": "Felodipine", "drugbank_id": "DB01023"}
+{"id": "DDInter717", "name": "Fenfluramine", "drugbank_id": "DB00574"}
+{"id": "DDInter718", "name": "Fenofibrate", "drugbank_id": "DB01039"}
+{"id": "DDInter719", "name": "Fenofibric acid", "drugbank_id": "DB13873"}
+{"id": "DDInter72", "name": "Aminolevulinic acid", "drugbank_id": "DB00855"}
+{"id": "DDInter720", "name": "Fenoldopam", "drugbank_id": "DB00800"}
+{"id": "DDInter721", "name": "Fenoprofen", "drugbank_id": "DB00573"}
+{"id": "DDInter722", "name": "Fentanyl", "drugbank_id": "DB00813"}
+{"id": "DDInter723", "name": "Ferric carboxymaltose", "drugbank_id": "DB08917"}
+{"id": "DDInter724", "name": "Ferric derisomaltose", "drugbank_id": "DB15617"}
+{"id": "DDInter725", "name": "Ferrous fumarate", "drugbank_id": "DB14491"}
+{"id": "DDInter726", "name": "Ferrous gluconate", "drugbank_id": "DB14488"}
+{"id": "DDInter727", "name": "Ferrous sulfate anhydrous", "drugbank_id": "DB13257"}
+{"id": "DDInter728", "name": "Ferumoxides", "drugbank_id": "DB09508"}
+{"id": "DDInter729", "name": "Ferumoxsil", "drugbank_id": "DB09507"}
+{"id": "DDInter73", "name": "Aminolevulinic acid (topical)", "drugbank_id": "DB00855"}
+{"id": "DDInter730", "name": "Ferumoxytol", "drugbank_id": "DB06215"}
+{"id": "DDInter731", "name": "Fesoterodine", "drugbank_id": "DB06702"}
+{"id": "DDInter732", "name": "Fexofenadine", "drugbank_id": "DB00950"}
+{"id": "DDInter733", "name": "Fibrinogen human", "drugbank_id": "DB09222"}
+{"id": "DDInter734", "name": "Fidaxomicin", "drugbank_id": "DB08874"}
+{"id": "DDInter735", "name": "Filgrastim", "drugbank_id": "DB00099"}
+{"id": "DDInter736", "name": "Finasteride", "drugbank_id": "DB01216"}
+{"id": "DDInter737", "name": "Fingolimod", "drugbank_id": "DB08868"}
+{"id": "DDInter738", "name": "Flavoxate", "drugbank_id": "DB01148"}
+{"id": "DDInter739", "name": "Flax seed", "drugbank_id": "DB10708"}
+{"id": "DDInter74", "name": "Aminophylline", "drugbank_id": "DB01223"}
+{"id": "DDInter740", "name": "Flecainide", "drugbank_id": "DB01195"}
+{"id": "DDInter741", "name": "Flibanserin", "drugbank_id": "DB04908"}
+{"id": "DDInter742", "name": "Floxuridine", "drugbank_id": "DB00322"}
+{"id": "DDInter743", "name": "Fluconazole", "drugbank_id": "DB00196"}
+{"id": "DDInter744", "name": "Flucytosine", "drugbank_id": "DB01099"}
+{"id": "DDInter745", "name": "Fludarabine", "drugbank_id": "DB01073"}
+{"id": "DDInter746", "name": "Fludeoxyglucose (18F)", "drugbank_id": "DB09502"}
+{"id": "DDInter747", "name": "Fludrocortisone", "drugbank_id": "DB00687"}
+{"id": "DDInter748", "name": "Flumazenil", "drugbank_id": "DB01205"}
+{"id": "DDInter749", "name": "Flunisolide", "drugbank_id": "DB00180"}
+{"id": "DDInter75", "name": "Aminosalicylic acid", "drugbank_id": "DB00233"}
+{"id": "DDInter750", "name": "Flunisolide (nasal)", "drugbank_id": "DB00180"}
+{"id": "DDInter751", "name": "Fluocinolone acetonide", "drugbank_id": "DB00591"}
+{"id": "DDInter752", "name": "Fluocinonide", "drugbank_id": "DB01047"}
+{"id": "DDInter753", "name": "Fluocinonide (topical)", "drugbank_id": "DB01047"}
+{"id": "DDInter754", "name": "Fluorescein", "drugbank_id": "DB00693"}
+{"id": "DDInter755", "name": "Fluorometholone", "drugbank_id": "DB00324"}
+{"id": "DDInter756", "name": "Fluorometholone (ophthalmic)", "drugbank_id": "DB00324"}
+{"id": "DDInter757", "name": "Fluorouracil", "drugbank_id": "DB00544"}
+{"id": "DDInter758", "name": "Fluoxetine", "drugbank_id": "DB00472"}
+{"id": "DDInter759", "name": "Fluoxymesterone", "drugbank_id": "DB01185"}
+{"id": "DDInter76", "name": "Amiodarone", "drugbank_id": "DB01118"}
+{"id": "DDInter760", "name": "Fluphenazine", "drugbank_id": "DB00623"}
+{"id": "DDInter761", "name": "Flurandrenolide (topical)", "drugbank_id": null}
+{"id": "DDInter762", "name": "Flurazepam", "drugbank_id": "DB00690"}
+{"id": "DDInter763", "name": "Flurbiprofen", "drugbank_id": "DB00712"}
+{"id": "DDInter764", "name": "Flurbiprofen (ophthalmic)", "drugbank_id": "DB00712"}
+{"id": "DDInter765", "name": "Flutamide", "drugbank_id": "DB00499"}
+{"id": "DDInter766", "name": "Fluticasone", "drugbank_id": "DB13867"}
+{"id": "DDInter767", "name": "Fluticasone (nasal)", "drugbank_id": "DB13867"}
+{"id": "DDInter768", "name": "Fluticasone (topical)", "drugbank_id": "DB13867"}
+{"id": "DDInter769", "name": "Fluvastatin", "drugbank_id": "DB01095"}
+{"id": "DDInter77", "name": "Amisulpride", "drugbank_id": "DB06288"}
+{"id": "DDInter770", "name": "Fluvoxamine", "drugbank_id": "DB00176"}
+{"id": "DDInter771", "name": "Folic acid", "drugbank_id": "DB00158"}
+{"id": "DDInter772", "name": "Follitropin", "drugbank_id": "DB00066"}
+{"id": "DDInter773", "name": "Fomepizole", "drugbank_id": "DB01213"}
+{"id": "DDInter774", "name": "Fomivirsen (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter775", "name": "Fondaparinux", "drugbank_id": "DB00569"}
+{"id": "DDInter776", "name": "Formoterol", "drugbank_id": "DB00983"}
+{"id": "DDInter777", "name": "Fosamprenavir", "drugbank_id": "DB01319"}
+{"id": "DDInter778", "name": "Fosaprepitant", "drugbank_id": "DB06717"}
+{"id": "DDInter779", "name": "Foscarnet", "drugbank_id": "DB00529"}
+{"id": "DDInter78", "name": "Amitriptyline", "drugbank_id": "DB00321"}
+{"id": "DDInter780", "name": "Fosfomycin", "drugbank_id": "DB00828"}
+{"id": "DDInter781", "name": "Fosinopril", "drugbank_id": "DB00492"}
+{"id": "DDInter782", "name": "Fosnetupitant", "drugbank_id": "DB14019"}
+{"id": "DDInter783", "name": "Fosphenytoin", "drugbank_id": "DB01320"}
+{"id": "DDInter784", "name": "Fospropofol", "drugbank_id": "DB06716"}
+{"id": "DDInter785", "name": "Fostamatinib", "drugbank_id": "DB12010"}
+{"id": "DDInter786", "name": "Fostemsavir", "drugbank_id": "DB11796"}
+{"id": "DDInter787", "name": "Frangula purshiana bark", "drugbank_id": "DB15478"}
+{"id": "DDInter788", "name": "Frovatriptan", "drugbank_id": "DB00998"}
+{"id": "DDInter789", "name": "Fulvestrant", "drugbank_id": "DB00947"}
+{"id": "DDInter79", "name": "Amlodipine", "drugbank_id": "DB00381"}
+{"id": "DDInter790", "name": "Furosemide", "drugbank_id": "DB00695"}
+{"id": "DDInter791", "name": "Gabapentin", "drugbank_id": "DB00996"}
+{"id": "DDInter792", "name": "Gadobenic acid", "drugbank_id": "DB00743"}
+{"id": "DDInter793", "name": "Gadobutrol", "drugbank_id": "DB06703"}
+{"id": "DDInter794", "name": "Gadodiamide", "drugbank_id": "DB00225"}
+{"id": "DDInter795", "name": "Gadofosveset trisodium", "drugbank_id": "DB06705"}
+{"id": "DDInter796", "name": "Gadopentetic acid", "drugbank_id": "DB00789"}
+{"id": "DDInter797", "name": "Gadoteric acid", "drugbank_id": "DB09132"}
+{"id": "DDInter798", "name": "Gadoteridol", "drugbank_id": "DB00597"}
+{"id": "DDInter799", "name": "Gadoversetamide", "drugbank_id": "DB00538"}
+{"id": "DDInter8", "name": "Abiraterone", "drugbank_id": "DB05812"}
+{"id": "DDInter80", "name": "Ammonium chloride", "drugbank_id": "DB06767"}
+{"id": "DDInter800", "name": "Gadoxetic acid", "drugbank_id": "DB08884"}
+{"id": "DDInter801", "name": "Galactose", "drugbank_id": "DB11735"}
+{"id": "DDInter802", "name": "Galantamine", "drugbank_id": "DB00674"}
+{"id": "DDInter803", "name": "Gallium chloride Ga-67", "drugbank_id": "DB14550"}
+{"id": "DDInter804", "name": "Gallium nitrate", "drugbank_id": "DB05260"}
+{"id": "DDInter805", "name": "gamma-Aminobutyric acid", "drugbank_id": "DB02530"}
+{"id": "DDInter806", "name": "Ganciclovir", "drugbank_id": "DB01004"}
+{"id": "DDInter807", "name": "Ganirelix", "drugbank_id": "DB06785"}
+{"id": "DDInter808", "name": "Garlic", "drugbank_id": "DB10532"}
+{"id": "DDInter809", "name": "Gatifloxacin", "drugbank_id": "DB01044"}
+{"id": "DDInter81", "name": "Amobarbital", "drugbank_id": "DB01351"}
+{"id": "DDInter810", "name": "Gefitinib", "drugbank_id": "DB00317"}
+{"id": "DDInter811", "name": "Gemcitabine", "drugbank_id": "DB00441"}
+{"id": "DDInter812", "name": "Gemfibrozil", "drugbank_id": "DB01241"}
+{"id": "DDInter813", "name": "Gemifloxacin", "drugbank_id": "DB01155"}
+{"id": "DDInter814", "name": "Gemtuzumab ozogamicin", "drugbank_id": "DB00056"}
+{"id": "DDInter815", "name": "Gentamicin", "drugbank_id": "DB00798"}
+{"id": "DDInter816", "name": "Gentamicin (topical)", "drugbank_id": "DB00798"}
+{"id": "DDInter817", "name": "Gilteritinib", "drugbank_id": "DB12141"}
+{"id": "DDInter818", "name": "Ginger", "drugbank_id": "DB10344"}
+{"id": "DDInter819", "name": "Ginkgo biloba", "drugbank_id": "DB01381"}
+{"id": "DDInter82", "name": "Amoxapine", "drugbank_id": "DB00543"}
+{"id": "DDInter820", "name": "Ginseng", "drugbank_id": "DB01404"}
+{"id": "DDInter821", "name": "Givosiran", "drugbank_id": "DB15066"}
+{"id": "DDInter822", "name": "Glasdegib", "drugbank_id": "DB11978"}
+{"id": "DDInter823", "name": "Glatiramer", "drugbank_id": "DB05259"}
+{"id": "DDInter824", "name": "Glecaprevir", "drugbank_id": "DB13879"}
+{"id": "DDInter825", "name": "Glimepiride", "drugbank_id": "DB00222"}
+{"id": "DDInter826", "name": "Glipizide", "drugbank_id": "DB01067"}
+{"id": "DDInter827", "name": "Glucagon", "drugbank_id": "DB00040"}
+{"id": "DDInter828", "name": "Glucarpidase", "drugbank_id": "DB08898"}
+{"id": "DDInter829", "name": "Glucosamine", "drugbank_id": "DB01296"}
+{"id": "DDInter83", "name": "Amoxicillin", "drugbank_id": "DB01060"}
+{"id": "DDInter830", "name": "Glutamic acid", "drugbank_id": "DB00142"}
+{"id": "DDInter831", "name": "Glyburide", "drugbank_id": "DB01016"}
+{"id": "DDInter832", "name": "Glycerin", "drugbank_id": "DB09462"}
+{"id": "DDInter833", "name": "Glycerol phenylbutyrate", "drugbank_id": "DB08909"}
+{"id": "DDInter834", "name": "Glycopyrronium", "drugbank_id": "DB00986"}
+{"id": "DDInter835", "name": "Glycopyrronium (topical)", "drugbank_id": null}
+{"id": "DDInter836", "name": "Goldenseal", "drugbank_id": "DB16594"}
+{"id": "DDInter837", "name": "Golimumab", "drugbank_id": "DB06674"}
+{"id": "DDInter838", "name": "Gonadorelin", "drugbank_id": "DB00644"}
+{"id": "DDInter839", "name": "Goserelin", "drugbank_id": "DB00014"}
+{"id": "DDInter84", "name": "Amphetamine", "drugbank_id": "DB00182"}
+{"id": "DDInter840", "name": "Granisetron", "drugbank_id": "DB00889"}
+{"id": "DDInter841", "name": "Grazoprevir", "drugbank_id": "DB11575"}
+{"id": "DDInter842", "name": "Grepafloxacin", "drugbank_id": "DB00365"}
+{"id": "DDInter843", "name": "Griseofulvin", "drugbank_id": "DB00400"}
+{"id": "DDInter844", "name": "Guanabenz", "drugbank_id": "DB00629"}
+{"id": "DDInter845", "name": "Guanadrel", "drugbank_id": "DB00226"}
+{"id": "DDInter846", "name": "Guanethidine", "drugbank_id": "DB01170"}
+{"id": "DDInter847", "name": "Guanfacine", "drugbank_id": "DB01018"}
+{"id": "DDInter848", "name": "Guanidine", "drugbank_id": "DB00536"}
+{"id": "DDInter849", "name": "Guselkumab", "drugbank_id": "DB11834"}
+{"id": "DDInter85", "name": "Amphotericin B", "drugbank_id": "DB00681"}
+{"id": "DDInter850", "name": "Halazepam", "drugbank_id": "DB00801"}
+{"id": "DDInter851", "name": "Halcinonide (topical)", "drugbank_id": null}
+{"id": "DDInter852", "name": "Halofantrine", "drugbank_id": "DB01218"}
+{"id": "DDInter853", "name": "Haloperidol", "drugbank_id": "DB00502"}
+{"id": "DDInter854", "name": "Halothane", "drugbank_id": "DB01159"}
+{"id": "DDInter855", "name": "Hemin", "drugbank_id": "DB03404"}
+{"id": "DDInter856", "name": "Heparin", "drugbank_id": "DB01109"}
+{"id": "DDInter857", "name": "Heparin (flush)", "drugbank_id": "DB01109"}
+{"id": "DDInter858", "name": "Hepatitis A Vaccine", "drugbank_id": "DB10989"}
+{"id": "DDInter859", "name": "Hepatitis B Immune Globulin", "drugbank_id": null}
+{"id": "DDInter86", "name": "Amphotericin B (cholesteryl sulfate)", "drugbank_id": "DB00681"}
+{"id": "DDInter860", "name": "Hepatitis B Vaccine (Recombinant)", "drugbank_id": "DB11627"}
+{"id": "DDInter861", "name": "Hexachlorophene (topical)", "drugbank_id": null}
+{"id": "DDInter862", "name": "Hexaminolevulinate", "drugbank_id": "DB06261"}
+{"id": "DDInter863", "name": "Histamine", "drugbank_id": "DB05381"}
+{"id": "DDInter864", "name": "Histrelin", "drugbank_id": "DB06788"}
+{"id": "DDInter865", "name": "Homatropine", "drugbank_id": "DB11181"}
+{"id": "DDInter866", "name": "Homatropine (ophthalmic)", "drugbank_id": "DB11181"}
+{"id": "DDInter867", "name": "Human adenovirus e serotype 4 strain cl-68578 antigen", "drugbank_id": "DB14409"}
+{"id": "DDInter868", "name": "Human botulinum neurotoxin A/B immune globulin", "drugbank_id": "DB14115"}
+{"id": "DDInter869", "name": "Human C1-esterase inhibitor", "drugbank_id": "DB06404"}
+{"id": "DDInter87", "name": "Amphotericin B (lipid complex)", "drugbank_id": "DB00681"}
+{"id": "DDInter870", "name": "Human cytomegalovirus immune globulin", "drugbank_id": "DB13886"}
+{"id": "DDInter871", "name": "Human immunoglobulin G (intramuscular)", "drugbank_id": null}
+{"id": "DDInter872", "name": "Human immunoglobulin G (intravenous and subcutaneous)", "drugbank_id": null}
+{"id": "DDInter873", "name": "Human immunoglobulin G (intravenous)", "drugbank_id": null}
+{"id": "DDInter874", "name": "Human immunoglobulin G (subcutaneous)", "drugbank_id": null}
+{"id": "DDInter875", "name": "Human papillomavirus type 11 L1 capsid protein antigen", "drugbank_id": "DB10300"}
+{"id": "DDInter876", "name": "Human rabies virus immune globulin", "drugbank_id": null}
+{"id": "DDInter877", "name": "Human Rho(D) immune globulin", "drugbank_id": "DB11597"}
+{"id": "DDInter878", "name": "Human vaccinia virus immune globulin", "drugbank_id": "DB14112"}
+{"id": "DDInter879", "name": "Human Varicella-Zoster Immune Globulin", "drugbank_id": null}
+{"id": "DDInter88", "name": "Amphotericin B (liposomal)", "drugbank_id": "DB00681"}
+{"id": "DDInter880", "name": "Hyaluronic acid", "drugbank_id": "DB08818"}
+{"id": "DDInter881", "name": "Hyaluronidase", "drugbank_id": "DB14740"}
+{"id": "DDInter882", "name": "Hydralazine", "drugbank_id": "DB01275"}
+{"id": "DDInter883", "name": "Hydrochlorothiazide", "drugbank_id": "DB00999"}
+{"id": "DDInter884", "name": "Hydrocodone", "drugbank_id": "DB00956"}
+{"id": "DDInter885", "name": "Hydrocortisone", "drugbank_id": "DB00741"}
+{"id": "DDInter886", "name": "Hydrocortisone (ophthalmic)", "drugbank_id": "DB00741"}
+{"id": "DDInter887", "name": "Hydrocortisone (topical)", "drugbank_id": "DB00741"}
+{"id": "DDInter888", "name": "Hydrocortisone butyrate", "drugbank_id": "DB14540"}
+{"id": "DDInter889", "name": "Hydroflumethiazide", "drugbank_id": "DB00774"}
+{"id": "DDInter89", "name": "Ampicillin", "drugbank_id": "DB00415"}
+{"id": "DDInter890", "name": "Hydromorphone", "drugbank_id": "DB00327"}
+{"id": "DDInter891", "name": "Hydroxocobalamin", "drugbank_id": "DB00200"}
+{"id": "DDInter892", "name": "Hydroxyamphetamine (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter893", "name": "Hydroxychloroquine", "drugbank_id": "DB01611"}
+{"id": "DDInter894", "name": "Hydroxyurea", "drugbank_id": "DB01005"}
+{"id": "DDInter895", "name": "Hydroxyzine", "drugbank_id": "DB00557"}
+{"id": "DDInter896", "name": "Hyoscyamine", "drugbank_id": "DB00424"}
+{"id": "DDInter897", "name": "Ibandronate", "drugbank_id": "DB00710"}
+{"id": "DDInter898", "name": "Ibritumomab tiuxetan", "drugbank_id": "DB00078"}
+{"id": "DDInter899", "name": "Ibrutinib", "drugbank_id": "DB09053"}
+{"id": "DDInter9", "name": "Acalabrutinib", "drugbank_id": "DB11703"}
+{"id": "DDInter90", "name": "Amprenavir", "drugbank_id": "DB00701"}
+{"id": "DDInter900", "name": "Ibuprofen", "drugbank_id": "DB01050"}
+{"id": "DDInter901", "name": "Ibutilide", "drugbank_id": "DB00308"}
+{"id": "DDInter902", "name": "Icatibant", "drugbank_id": "DB06196"}
+{"id": "DDInter903", "name": "Icosapent", "drugbank_id": "DB00159"}
+{"id": "DDInter904", "name": "Idarubicin", "drugbank_id": "DB01177"}
+{"id": "DDInter905", "name": "Idelalisib", "drugbank_id": "DB09054"}
+{"id": "DDInter906", "name": "Ifosfamide", "drugbank_id": "DB01181"}
+{"id": "DDInter907", "name": "Iloperidone", "drugbank_id": "DB04946"}
+{"id": "DDInter908", "name": "Iloprost", "drugbank_id": "DB01088"}
+{"id": "DDInter909", "name": "Imatinib", "drugbank_id": "DB00619"}
+{"id": "DDInter91", "name": "Amrinone", "drugbank_id": "DB01427"}
+{"id": "DDInter910", "name": "Imiglucerase", "drugbank_id": "DB00053"}
+{"id": "DDInter911", "name": "Imipenem", "drugbank_id": "DB01598"}
+{"id": "DDInter912", "name": "Imipramine", "drugbank_id": "DB00458"}
+{"id": "DDInter913", "name": "Imiquimod", "drugbank_id": "DB00724"}
+{"id": "DDInter914", "name": "Imiquimod (topical)", "drugbank_id": "DB00724"}
+{"id": "DDInter915", "name": "Indacaterol", "drugbank_id": "DB05039"}
+{"id": "DDInter916", "name": "Indapamide", "drugbank_id": "DB00808"}
+{"id": "DDInter917", "name": "Indinavir", "drugbank_id": "DB00224"}
+{"id": "DDInter918", "name": "Indium In-111 oxyquinoline", "drugbank_id": "DB09473"}
+{"id": "DDInter919", "name": "Indium In-111 pentetate", "drugbank_id": "DB09425"}
+{"id": "DDInter92", "name": "Amyl Nitrite", "drugbank_id": "DB01612"}
+{"id": "DDInter920", "name": "Indium In-111 pentetreotide", "drugbank_id": "DB11835"}
+{"id": "DDInter921", "name": "Indomethacin", "drugbank_id": "DB00328"}
+{"id": "DDInter922", "name": "Inebilizumab", "drugbank_id": "DB12530"}
+{"id": "DDInter923", "name": "Infliximab", "drugbank_id": "DB00065"}
+{"id": "DDInter924", "name": "Influenza A virus A/California/7/2009 (H1N1)-like antigen (propiolactone inactivated)", "drugbank_id": "DB14444"}
+{"id": "DDInter925", "name": "Influenza A virus A/Vietnam/1194/2004 (H5N1) antigen (formaldehyde inactivated)", "drugbank_id": "DB16646"}
+{"id": "DDInter926", "name": "Inotersen", "drugbank_id": "DB14713"}
+{"id": "DDInter927", "name": "Inotuzumab ozogamicin", "drugbank_id": "DB05889"}
+{"id": "DDInter928", "name": "Insulin aspart (aspart protamine)", "drugbank_id": null}
+{"id": "DDInter929", "name": "Insulin aspart (aspart)", "drugbank_id": null}
+{"id": "DDInter93", "name": "Anagrelide", "drugbank_id": "DB00261"}
+{"id": "DDInter930", "name": "Insulin degludec", "drugbank_id": "DB09564"}
+{"id": "DDInter931", "name": "Insulin detemir", "drugbank_id": "DB01307"}
+{"id": "DDInter932", "name": "Insulin glargine", "drugbank_id": "DB00047"}
+{"id": "DDInter933", "name": "Insulin glulisine", "drugbank_id": "DB01309"}
+{"id": "DDInter934", "name": "Insulin human", "drugbank_id": "DB00030"}
+{"id": "DDInter935", "name": "Insulin human (inhalation, rapid acting)", "drugbank_id": "DB00030"}
+{"id": "DDInter936", "name": "Insulin human (isophane)", "drugbank_id": "DB00030"}
+{"id": "DDInter937", "name": "Insulin human (regular)", "drugbank_id": "DB00030"}
+{"id": "DDInter938", "name": "Insulin human (zinc extended)", "drugbank_id": "DB00030"}
+{"id": "DDInter939", "name": "Insulin human (zinc)", "drugbank_id": "DB00030"}
+{"id": "DDInter94", "name": "Anakinra", "drugbank_id": "DB00026"}
+{"id": "DDInter940", "name": "Insulin lispro", "drugbank_id": "DB00046"}
+{"id": "DDInter941", "name": "Insulin lispro (protamine)", "drugbank_id": null}
+{"id": "DDInter942", "name": "Interferon alfa-2a, Recombinant", "drugbank_id": null}
+{"id": "DDInter943", "name": "Interferon alfa-2b", "drugbank_id": "DB00105"}
+{"id": "DDInter944", "name": "Interferon alfa-n1", "drugbank_id": "DB00011"}
+{"id": "DDInter945", "name": "Interferon alfa-n3", "drugbank_id": "DB00018"}
+{"id": "DDInter946", "name": "Interferon alfacon-1", "drugbank_id": "DB00069"}
+{"id": "DDInter947", "name": "Interferon beta-1a", "drugbank_id": "DB00060"}
+{"id": "DDInter948", "name": "Interferon beta-1b", "drugbank_id": "DB00068"}
+{"id": "DDInter949", "name": "Interferon gamma-1b", "drugbank_id": "DB00033"}
+{"id": "DDInter95", "name": "Anastrozole", "drugbank_id": "DB01217"}
+{"id": "DDInter950", "name": "Inulin", "drugbank_id": "DB00638"}
+{"id": "DDInter951", "name": "Iobenguane (I-123)", "drugbank_id": null}
+{"id": "DDInter952", "name": "Iobenguane (I-131)", "drugbank_id": null}
+{"id": "DDInter953", "name": "Iodide I-123", "drugbank_id": "DB09420"}
+{"id": "DDInter954", "name": "Iodide I-131", "drugbank_id": "DB09293"}
+{"id": "DDInter955", "name": "Iodine", "drugbank_id": "DB05382"}
+{"id": "DDInter956", "name": "Iodine (topical)", "drugbank_id": "DB05382"}
+{"id": "DDInter957", "name": "Iodipamide", "drugbank_id": "DB04711"}
+{"id": "DDInter958", "name": "Iodixanol", "drugbank_id": "DB01249"}
+{"id": "DDInter959", "name": "Ioflupane I-123", "drugbank_id": "DB08824"}
+{"id": "DDInter96", "name": "Angiotensin II", "drugbank_id": "DB11842"}
+{"id": "DDInter960", "name": "Iohexol", "drugbank_id": "DB01362"}
+{"id": "DDInter961", "name": "Iopamidol", "drugbank_id": "DB08947"}
+{"id": "DDInter962", "name": "Iopanoic acid", "drugbank_id": "DB08946"}
+{"id": "DDInter963", "name": "Iopodic acid", "drugbank_id": "DB09333"}
+{"id": "DDInter964", "name": "Iopromide", "drugbank_id": "DB09156"}
+{"id": "DDInter965", "name": "Iothalamic acid", "drugbank_id": "DB09133"}
+{"id": "DDInter966", "name": "Ioversol", "drugbank_id": "DB09134"}
+{"id": "DDInter967", "name": "Ioxilan", "drugbank_id": "DB09135"}
+{"id": "DDInter968", "name": "Ipecac", "drugbank_id": "DB13293"}
+{"id": "DDInter969", "name": "Ipilimumab", "drugbank_id": "DB06186"}
+{"id": "DDInter97", "name": "Anidulafungin", "drugbank_id": "DB00362"}
+{"id": "DDInter970", "name": "Ipratropium", "drugbank_id": "DB00332"}
+{"id": "DDInter971", "name": "Ipratropium (nasal)", "drugbank_id": "DB00332"}
+{"id": "DDInter972", "name": "Irbesartan", "drugbank_id": "DB01029"}
+{"id": "DDInter973", "name": "Irinotecan", "drugbank_id": "DB00762"}
+{"id": "DDInter974", "name": "Irinotecan (liposomal)", "drugbank_id": "DB00762"}
+{"id": "DDInter975", "name": "Iron", "drugbank_id": "DB01592"}
+{"id": "DDInter976", "name": "Iron Dextran", "drugbank_id": "DB00893"}
+{"id": "DDInter977", "name": "Iron protein succinylate", "drugbank_id": "DB11209"}
+{"id": "DDInter978", "name": "Iron sucrose", "drugbank_id": "DB09146"}
+{"id": "DDInter979", "name": "Isatuximab", "drugbank_id": "DB14811"}
+{"id": "DDInter98", "name": "Anisindione", "drugbank_id": "DB01125"}
+{"id": "DDInter980", "name": "Isavuconazonium", "drugbank_id": "DB06636"}
+{"id": "DDInter981", "name": "Isocarboxazid", "drugbank_id": "DB01247"}
+{"id": "DDInter982", "name": "Isoetharine", "drugbank_id": "DB00221"}
+{"id": "DDInter983", "name": "Isoflurane", "drugbank_id": "DB00753"}
+{"id": "DDInter984", "name": "Isoflurophate (ophthalmic)", "drugbank_id": null}
+{"id": "DDInter985", "name": "Isometheptene", "drugbank_id": "DB06706"}
+{"id": "DDInter986", "name": "Isoniazid", "drugbank_id": "DB00951"}
+{"id": "DDInter987", "name": "Isoprenaline", "drugbank_id": "DB01064"}
+{"id": "DDInter988", "name": "Isosorbide", "drugbank_id": "DB09401"}
+{"id": "DDInter989", "name": "Isosorbide dinitrate", "drugbank_id": "DB00883"}
+{"id": "DDInter99", "name": "Anistreplase", "drugbank_id": "DB00029"}
+{"id": "DDInter990", "name": "Isosorbide mononitrate", "drugbank_id": "DB01020"}
+{"id": "DDInter991", "name": "Isotretinoin", "drugbank_id": "DB00982"}
+{"id": "DDInter992", "name": "Isoxsuprine", "drugbank_id": "DB08941"}
+{"id": "DDInter993", "name": "Isradipine", "drugbank_id": "DB00270"}
+{"id": "DDInter994", "name": "Istradefylline", "drugbank_id": "DB11757"}
+{"id": "DDInter995", "name": "Itraconazole", "drugbank_id": "DB01167"}
+{"id": "DDInter996", "name": "Ivabradine", "drugbank_id": "DB09083"}
+{"id": "DDInter997", "name": "Ivacaftor", "drugbank_id": "DB08820"}
+{"id": "DDInter998", "name": "Ivermectin", "drugbank_id": "DB00602"}
+{"id": "DDInter999", "name": "Ivermectin (topical)", "drugbank_id": "DB00602"}

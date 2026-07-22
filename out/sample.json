@@ -1,5 +1,5 @@
 {
-  "note": "Reconstructed interaction rows (join interactions -> drugs and mechanisms). Illustrative sample of the canonical ddi_kb_compact.json.",
+  "note": "Illustrative reconstructed rows from ddi_kb_compact.json.",
   "interactions": [
     {
       "drug_a": {
@@ -14,9 +14,6 @@
       },
       "severity": "Moderate",
       "mechanism": "Coadministration with potent inducers of CYP450 3A4 may significantly decrease the plasma concentrations of ixabepilone, which is primarily metabolized by the isoenzyme. Subtherapeutic levels of ixabepilone may result.",
-      "mechanism_categories": [
-        "metabolism"
-      ],
       "group_id": "894"
     },
     {
@@ -32,9 +29,6 @@
       },
       "severity": "Moderate",
       "mechanism": "Coadministration with inducers of CYP450 3A4 may decrease the plasma concentrations of ixazomib, which is a substrate of the isoenzyme. When ixazomib was administered with the potent CYP450 3A4 inducer rifampin, ixazomib peak plasma concentration (Cmax) and systemic exposure (AUC) decreased by 54% and 74%, respectively.",
-      "mechanism_categories": [
-        "metabolism"
-      ],
       "group_id": "4360"
     },
     {
@@ -50,9 +44,6 @@
       },
       "severity": "Major",
       "mechanism": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of ivosidenib, which is primarily metabolized by the isoenzyme. Coadministration with ivosidenib may decrease the plasma concentrations of drugs that are primarily metabolized by CYP450 3A4, including many of the known potent inhibitors of the isoenzyme such as clarithromycin, conivaptan, delavirdine, idelalisib, itraconazole, ketoconazole, nefazodone, posaconazole, telithromycin, and all protease inhibitors. Ivosidenib is an inducer of CYP450 3A4 and induces its own metabolism following multiple dosing.",
-      "mechanism_categories": [
-        "metabolism"
-      ],
       "group_id": "3900"
     },
     {
@@ -68,9 +59,6 @@
       },
       "severity": "Moderate",
       "mechanism": "Bowel cleansing as well as overuse of certain laxatives may cause electrolyte loss and increase the risk of torsade de pointes ventricular arrhythmia in patients treated with drugs that prolong the QT interval. Electrolyte disturbances including hypokalemia and hypomagnesemia have been reported with laxative abuse and are known risk factors for torsade de pointes associated with QT interval prolongation.",
-      "mechanism_categories": [
-        "synergistic_effect"
-      ],
       "group_id": "3449"
     },
     {
@@ -86,9 +74,6 @@
       },
       "severity": "Moderate",
       "mechanism": "Bowel cleansing as well as overuse of certain laxatives may cause electrolyte loss and increase the risk of torsade de pointes ventricular arrhythmia in patients treated with drugs that prolong the QT interval. Electrolyte disturbances including hypokalemia and hypomagnesemia have been reported with laxative abuse and are known risk factors for torsade de pointes associated with QT interval prolongation.",
-      "mechanism_categories": [
-        "synergistic_effect"
-      ],
       "group_id": "3449"
     },
     {
@@ -104,9 +89,6 @@
       },
       "severity": "Major",
       "mechanism": "Ivosidenib can cause prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
-      "mechanism_categories": [
-        "synergistic_effect"
-      ],
       "group_id": "2053"
     },
     {
@@ -122,9 +104,6 @@
       },
       "severity": "Moderate",
       "mechanism": "Coadministration with inducers of CYP450 3A4 and/or P-glycoprotein (P-gp) may decrease the plasma concentrations of larotrectinib, which is primarily metabolized by the isoenzyme as well as the efflux transporter.",
-      "mechanism_categories": [
-        "metabolism"
-      ],
       "group_id": "3582"
     },
     {
@@ -140,10 +119,6 @@
       },
       "severity": "Major",
       "mechanism": "When administered orally, lefamulin may significantly increase the plasma concentrations of drugs that are primarily metabolized by CYP450 3A4. Increased exposure to sensitive CYP450 3A4 substrates that can prolong the QT interval may increase the risk of ventricular arrhythmias including torsade de pointes and sudden death. Because lefamulin itself may cause prolongation of the QT interval, the potential for a pharmacodynamic interaction with other agents that can prolong the QT interval should also be considered.",
-      "mechanism_categories": [
-        "synergistic_effect",
-        "metabolism"
-      ],
       "group_id": "2748"
     }
   ]

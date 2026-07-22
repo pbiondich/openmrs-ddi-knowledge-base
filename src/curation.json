@@ -1,0 +1,266 @@
+{
+  "description": "Clinician curation decisions applied after algorithmic RxNorm canonicalization. build_kb.py applies these overrides so the canonical KB is reproducible. Reasons: 'separation' = clinically distinct drugs the ingredient match had merged; 'remap' = obsolete concept remapped to its correct current RxCUI; 'gap' = obsolete/low-relevance concept with no safe current mapping, left null (surfaced as a knowledge gap).",
+  "reviewed_by": "clinician (physician-informatician)",
+  "date": "2026-07-21",
+  "overrides": [
+    {
+      "id": "DDInter1075",
+      "name": "Liotrix",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter1148",
+      "name": "Menotropins",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter1647",
+      "name": "Scopolamine",
+      "rxcui": "9601",
+      "rxnorm_name": "scopolamine",
+      "reason": "separation"
+    },
+    {
+      "id": "DDInter1807",
+      "name": "Tilmanocept",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter1847",
+      "name": "Trastuzumab deruxtecan",
+      "rxcui": "2267582",
+      "rxnorm_name": "trastuzumab deruxtecan",
+      "reason": "separation"
+    },
+    {
+      "id": "DDInter1848",
+      "name": "Trastuzumab emtansine",
+      "rxcui": "1371041",
+      "rxnorm_name": "ado-trastuzumab emtansine",
+      "reason": "separation"
+    },
+    {
+      "id": "DDInter1893",
+      "name": "Typhoid vaccine (inactivated)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter1974",
+      "name": "Bcg vaccine",
+      "rxcui": "221050",
+      "rxnorm_name": "BCG, live, Tice strain",
+      "reason": "remap"
+    },
+    {
+      "id": "DDInter2021",
+      "name": "Moderna covid-19 vaccine (6y+ bivalent booster)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2024",
+      "name": "Etretinate",
+      "rxcui": "4182",
+      "rxnorm_name": "etretinate",
+      "reason": "separation"
+    },
+    {
+      "id": "DDInter2161",
+      "name": "Polycarbophil",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2169",
+      "name": "Daxibotulinumtoxina",
+      "rxcui": "1712",
+      "rxnorm_name": "botulinum toxin type A",
+      "reason": "remap"
+    },
+    {
+      "id": "DDInter2193",
+      "name": "Multivitamin with iron",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2194",
+      "name": "Multivitamin with iron and fluoride",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2195",
+      "name": "Multivitamin (prenatal)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2214",
+      "name": "Mixed respiratory vaccine",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2218",
+      "name": "Moderna COVID-19 Vaccine (6m-5y bivalent booster)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2219",
+      "name": "Moderna COVID-19 Vaccine (bivalent booster)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2221",
+      "name": "Moderna COVID-19 Vaccine (6m-5y)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2222",
+      "name": "Moderna COVID-19 Vaccine (6y-11y)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2223",
+      "name": "Moderna COVID-19 Vaccine (booster only)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2224",
+      "name": "SARS-CoV-2 vaccine",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2225",
+      "name": "Skin test antigens (multiple)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2226",
+      "name": "Staphage lysate (spl)",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2236",
+      "name": "Lvp solution with potassium",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2237",
+      "name": "Parenteral nutrition solution w/electrolytes",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2239",
+      "name": "Multivitamin with minerals",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2241",
+      "name": "Chaparral",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2246",
+      "name": "Multivitamin",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2247",
+      "name": "Multivitamin with fluoride",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2251",
+      "name": "Lvp solution with hypertonic saline",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter2271",
+      "name": "Parenteral nutrition solution",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter792",
+      "name": "Gadobenic acid",
+      "rxcui": "692620",
+      "rxnorm_name": "gadobenate",
+      "reason": "remap"
+    },
+    {
+      "id": "DDInter797",
+      "name": "Gadoteric acid",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter800",
+      "name": "Gadoxetic acid",
+      "rxcui": "802624",
+      "rxnorm_name": "gadoxetate",
+      "reason": "remap"
+    },
+    {
+      "id": "DDInter919",
+      "name": "Indium In-111 pentetate",
+      "rxcui": null,
+      "rxnorm_name": null,
+      "reason": "gap"
+    },
+    {
+      "id": "DDInter990",
+      "name": "Isosorbide mononitrate",
+      "rxcui": "28004",
+      "rxnorm_name": "isosorbide mononitrate",
+      "reason": "separation"
+    }
+  ]
+}
