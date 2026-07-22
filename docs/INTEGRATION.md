@@ -59,7 +59,7 @@ To keep the file sane, scope it: the strongest first cut is the intersection wit
 
 ### Phase 2 — a pluggable source for the full dataset (module PR)
 
-Contribute a `DdiDrugReferenceSource implements DrugReferenceSource` and a `sourceFormat=ddinter`, reading our compact enriched KB and materializing `DrugReference` objects, indexed by RxCUI and name so the full set scales without a giant expanded file. This is the production path and a natural upstream contribution. Two small model additions are worth proposing alongside it:
+Contribute a `DdiDrugReferenceSource implements DrugReferenceSource` and a `sourceFormat=ddinter`, reading our compact KB (`ddi_kb_compact.json`) and materializing `DrugReference` objects, indexed by RxCUI and name so the full set scales without a giant expanded file. This is the production path and a natural upstream contribution. Two small model additions are worth proposing alongside it:
 - a `severity` field on `Interaction`, so safety chips can be ranked (Major vs Minor) rather than flattened into prose; and
 - the optional CIEL-concept order matcher described above.
 
@@ -73,7 +73,7 @@ The module has the test surface to prove the integration: `DrugSafetyValidatorTe
 
 ## Phase 1 build (done)
 
-The adapter is `adapt_to_chartsearchai.py` (ATC codes derived by `derive_atc.py` via RxClass, cached in `out/atc_cache.jsonl`). It emits the module's `drug-reference.json` shape (`{entries: [...]}`, drug-centric, with `interactions[].{token, atc, note}`), parameterized by severity and formulary scope. Two artifacts are produced:
+The adapter is `adapt_to_chartsearchai.py`. It reads the canonical `ddi_kb_compact.json` (whose drugs table already carries the ATC codes, pre-derived from RxNorm RxClass) and emits the module's `drug-reference.json` shape (`{entries: [...]}`, drug-centric, with `interactions[].{token, atc, note}`), parameterized by severity and formulary scope. Two artifacts are produced:
 
 | File | Scope | Contents |
 |---|---|---|

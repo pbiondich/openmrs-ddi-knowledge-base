@@ -6,7 +6,7 @@ It was built for the Chart Search AI DDI feature, but nothing about it is specif
 
 ## What it is
 
-The knowledge base is a set of JSON files. The primary artifact is a single file of 295,184 interacting drug pairs, each carrying a severity, a mechanism description where one exists, and full provenance back to its source. Two things make it usable inside OpenMRS rather than just a data dump:
+The knowledge base is a single normalized JSON file, `ddi_kb_compact.json`, shipped as a ~2 MB compressed `.gz` as its distributable form. It holds three tables joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, and 295,184 interaction rows carrying severity and a mechanism reference. Two things make it usable inside OpenMRS rather than just a data dump:
 
 - Every drug is resolved to an **RxNorm RxCUI**, so a drug named three different ways resolves to one identifier and an interaction is not missed on a spelling difference.
 - Every drug is cross-walked to the **CIEL concept dictionary**, so a medication recorded in a patient's chart maps directly to its interaction records.
@@ -27,47 +27,51 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 
 | File | What it is |
 |---|---|
-| `out/ddi_knowledge_base_enriched.json.gz` | **The knowledge base.** 2,283 drugs and 295,184 interactions, each with severity, mechanism, mechanism categories, RxCUI, and CIEL concepts. ~19 MB gzipped, ~272 MB open (over GitHub's 100 MB limit, so it is stored compressed; `gunzip` to use). |
+| `out/ddi_kb_compact.json.gz` | **The knowledge base** (compressed final form, ~2 MB). Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), and 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`. |
+| `out/ddi_kb_compact.json` | The same, uncompressed (~19 MB): the canonical, editable source of truth. `build_kb.py` validates it and rebuilds the `.gz`. |
+| `out/schema.json` | JSON Schema (draft 2020-12) for the compact format. |
+| `out/sample.json` | A few reconstructed interaction rows for quick inspection. |
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
-| `out/interaction.schema.json` | JSON Schema (draft 2020-12) for one interaction record. |
-| `out/ddi_knowledge_base.json` | The bulk-CSV-only subset (160,235 pairs, severity only), kept for comparison. |
-| `out/ddi_kb_compact.json` | Normalized/compact form (~19 MB): mechanisms stored once, interactions referencing them by id, plus a drugs table with ATC and CIEL. The read form for tooling and the Phase 2 module source; the enriched `.gz` is a denormalized view of the same facts. |
-| `out/ddi_mechanisms.json` | The 8,466 DDInter mechanism descriptions on their own. |
 | `out/ciel_rxnorm_crosswalk.json` | CIEL Drug concept (code, UUID, name) to RxCUI(s). |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
-| `out/enriched_sample.json` | A handful of worked records for quick inspection. |
+| `out/rxcui_review.json` | Record of the RxNorm canonicalization and clinician curation decisions. |
+| `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`). |
+| `dist/chartsearchai-drug-reference.json.gz` | Chart Search AI module format, full dataset. |
 
 ## The record shape
 
+Three tables joined by id, so nothing is duplicated:
+
 ```json
 {
-  "id": "DDInter1089__DDInter1479",
-  "drug_a": { "ddinter_id": "DDInter1089", "name": "Lopinavir", "drugbank_id": "DB01601", "rxcui": "195088" },
-  "drug_b": { "ddinter_id": "DDInter1479", "name": "Pitavastatin", "drugbank_id": "DB08860", "rxcui": "861634" },
-  "severity": "Major",
-  "mechanism": "Coadministration with lopinavir-ritonavir may significantly increase the plasma concentrations of pitavastatin...",
-  "management": null,
-  "mechanism_categories": ["synergistic_effect"],
-  "source": "DDInter 2.0",
-  "source_group_id": "34",
-  "source_url": "https://ddinter2.scbdd.com/server/inter-detail/34/",
-  "citation": "Xiong G, et al. DDInter 2.0. Nucleic Acids Research. 2025;53(D1):D1356-D1364."
+  "mechanisms": {
+    "34": { "text": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of pitavastatin...", "categories": ["synergistic_effect"] },
+    "-1": { "text": null, "categories": [] }
+  },
+  "drugs": [
+    { "id": "DDInter1", "name": "Abacavir", "rxcui": "190521", "rxnorm_name": "abacavir",
+      "drugbank_id": "DB01048", "atc": ["J05AR", "J05AF"],
+      "ciel": [ { "code": "103166", "uuid": "103166AAAA…", "name": "Abacavir / lamivudine" } ] }
+  ],
+  "interactions": [
+    ["DDInter1089", "DDInter1479", "Major", "34"]
+  ]
 }
 ```
 
-The top-level `drugs[]` list carries the richer per-drug detail: `rxcui`, `rxnorm_name`, how the RxNorm match was made (`rxcui_match`), and the linked `ciel_concepts`.
+An interaction row is `[drug_a_id, drug_b_id, severity, group_id]`: join the ids to `drugs[]` for names/RxCUIs/CIEL, and the `group_id` to `mechanisms` for the description. A pair with no published mechanism references the sentinel group `-1` (null text).
 
-**The join key is the RxCUI.** A chart medication resolves CIEL concept to RxCUI (via `ciel_index.json`), and the RxCUI keys into the interaction records. That single key is what ties the patient's data, the drug vocabulary, and the interaction knowledge together.
+**The join key is the RxCUI.** A chart medication resolves CIEL concept to RxCUI (via `ciel_index.json`), and the RxCUI keys into the drugs table. That single key is what ties the patient's data, the drug vocabulary, and the interaction knowledge together.
 
 ## How it was made
 
 Three public sources, layered so each does the job it is best at:
 
 - **DDInter 2.0** supplies the interactions: the pair, a severity, and a mechanism description. It is open-access, requires no implementer maintenance, and works offline. The full database (about 302K interactions) was assembled by walking DDInter's interaction groups, since the bulk CSV download carries only about half the pairs and no mechanism text.
-- **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Each drug records how it matched (`rxcui_match`) and its pre-canonical value (`rxcui_original`), so the work is auditable. Distinct drugs that had been merged onto one identifier were separated under clinician review. The 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) are left as explicit gaps (`rxcui` null, `rxcui_status` set) rather than assigned a wrong identifier. The review trail is in `out/rxcui_review.json`.
+- **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
-No step requires an implementer to curate drug data by hand. The sources update outside the implementer's control; refreshing the bundle is a maintainer re-run on the release cycle. The build scripts (`enrich.py`, `build_enriched.py`, `rxnorm.py`, `ciel_crosswalk.py`, `ciel_reconcile.py`, `ciel_coverage.py`, `integrate_ciel.py`) reproduce every file. The CIEL crosswalk can be regenerated with the OCL CLI or the OCL export API and a token; no token or raw export is stored here.
+No step requires an implementer to curate drug data by hand. The canonical source of truth is `ddi_kb_compact.json`; `build_kb.py` validates it (referential integrity plus shape) and emits the compressed final form and a sample, and `adapt_to_chartsearchai.py` projects it into the Chart Search AI module format. The one-time acquisition-and-curation pipeline that produced the canonical data — the DDInter group walk, RxNorm normalization and canonicalization, the clinician review, the CIEL crosswalk, and ATC derivation — is preserved in the git history and summarized in `out/rxcui_review.json`; because it embeds human clinical decisions, the compact file is the curated source of record rather than a rebuild output.
 
 ## Coverage
 

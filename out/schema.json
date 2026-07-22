@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openmrs.org/schemas/ddi-kb-compact-1.0.json",
+  "title": "OpenMRS DDI Knowledge Base (compact/normalized)",
+  "description": "The canonical drug-drug interaction knowledge base. Normalized into three tables joined by id: mechanisms (stored once), drugs, and interaction rows that reference both.",
+  "type": "object",
+  "required": ["metadata", "mechanisms", "drugs", "interactions"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "schema_version": {"type": "string"},
+        "source": {"type": "object"},
+        "shape": {
+          "type": "object",
+          "properties": {
+            "drugs": {"type": "integer"},
+            "mechanisms": {"type": "integer"},
+            "interactions": {"type": "integer"}
+          }
+        }
+      }
+    },
+    "mechanisms": {
+      "type": "object",
+      "description": "Keyed by group id. The sentinel group '-1' has null text and represents pairs DDInter lists without a mechanism description.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["text", "categories"],
+        "properties": {
+          "text": {"type": ["string", "null"], "description": "Free-text mechanism/effect description from DDInter 2.0."},
+          "categories": {
+            "type": "array",
+            "items": {"enum": ["antagonistic_effect", "synergistic_effect", "absorption", "distribution", "metabolism", "excretion", "others"]}
+          }
+        }
+      }
+    },
+    "drugs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {"type": "string", "description": "DDInter internal id; stable key referenced by interactions."},
+          "name": {"type": "string"},
+          "rxcui": {"type": ["string", "null"], "description": "RxNorm ingredient RxCUI; null with a documented gap for a small set of obsolete/unmapped concepts."},
+          "rxnorm_name": {"type": ["string", "null"]},
+          "drugbank_id": {"type": ["string", "null"]},
+          "atc": {"type": "array", "items": {"type": "string"}, "description": "ATC codes, pre-derived from RxNorm RxClass."},
+          "ciel": {
+            "type": "array",
+            "description": "Linked CIEL concepts (ingredient-level match).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {"type": "string"},
+                "uuid": {"type": ["string", "null"]},
+                "name": {"type": ["string", "null"]}
+              }
+            }
+          }
+        }
+      }
+    },
+    "interactions": {
+      "type": "array",
+      "description": "Compact rows: [drug_a_id, drug_b_id, severity, group_id]. Join *_id -> drugs[].id and group_id -> mechanisms{}.",
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "prefixItems": [
+          {"type": "string", "description": "drug_a id"},
+          {"type": "string", "description": "drug_b id"},
+          {"enum": ["Major", "Moderate", "Minor", "Unknown"]},
+          {"type": "string", "description": "group id -> mechanisms"}
+        ]
+      }
+    }
+  }
+}
