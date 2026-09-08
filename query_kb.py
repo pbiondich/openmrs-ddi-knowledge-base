@@ -13,8 +13,9 @@ takes one line instead of a script:
   python3 query_kb.py search statin                        drugs whose name contains a string
   python3 query_kb.py coverage                             drugs and interaction rows per ATC group
 
-Name a drug by its DDInter name, RxNorm name, or CIEL concept name (case-insensitive),
-or by identifier with a prefix: rxcui:11289, ciel:86415, drugbank:DB00682, id:DDInter1951.
+Name a drug by its DDInter name, RxNorm name, RxNorm brand name (panadol, zocor), or CIEL
+concept name (case-insensitive), or by identifier with a prefix: rxcui:11289, ciel:86415,
+drugbank:DB00682, id:DDInter1951.
 --json on any command prints machine-readable output; --kb PATH points at another file.
 
 pair and check also report DERIVED findings: a causal chain through the drug-disease table,
@@ -134,16 +135,18 @@ class KB:
                 self.by_drugbank.setdefault(d["drugbank_id"].upper(), []).append(d)
             for c in d["ciel"]:
                 self.by_ciel.setdefault(c["code"], []).append(d)
-        # --- name indexes, in precedence order: DDInter name, RxNorm name, CIEL concept name ---
-        self.by_name, self.by_rxname, self.by_cielname = {}, {}, {}
+        # --- name indexes, in precedence order: DDInter name, RxNorm name, brand name, CIEL concept name ---
+        self.by_name, self.by_rxname, self.by_brand, self.by_cielname = {}, {}, {}, {}
         for d in self.drugs:
             self.by_name.setdefault(d["name"].lower(), []).append(d)
             if d["rxnorm_name"]:
                 self.by_rxname.setdefault(d["rxnorm_name"].lower(), []).append(d)
+            for b in d.get("brand_names", []):
+                self.by_brand.setdefault(b.lower(), []).append(d)
             for c in d["ciel"]:
                 if c["name"]:
                     self.by_cielname.setdefault(c["name"].lower(), []).append(d)
-        self.all_names = sorted(set(self.by_name) | set(self.by_rxname))
+        self.all_names = sorted(set(self.by_name) | set(self.by_rxname) | set(self.by_brand))
         # --- interaction indexes: one row per unordered pair; partners per drug ---
         self.rows, self.partners_of = {}, {}
         for a, b, sev, gid in data["interactions"]:
@@ -170,7 +173,8 @@ class KB:
     # --- resolution ---
     def resolve(self, term):
         """All drugs a term names. Identifier prefixes are exact; a bare name tries the DDInter
-        name, then the RxNorm name, then CIEL concept names. Raises Unresolved when nothing matches."""
+        name, then the RxNorm name, then RxNorm brand names, then CIEL concept names. Raises
+        Unresolved when nothing matches."""
         t = term.strip()
         if ":" in t:
             kind, _, val = t.partition(":")
@@ -186,7 +190,7 @@ class KB:
         if t in self.by_id:
             return [self.by_id[t]]
         low = t.lower()
-        for index in (self.by_name, self.by_rxname, self.by_cielname):
+        for index in (self.by_name, self.by_rxname, self.by_brand, self.by_cielname):
             if low in index:
                 return list(index[low])
         raise Unresolved(t, difflib.get_close_matches(low, self.all_names, n=5, cutoff=0.6))
@@ -355,16 +359,17 @@ class KB:
         return {"groups": out, "drugs_without_atc": sum(1 for d in self.drugs if not d["atc"])}
 
     def search(self, text):
-        """Drugs whose DDInter, RxNorm, or CIEL name contains the text. A hit found only through a
-        CIEL combination name (say "Imipenem / cilastatin" for "statin") carries that name in
-        matched_via, so the reader can see why an unexpected drug is in the list."""
+        """Drugs whose DDInter, RxNorm, brand, or CIEL name contains the text. A hit found only through
+        a brand or a CIEL combination name (say "Imipenem / cilastatin" for "statin") carries that name
+        in matched_via, so the reader can see why an unexpected drug is in the list."""
         low = text.lower()
         hits = []
         for d in self.drugs:
             if low in d["name"].lower() or (d["rxnorm_name"] and low in d["rxnorm_name"].lower()):
                 hits.append(dict(d, matched_via=None))
                 continue
-            via = [c["name"] for c in d["ciel"] if c["name"] and low in c["name"].lower()]
+            via = [f'brand "{b}"' for b in d.get("brand_names", []) if low in b.lower()]
+            via += [f'CIEL "{c["name"]}"' for c in d["ciel"] if c["name"] and low in c["name"].lower()]
             if via:
                 hits.append(dict(d, matched_via=via[0]))
         return sorted(hits, key=lambda d: d["name"].lower())
@@ -375,10 +380,13 @@ def fmt_drug(d):
     ciel = "; ".join(f"{c['code']} {c['name']}" for c in d["ciel"][:5])
     more = f" (+{len(d['ciel']) - 5} more)" if len(d["ciel"]) > 5 else ""
     rx = d["rxcui"] or "none (documented gap)"
+    brands = d.get("brand_names", [])
+    bmore = f" (+{len(brands) - 6} more)" if len(brands) > 6 else ""
     lines = [f"{d['name']}  [{d['id']}]",
              f"  RxCUI     {rx}" + (f"  ({d['rxnorm_name']})" if d["rxnorm_name"] else ""),
              f"  DrugBank  {d['drugbank_id'] or 'none'}",
              f"  ATC       {', '.join(d['atc']) or 'none'}",
+             f"  Brands    {', '.join(brands[:6]) or 'none'}{bmore}",
              f"  CIEL      {ciel or 'none'}{more}"]
     if "partner_counts" in d:
         c = d["partner_counts"]
@@ -463,7 +471,7 @@ def run(kb, args):
     if args.cmd == "search":
         hits = kb.search(args.text)
         lines = [f"{d['name']:<40} rxcui:{d['rxcui'] or '-':<8} {d['id']:<14}"
-                 + (f" via CIEL \"{d['matched_via']}\"" if d["matched_via"] else "") for d in hits]
+                 + (f" via {d['matched_via']}" if d["matched_via"] else "") for d in hits]
         return hits, "\n".join(lines) or f"No drug name contains {args.text!r}."
     raise AssertionError(args.cmd)
 

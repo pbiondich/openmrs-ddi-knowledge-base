@@ -42,6 +42,21 @@ class QueryKbTest(unittest.TestCase):
             self.assertEqual(self.kb.resolve_one(term)["name"], "Warfarin", term)
         self.assertEqual(self.kb.resolve_one("aspirin")["name"], "Acetylsalicylic acid")  # RxNorm name
 
+    def test_brand_names_resolve(self):
+        # issue #5: a clinician asks in brand names; RxNorm BN concepts per ingredient supply them
+        self.assertEqual(self.kb.resolve_one("panadol")["name"], "Acetaminophen")
+        self.assertEqual(self.kb.resolve_one("Zocor")["name"], "Simvastatin")
+        self.assertEqual(self.kb.resolve_one("coumadin")["name"], "Warfarin")
+        vytorin = sorted(d["name"] for d in self.kb.resolve("vytorin"))     # a combination brand names both
+        self.assertEqual(vytorin, ["Ezetimibe", "Simvastatin"])
+        with_brands = sum(1 for d in self.kb.drugs if d.get("brand_names"))
+        self.assertGreater(with_brands, 1000, "most ingredients should carry at least one brand")
+        r = self.run_cli("pair", "panadol", "simvastatin")                   # the live case from issue #5
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("Acetaminophen + Simvastatin", r.stdout)
+        hit = [d for d in self.kb.search("zocor") if d["name"] == "Simvastatin"][0]
+        self.assertEqual(hit["matched_via"], 'brand "Zocor"')
+
     def test_unresolved_offers_suggestions(self):
         with self.assertRaises(Unresolved) as cm:
             self.kb.resolve("warfarine")

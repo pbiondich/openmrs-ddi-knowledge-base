@@ -47,7 +47,8 @@
           "rxcui": {"type": ["string", "null"], "description": "RxNorm ingredient RxCUI; null with a documented gap for a small set of obsolete/unmapped concepts."},
           "rxnorm_name": {"type": ["string", "null"]},
           "drugbank_id": {"type": ["string", "null"]},
-          "atc": {"type": "array", "items": {"type": "string"}, "description": "ATC codes, pre-derived from RxNorm RxClass."},
+          "atc": {"type": "array", "items": {"type": "string"}, "description": "RxNorm level-5 ATC substance codes (7 characters, e.g. C09AA03)."},
+          "brand_names": {"type": "array", "items": {"type": "string"}, "description": "RxNorm brand-name (BN) concepts related to the ingredient, including brands of combination products that contain it (Vytorin lists under simvastatin and ezetimibe). US-centric: Panadol is present, Calpol is not. Intended as aliases for matching clinician text."},
           "ciel": {
             "type": "array",
             "description": "Linked CIEL concepts (ingredient-level match).",

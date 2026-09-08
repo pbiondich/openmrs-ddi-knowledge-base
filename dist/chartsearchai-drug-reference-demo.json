@@ -1,7 +1,7 @@
 {
  "version": "1.0",
  "source": "DDInter 2.0, RxNorm, CIEL (openmrs-ddi-knowledge-base)",
- "description": "Drug-drug interaction reference for chartsearchai, generated from the OpenMRS DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting partners (Major/Moderate severity) with mechanism notes, and its contraindications as DDInter's drug-disease rows (type condition; token in natural word order for containment matching against the patient's condition list). Aliases include RxNorm and CIEL concept names; atcCodes are RxNorm level-5 ATC codes. Dosing is out of V1 scope.",
+ "description": "Drug-drug interaction reference for chartsearchai, generated from the OpenMRS DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting partners (Major/Moderate severity) with mechanism notes, and its contraindications as DDInter's drug-disease rows (type condition; token in natural word order for containment matching against the patient's condition list). Aliases include the RxNorm generic name, RxNorm brand names, and CIEL concept names; atcCodes are RxNorm level-5 ATC codes. Dosing is out of V1 scope.",
  "entries": [
   {
    "id": "1191",
@@ -9,6 +9,38 @@
    "aliases": [
     "acetylsalicylic acid",
     "aspirin",
+    "alka-seltzer",
+    "anacin",
+    "anacin advanced headache formula",
+    "anacin aspirin regimen",
+    "arthriten inflammatory pain",
+    "ascomp",
+    "aspergum",
+    "aspi-cor",
+    "bc arthritis",
+    "bc original formula",
+    "backaid ipf",
+    "bayer aspirin",
+    "bromo seltzer antacid pain reliever",
+    "bufferin",
+    "durlaza",
+    "ecotrin",
+    "equagesic",
+    "exaprin",
+    "exaprin plus",
+    "excedrin",
+    "excedrin pm triple action",
+    "miniprin",
+    "norgesic",
+    "norwich aspirin",
+    "orphengesic",
+    "pamprin max formula",
+    "saleto",
+    "st. joseph aspirin",
+    "stanback headache powder reformulated jan 2011",
+    "vanquish",
+    "vazalore",
+    "yosprala",
     "acetaminophen / aluminum hydroxide / aspirin / caffeine / magnesium hydroxide",
     "acetaminophen / aluminum hydroxide / aspirin / salicylamide",
     "acetaminophen / aspirin",
@@ -168,6 +200,8 @@
    "name": "Amiodarone",
    "aliases": [
     "amiodarone",
+    "nexterone",
+    "pacerone",
     "amiodarone hydrochloride"
    ],
    "atcCodes": [
@@ -280,6 +314,13 @@
    "name": "Ciprofloxacin",
    "aliases": [
     "ciprofloxacin",
+    "cetraxal",
+    "ciloxan",
+    "cipro",
+    "cipro hc",
+    "ciprodex",
+    "otovel",
+    "proquin",
     "ciprofloxacin / dexamethasone",
     "ciprofloxacin / hydrocortisone",
     "ciprofloxacin hydrochloride",
@@ -408,6 +449,7 @@
    "name": "Clarithromycin",
    "aliases": [
     "clarithromycin",
+    "biaxin",
     "clarithromycin / esomeprazole / levofloxacin combination kit",
     "amoxicillin / clarithromycin / esomeprazole combination kit",
     "amoxicillin / clarithromycin / vonoprazan combination kit"
@@ -496,7 +538,10 @@
    "id": "3407",
    "name": "Digoxin",
    "aliases": [
-    "digoxin"
+    "digoxin",
+    "digitek",
+    "digox",
+    "lanoxin"
    ],
    "atcCodes": [
     "C01AA05"
@@ -623,6 +668,7 @@
    "name": "Fluconazole",
    "aliases": [
     "fluconazole",
+    "diflucan",
     "azithromycin / fluconazole / ornidazole"
    ],
    "atcCodes": [
@@ -701,6 +747,24 @@
    "name": "Ibuprofen",
    "aliases": [
     "ibuprofen",
+    "addaprin",
+    "advil",
+    "caldolor",
+    "combogesic",
+    "counteract ib",
+    "duexis",
+    "genpril",
+    "ibu",
+    "ibudone",
+    "ibuprohm",
+    "motrin",
+    "motrin pm",
+    "neoprofen",
+    "proprinal",
+    "reprexain",
+    "samson 8",
+    "vicoprofen",
+    "wal-profen",
     "chlorpheniramine / ibuprofen / pseudoephedrine",
     "codeine / ibuprofen",
     "diphenhydramine / ibuprofen",
@@ -841,6 +905,10 @@
    "name": "Lisinopril",
    "aliases": [
     "lisinopril",
+    "prinivil",
+    "qbrelis",
+    "zestoretic",
+    "zestril",
     "hydrochlorothiazide / lisinopril"
    ],
    "atcCodes": [
@@ -928,6 +996,20 @@
    "name": "Metformin",
    "aliases": [
     "metformin",
+    "actoplus met",
+    "glucophage",
+    "glumetza",
+    "invokamet",
+    "janumet",
+    "jentadueto",
+    "kazano",
+    "kombiglyze",
+    "riomet",
+    "segluromet",
+    "synjardy",
+    "trijardy",
+    "xigduo",
+    "zituvimet",
     "glipizide / metformin",
     "glyburide / metformin",
     "metformin / pioglitazone",
@@ -1018,6 +1100,12 @@
    "name": "Methotrexate",
    "aliases": [
     "methotrexate",
+    "jylamvo",
+    "otrexup",
+    "rasuvo",
+    "reditrex",
+    "trexall",
+    "xatmep",
     "methotrexate, sodium salt"
    ],
    "atcCodes": [
@@ -1112,6 +1200,8 @@
    "aliases": [
     "omeprazole",
     "esomeprazole",
+    "nexium",
+    "vimovo",
     "amoxicillin / esomeprazole / levofloxacin combination kit",
     "clarithromycin / esomeprazole / levofloxacin combination kit",
     "amoxicillin / clarithromycin / esomeprazole combination kit",
@@ -1172,6 +1262,7 @@
    "name": "Sertraline",
    "aliases": [
     "sertraline",
+    "zoloft",
     "sertraline hydrochloride"
    ],
    "atcCodes": [
@@ -1284,6 +1375,9 @@
    "name": "Simvastatin",
    "aliases": [
     "simvastatin",
+    "flolipid",
+    "vytorin",
+    "zocor",
     "ezetimibe / simvastatin"
    ],
    "atcCodes": [
@@ -1361,6 +1455,9 @@
    "name": "Spironolactone",
    "aliases": [
     "spironolactone",
+    "aldactone",
+    "cardalis",
+    "carospir",
     "furosemide / spironolactone",
     "hydrochlorothiazide / spironolactone",
     "hydroflumethiazide / spironolactone"
@@ -1435,6 +1532,11 @@
    "name": "Tramadol",
    "aliases": [
     "tramadol",
+    "conzip",
+    "qdolo",
+    "seglentis",
+    "ultracet",
+    "ultram",
     "acetaminophen / tramadol",
     "tramadol hydrochloride"
    ],
@@ -1548,6 +1650,8 @@
    "name": "Warfarin",
    "aliases": [
     "warfarin",
+    "coumadin",
+    "jantoven",
     "warfarin potassium",
     "warfarin sodium"
    ],

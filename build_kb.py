@@ -13,6 +13,7 @@ Pipeline:
   4. clinician curation   src/curation.json (separations, remaps, gaps)
   5. CIEL bridge          src/ciel_crosswalk.json (ingredient-level match)
   6. ATC                  src/atc_cache.jsonl (pre-derived from RxNorm, level-5)
+  6b. brand names         src/brand_names.jsonl (RxNorm BN concepts per ingredient; issue #5)
   7. drug-disease rows    src/disease_interactions.jsonl (DDInter's drug-disease table)
   8. derived tier         condition-mediated chains inferred from step 7 (query_kb.py's matcher)
 
@@ -28,6 +29,10 @@ rxn = {r["ddinter_id"]: r for r in jsonl(S + "rxnorm.jsonl")}
 ing = {r["rxcui"]: r["ingredients"] for r in jsonl(S + "ingredient_cache.jsonl")}
 rxnames = {r["rxcui"]: r["name"] for r in jsonl(S + "rxnorm_names.jsonl")}
 atc = {r["rxcui"]: r["atc"] for r in jsonl(S + "atc_cache.jsonl")}
+if not os.path.exists(S + "brand_names.jsonl"):
+    print("BUILD FAILED: src/brand_names.jsonl missing; run fetch_brand_names.py")
+    sys.exit(1)
+brands = {r["rxcui"]: r["brand_names"] for r in jsonl(S + "brand_names.jsonl")}
 curation = {o["id"]: o for o in json.load(open(S + "curation.json"))["overrides"]}
 drugs_raw = jsonl(S + "drugs.jsonl")
 interactions = [json.loads(l) for l in open(S + "interactions.jsonl")]
@@ -87,6 +92,7 @@ for d in drugs_raw:
         "id": did, "name": name, "rxcui": rx, "rxnorm_name": rxname,
         "drugbank_id": d.get("drugbank_id"),
         "atc": atc.get(rx, []) if rx else [],
+        "brand_names": brands.get(rx, []) if rx else [],
         "ciel": ciel_for(rx),
     })
 
@@ -162,7 +168,7 @@ derived.sort(key=lambda r: (drug_pos[r[0]], drug_pos[r[4]], r[5]))
 
 kb = {
     "metadata": {
-        "schema_version": "1.2",
+        "schema_version": "1.3",
         "title": "OpenMRS DDI knowledge base (normalized)",
         "source": {"name": "DDInter 2.0", "url": "https://ddinter2.scbdd.com/",
                    "tables": "drug-drug interactions; drug-disease interactions",

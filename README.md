@@ -36,7 +36,8 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 | `out/rxcui_review.json` | Human-readable record of the RxNorm canonicalization and clinician curation review. |
 | `query_kb.py` | Command-line and importable query tool over the knowledge base (see "Asking it questions"). `tests/` exercises it against the built file. |
 | `fetch_disease_interactions.py` | The network step that refreshes `src/disease_interactions.jsonl` from DDInter's per-drug drug-disease endpoint (the table is not in DDInter's bulk downloads). |
-| `src/` | The build inputs: DDInter facts (`drugs.jsonl`, `interactions.jsonl`, `ddi_mechanisms.json`, `disease_interactions.jsonl`), the RxNorm/RxClass/CIEL fetch results, and the clinician decisions (`curation.json`). `build_kb.py` turns these into the KB above. |
+| `fetch_brand_names.py` | The network step that refreshes `src/brand_names.jsonl` from RxNorm's brand-name concepts per ingredient. |
+| `src/` | The build inputs: DDInter facts (`drugs.jsonl`, `interactions.jsonl`, `ddi_mechanisms.json`, `disease_interactions.jsonl`), the RxNorm/RxClass/CIEL fetch results (including `brand_names.jsonl`), and the clinician decisions (`curation.json`). `build_kb.py` turns these into the KB above. |
 | `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`); drug-disease rows become the module's `condition` contraindications. Run `adapt_to_chartsearchai.py full` to generate the full dataset (~180 MB, not committed). |
 
 ## The record shape
@@ -52,6 +53,7 @@ Tables joined by id, so nothing is duplicated:
   "drugs": [
     { "id": "DDInter1", "name": "Abacavir", "rxcui": "190521", "rxnorm_name": "abacavir",
       "drugbank_id": "DB01048", "atc": ["J05AF06"],
+      "brand_names": ["Epzicom", "Triumeq", "Trizivir", "Ziagen"],
       "ciel": [ { "code": "103166", "uuid": "103166AAAA…", "name": "Abacavir / lamivudine" } ] }
   ],
   "interactions": [
@@ -91,7 +93,7 @@ python3 query_kb.py mechanism 34                                       # a mecha
 python3 query_kb.py search statin                                      # drugs whose name contains a string
 ```
 
-A drug can be named by its DDInter name, its RxNorm name, or a CIEL concept name, or by identifier with a prefix (`rxcui:11289`, `ciel:86415`, `drugbank:DB00682`, `id:DDInter1951`). Add `--json` to any command for machine-readable output. The same logic is importable (`from query_kb import KB`) for scripts and notebooks, and it needs nothing beyond Python 3.
+A drug can be named by its DDInter name, its RxNorm generic name, an RxNorm brand name (`panadol`, `zocor`), or a CIEL concept name, or by identifier with a prefix (`rxcui:11289`, `ciel:86415`, `drugbank:DB00682`, `id:DDInter1951`). Add `--json` to any command for machine-readable output. The same logic is importable (`from query_kb import KB`) for scripts and notebooks, and it needs nothing beyond Python 3.
 
 Two behaviors are deliberate. A misspelled drug gets close-match suggestions rather than a silent empty result, and a pair with no record is reported as a knowledge gap, in the words of the governing rule above, never as "no interaction." A CIEL name that covers a combination product (say, "Acetaminophen / aspirin") resolves to every ingredient it contains, so a question about it checks all of them.
 
@@ -102,7 +104,7 @@ Two behaviors are deliberate. A misspelled drug gets close-match suggestions rat
 Three public sources, layered so each does the job it is best at:
 
 - **DDInter 2.0** supplies the interactions: the pair, a severity, and a mechanism description. It is open-access, requires no implementer maintenance, and works offline. The full database (about 302K interactions) was assembled by walking DDInter's interaction groups, since the bulk CSV downloads cover only eight of the fourteen ATC anatomical groups (no cardiovascular, anti-infective, or nervous-system files) and carry no mechanism text. DDInter's drug-disease table was fetched the same way, one request per drug, because it is not in the downloads at all: 8,346 rows across 1,480 drugs, every row with a description and nearly every one with literature or product-label references.
-- **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`.
+- **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`. RxNorm also supplies each ingredient's **brand names** (its related `BN` concepts, including brands of combination products that contain it), because a clinician's question is where brand names live and a knowledge base that knows only `acetaminophen` cannot answer one about Panadol. RxNorm is US-centric here: Panadol is present, regional brands such as Calpol are not.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
 No step requires an implementer to curate drug data by hand, and the build is reproducible and offline. The committed `src/` inputs hold the facts fetched once from DDInter, RxNorm, RxClass, and CIEL, together with the clinician decisions captured as explicit data (`src/curation.json`: 5 separations, 4 remaps, 28 gaps). `build_kb.py` deterministically assembles `ddi_knowledge_base.json` from those inputs: RxNorm base match, canonicalization to the single-ingredient (`IN`) concept, the clinician overrides, the CIEL ingredient-level bridge, and ATC. Because the human decisions are data rather than re-derived, the build reproduces the exact curated knowledge base — confirm with `python3 build_kb.py --check`. Only the one-time acquisition of `src/` (the network fetches from those four sources) lives outside the repo, in the git history.
@@ -115,12 +117,14 @@ python3 build_kb.py --check     # verify the rebuild matches the committed KB
 python3 -m unittest discover tests       # query the built KB and check every row joins
 python3 adapt_to_chartsearchai.py demo   # project into the Chart Search AI module format
 python3 fetch_disease_interactions.py    # network: refresh src/disease_interactions.jsonl from DDInter
+python3 fetch_brand_names.py             # network: refresh src/brand_names.jsonl from RxNorm
 ```
 
 `build_kb.py` is offline and deterministic. Refreshing a source input from its
-external service is a separate, network-facing step; two are kept in-repo.
+external service is a separate, network-facing step; three are kept in-repo.
 `fetch_disease_interactions.py` walks DDInter's per-drug drug-disease endpoint
-(resumable, one request per drug). `derive_atc.py` rebuilds `src/atc_cache.jsonl`
+(resumable, one request per drug). `fetch_brand_names.py` pulls each ingredient's
+brand-name concepts from RxNorm. `derive_atc.py` rebuilds `src/atc_cache.jsonl`
 from RxNorm. It must produce
 **level-5** ATC substance codes (via RxNorm's `propName=ATC`, e.g. `C09AA03`),
 not level-4 subgroups (`C09AA`) — the Chart Search AI validator keys on level-5,
@@ -140,6 +144,7 @@ is not level-5, so the fix cannot regress through the pipeline.
 | Derived tier | 111,138 chains linking 97,493 drug pairs through 185 conditions (923 cause drugs, 1,318 rated drugs) |
 | Derived tier vs DDInter's pairwise rows | 65,406 of those pairs DDInter does not list; 5,021 it rates `Unknown`; 27,066 it already rates |
 | RxNorm normalization | 2,255 / 2,283 drugs to a current ingredient RxCUI (28 obsolete, low-relevance concepts left as explicit gaps) |
+| Brand names | 1,652 / 2,283 drugs (72.4%) carry at least one RxNorm brand name; 4,066 distinct brands, 7,091 links |
 | CIEL bridge | 1,986 / 2,283 KB drugs (87%) carry a CIEL concept |
 | CIEL formulary overlap | 4,258 of 7,615 RxNorm-mapped CIEL drugs (55.9%) have interaction data |
 

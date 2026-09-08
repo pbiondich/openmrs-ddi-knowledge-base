@@ -28,6 +28,7 @@ def aliases(d):
     al = [d["name"]]
     if d.get("rxnorm_name"):
         al.append(d["rxnorm_name"])
+    al.extend(d.get("brand_names", []))        # clinicians ask in brand names (issue #5)
     for c in d.get("ciel", []):
         if c.get("name"):
             al.append(c["name"])
@@ -112,9 +113,9 @@ dataset = {
                     "DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting "
                     "partners (Major/Moderate severity) with mechanism notes, and its contraindications "
                     "as DDInter's drug-disease rows (type condition; token in natural word order for "
-                    "containment matching against the patient's condition list). Aliases include RxNorm "
-                    "and CIEL concept names; atcCodes are RxNorm level-5 ATC codes. Dosing is out of "
-                    "V1 scope."),
+                    "containment matching against the patient's condition list). Aliases include the RxNorm "
+                    "generic name, RxNorm brand names, and CIEL concept names; atcCodes are RxNorm level-5 "
+                    "ATC codes. Dosing is out of V1 scope."),
     "entries": entries,
 }
 os.makedirs("dist", exist_ok=True)
