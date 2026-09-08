@@ -1,8 +1,8 @@
 # Data attribution and terms
 
-All interaction data in this repository is derived from **DDInter 2.0**, an
-open-access drug-drug interaction database from the Computational Biology &
-Drug Design Group.
+All interaction data in this repository, the drug-drug interactions and the
+drug-disease interactions alike, is derived from **DDInter 2.0**, an open-access
+drug interaction database from the Computational Biology & Drug Design Group.
 
 - Source: https://ddinter2.scbdd.com/
 - Citation: Xiong G, et al. DDInter 2.0: an enhanced drug interaction resource

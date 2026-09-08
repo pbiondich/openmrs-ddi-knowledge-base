@@ -12,7 +12,8 @@ Pipeline:
   3. canonicalize to IN   src/ingredient_cache.jsonl, src/rxnorm_names.jsonl
   4. clinician curation   src/curation.json (separations, remaps, gaps)
   5. CIEL bridge          src/ciel_crosswalk.json (ingredient-level match)
-  6. ATC                  src/atc_cache.jsonl (pre-derived from RxClass)
+  6. ATC                  src/atc_cache.jsonl (pre-derived from RxNorm, level-5)
+  7. drug-disease rows    src/disease_interactions.jsonl (DDInter's drug-disease table)
 
 Usage: python3 build_kb.py [--check]   (--check verifies against the committed file)
 """
@@ -103,26 +104,58 @@ used = {row[3] for row in interactions}
 mechanisms = {gid: {"text": mech_src[gid]["mechanism"], "categories": mech_src[gid]["mechanism_categories"]}
               for gid in sorted(used, key=lambda x: int(x)) if gid in mech_src}
 
+# --- 7. drug-disease rows: DDInter's drug-disease table, one row per (drug, condition) ---
+# The description and references are interned once in disease_notes, because DDInter reuses a
+# class-level paragraph across every drug in the class (the NRTI hepatotoxicity text appears under
+# didanosine, stavudine, zalcitabine, ...). This table is what lets a consumer derive a
+# condition-mediated finding for a pair DDInter rates "Unknown" as a drug-drug row (stavudine +
+# metformin via lactic acidosis).
+if not os.path.exists(S + "disease_interactions.jsonl"):
+    print("BUILD FAILED: src/disease_interactions.jsonl missing; run fetch_disease_interactions.py")
+    sys.exit(1)
+SEVERITIES = {"Major", "Moderate", "Minor", "Unknown"}
+drug_ids = {d["id"] for d in drugs}
+disease_notes, note_ids, disease_rows = {}, {}, []
+for rec in jsonl(S + "disease_interactions.jsonl"):
+    if rec["ddinter_id"] not in drug_ids:
+        continue
+    for r in rec["rows"]:
+        key = (r["text"], tuple(r["references"]))
+        nid = note_ids.get(key)
+        if nid is None:
+            nid = note_ids[key] = str(len(note_ids) + 1)
+            disease_notes[nid] = {"text": r["text"], "references": r["references"]}
+        disease_rows.append([rec["ddinter_id"], r["disease"], r["severity"], nid])
+bad_sev = sorted({row[2] for row in disease_rows} - SEVERITIES)
+if bad_sev:
+    print("BUILD FAILED: drug-disease rows carry a severity outside the DDInter scale:", bad_sev)
+    sys.exit(1)
+
 kb = {
     "metadata": {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "title": "OpenMRS DDI knowledge base (normalized)",
         "source": {"name": "DDInter 2.0", "url": "https://ddinter2.scbdd.com/",
+                   "tables": "drug-drug interactions; drug-disease interactions",
                    "normalization": "RxNorm (NLM)", "bridge": "CIEL v2026-07-20"},
-        "shape": {"drugs": len(drugs), "mechanisms": len(mechanisms), "interactions": len(interactions)},
+        "shape": {"drugs": len(drugs), "mechanisms": len(mechanisms), "interactions": len(interactions),
+                  "disease_notes": len(disease_notes), "disease_interactions": len(disease_rows)},
         "format": {"interactions": "[drug_a_id, drug_b_id, severity, group_id]",
+                   "disease_interactions": "[drug_id, condition, severity, note_id]",
                    "note": "Reproducible build from src/ via build_kb.py; clinician decisions in src/curation.json."},
     },
     "mechanisms": mechanisms,
     "drugs": drugs,
     "interactions": interactions,
+    "disease_notes": disease_notes,
+    "disease_interactions": disease_rows,
 }
 
 if "--check" in sys.argv:
     cur = json.load(open("out/ddi_knowledge_base.json"))
     ok = True
-    for key in ("drugs", "mechanisms", "interactions"):
-        if kb[key] != cur[key]:
+    for key in ("drugs", "mechanisms", "interactions", "disease_notes", "disease_interactions"):
+        if kb[key] != cur.get(key):
             ok = False
             if key == "drugs":
                 diff = [d["id"] for d, c in zip(kb["drugs"], cur["drugs"]) if d != c]
@@ -151,4 +184,5 @@ sample = [{"drug_a": {"id": a, "name": by_id[a]["name"], "rxcui": by_id[a]["rxcu
           for a, b, s, g in interactions[:8]]
 json.dump({"note": "Illustrative reconstructed rows from ddi_knowledge_base.json.", "interactions": sample},
           open("out/sample.json", "w"), ensure_ascii=False, indent=2)
-print(f"built out/ddi_knowledge_base.json  drugs {len(drugs)} | mechanisms {len(mechanisms)} | interactions {len(interactions)}")
+print(f"built out/ddi_knowledge_base.json  drugs {len(drugs)} | mechanisms {len(mechanisms)} | interactions {len(interactions)}"
+      f" | disease rows {len(disease_rows)} ({len(disease_notes)} notes)")

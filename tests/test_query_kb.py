@@ -9,7 +9,7 @@ import json, os, subprocess, sys, unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-from query_kb import KB, Unresolved, Ambiguous, SEVERITIES  # noqa: E402
+from query_kb import KB, Unresolved, Ambiguous, SEVERITIES, condition_terms  # noqa: E402
 
 SCRIPT = os.path.join(ROOT, "query_kb.py")
 
@@ -98,6 +98,46 @@ class QueryKbTest(unittest.TestCase):
         self.assertIn("Simvastatin", names)
         self.assertEqual(names, sorted(names, key=str.lower))
 
+    # --- drug-disease table and derived findings ---
+    def test_every_disease_row_joins(self):
+        kb = self.kb
+        self.assertTrue(kb.conditions_of, "the drug-disease table should be present")
+        for did, rows in kb.conditions_of.items():
+            self.assertIn(did, kb.by_id)
+            for condition, sev, nid in rows:
+                self.assertTrue(condition)
+                self.assertIn(sev, SEVERITIES)
+                self.assertIn(nid, kb.disease_notes)
+
+    def test_metformin_lactic_acidosis_is_major_with_references(self):
+        rows = {r["condition"]: r for r in self.kb.conditions("metformin")}
+        row = rows["Acidosis, Lactic"]
+        self.assertEqual(row["severity"], "Major")
+        self.assertIn("lactic acidosis", row["text"].lower())
+        self.assertTrue(row["references"])
+        sevs = [SEVERITIES.index(r["severity"]) for r in self.kb.conditions("metformin")]
+        self.assertEqual(sevs, sorted(sevs), "most severe first")
+
+    def test_stavudine_metformin_is_unknown_pairwise_but_derived_via_lactic_acidosis(self):
+        pair = self.kb.pair("stavudine", "metformin")
+        self.assertEqual([r["severity"] for r in pair], ["Unknown"])   # DDInter's pairwise row
+        derived = self.kb.derived("stavudine", "metformin")
+        hit = [r for r in derived if r["condition"] == "Acidosis, Lactic"]
+        self.assertTrue(hit, derived)
+        self.assertIn("Stavudine", hit[0]["basis"])                  # stavudine's text names it
+        self.assertEqual(hit[0]["b"]["severity"], "Major")          # metformin's rating
+        # symmetric: the same conditions come back whichever way the pair is asked
+        self.assertEqual({r["condition"] for r in derived},
+                         {r["condition"] for r in self.kb.derived("metformin", "stavudine")})
+
+    def test_check_carries_derived_findings(self):
+        res = self.kb.check(["stavudine", "metformin"])
+        self.assertIn("Acidosis, Lactic", [r["condition"] for r in res["derived"]])
+
+    def test_condition_terms(self):
+        self.assertIn("lactic acidosis", condition_terms("Acidosis, Lactic"))
+        self.assertIn("liver disease", condition_terms("Liver Diseases"))
+
     # --- command line ---
     def run_cli(self, *args):
         return subprocess.run([sys.executable, SCRIPT, *args], capture_output=True, text=True)
@@ -105,7 +145,9 @@ class QueryKbTest(unittest.TestCase):
     def test_cli_json_pair(self):
         r = self.run_cli("--json", "pair", "warfarin", "aspirin")
         self.assertEqual(r.returncode, 0, r.stderr)
-        self.assertEqual(json.loads(r.stdout)[0]["severity"], "Major")
+        out = json.loads(r.stdout)
+        self.assertEqual(out["interactions"][0]["severity"], "Major")
+        self.assertEqual(out["derived"], [], "warfarin/aspirin share precautions but form no causal chain")
 
     def test_cli_gap_and_errors(self):
         r = self.run_cli("pair", "warfarin", "warfarine")
@@ -117,6 +159,19 @@ class QueryKbTest(unittest.TestCase):
         r = self.run_cli("drug", "Acetaminophen / aspirin")
         self.assertEqual(r.returncode, 0)
         self.assertEqual(r.stdout.count("RxCUI"), 2)
+
+    def test_cli_pair_and_conditions_show_derived(self):
+        r = self.run_cli("pair", "stavudine", "metformin")
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("Unknown", r.stdout)
+        self.assertIn("Derived (condition-mediated", r.stdout)
+        self.assertIn("Acidosis, Lactic", r.stdout)
+        r = self.run_cli("--json", "pair", "stavudine", "metformin")
+        out = json.loads(r.stdout)
+        self.assertEqual(out["interactions"][0]["severity"], "Unknown")
+        self.assertTrue(out["derived"])
+        r = self.run_cli("conditions", "metformin")
+        self.assertIn("Acidosis, Lactic", r.stdout)
 
     def test_cli_check_reports_gap_wording(self):
         r = self.run_cli("check", "warfarin", "notadrug")

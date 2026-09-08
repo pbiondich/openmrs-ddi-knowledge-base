@@ -55,6 +55,25 @@ def note_for(sev, gid):
     text = mech.get(gid, {}).get("text")
     return f"{sev}. {text}" if text else f"{sev} severity interaction (DDInter 2.0; no mechanism description on file)."
 
+# contraindications: DDInter's drug-disease rows, as the module's {type: "condition"} rules. The module
+# matches a condition token by containment against the patient's lowercased condition text, so the
+# token is the condition name in natural word order ("Acidosis, Lactic" -> "lactic acidosis"), not
+# DDInter's MeSH-style inverted form.
+notes = kb.get("disease_notes", {})
+conds = {}
+for did, condition, sev, nid in kb.get("disease_interactions", []):
+    conds.setdefault(did, []).append((condition, sev, notes.get(nid, {}).get("text")))
+
+def condition_token(name):
+    return " ".join(reversed([p.strip() for p in name.lower().split(",")]))
+
+def contraindications_for(did):
+    out = []
+    for condition, sev, text in sorted(conds.get(did, [])):
+        note = f"{sev}. {text}" if text else f"{sev} severity drug-disease interaction (DDInter 2.0; no description on file)."
+        out.append({"type": "condition", "token": condition_token(condition), "note": note})
+    return out
+
 entries = []
 for did, plist in partners.items():
     d = drugs[did]
@@ -81,7 +100,7 @@ for did, plist in partners.items():
         "atcCodes": d.get("atc", []),
         "ageBands": [],
         "interactions": inter,
-        "contraindications": [],
+        "contraindications": contraindications_for(did),
         "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)",
     })
 
@@ -91,9 +110,11 @@ dataset = {
     "source": "DDInter 2.0, RxNorm, CIEL (openmrs-ddi-knowledge-base)",
     "description": ("Drug-drug interaction reference for chartsearchai, generated from the OpenMRS "
                     "DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting "
-                    "partners (Major/Moderate severity) with mechanism notes. Aliases include RxNorm "
-                    "and CIEL concept names; atcCodes derived via RxNorm RxClass. Dosing and "
-                    "contraindications are out of V1 scope."),
+                    "partners (Major/Moderate severity) with mechanism notes, and its contraindications "
+                    "as DDInter's drug-disease rows (type condition; token in natural word order for "
+                    "containment matching against the patient's condition list). Aliases include RxNorm "
+                    "and CIEL concept names; atcCodes are RxNorm level-5 ATC codes. Dosing is out of "
+                    "V1 scope."),
     "entries": entries,
 }
 os.makedirs("dist", exist_ok=True)
@@ -102,6 +123,7 @@ json.dump(dataset, open(out, "w"), ensure_ascii=False, indent=1 if MODE == "demo
 
 n_inter = sum(len(e["interactions"]) for e in entries)
 n_atc = sum(1 for e in entries if e["atcCodes"])
+n_contra = sum(len(e["contraindications"]) for e in entries)
 print(f"MODE={MODE}")
-print(f"entries: {len(entries)} | interaction objects: {n_inter} | entries with ATC: {n_atc}")
+print(f"entries: {len(entries)} | interaction objects: {n_inter} | entries with ATC: {n_atc} | contraindications: {n_contra}")
 print(f"file: {out} ({os.path.getsize(out)/1e6:.1f} MB)")

@@ -8,12 +8,18 @@ takes one line instead of a script:
   python3 query_kb.py check warfarin aspirin simvastatin   every interacting pair in a medication list
   python3 query_kb.py partners warfarin --severity Major   a drug's interacting partners, most severe first
   python3 query_kb.py drug warfarin                        identifiers, ATC, CIEL concepts, partner counts
+  python3 query_kb.py conditions metformin                 a drug's disease interactions (DDInter drug-disease table)
   python3 query_kb.py mechanism 34                         a mechanism group's text and categories
   python3 query_kb.py search statin                        drugs whose name contains a string
 
 Name a drug by its DDInter name, RxNorm name, or CIEL concept name (case-insensitive),
 or by identifier with a prefix: rxcui:11289, ciel:86415, drugbank:DB00682, id:DDInter1951.
 --json on any command prints machine-readable output; --kb PATH points at another file.
+
+pair and check also report DERIVED findings: a causal chain through the drug-disease table,
+where one drug's rating text names a condition the other drug is rated for (stavudine's
+"Liver Diseases" text names lactic acidosis; metformin is rated Major for "Acidosis,
+Lactic"). Those are inferences, labelled as such, not DDInter pairwise ratings.
 
 Importable: from query_kb import KB; kb = KB.load(); kb.pair("warfarin", "aspirin").
 A pair with no record is a knowledge gap, never a clearance (see README).
@@ -43,6 +49,32 @@ class Ambiguous(LookupError):
 
 def brief(d):
     return {"id": d["id"], "name": d["name"], "rxcui": d["rxcui"]}
+
+
+def condition_terms(name):
+    """The forms a MeSH-style condition name takes in prose: "Acidosis, Lactic" -> "lactic acidosis",
+    plus the singular of a plural head noun ("Liver Diseases" -> "liver disease")."""
+    low = name.lower().strip()
+    forms = {low, " ".join(reversed([p.strip() for p in low.split(",")]))}
+    forms |= {f[:-1] for f in forms if f.endswith("s")}
+    return forms
+
+
+def condition_link(ra, rb):
+    """Why two drug-disease rows form a causal chain, or None: one row's text names the OTHER row's
+    condition (stavudine's "Liver Diseases" text names lactic acidosis; metformin is rated for
+    "Acidosis, Lactic"). Two rows about the same condition are deliberately not a link: 667 drugs
+    carry a "Kidney Diseases" row, so "both rated for it" would fire on most pairs and says only that
+    each drug needs care in that condition, which `conditions` already reports per drug.
+    Returns (condition, basis)."""
+    ta, tb = condition_terms(ra["condition"]), condition_terms(rb["condition"])
+    if ta & tb:
+        return None
+    if any(t in (ra["text"] or "").lower() for t in tb):
+        return rb["condition"], f"{ra['drug']['name']}'s \"{ra['condition']}\" text names this condition"
+    if any(t in (rb["text"] or "").lower() for t in ta):
+        return ra["condition"], f"{rb['drug']['name']}'s \"{rb['condition']}\" text names this condition"
+    return None
 
 
 class KB:
@@ -77,6 +109,11 @@ class KB:
             self.partners_of.setdefault(a, []).append((b, sev, gid))
             if a != b:
                 self.partners_of.setdefault(b, []).append((a, sev, gid))
+        # --- drug-disease rows per drug (.get: a KB built before this table existed still loads) ---
+        self.disease_notes = data.get("disease_notes", {})
+        self.conditions_of = {}
+        for did, condition, sev, nid in data.get("disease_interactions", []):
+            self.conditions_of.setdefault(did, []).append((condition, sev, nid))
 
     @classmethod
     def load(cls, path=DEFAULT_KB):
@@ -141,24 +178,69 @@ class KB:
                     out.append(rec)
         return out
 
+    def _conditions_for(self, d):
+        out = []
+        for condition, sev, nid in self.conditions_of.get(d["id"], []):
+            n = self.disease_notes.get(nid, {})
+            out.append({"drug": brief(d), "condition": condition, "severity": sev,
+                        "text": n.get("text"), "references": n.get("references", [])})
+        out.sort(key=lambda r: (RANK[r["severity"]], r["condition"]))
+        return out
+
+    def conditions(self, term):
+        """A drug's disease interactions from DDInter's drug-disease table, most severe first."""
+        out = []
+        for d in self.resolve(term):
+            out.extend(self._conditions_for(d))
+        return out
+
+    def _derived_for(self, a, b):
+        out = []
+        for ra in self._conditions_for(a):
+            for rb in self._conditions_for(b):
+                link = condition_link(ra, rb)
+                if link:
+                    out.append({"drug_a": brief(a), "drug_b": brief(b), "condition": link[0], "basis": link[1],
+                                "a": {k: ra[k] for k in ("condition", "severity", "text")},
+                                "b": {k: rb[k] for k in ("condition", "severity", "text")}})
+        return out
+
+    def derived(self, term_a, term_b):
+        """Condition-mediated findings for two drugs, derived from the drug-disease table rather than
+        read from a DDInter pairwise row: one drug's rating text names a condition the other drug is
+        rated for (a causal chain). Inferences, labelled as such wherever shown."""
+        out = []
+        for a in self.resolve(term_a):
+            for b in self.resolve(term_b):
+                if a["id"] != b["id"]:
+                    out.extend(self._derived_for(a, b))
+        out.sort(key=lambda r: (min(RANK[r["a"]["severity"]], RANK[r["b"]["severity"]]), r["condition"]))
+        return out
+
     def check(self, terms):
-        """Every interacting pair among a medication list, most severe first, plus the terms
-        that could not be resolved, so a gap is reported rather than swallowed."""
+        """Every interacting pair among a medication list, most severe first, plus derived
+        condition-mediated findings, plus the terms that could not be resolved, so a gap is
+        reported rather than swallowed."""
         resolved, unresolved = [], []
         for t in terms:
             try:
                 resolved.extend(self.resolve(t))
             except Unresolved as e:
                 unresolved.append({"term": t, "suggestions": e.suggestions})
-        found = []
+        found, derived = [], []
         for i in range(len(resolved)):
             for j in range(i + 1, len(resolved)):
                 a, b = resolved[i], resolved[j]
-                rec = self.interaction(a, b) if a["id"] != b["id"] else None
+                if a["id"] == b["id"]:
+                    continue
+                rec = self.interaction(a, b)
                 if rec:
                     found.append(rec)
+                derived.extend(self._derived_for(a, b))
         found.sort(key=lambda r: (RANK[r["severity"]], r["drug_a"]["name"], r["drug_b"]["name"]))
-        return {"checked": [brief(d) for d in resolved], "interactions": found, "unresolved": unresolved}
+        derived.sort(key=lambda r: (min(RANK[r["a"]["severity"]], RANK[r["b"]["severity"]]), r["condition"]))
+        return {"checked": [brief(d) for d in resolved], "interactions": found, "derived": derived,
+                "unresolved": unresolved}
 
     def partners(self, term, severities=None):
         """A drug's interacting partners, most severe first and then by name."""
@@ -180,7 +262,11 @@ class KB:
             counts = {s: 0 for s in SEVERITIES}
             for _, sev, _ in self.partners_of.get(d["id"], []):
                 counts[sev] += 1
-            out.append(dict(d, partner_counts=counts, partners_total=sum(counts.values())))
+            conds = {s: 0 for s in SEVERITIES}
+            for _, sev, _ in self.conditions_of.get(d["id"], []):
+                conds[sev] += 1
+            out.append(dict(d, partner_counts=counts, partners_total=sum(counts.values()),
+                            condition_counts=conds, conditions_total=sum(conds.values())))
         return out
 
     def search(self, text):
@@ -212,12 +298,33 @@ def fmt_drug(d):
     if "partner_counts" in d:
         c = d["partner_counts"]
         lines.append(f"  Partners  {d['partners_total']} total: " + ", ".join(f"{c[s]} {s}" for s in SEVERITIES))
+        c = d["condition_counts"]
+        lines.append(f"  Conditions {d['conditions_total']} rated: " + ", ".join(f"{c[s]} {s}" for s in SEVERITIES if c[s])
+                     if d["conditions_total"] else "  Conditions none on file")
     return "\n".join(lines)
 
 
 def fmt_rec(r):
     mech = r["mechanism"] or "(no mechanism description on file)"
     return f"{r['severity']:<9}{r['drug_a']['name']} + {r['drug_b']['name']}\n         {mech}"
+
+
+def fmt_cond(r):
+    text = r["text"] or "(no description on file)"
+    return f"{r['severity']:<9}{r['condition']}\n         {text}"
+
+
+def fmt_derived(recs):
+    if not recs:
+        return []
+    lines = ["Derived (condition-mediated; an inference from the drug-disease table, not a DDInter pairwise rating):"]
+    for r in recs:
+        lines.append(f"  {r['condition']}  ({r['basis']})")
+        for side, d in (("a", r["drug_a"]), ("b", r["drug_b"])):
+            row = r[side]
+            text = (row["text"] or "(no description on file)")
+            lines.append(f"    {d['name']:<24} {row['severity']:<9} {row['condition']}: {text[:150]}{'...' if len(text) > 150 else ''}")
+    return lines
 
 
 def gap(a, b):
@@ -230,12 +337,18 @@ def run(kb, args):
         drugs = kb.profile(args.term)
         return drugs, "\n\n".join(fmt_drug(d) for d in drugs)
     if args.cmd == "pair":
-        recs = kb.pair(args.a, args.b)
-        return recs, "\n".join(fmt_rec(r) for r in recs) if recs else gap(args.a, args.b)
+        recs, derived = kb.pair(args.a, args.b), kb.derived(args.a, args.b)
+        lines = [fmt_rec(r) for r in recs] or [gap(args.a, args.b)]
+        lines += fmt_derived(derived)
+        return {"interactions": recs, "derived": derived}, "\n".join(lines)
+    if args.cmd == "conditions":
+        recs = kb.conditions(args.term)
+        return recs, "\n".join(fmt_cond(r) for r in recs) or f"No disease interactions on file for {args.term}."
     if args.cmd == "check":
         res = kb.check(args.terms)
         lines = ["Checked: " + ", ".join(d["name"] for d in res["checked"])]
         lines += [fmt_rec(r) for r in res["interactions"]] or ["No interactions on file among these drugs (a gap, not a clearance)."]
+        lines += fmt_derived(res["derived"])
         for u in res["unresolved"]:
             hint = f"  did you mean: {', '.join(u['suggestions'])}?" if u["suggestions"] else ""
             lines.append(f"Not in the knowledge base: {u['term']}{hint}")
@@ -277,6 +390,7 @@ def main(argv=None):
     s.add_argument("term")
     s.add_argument("--severity", action="append", choices=SEVERITIES, help="keep only this severity (repeatable)")
     s.add_argument("--limit", type=int, default=50, help="rows to show (0 = all)")
+    sub.add_parser("conditions", help="a drug's disease interactions (DDInter drug-disease table)").add_argument("term")
     sub.add_parser("mechanism", help="a mechanism group's text and categories").add_argument("gid")
     sub.add_parser("search", help="drugs whose name contains text").add_argument("text")
     args = p.parse_args(argv)

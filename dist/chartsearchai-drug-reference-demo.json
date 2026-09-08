@@ -1,7 +1,7 @@
 {
  "version": "1.0",
  "source": "DDInter 2.0, RxNorm, CIEL (openmrs-ddi-knowledge-base)",
- "description": "Drug-drug interaction reference for chartsearchai, generated from the OpenMRS DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting partners (Major/Moderate severity) with mechanism notes. Aliases include RxNorm and CIEL concept names; atcCodes derived via RxNorm RxClass. Dosing and contraindications are out of V1 scope.",
+ "description": "Drug-drug interaction reference for chartsearchai, generated from the OpenMRS DDI knowledge base (ddi_knowledge_base.json). Each entry lists a drug's interacting partners (Major/Moderate severity) with mechanism notes, and its contraindications as DDInter's drug-disease rows (type condition; token in natural word order for containment matching against the patient's condition list). Aliases include RxNorm and CIEL concept names; atcCodes are RxNorm level-5 ATC codes. Dosing is out of V1 scope.",
  "entries": [
   {
    "id": "1191",
@@ -72,50 +72,95 @@
     "buffered aspirin"
    ],
    "atcCodes": [
-    "A01AD",
-    "B01AC",
-    "N02BA",
-    "N02AJ"
+    "A01AD05",
+    "B01AC06",
+    "N02BA01"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the risk of central nervous system toxicity sometimes associated with fluoroquinolone use. Some investigators suggest that the piperazine ring of fluoroquinolones may inhibit the binding of gamma-aminobutyric acid (GABA) to brain receptors and that NSAIDs may synergistically add to this effect. Patients with a history of seizures may be at greater risk.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "digoxin",
      "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) may increase plasma digoxin concentrations and half-life. The exact mechanism is unknown, but may be related to reduced renal clearance of digoxin. The interaction has been reported with indomethacin and ibuprofen, but data for other NSAIDs are not available.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "ibuprofen",
      "note": "Major. The antiplatelet and cardioprotective effect of low-dose aspirin may be antagonized by coadministration of some nonsteroidal anti-inflammatory drugs (NSAIDs). Ibuprofen has been specifically implicated, and there is evidence that others including indomethacin, naproxen, and tiaprofenic acid may also interact. The mechanism is competitive inhibition of platelet cyclooxygenase by certain NSAIDs, which, unlike aspirin, bind reversibly at the active site of the enzyme and cause a temporary rather than persistent depression of thromboxane formation and thromboxane-dependent platelet function. The combined use of aspirin with NSAIDs in general may increase the potential for serious gastrointestinal (GI) toxicity, including inflammation, bleeding, ulceration, and perforation.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "lisinopril",
      "note": "Moderate. Some investigators suggest that coadministration with aspirin may attenuate the vasodilator and hypotensive effects of ACE inhibitors. In addition, some have found that the benefits of ACE inhibitors on morbidity and mortality in post-acute myocardial infarction, coronary heart disease, and particularly congestive heart failure may be compromised or even nullified by aspirin. The proposed mechanism is aspirin inhibition of cyclooxygenase, resulting in suppression of prostaglandin synthesis and prostaglandin-mediated hemodynamic effects of ACE inhibitors. However, evidence of a negative interaction is largely contradictory, and interpretation of relevant data has often been complicated by multiple confounding elements as well as the retrospective or post hoc nature of most studies.",
-     "atc": "C09AA"
+     "atc": "C09AA03"
     },
     {
      "token": "methotrexate",
      "note": "Major. Salicylates may interfere with the renal elimination of methotrexate and may displace it from binding sites. The pharmacologic effect and toxicity of methotrexate may be increased. Patients receiving high-dose methotrexate are at a greater risk of developing toxicity.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "sertraline",
      "note": "Moderate. Serotonin reuptake inhibitors (SRIs) may potentiate the risk of bleeding in patients treated with ulcerogenic agents and agents that affect hemostasis such as anticoagulants, platelet inhibitors, thrombin inhibitors, thrombolytic agents, or agents that commonly cause thrombocytopenia. The tricyclic antidepressant, clomipramine, is also a strong SRI and may interact similarly. Serotonin release by platelets plays an important role in hemostasis, thus SRIs may alter platelet function and induce bleeding.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "warfarin",
      "note": "Major. Aspirin, even in small doses, may increase the risk of bleeding in patients on oral anticoagulants by inhibiting platelet aggregation, prolonging bleeding time, and inducing gastrointestinal lesions. Analgesic/antipyretic doses of aspirin increase the risk of major bleeding more than low-dose aspirin; however bleeding has also occurred with low-dose aspirin.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "anemia",
+     "note": "Moderate. Occult, often asymptomatic GI blood loss occurs quite frequently with the use of normal dosages of aspirin and stems from the drug's local effect on the GI mucosa.  During chronic therapy, this type of bleeding may occasionally produce iron deficiency anemia.  Other salicylates reportedly cause little or no GI blood loss at usual dosages, but may do so at high dosages.  Prolonged therapy with salicylates, particularly aspirin, should be administered cautiously in patients with or predisposed to anemia.  Periodic monitoring of hematocrit is recommended.  The same precautions should also be observed with the use of related agents such as salicylamide because of their structural and pharmacological similarities to salicylate."
+    },
+    {
+     "type": "condition",
+     "token": "asthma",
+     "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) are contraindicated in patients with history of asthma, urticaria, or other allergic-type reactions after taking aspirin or other NSAIDs; severe, sometimes fatal, anaphylactic reactions to NSAIDs have been reported in such patients.  A subpopulation of patients with asthma may have aspirin-sensitive asthma which may include chronic rhinosinusitis complicated by nasal polyps, severe potentially fatal bronchospasm, and/or intolerance to aspirin and other NSAIDs.  Since cross-reactivity between aspirin and other NSAIDs has been reported in such aspirin-sensitive patients, therapy with any NSAID should be avoided in patients with this form of aspirin sensitivity.  NSAIDs should be used with caution in patients with preexisting asthma (without known aspirin sensitivity), and these patients should be monitored for changes in the signs and symptoms of asthma."
+    },
+    {
+     "type": "condition",
+     "token": "blood coagulation disorders",
+     "note": "Major. The use of aspirin is contraindicated in patients with significant active bleeding or hemorrhagic disorders such as hemophilia, von Willebrand's disease, or telangiectasia.  Aspirin interferes with coagulation by irreversibly inhibiting platelet aggregation and prolonging bleeding time.  The non-aceylated salicylates (i.e. salicylate salts such as sodium or magnesium salicylate) do not demonstrate these effects and may be appropriate substitutions in these patients.  However, all salicylates can interfere with the action of vitamin K and induce a dose-dependent alteration in hepatic synthesis of coagulation factors VII, IX and X.  At usual recommended dosages, a slight increase in prothrombin time (PT) may occur.  Therapy with salicylates, especially aspirin, should be administered with extreme caution in patients with hypoprothrombinemia, vitamin K deficiency, thrombocytopenia, thrombotic thrombocytopenic purpura, severe hepatic impairment, or anticoagulant use."
+    },
+    {
+     "type": "condition",
+     "token": "diseases requiring dialysis",
+     "note": "Moderate. Salicylate and its metabolites are readily removed by hemodialysis and, to a lesser extent, by peritoneal dialysis.  Doses should either be scheduled for administration after dialysis or supplemental doses be given after dialysis."
+    },
+    {
+     "type": "condition",
+     "token": "glucosephosphate dehydrogenase deficiency",
+     "note": "Moderate. Salicylates, particularly aspirin, may cause or aggravate hemolysis in patients with pyruvate kinase or glucose-6-phosphate dehydrogenase (G-6-PD) deficiency.  However, this effect has not been clearly established.  Until more data are available, therapy with salicylates should be administered cautiously in patients with G-6-PD deficiency.  The same precaution should also be observed with the use of related agents such as salicylamide because of their structural and pharmacological similarities to salicylate."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Major. Salicylate and its metabolites are eliminated almost entirely by the kidney.  Therapy with salicylate drugs should be administered cautiously in patients with renal impairment, especially if it is severe.  Reduced dosages may be necessary to avoid drug accumulation.  Clinical monitoring of renal function is recommended during prolonged therapy, since the use of salicylate drugs has rarely been associated with renal toxicities, including elevations in serum creatinine, renal papillary necrosis, and acute tubular necrosis with renal failure.  Most of the data have been derived from experience with aspirin but may apply to other salicylates as well.  In patients with impaired renal function, aspirin has caused reversible and sometimes marked decreases in renal blood flow and glomerular filtration rate.  Adverse renal effects have usually reversed rapidly following withdrawal of aspirin therapy."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Moderate. The use of salicylates has occasionally been associated with acute, reversible hepatotoxicity, primarily manifested as elevations of serum transaminases, alkaline phosphatase and/or, rarely, bilirubin.  Hepatic injury consistent with chronic active hepatitis has also been reported in a few patients, which resulted rarely in encephalopathy or death.  Salicylate-induced hepatotoxicity appears to be dependent on serum salicylate concentration (> 25 mg/dL) and has occurred most frequently in patients with juvenile arthritis, active systemic lupus erythematosus, rheumatic fever, or preexisting hepatic impairment.  Therapy with salicylates, particularly when given in high dosages, should be administered cautiously in these patients, and periodic monitoring of liver function is recommended.  The same precautions should also be observed with the use of related agents such as salicylamide because of their structural and pharmacological similarities to salicylate.  A dosage reduction may be necessary if liver function abnormalities develop and serum salicylate concentration exceeds 25 mg/dL, although serum transaminase elevations may sometimes be transient and return to pretreatment values despite continued therapy without dosage adjustment."
+    },
+    {
+     "type": "condition",
+     "token": "peptic ulcer",
+     "note": "Major. Salicylates, particularly aspirin, can cause dose-related gastrointestinal bleeding and mucosal damage, which may occur independently of each other.  Occult, often asymptomatic GI blood loss is quite common with usual dosages of aspirin and stems from the drug's local effect on the GI mucosa.  During chronic therapy, this type of bleeding may occasionally produce iron deficiency anemia.  In contrast, major upper GI bleeding rarely occurs except in patients with active peptic ulcers or recent GI bleeding.  However, these patients generally do not experience greater occult blood loss than healthy patients following small doses of aspirin.  Mucosal damage associated with the use of salicylates may lead to development of peptic ulcers with or without bleeding, reactivation of latent ulcers, and ulcer perforation.  Therapy with salicylates and related agents such as salicylamide should be considered and administered cautiously in patients with a history of GI disease or alcoholism, particularly if they are elderly and/or debilitated, since such patients may be more susceptible to the GI toxicity of these drugs and seem to tolerate ulceration and bleeding less well than other individuals.  Extreme caution and thorough assessment of risks and benefits are warranted in patients with active or recent GI bleeding or lesions.  Whenever possible, especially if prolonged use is anticipated, treatment with non-ulcerogenic agents should be attempted first.  If salicylates are used, close monitoring for toxicity is recommended.  Some adverse GI effects may be minimized by administration with high dosages of antacids, use of enteric-coated or extended-release formulations, and/or concurrent use of a histamine H2-receptor antagonist or a cytoprotective agent such as misoprostol.  Patients with active peptic ulceration or GI bleeding treated with salicylates should generally be administered a concomitant anti-ulcer regimen."
+    },
+    {
+     "type": "condition",
+     "token": "reye syndrome",
+     "note": "Major. The use of salicylates, primarily aspirin, in children with varicella infections or influenza-like illnesses has been associated with an increased risk of Reye's syndrome.  Although a causal relationship has not been established, the majority of evidence to date seems to support the association.  Most authorities, including the American Academy of Pediatrics Committee on Infectious Diseases, recommend avoiding the use of salicylates in children and teenagers with known or suspected varicella or influenza and during presumed outbreaks of influenza.  If antipyretic or analgesic therapy is indicated under these circumstances, acetaminophen may be an appropriate alternative.  The same precautions should also be observed with related agents such as salicylamide or diflunisal because of their structural and pharmacological similarities to salicylate."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -126,57 +171,108 @@
     "amiodarone hydrochloride"
    ],
    "atcCodes": [
-    "C01BD"
+    "C01BD01"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "ciprofloxacin",
      "note": "Major. Quinolones such as ciprofloxacin, gatifloxacin, gemifloxacin, levofloxacin, lomefloxacin, moxifloxacin, norfloxacin, ofloxacin, and sparfloxacin may cause dose-related prolongation of the QT interval in some patients. Coadministration with other agents that can prolong the QT interval may result in elevated risk of ventricular arrhythmias, including ventricular tachycardia and torsade de pointes, because of additive arrhythmogenic potential related to their effects on cardiac conduction.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Major. Amiodarone can cause dose-related prolongation of the QT interval. Coadministration with other agents that can prolong the QT interval such as macrolide antibiotics may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.In general, the risk of an individual agent or a combination of agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances (e.g., hypokalemia, hypomagnesemia). Some macrolides such as clarithromycin, erythromycin, and troleandomycin are also potent inhibitors of CYP450 3A4 and may significantly inhibit the metabolism of amiodarone, which is primarily metabolized by the isoenzyme.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "digoxin",
      "note": "Major. Coadministration with amiodarone may increase serum digoxin concentrations by up to 100%, frequently resulting in clinical toxicity. In children, this percentage may be even higher. Amiodarone has been suggested to increase intestinal transit time, reduce renal clearance and volume of distribution, displace digoxin from protein binding sites, as well as induce hypothyroidism, all of which may contribute to increased serum digoxin levels. In addition, both drugs may have additive bradycardic effects. Torsade de pointes cardiac arrhythmia has been reported. The interaction also has occurred with digitoxin.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "fluconazole",
      "note": "Major. Coadministration with azole antifungal agents may significantly increase the plasma concentrations of amiodarone. The proposed mechanism is azole inhibition of CYP450 3A4, the isoenzyme responsible for the metabolic clearance of amiodarone. The use of amiodarone has been associated with prolongation of the QT interval, thus elevated plasma levels of the drug may potentiate the risk of ventricular arrhythmias such as ventricular tachycardia and torsade de pointes as well as cardiac arrest and sudden death. Within the azole class, ketoconazole and itraconazole are considered potent inhibitors, while fluconazole is comparatively weak and generally causes clinically significant interactions with CYP450 3A4 substrates only at dosages of 200 mg/day or more.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. A case report has suggested that amiodarone may increase the risk of methotrexate toxicity (particularly skin necrosis). The mechanism is unknown and causality could not be definitely determined.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "sertraline",
      "note": "Major. Class IA (e.g., disopyramide, quinidine, procainamide) and class III (e.g., amiodarone, dofetilide, sotalol) antiarrhythmic agents can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "simvastatin",
      "note": "Major. The use of amiodarone with higher dosages of simvastatin or lovastatin may be associated with an increased risk of myopathy. The proposed mechanism is inhibition by amiodarone of intestinal and hepatic CYP450 3A4, resulting in enhanced bioavailability as well as reduced clearance of simvastatin and its active metabolite, simvastatin acid. Although not studied, the interaction is also expected to occur with lovastatin due to its similar metabolic profile to simvastatin. In general, the risk of myopathy associated with the statin class of drugs is thought to be dose-related and increased by high levels of HMG-CoA reductase inhibitory activity in plasma. Myopathy manifested as muscle pain and/or weakness associated with grossly elevated creatine kinase exceeding ten times the upper limit of normal has been reported occasionally. Rhabdomyolysis has also occurred rarely, which may be accompanied by acute renal failure secondary to myoglobinuria and may result in death.",
-     "atc": "A10BH"
+     "atc": "C10AA01"
     },
     {
      "token": "tramadol",
      "note": "Major. Class IA (e.g., disopyramide, quinidine, procainamide) and class III (e.g., amiodarone, dofetilide, sotalol) antiarrhythmic agents can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     },
     {
      "token": "warfarin",
      "note": "Major. Amiodarone may increase the pharmacologic effects of warfarin by inhibiting CYP450 2C9 hepatic metabolism of S-warfarin. Similar effects may also occur with other oral anticoagulants, resulting in significant hypoprothrombinemia and bleeding. When amiodarone is added to an anticoagulant regimen, increased anticoagulant effects may become apparent within one to several weeks and may persist for months after the amiodarone is discontinued. The effects of this interaction are highly variable - while some patients are asymptomatic, serious and life-threatening bleeding complications have been reported in others. Patients who are poor CYP450 2C9 metabolizers may have a higher risk of bleeding and a faster onset of the interaction.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "cardiac arrhythmias",
+     "note": "Major. Antiarrhythmic agents can induce or worsen ventricular arrhythmias.  Ventricular tachycardia, ventricular fibrillation, and torsades de pointes have occurred in some patients.  Patients with underlying cardiac dysfunction, bradycardia, hypokalemia, hypomagnesemia, or high antiarrhythmic serum concentrations are at increased risk for drug-induced arrhythmias.  Therapy with antiarrhythmics should be used with extreme caution in patients with or predisposed to arrhythmias.  Evidence of improved survival is lacking for use of antiarrhythmic therapy in asymptomatic, non-life-threatening arrhythmias.  Therapy with antiarrhythmic agents should be reserved for patients with life-threatening arrhythmias."
+    },
+    {
+     "type": "condition",
+     "token": "cardiomyopathies",
+     "note": "Major. Antiarrhythmic agents can induce severe hypotension (particularly with IV administration) or induce or worsen congestive heart failure (CHF).  Patients with primary cardiomyopathy or inadequately compensated CHF are at increased risk.  Antiarrhythmic agents should be administered cautiously and dosage and/or frequency of administration modified in patients with hypotension or adequately compensated CHF.  Alternative therapy should be considered unless these conditions are secondary to cardiac arrhythmia."
+    },
+    {
+     "type": "condition",
+     "token": "diseases requiring dialysis",
+     "note": "Major. Amiodarone and its active metabolite are not removed by hemodialysis."
+    },
+    {
+     "type": "condition",
+     "token": "hepatic insufficiency",
+     "note": "Moderate. There have been rare reports of fatal hepatocellular necrosis after treatment with amiodarone.  In patients with life-threatening arrhythmias, the potential risk of hepatic injury should be weighed against the potential benefit of amiodarone therapy.  Patients with hepatic impairment should be monitored for evidence of progressive hepatic injury.  Consideration should be given to reducing the rate of administration or withdrawing treatment if needed."
+    },
+    {
+     "type": "condition",
+     "token": "hypothyroidism",
+     "note": "Moderate. Amiodarone inhibits peripheral conversion of thyroxine (T4) to triiodothyronine (T3) and also contributes inorganic iodine that can result in altered thyroid function tests, hypothyroidism, or hyperthyroidism.  Therapy with amiodarone should be administered cautiously in patients with thyroid dysfunction.  Clinical monitoring, including baseline and periodic evaluation of thyroid function is recommended.   Modification of thyroid therapy may be necessary."
+    },
+    {
+     "type": "condition",
+     "token": "neurologic manifestations",
+     "note": "Moderate. Reversible and dose-related nervous system toxicity such as dizziness, paresthesia, tremor and involuntary movements, lack of coordination, abnormal gait and ataxia is commonly noted in patients receiving amiodarone.  Therapy with amiodarone should be administered cautiously and dosage modifications considered in patients with or predisposed to neurologic dysfunction."
+    },
+    {
+     "type": "condition",
+     "token": "respiratory insufficiency",
+     "note": "Major. Pulmonary toxicities such as hypersensitivity pneumonitis or interstitial/alveolar pneumonitis are potentially fatal (approximately 10% of the time) and have occurred in as many as 10% to 17% of patients administered daily dosages of approximately 400 mg of amiodarone.  More frequently, asymptomatic abnormal diffusion capacity has been observed.  Patients with preexisting pulmonary dysfunction does not appear to have an increased risk of pulmonary toxicity; however, they have a poorer prognosis if toxicity does develop.  Thus, the risks and benefits of amiodarone therapy should be weighed carefully.  Clinical monitoring of pulmonary function, including chest X-ray (baseline and every 3 to 6 months) and pulmonary function tests (with diffusion capacity), is recommended in all patients receiving amiodarone therapy.  Any new respiratory symptom during treatment should be evaluated promptly and thoroughly, since toxicity is more likely to be reversible if diagnosed and managed early.  Patients who develop hypersensitivity pneumonitis should be withdrawn permanently from amiodarone therapy and treated with steroids.  In the case of interstitial/alveolar pneumonitis, steroid therapy and dosage reduction or discontinuation of amiodarone, if possible, usually result in clinical improvement.  Subsequent rechallenge with amiodarone at reduced dosages does not always lead to return of toxicity and may be considered in some patients.  The use of a lower loading dose and maintenance doses may also decrease the incidence of amiodarone- induced pulmonary toxicity."
+    },
+    {
+     "type": "condition",
+     "token": "sick sinus syndrome",
+     "note": "Major. The use of amiodarone is contraindicated for use in patients with cardiogenic shock, severe sinus node dysfunction causing marked sinus bradycardia, second- or third-degree AV block, or symptomatic bradycardia in the absence of a functioning pacemaker."
+    },
+    {
+     "type": "condition",
+     "token": "vision disorders",
+     "note": "Major. Optic neuropathy and/or neuritis has occurred during administration of amiodarone and has resulted in visual impairment such as changes in visual acuity, decrease in peripheral vision, and blindness.  Optic toxicity can occur at any time following initiation of amiodarone.  Therapy with amiodarone should be administered cautiously in patients with visual defects.  Regular ophthalmologic examinations including fundoscopy and slit- lamp examinations are recommended."
+    },
+    {
+     "type": "condition",
+     "token": "water-electrolyte imbalance",
+     "note": "Moderate. Electrolyte imbalance can alter the therapeutic effectiveness of antiarrhythmic agents.  Hypokalemia and hypomagnesemia can reduce the effectiveness of antiarrhythmic agents.  In some cases, these disorders can exaggerate the degree of QTc prolongation and increase the potential for torsade de pointes.  Hyperkalemia can potentiate the toxic effects of antiarrhythmic agents.  Electrolyte imbalance should be corrected prior to initiating antiarrhythmic therapy.  Clinical monitoring of cardiac function and electrolyte concentrations is recommended."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -190,70 +286,121 @@
     "ciprofloxacin lactate"
    ],
    "atcCodes": [
-    "J01MA",
-    "S01AE",
-    "S02AA",
-    "S03AA"
+    "J01MA02",
+    "S01AE03",
+    "S02AA15",
+    "S03AA07"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Moderate. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the risk of central nervous system toxicity sometimes associated with fluoroquinolone use. Some investigators suggest that the piperazine ring of fluoroquinolones may inhibit the binding of gamma-aminobutyric acid (GABA) to brain receptors and that NSAIDs may synergistically add to this effect. Patients with a history of seizures may be at greater risk.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "amiodarone",
      "note": "Major. Quinolones such as ciprofloxacin, gatifloxacin, gemifloxacin, levofloxacin, lomefloxacin, moxifloxacin, norfloxacin, ofloxacin, and sparfloxacin may cause dose-related prolongation of the QT interval in some patients. Coadministration with other agents that can prolong the QT interval may result in elevated risk of ventricular arrhythmias, including ventricular tachycardia and torsade de pointes, because of additive arrhythmogenic potential related to their effects on cardiac conduction.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "clarithromycin",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "fluconazole",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "ibuprofen",
      "note": "Moderate. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the risk of central nervous system toxicity sometimes associated with fluoroquinolone use. Some investigators suggest that the piperazine ring of fluoroquinolones may inhibit the binding of gamma-aminobutyric acid (GABA) to brain receptors and that NSAIDs may synergistically add to this effect. Patients with a history of seizures may be at greater risk.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "metformin",
      "note": "Moderate. Quinolone antibiotics may interfere with the therapeutic effects of insulin and other antidiabetic agents. The use of quinolones has been associated with disturbances in blood glucose homeostasis possibly stemming from effects on pancreatic beta cell ATP-sensitive potassium channels that regulate insulin secretion. Both hyperglycaemia and hypoglycemia have been reported, usually in diabetic patients receiving concomitant treatment with an oral hypoglycemic agent (e.g., sulfonylurea) or insulin. Although hyperglycaemia is significantly more common and infection itself may be an underlying risk factor, hypoglycemia may cause greater morbidity and mortality.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. Coadministration with ciprofloxacin or other quinolones may increase the plasma concentrations of methotrexate. The exact mechanism of interaction is unknown but may involve competitive inhibition of the renal tubular secretion of methotrexate.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "sertraline",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "simvastatin",
      "note": "Moderate. Coadministration with inhibitors of CYP450 3A4 may increase the plasma concentrations of HMG-CoA reductase inhibitors (i.e., statins) that are metabolized by the isoenzyme. Lovastatin and simvastatin are particularly susceptible because of their low oral bioavailability, but others such as atorvastatin and cerivastatin may also be affected.",
-     "atc": "A10BH"
+     "atc": "C10AA01"
     },
     {
      "token": "tramadol",
      "note": "Major. The risk of seizures may be increased during coadministration of tramadol with any substance that can reduce the seizure threshold, such as selective serotonin reuptake inhibitors (SSRI antidepressants or anorectics), monoamine oxidase inhibitors, neuroleptic agents, central nervous system stimulants, opioids, tricyclic antidepressants, other tricyclic compounds (e.g., cyclobenzaprine, phenothiazines), carbapenems, cholinergic agents, fluoroquinolones, interferons, chloroquine, mefloquine, lindane, and theophylline. These agents are often individually epileptogenic and may have additive effects when combined. Many of these agents also exhibit CNS- and/or respiratory-depressant effects, which may be enhanced during their concomitant use with tramadol.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     },
     {
      "token": "warfarin",
      "note": "Major. Some quinolone antibiotics have been reported to potentiate the hypoprothrombinemic effect of warfarin and other coumarin anticoagulants. The exact mechanism is unknown but may involve inhibition of coumarin metabolism and/or depletion of certain clotting factors due to suppression of vitamin K-producing intestinal flora.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "central nervous system diseases",
+     "note": "Major. Quinolones may cause CNS stimulation manifested as tremors, agitation, restlessness, anxiety, confusion, hallucinations, paranoia, insomnia, toxic psychosis, and/or seizures.  Benign intracranial hypertension has also been reported.  Therapy with quinolones should be administered cautiously in patients with or predisposed to seizures or other CNS abnormalities.  In addition, these patients should be advised to avoid the consumption of caffeine-containing products during therapy with some quinolones, most notably ciprofloxacin, enoxacin, and cinoxacin, since these agents can substantially reduce the clearance of caffeine and other methylxanthines, potentially resulting in severe CNS reactions."
+    },
+    {
+     "type": "condition",
+     "token": "colitis",
+     "note": "Major. Clostridioides difficile-associated diarrhea (CDAD), formerly pseudomembranous colitis, has been reported with almost all antibacterial drugs and may range from mild diarrhea to fatal colitis.  The most common culprits include clindamycin and lincomycin.  Antibacterial therapy alters the normal flora of the colon, leading to overgrowth of C difficile, whose toxins A and B contribute to CDAD development.  Morbidity and mortality are increased with hypertoxin-producing strains of C difficile; these infections can be resistant to antimicrobial therapy and may require colectomy.  CDAD must be considered in all patients who present with diarrhea after antibacterial use.  Since CDAD has been reported to occur more than 2 months after antibacterial use, careful medical history is necessary.  Therapy with broad-spectrum antibacterials and other agents with significant antibacterial activity should be administered cautiously in patients with history of gastrointestinal disease, particularly colitis; pseudomembranous colitis (generally characterized by severe, persistent diarrhea and severe abdominal cramps, and sometimes associated with the passage of blood and mucus), if it occurs, may be more severe in these patients and may be associated with flares in underlying disease activity.  Antibacterial drugs not directed against C difficile may need to be stopped if CDAD is suspected or confirmed.  Appropriate fluid and electrolyte management, protein supplementation, antibacterial treatment of C difficile, and surgical evaluation should be started as clinically indicated."
+    },
+    {
+     "type": "condition",
+     "token": "crystalluria",
+     "note": "Moderate. Crystalluria has been reported rarely during quinolone therapy.  Although it is not expected to occur under normal circumstances with usual recommended dosages, patients who are dehydrated (e.g., due to severe diarrhea or vomiting) may be at increased risk and should be encouraged to consume additional amounts of liquid or given intravenous fluid to ensure an adequate urinary output.  Alkalinity of the urine should be avoided, since it may also increase the risk of crystalluria.  Renal function tests should be performed periodically during prolonged therapy (> 2 weeks)."
+    },
+    {
+     "type": "condition",
+     "token": "diabetes mellitus",
+     "note": "Moderate. The use of certain quinolones has been associated with disturbances in blood glucose homeostasis possibly stemming from effects on pancreatic beta cell ATP-sensitive potassium channels that regulate insulin secretion.  Hypoglycemia and, less frequently, hyperglycemia have been reported, although the latter may also occur due to infection alone.  Hypoglycemia has usually occurred in patients with diabetes receiving concomitant oral hypoglycemic agents and/or insulin.  Administration of ciprofloxacin, levofloxacin, norfloxacin, and especially gatifloxacin in patients treated with sulfonylureas or other oral hypoglycemic agents has resulted in severe, refractory hypoglycemia and hypoglycemic coma.  Elderly patients and patients with reduced renal function are particularly susceptible.  Blood glucose should be monitored more closely whenever quinolones are prescribed to patients with diabetes.  Gatifloxacin has been known to cause hypoglycemic episodes generally within the first 3 days of therapy and sometimes even after the first dose, while hyperglycemia usually occurs 4 to 10 days after initiation of therapy.  Patients should be counseled to recognize symptoms of hypoglycemia such as headache, dizziness, drowsiness, nausea, tremor, weakness, hunger, excessive perspiration, and palpitations.  If hypo- or hyperglycemia occur during quinolone therapy, patients should initiate appropriate remedial therapy immediately, discontinue the antibiotic, and contact their physician."
+    },
+    {
+     "type": "condition",
+     "token": "diseases requiring hemodialysis",
+     "note": "Moderate. The following quinolones are known to be partially removed by hemodialysis and should be administered after dialysis: ciprofloxacin, enoxacin, gatifloxacin, levofloxacin, lomefloxacin, and ofloxacin."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. Quinolones (except trovafloxacin, moxifloxacin, and nalidixic acid) and their metabolites are eliminated by the kidney.  Patients with renal impairment may be at greater risk for adverse effects from quinolones, including nephrotoxicity, due to decreased drug clearance.  Dosage adjustments may be necessary and modifications should be based on the degree of renal impairment and severity of infection in accordance with the individual product package labeling.  Renal function tests should be performed periodically during therapy."
+    },
+    {
+     "type": "condition",
+     "token": "long qt syndrome",
+     "note": "Major. Quinolones have been reported to prolong the QT interval of the electrocardiogram in some patients.  QT prolongation may potentiate the risk of ventricular arrhythmias including ventricular tachycardia, ventricular fibrillation, and torsade de pointes.  The risk appears to be greatest with grepafloxacin and sparfloxacin (both are no longer marketed in the U.S.), although cardiovascular morbidity and mortality attributable to QT prolongation have also been reported rarely with others like gatifloxacin, levofloxacin, ciprofloxacin, and ofloxacin.  Reported cases have primarily occurred in patients with advanced age, cardiac disease, electrolyte disturbances, and/or underlying medical problems for which they were receiving concomitant medications known to prolong the QT interval.  Therapy with quinolones should be avoided in patients with known QT prolongation and/or uncorrected electrolyte disorders (hypokalemia or hypomagnesemia) and in patients treated concomitantly with class IA or III antiarrhythmic agents.  Cautious use with ECG monitoring is advised in patients with other proarrhythmic conditions such as clinically significant bradycardia, congestive heart failure, acute myocardial ischemia, and atrial fibrillation.  As QT prolongation may be a concentration-dependent effect, it is important that the recommended dosages or infusion rates of these drugs not be exceeded, particularly in patients with renal and/or hepatic impairment."
+    },
+    {
+     "type": "condition",
+     "token": "myasthenia gravis",
+     "note": "Major. Fluoroquinolones have neuromuscular blocking activity and may exacerbate muscle weakness in persons with myasthenia gravis.  Postmarketing serious adverse events, including deaths and requirement for ventilatory support, have been associated with fluoroquinolones use in persons with myasthenia gravis.  Fluoroquinolones should be avoided in patients with history of myasthenia gravis."
+    },
+    {
+     "type": "condition",
+     "token": "peripheral nervous system diseases",
+     "note": "Major. The use of quinolones has been associated with an increased risk of peripheral neuropathy.  Monitor closely and discontinue their use in patients experiencing symptoms of peripheral neuropathy.  It is recommended to avoid these agents in patients who have previously experienced peripheral neuropathy."
+    },
+    {
+     "type": "condition",
+     "token": "tendinopathy",
+     "note": "Major. Tendonitis and ruptures of the shoulder, hand, and Achilles tendons have been reported in patients receiving quinolones, both during and after treatment.  Avoid the use of these agents in patients who have a history of tendon disorders or have experienced tendinitis or tendon rupture.  Therapy with quinolones should be administered cautiously in patients with patients with kidney, heart, and lung transplant, since it may delay the recognition or confound the diagnosis of a quinolone-induced musculoskeletal effect.  Factors that may independently increase the risk of tendon rupture include strenuous physical activity, renal failure, and previous tendon disorders such as rheumatoid arthritis.  It is recommended to discontinue these agents if, at any time during therapy, pain, inflammation or rupture of a tendon develops and institute appropriate treatment."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -266,57 +413,83 @@
     "amoxicillin / clarithromycin / vonoprazan combination kit"
    ],
    "atcCodes": [
-    "J01FA"
+    "J01FA09"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "amiodarone",
      "note": "Major. Amiodarone can cause dose-related prolongation of the QT interval. Coadministration with other agents that can prolong the QT interval such as macrolide antibiotics may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.In general, the risk of an individual agent or a combination of agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances (e.g., hypokalemia, hypomagnesemia). Some macrolides such as clarithromycin, erythromycin, and troleandomycin are also potent inhibitors of CYP450 3A4 and may significantly inhibit the metabolism of amiodarone, which is primarily metabolized by the isoenzyme.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "digoxin",
      "note": "Major. Coadministration with clarithromycin may significantly increase the plasma concentrations of digoxin. The proposed mechanism is clarithromycin inhibition of the P-glycoprotein-mediated intestinal efflux and/or renal tubular secretion of digoxin.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "metformin",
      "note": "Moderate. Concomitant use of insulin and other antidiabetic agents with clarithromycin may cause significant hypoglycemia. There have been rare reports of hypoglycemia in patients treated with clarithromycin, some of whom were taking oral hypoglycemic agents or insulin. The exact mechanism of interaction has not been established. With certain hypoglycemic drugs such as nateglinide, pioglitazone, repaglinide and rosiglitazone, inhibition of the CYP450 3A4 isoenzyme by clarithromycin may be involved.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "sertraline",
      "note": "Moderate. The use of some macrolide antibiotics has been associated with increased blood levels of some selective serotonin reuptake inhibitors (SSRIs), resulting in excessive serotonergic effects or serotonin syndrome. The mechanism is inhibition of the CYP450 3A4 isoenzyme, which metabolizes SSRIs.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "simvastatin",
      "note": "Major. Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of simvastatin and lovastatin and their active acid metabolites, all of which are primarily metabolized by the isoenzyme.",
-     "atc": "A10BH"
+     "atc": "C10AA01"
     },
     {
      "token": "tramadol",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     },
     {
      "token": "warfarin",
      "note": "Major. Coadministration with clarithromycin or erythromycin may infrequently but substantially enhance the hypoprothrombinemic effect of warfarin and other coumarin anticoagulants. The exact mechanism of interaction is unknown. Data from clinical studies have not supported a significant, predictable pharmacodynamic or pharmacokinetic interaction in general. Although both macrolides are potent inhibitors of CYP450 3A4 and can inhibit metabolism of the R(+) enantiomer of warfarin, the overall effect on racemic warfarin pharmacokinetics appears to be minor.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "colitis",
+     "note": "Major. Clostridioides difficile-associated diarrhea (CDAD), formerly pseudomembranous colitis, has been reported with almost all antibacterial drugs and may range from mild diarrhea to fatal colitis.  The most common culprits include clindamycin and lincomycin.  Antibacterial therapy alters the normal flora of the colon, leading to overgrowth of C difficile, whose toxins A and B contribute to CDAD development.  Morbidity and mortality are increased with hypertoxin-producing strains of C difficile; these infections can be resistant to antimicrobial therapy and may require colectomy.  CDAD must be considered in all patients who present with diarrhea after antibacterial use.  Since CDAD has been reported to occur more than 2 months after antibacterial use, careful medical history is necessary.  Therapy with broad-spectrum antibacterials and other agents with significant antibacterial activity should be administered cautiously in patients with history of gastrointestinal disease, particularly colitis; pseudomembranous colitis (generally characterized by severe, persistent diarrhea and severe abdominal cramps, and sometimes associated with the passage of blood and mucus), if it occurs, may be more severe in these patients and may be associated with flares in underlying disease activity.  Antibacterial drugs not directed against C difficile may need to be stopped if CDAD is suspected or confirmed.  Appropriate fluid and electrolyte management, protein supplementation, antibacterial treatment of C difficile, and surgical evaluation should be started as clinically indicated."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. Clarithromycin is primarily eliminated by the kidney and liver.  A decreased dosage or prolonged dosing intervals are recommended in patients with severe renal impairment (CrCl < 30 mL/min).  Dosage adjustments are usually not necessary in patients with mild to moderate renal impairment, although drug accumulation could occur in the presence of concomitant liver disease.  Monitoring is advised."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Moderate. Hepatic dysfunction, including increased liver enzymes, and hepatocellular and/or cholestatic hepatitis, with or without jaundice, has been reported in patients receiving clarithromycin.  The hepatic dysfunction may be severe but in most cases is reversible.  Fatal outcomes have also been reported and in general have been associated with serious underlying diseases and/or concomitant medications.  Caution and monitoring is advised if using this drug in patients with hepatic impairment.  Treatment must be discontinued immediately if signs and symptoms of hepatitis occur (e.g., anorexia, jaundice, dark urine, pruritus, or tender abdomen).  The use of clarithromycin and combination medications containing this antibiotic are contraindicated in patients with a history of cholestatic jaundice or hepatic impairment associated with the prior use of clarithromycin."
+    },
+    {
+     "type": "condition",
+     "token": "long qt syndrome",
+     "note": "Moderate. Macrolides have been associated with prolongation of the QT interval and infrequent cases of arrhythmia.  Clarithromycin and erythromycin should be avoided in:  patients with known prolongation of the QT interval, ventricular cardiac arrhythmia, including torsades de pointes; patients with proarrhythmic conditions such as uncorrected hypokalemia or hypomagnesemia, clinically significant bradycardia, or receiving other drugs that prolong the QT interval."
+    },
+    {
+     "type": "condition",
+     "token": "myasthenia gravis",
+     "note": "Moderate. The use of macrolide antibiotics has been reported to exacerbate symptoms of myasthenia gravis and trigger new onset of symptoms of myasthenic syndrome.  Therapy with these agents should be administered cautiously in patients with a history of myasthenia gravis."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -326,57 +499,123 @@
     "digoxin"
    ],
    "atcCodes": [
-    "C01AA"
+    "C01AA05"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) may increase plasma digoxin concentrations and half-life. The exact mechanism is unknown, but may be related to reduced renal clearance of digoxin. The interaction has been reported with indomethacin and ibuprofen, but data for other NSAIDs are not available.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "amiodarone",
      "note": "Major. Coadministration with amiodarone may increase serum digoxin concentrations by up to 100%, frequently resulting in clinical toxicity. In children, this percentage may be even higher. Amiodarone has been suggested to increase intestinal transit time, reduce renal clearance and volume of distribution, displace digoxin from protein binding sites, as well as induce hypothyroidism, all of which may contribute to increased serum digoxin levels. In addition, both drugs may have additive bradycardic effects. Torsade de pointes cardiac arrhythmia has been reported. The interaction also has occurred with digitoxin.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "clarithromycin",
      "note": "Major. Coadministration with clarithromycin may significantly increase the plasma concentrations of digoxin. The proposed mechanism is clarithromycin inhibition of the P-glycoprotein-mediated intestinal efflux and/or renal tubular secretion of digoxin.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "ibuprofen",
      "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) may increase plasma digoxin concentrations and half-life. The exact mechanism is unknown, but may be related to reduced renal clearance of digoxin. The interaction has been reported with indomethacin and ibuprofen, but data for other NSAIDs are not available.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "lisinopril",
      "note": "Moderate. Some ACE inhibitors may decrease the renal clearance of digoxin. Increased plasma digoxin levels may result. The proposed mechanism is reduced tubular secretion of digoxin. Patients with congestive heart failure (CHF) or renal impairment may have a greater risk of developing digoxin toxicity.",
-     "atc": "C09AA"
+     "atc": "C09AA03"
     },
     {
      "token": "metformin",
      "note": "Moderate. Digoxin is a cationic drug and theoretically could decrease the excretion of metformin by competing for renal tubular transport. In addition, patients who are being pharmacologically treated for congestive heart failure appear to be at greater risk of developing lactic acidosis.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. The use of some antineoplastic agents has been associated with decreased gastrointestinal absorption of digoxin. The suspected mechanism is alteration of the gastrointestinal mucosa. The risk of an interaction is expected to be less with digoxin solution in capsules because absorption occurs rapidly in the upper GI tract.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "omeprazole",
      "note": "Moderate. Proton pump inhibitors may increase the bioavailability of digoxin. The mechanism may involve a pH-dependent increase in gastrointestinal absorption of digoxin and/or inhibition by PPIs of the P-glycoprotein-mediated intestinal transport of digoxin. Coadministration with proton pump inhibitors (PPIs) for prolonged periods may increase the risk of digoxin toxicity. Chronic use of PPIs can induce hypomagnesemia. In patients with hypomagnesemia, toxicity may occur despite serum digoxin concentrations below 2.0 ng/mL because magnesium depletion sensitizes the myocardium to digoxin. The mechanism via which hypomagnesemia may occur during long-term PPI use is unknown, although changes in intestinal absorption of magnesium may be involved. Hypomagnesemia has been reported rarely in patients treated with PPIs for at least three months, but in most cases, after a year or more. Serious adverse events include tetany, seizures, tremor, carpopedal spasm, atrial fibrillation, supraventricular tachycardia, and abnormal QT interval; however, patients do not always exhibit these symptoms.",
-     "atc": "A02BC"
+     "atc": "A02BC05"
     },
     {
      "token": "tramadol",
      "note": "Moderate. Rare cases of digoxin toxicity have been reported with concomitant use of tramadol. The mechanism of the interaction has not been described.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "cardiac arrhythmias",
+     "note": "Major. The use of digoxin is contraindicated in patients with ventricular fibrillation.  Digoxin toxicity is associated with adverse cardiac effects, including ventricular arrhythmias, which are most commonly seen in chronic toxicity.  Digoxin-induced ventricular tachycardia is associated with a high mortality rate, since ventricular fibrillation or asystole may result.  Therapy with digoxin should be administered cautiously in patients with frequent ventricular premature contractions or ventricular tachycardia, especially if these arrhythmias are not caused by heart failure."
+    },
+    {
+     "type": "condition",
+     "token": "atrioventricular block",
+     "note": "Major. Digoxin slows sinoatrial and AV conduction, prolonging the PR interval.  When treated with digoxin, patients with preexisting sinus node disease may develop severe sinus bradycardia or sinoatrial block, and patients with incomplete AV block may progress to advanced or complete heart block.  In such patients, consideration should be given to the insertion of a pacemaker prior to initiating treatment with digoxin.  Digoxin may be administered to patients with complete, stable AV block who have congestive heart failure, provided the block was not induced by cardiac glycosides."
+    },
+    {
+     "type": "condition",
+     "token": "cardiovascular disease",
+     "note": "Major. Patients with heart failure associated with preserved left ventricular systolic function, such as in restrictive cardiomyopathy, constrictive pericarditis, amyloid heart disease and acute cor pulmonale, may be particularly susceptible to experience decrease cardiac output.  Therapy with digoxin should be administered cautiously in such patients.  Patients with idiopathic hypertrophic subaortic stenosis may have worsening of the outflow obstruction due to the inotropic effects of digoxin."
+    },
+    {
+     "type": "condition",
+     "token": "hypercalcemia",
+     "note": "Major. Calcium and digoxin have additive inotropic effects.  Therefore, hypercalcemia from any cause will predispose patients to digoxin toxicity and serious arrhythmias.  Hypercalcemia should be corrected prior to initiating treatment with digoxin, and serum calcium levels should be monitored during therapy."
+    },
+    {
+     "type": "condition",
+     "token": "hyperthyroidism",
+     "note": "Moderate. Heart failure and/or atrial arrhythmias resulting from hypermetabolic or hyperdynamic states such as hyperthyroidism, hypoxia, or arteriovenous shunt are best managed by treating the underlying condition.  Atrial arrhythmias associated with hypermetabolic states are particularly refractory to digoxin, possibly due to altered pharmacokinetics.  Specifically, the apparent volume of distribution and renal elimination of the drug may be increased, resulting in lower serum concentrations.  Therapy with digoxin should be administered cautiously in patients with hyperthyroidism.  Serum digoxin levels should be monitored regularly and dosage adjustments may be required secondary to changes in their thyroid condition."
+    },
+    {
+     "type": "condition",
+     "token": "hypocalcemia",
+     "note": "Major. Hypocalcemia can nullify the effects of digoxin.  The drug may be ineffective in hypocalcemic patients until serum calcium levels are restored to normal.  Restore serum calcium levels prior to initiating therapy with digoxin to obtain maximum results when using digoxin."
+    },
+    {
+     "type": "condition",
+     "token": "hypokalemia",
+     "note": "Major. Potassium and/or magnesium depletion sensitizes the myocardium to digoxin.  In patients with hypokalemia or hypomagnesemia, digoxin toxicity may occur despite serum drug concentrations below 2.0 ng/mL.  Therapy with digoxin should be administered cautiously in patients with or predisposed to potassium and/or magnesium deficiency, including patients on diuretic therapy; those with primary or secondary aldosteronism (may have low potassium levels); those with severe or prolonged diarrhea or vomiting; those with malnutrition; and renal dialysis patients.  Electrolyte imbalances should be corrected prior to initiation of treatment.  Serum potassium and magnesium concentrations should be monitored during therapy."
+    },
+    {
+     "type": "condition",
+     "token": "hypothyroidism",
+     "note": "Moderate. Hypothyroidism may reduce the requirements for digoxin due to decreased volume of distribution and plasma clearance of the drug.  Therapy with digoxin should be initiated at lower dosages in patients with hypothyroidism to avoid toxicity.  Serum digoxin levels should be monitored regularly and dosage adjustments may be required secondary to changes in thyroid condition."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Major. Digoxin is primarily eliminated by the kidney.  Patients with renal impairment may be at increased risk for digoxin toxicity, including ventricular arrhythmias and AV conduction disturbances, due to decreased drug clearance.  Therapy with digoxin should be administered cautiously in patients with impaired renal function.  Dosage adjustments should be made according to product package labeling and patient attributes such as age, ideal body weight, and other concomitant disease states and medication usage.  Dosage increments should be made very gradually, since the elimination half-life may be prolonged in these patients and a longer period of time is required to establish steady-state serum concentrations than normal.  These patients should be monitored closely for manifestations of toxicity, and dosages further adjusted as necessary.  If toxicity occurs, clinicians should be aware that the adverse effects may also be prolonged."
+    },
+    {
+     "type": "condition",
+     "token": "myocardial infarction",
+     "note": "Moderate. The use of inotropic drugs in some patients with acute myocardial infarction may lead to increases in myocardial oxygen demand and lead to ischemia.  Therapy with digoxin should be administered cautiously in these patients."
+    },
+    {
+     "type": "condition",
+     "token": "myocarditis",
+     "note": "Major. Digoxin can rarely precipitate vasoconstriction and may promote the development of cytokines; therefore, should be avoided in patients with myocarditis."
+    },
+    {
+     "type": "condition",
+     "token": "thiamine deficiency",
+     "note": "Moderate. Patients with beri beri heart disease may fail to respond adequately to digoxin if the underlying thiamine deficiency is not treated concomitantly."
+    },
+    {
+     "type": "condition",
+     "token": "wolff-parkinson-white syndrome",
+     "note": "Major. Digoxin may enhance accessory pathway conduction in conditions such as the Wolff-Parkinson-White syndrome.  Patients with Wolf-Parkinson-White syndrome that presents atrial fibrillation are at higher risk for ventricular fibrillation.  Treatment with digoxin should be used with caution in these patients."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -387,53 +626,74 @@
     "azithromycin / fluconazole / ornidazole"
    ],
    "atcCodes": [
-    "D01AC",
-    "J02AC"
+    "D01AC15",
+    "J02AC01"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "amiodarone",
      "note": "Major. Coadministration with azole antifungal agents may significantly increase the plasma concentrations of amiodarone. The proposed mechanism is azole inhibition of CYP450 3A4, the isoenzyme responsible for the metabolic clearance of amiodarone. The use of amiodarone has been associated with prolongation of the QT interval, thus elevated plasma levels of the drug may potentiate the risk of ventricular arrhythmias such as ventricular tachycardia and torsade de pointes as well as cardiac arrest and sudden death. Within the azole class, ketoconazole and itraconazole are considered potent inhibitors, while fluconazole is comparatively weak and generally causes clinically significant interactions with CYP450 3A4 substrates only at dosages of 200 mg/day or more.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "omeprazole",
      "note": "Moderate. Coadministration with fluconazole may significantly increase the plasma concentrations of omeprazole and other proton pump inhibitors (PPIs). The proposed mechanism is fluconazole inhibition of PPI metabolism via CYP450 2C19 and 3A4.",
-     "atc": "A02BC"
+     "atc": "A02BC05"
     },
     {
      "token": "sertraline",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "simvastatin",
      "note": "Major. Coadministration with potent inhibitors of CYP450 3A4 including azole antifungal agents may significantly increase the plasma concentrations of HMG-CoA reductase inhibitors (statins) that are substrates of the isoenzyme. High levels of HMG-CoA reductase inhibitory activity in plasma is associated with an increased risk of musculoskeletal toxicity. Myopathy manifested as muscle pain and/or weakness associated with grossly elevated creatine kinase exceeding ten times the upper limit of normal has been reported occasionally. Rhabdomyolysis has also occurred rarely, which may be accompanied by acute renal failure secondary to myoglobinuria and may result in death.",
-     "atc": "A10BH"
+     "atc": "C10AA01"
     },
     {
      "token": "tramadol",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     },
     {
      "token": "warfarin",
      "note": "Major. Coadministration with fluconazole may significantly increase the plasma concentrations and hypoprothrombinemic effect of warfarin. The mechanism is fluconazole inhibition of CYP450 2C9, the isoenzyme responsible for the metabolic clearance of the biologically more active S(-) enantiomer of warfarin. Additionally, fluconazole inhibits CYP450 2C19 and 3A4, which are responsible for the metabolism of R(+) warfarin.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "diseases requiring hemodialysis",
+     "note": "Moderate. Fluconazole is substantially removed by hemodialysis.  Plasma levels of fluconazole has been shown to reduce by 50% following 3 hours of dialysis.  Fluconazole should be administered after hemodialysis."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. Fluconazole is primarily eliminated by the kidney.  Patients with renal impairment may be at greater risk for adverse effects from fluconazole due to decreased drug clearance.  Dosage adjustments are recommended for patients with moderate to severe renal impairment (CrCl <= 50 mL/min) receiving multiple doses of the drug."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Major. The use of fluconazole has been rarely associated with hepatotoxicity.  Reversible idiosyncratic hepatitis, cholestasis and fatal fulminant hepatic failure have been reported, the latter occurring primarily in patients with serious underlying medical conditions and taking multiple concomitant medications.  Liver function tests should be performed periodically in patients with preexisting hepatic abnormalities, particularly during prolonged therapy.  Treatment should be withdrawn if persistent elevations or worsening of liver enzyme levels occur."
+    },
+    {
+     "type": "condition",
+     "token": "long qt syndrome",
+     "note": "Moderate. Some azole antifungals have been associated with prolongation of the QT interval on the ECG.  Rare cases of QT prolongation and torsade de pointes have been reported during postmarketing experience; such reports usually involved seriously ill patients with multiple confounding risk factors, such as structural heart disease, electrolyte abnormalities, and concomitant medications.  These drugs should be administered with caution to patients with potentially proarrhythmic conditions.  Concomitant use with other medications that have potential to increase the risk of cardiotoxicity should be avoided."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -453,62 +713,127 @@
     "solufenum"
    ],
    "atcCodes": [
-    "N02AJ",
-    "C01EB",
-    "G02CC",
-    "M01AE",
-    "M02AA",
-    "R02AX"
+    "C01EB16",
+    "G02CC01",
+    "M01AE01",
+    "M02AA13",
+    "R02AX02"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Major. The antiplatelet and cardioprotective effect of low-dose aspirin may be antagonized by coadministration of some nonsteroidal anti-inflammatory drugs (NSAIDs). Ibuprofen has been specifically implicated, and there is evidence that others including indomethacin, naproxen, and tiaprofenic acid may also interact. The mechanism is competitive inhibition of platelet cyclooxygenase by certain NSAIDs, which, unlike aspirin, bind reversibly at the active site of the enzyme and cause a temporary rather than persistent depression of thromboxane formation and thromboxane-dependent platelet function. The combined use of aspirin with NSAIDs in general may increase the potential for serious gastrointestinal (GI) toxicity, including inflammation, bleeding, ulceration, and perforation.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the risk of central nervous system toxicity sometimes associated with fluoroquinolone use. Some investigators suggest that the piperazine ring of fluoroquinolones may inhibit the binding of gamma-aminobutyric acid (GABA) to brain receptors and that NSAIDs may synergistically add to this effect. Patients with a history of seizures may be at greater risk.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "digoxin",
      "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) may increase plasma digoxin concentrations and half-life. The exact mechanism is unknown, but may be related to reduced renal clearance of digoxin. The interaction has been reported with indomethacin and ibuprofen, but data for other NSAIDs are not available.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "lisinopril",
      "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) may attenuate the antihypertensive effects of ACE inhibitors. The proposed mechanism is NSAID-induced inhibition of renal prostaglandin synthesis, which results in unopposed pressor activity producing hypertension. In addition, NSAIDs can cause fluid retention, which also affects blood pressure. Concomitant use of NSAIDs and ACE inhibitors may also cause deterioration in renal function, particularly in patients who are elderly or volume-depleted (including those on diuretic therapy) or have compromised renal function. Acute renal failure may occur, although effects are usually reversible. Chronic use of NSAIDs alone may be associated with renal toxicities, including elevations in serum creatinine and BUN, tubular necrosis, glomerulitis, renal papillary necrosis, acute interstitial nephritis, nephrotic syndrome, and renal failure.",
-     "atc": "C09AA"
+     "atc": "C09AA03"
     },
     {
      "token": "metformin",
      "note": "Moderate. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the risk of lactic acidosis associated with the use of metformin. The precise mechanism for this interaction has not been clearly delineated. Since NSAIDs have been shown to cause a deterioration in renal function, the likelihood of lactic acidosis occurring may be increased in patients with preexisting renal impairment.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "methotrexate",
      "note": "Major. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may increase the plasma concentrations and toxicities of methotrexate. The proposed mechanism is NSAID inhibition of the renal elimination of methotrexate and its metabolite, 7-hydroxymethotrexate, although data from pharmacokinetic studies are inconsistent and conflicting. Displacement of methotrexate binding to serum albumin by certain NSAIDs may also play a secondary role. Unexpectedly severe and sometimes fatal bone marrow suppression, aplastic anemia, gastrointestinal toxicity, and nephrotoxicity have been reported during concomitant administration of methotrexate with NSAIDs. The risk is greatest in patients receiving high dosages of methotrexate and those with renal impairment.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "sertraline",
      "note": "Moderate. Serotonin reuptake inhibitors (SRIs) may potentiate the risk of bleeding in patients treated with ulcerogenic agents and agents that affect hemostasis such as anticoagulants, platelet inhibitors, thrombin inhibitors, thrombolytic agents, or agents that commonly cause thrombocytopenia. The tricyclic antidepressant, clomipramine, is also a strong SRI and may interact similarly. Serotonin release by platelets plays an important role in hemostasis, thus SRIs may alter platelet function and induce bleeding.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "spironolactone",
      "note": "Moderate. Concomitant use of nonsteroidal anti-inflammatory drugs (NSAIDs) and diuretics may adversely affect renal function due to NSAID inhibition of the renal synthesis of prostaglandins that help maintain renal perfusion in dehydrated states. The risk may be increased in patients on dietary sodium restriction. At the same time, hypotensive effect of the diuretics may be reduced because inhibition of prostaglandins can lead to unopposed pressor activity and, consequently, elevation in blood pressure. Natriuretic and diuretic effects may also be reduced, as NSAIDs have been reported to cause sodium and water retention, which may account for the increased risk of congestive heart failure associated with the combination. NSAIDs may also increase the risk of hyperkalemia associated with potassium-sparing diuretics.",
-     "atc": "C03DA"
+     "atc": "C03DA01"
     },
     {
      "token": "warfarin",
      "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the hypoprothrombinemic effect and bleeding risk associated with oral anticoagulants.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "anemia",
+     "note": "Moderate. Anemia has been reported in patients treated with nonsteroidal anti-inflammatory drugs (NSAIDs).  This may be due to fluid retention, occult/gross blood loss, or an incompletely described effect on erythropoiesis.  Hemoglobin or hematocrit should be monitored in patients with any signs/symptoms of anemia or blood loss, especially during long-term therapy.  NSAIDs may increase risk of bleeding events; comorbid conditions (e.g., coagulation disorders; concomitant use of warfarin/other anticoagulants, antiplatelet agents, serotonin/serotonin norepinephrine reuptake inhibitors) may increase this risk, and patients with these conditions should be monitored for signs of bleeding.  Therapy with NSAIDs should be administered cautiously in patients with or predisposed to anemia.  Clinical monitoring of hematopoietic function may be appropriate, particularly during chronic therapy."
+    },
+    {
+     "type": "condition",
+     "token": "asthma",
+     "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) are contraindicated in patients with history of asthma, urticaria, or other allergic-type reactions after taking aspirin or other NSAIDs; severe, sometimes fatal, anaphylactic reactions to NSAIDs have been reported in such patients.  A subpopulation of patients with asthma may have aspirin-sensitive asthma which may include chronic rhinosinusitis complicated by nasal polyps, severe potentially fatal bronchospasm, and/or intolerance to aspirin and other NSAIDs.  Since cross-reactivity between aspirin and other NSAIDs has been reported in such aspirin-sensitive patients, therapy with any NSAID should be avoided in patients with this form of aspirin sensitivity.  NSAIDs should be used with caution in patients with preexisting asthma (without known aspirin sensitivity), and these patients should be monitored for changes in the signs and symptoms of asthma."
+    },
+    {
+     "type": "condition",
+     "token": "blood platelet disorders",
+     "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) reversibly inhibit platelet adhesion and aggregation and may prolong bleeding time in some patients.  With the exception of aspirin, the platelet effects seen with most NSAIDs at usual recommended dosages are generally slight and of relatively short duration but may be more pronounced in patients with underlying hemostatic abnormalities.  Thrombocytopenia has also been reported rarely during NSAID use.  Therapy with NSAIDs should be administered cautiously in patients with significant active bleeding or a hemorrhagic diathesis, including hemostatic and/or coagulation defects associated with hemophilia, vitamin K deficiency, hypoprothrombinemia, thrombocytopenia, thrombocytopathy, or severe hepatic impairment.  NSAIDs that selectively inhibit cyclooxygenase-2 (i.e., COX-2 inhibitors) do not appear to affect platelet function or bleeding time at indicated dosages and may be preferable if risk of bleeding is a concern."
+    },
+    {
+     "type": "condition",
+     "token": "exanthema",
+     "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) can cause serious skin adverse reactions (e.g., Stevens-Johnson syndrome, toxic epidermal necrolysis, and exfoliative dermatitis), which can be fatal.  These serious events may occur without warning.  Patients should be advised to discontinue the NSAID and seek medical attention promptly at the first sign of skin rash or any other sign of hypersensitivity.  NSAIDs are contraindicated in patients with previous serious skin reactions to these drugs."
+    },
+    {
+     "type": "condition",
+     "token": "heart failure",
+     "note": "Moderate. Fluid retention and edema have been observed in patients treated with nonsteroidal anti-inflammatory drugs (NSAIDs), including some topical formulations.  These drugs should be avoided in patients with severe heart failure unless the benefits are expected to outweigh the risk of worsening heart failure.  If an NSAID is used in patients with severe heart failure, they should be monitored for signs of worsening heart failure."
+    },
+    {
+     "type": "condition",
+     "token": "hyperkalemia",
+     "note": "Moderate. Increases in serum potassium concentration (including hyperkalemia) have been reported with use of nonsteroidal anti-inflammatory drugs (NSAIDs), even in some patients without renal impairment.  In patients with normal renal function, these effects have been attributed to a hyporeninemic-hypoaldosteronism state.  Caution is advised in patients with hyperkalemia."
+    },
+    {
+     "type": "condition",
+     "token": "hypertension",
+     "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs), including topicals, can lead to new onset of hypertension or worsening of preexisting hypertension, either of which can contribute to the increased incidence of cardiovascular events.  NSAIDs should be used with caution in patients with hypertension.  Blood pressure should be monitored closely during the initiation of NSAID therapy and throughout the course of therapy."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Major. Long-term use of nonsteroidal anti-inflammatory drugs (NSAIDs) has resulted in renal papillary necrosis and other renal injury.  Renal toxicity has been seen in patients in whom renal prostaglandins have a compensatory role in the maintenance of renal perfusion:  in such patients, NSAIDs may cause a dose-dependent reduction in prostaglandin synthesis and, secondarily, in renal blood flow, which may precipitate overt renal decompensation.  Patients at greatest risk for this reaction include the elderly, those with impaired renal function, dehydration, hypovolemia, heart failure, or liver dysfunction, and those taking diuretics, angiotensin-converting enzyme inhibitors, or angiotensin receptor blockers; discontinuation of NSAID therapy will usually lead to recovery to the pretreatment state.  No information is available regarding use NSAIDs in patients with advanced renal disease; the renal effects of NSAIDs may hasten the progression of renal dysfunction in patients with preexisting renal disease.  Volume status should be corrected in dehydrated or hypovolemic patients prior to initiating treatment.  Renal function should be monitored during therapy in patients with renal or liver dysfunction, heart failure, dehydration, or hypovolemia.  NSAIDs should be avoided in patients with advanced renal disease unless the benefits are expected to outweigh the risk of worsening renal function; if an NSAID is used in such patients, they should be monitored for signs of worsening renal function."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Moderate. Borderline elevations of 1 or more liver tests may occur in up to 15% of patients treated with nonsteroidal anti-inflammatory drugs (NSAIDs).  These laboratory abnormalities may progress, remain unchanged, or regress with continuing therapy.  Elevations of ALT or AST (at least 3 times the upper limit of normal) have been reported in about 1% of patients in clinical trials.  In addition, rare (sometimes fatal) cases of severe hepatotoxicity, including liver necrosis, hepatic failure, jaundice, and fulminant hepatitis have been reported.  Therapy with NSAIDs should be administered cautiously in patients with preexisting liver disease.  Periodic monitoring of liver function is recommended during prolonged therapy.  NSAIDs are also highly protein-bound and some are extensively metabolized by the liver.  Metabolic activity and/or plasma protein binding may be altered in patients with hepatic impairment.  A dosage reduction may be required in some cases."
+    },
+    {
+     "type": "condition",
+     "token": "peptic ulcer",
+     "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) can cause serious gastrointestinal (GI) adverse events including inflammation, bleeding, ulceration, and perforation of the esophagus, stomach, small intestine, or large intestine, which can be fatal.  These serious adverse events can develop at any time, with or without warning symptoms.  Only 1 in 5 patients who develop a serious upper GI side effect on NSAIDs is symptomatic.  NSAIDs should be used with caution in patients with history of peptic ulcer disease and/or GI bleeding, as these patients had a greater than 10-fold increased risk for developing a GI bleed compared to patients without these risk factors.  Caution is also advised if NSAIDs are prescribed to patients with other factors that increase risk of GI bleeding, such as:  prolonged NSAID therapy; concomitant use of oral corticosteroids, antiplatelet agents (e.g., aspirin), anticoagulants, selective serotonin reuptake inhibitors; alcohol use; smoking; history of gastrointestinal surgery or anastomosis, older age; poor general health status; and advanced liver disease and/or coagulopathy.  Particular vigilance is necessary when treating elderly or debilitated patients since most postmarketing reports of fatal GI events occurred in these patients."
+    },
+    {
+     "type": "condition",
+     "token": "phenylketonurias",
+     "note": "Moderate. Chewable products frequently may contain aspartame, which is metabolized in the gastrointestinal tract to phenylalanine.  Motrin (brand of ibuprofen) chewable 50 mg and 100 mg tablets provide the equivalent of 3 mg and 6 mg of phenylalanine each, respectively.  The aspartame/phenylalanine content should be considered when these and similar products are used in patients who must restrict their intake of phenylalanine (i.e. phenylketonurics)."
+    },
+    {
+     "type": "condition",
+     "token": "thrombosis",
+     "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal.  This risk may occur early in treatment and may increase with duration of use.  Clinical trials of several cyclooxygenase-2 (COX-2) selective and nonselective NSAIDs of up to 3 years duration have supported this increased risk.  It is unclear from available data if the risk for cardiovascular thrombotic events is similar for all NSAIDs.  Therapy with NSAIDs should be administered cautiously in patients with a history of cardiovascular or cerebrovascular disease.  Patients should be treated with the lowest effective dosage for the shortest duration necessary.  Appropriate antiplatelet therapy should be administered to patients requiring cardioprotection; however, there is no consistent evidence that concurrent use of aspirin mitigates the increased risk of serious cardiovascular thrombotic events associated with NSAID use, while the risk of serious gastrointestinal events is increased.  Physicians and patients should remain alert for the development of adverse cardiovascular events throughout the entire duration of therapy, even without prior cardiovascular symptoms.  Patients should be advised to promptly seek medical attention if they experience symptoms of cardiovascular thrombotic events (including chest pain, shortness of breath, weakness, or slurring of speech).NSAIDs are contraindicated in the setting of coronary artery bypass graft (CABG) surgery.  Two large clinical trials of a COX-2 selective NSAID for the treatment of pain in the first 10 to 14 days following CABG surgery found an increased incidence of myocardial infarction and stroke.The use of NSAIDs should be avoided in patients with a recent myocardial infarction unless the benefits are expected to outweigh the risk of recurrent cardiovascular thrombotic events.  If an NSAID is used in patients with a recent myocardial infarction, they should be monitored for signs of cardiac ischemia."
+    },
+    {
+     "type": "condition",
+     "token": "water-electrolyte imbalance",
+     "note": "Major. Fluid retention and edema have been reported in association with the use of nonsteroidal anti-inflammatory drugs (NSAIDs).  Therapy with NSAIDs should be administered cautiously in patients with preexisting fluid retention, hypertension, or a history of heart failure.  Blood pressure and cardiovascular status should be monitored closely during the initiation of NSAID treatment and throughout the course of therapy."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -519,42 +844,83 @@
     "hydrochlorothiazide / lisinopril"
    ],
    "atcCodes": [
-    "C09AA"
+    "C09AA03"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Moderate. Some investigators suggest that coadministration with aspirin may attenuate the vasodilator and hypotensive effects of ACE inhibitors. In addition, some have found that the benefits of ACE inhibitors on morbidity and mortality in post-acute myocardial infarction, coronary heart disease, and particularly congestive heart failure may be compromised or even nullified by aspirin. The proposed mechanism is aspirin inhibition of cyclooxygenase, resulting in suppression of prostaglandin synthesis and prostaglandin-mediated hemodynamic effects of ACE inhibitors. However, evidence of a negative interaction is largely contradictory, and interpretation of relevant data has often been complicated by multiple confounding elements as well as the retrospective or post hoc nature of most studies.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "digoxin",
      "note": "Moderate. Some ACE inhibitors may decrease the renal clearance of digoxin. Increased plasma digoxin levels may result. The proposed mechanism is reduced tubular secretion of digoxin. Patients with congestive heart failure (CHF) or renal impairment may have a greater risk of developing digoxin toxicity.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "ibuprofen",
      "note": "Moderate. Nonsteroidal anti-inflammatory drugs (NSAIDs) may attenuate the antihypertensive effects of ACE inhibitors. The proposed mechanism is NSAID-induced inhibition of renal prostaglandin synthesis, which results in unopposed pressor activity producing hypertension. In addition, NSAIDs can cause fluid retention, which also affects blood pressure. Concomitant use of NSAIDs and ACE inhibitors may also cause deterioration in renal function, particularly in patients who are elderly or volume-depleted (including those on diuretic therapy) or have compromised renal function. Acute renal failure may occur, although effects are usually reversible. Chronic use of NSAIDs alone may be associated with renal toxicities, including elevations in serum creatinine and BUN, tubular necrosis, glomerulitis, renal papillary necrosis, acute interstitial nephritis, nephrotic syndrome, and renal failure.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "metformin",
      "note": "Moderate. Limited data suggest that ACE inhibitors may potentiate the hypoglycemic effects of oral antidiabetic drugs, including metformin. The mechanism is unknown. Symptomatic and sometimes severe hypoglycemia has occurred.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "spironolactone",
      "note": "Major. Concomitant use of angiotensin converting enzyme (ACE) inhibitors and potassium-sparing diuretics may increase the risk of hyperkalemia. Inhibition of ACE results in decreased aldosterone secretion, which can lead to increases in serum potassium that may be additive with that induced by potassium-sparing diuretics. ACE inhibitors may also cause deterioration of renal function in patients with chronic heart failure, and the risk is increased if they are sodium-depleted or dehydrated after excessive diuresis.",
-     "atc": "C03DA"
+     "atc": "C03DA01"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "angioedema",
+     "note": "Major. The use of these agents is contraindicated in patients with hereditary angioedema or a history of idiopathic angioedema.  Patients with a history of angioedema unrelated to ACE inhibitors may be at increased risk of angioedema while receiving an ACE inhibitor.  Patients should be advised to immediately report any signs or symptoms suggestive of angioedema (swelling of face, extremities, eyes, lips, or tongue, or difficulty swallowing or breathing) and to stop taking the medication until otherwise directed by their physician.  Emergency therapy and/or measures to prevent airway obstruction are required for angioedema involving the tongue, glottis, or larynx.  Treatment with ACE inhibitors should be discontinued permanently if angioedema develops in association with therapy."
+    },
+    {
+     "type": "condition",
+     "token": "bone marrow failure disorders",
+     "note": "Major. ACE inhibitors may cause bone marrow suppression, rarely in uncomplicated individuals but more frequently in patients with renal impairment, especially if they also have a collagen-vascular disease such as systemic lupus erythematosus or scleroderma.  Neutropenia, agranulocytosis, aplastic anemia, hemolytic anemia, eosinophilia and thrombocytopenia have been reported, mostly with captopril.  Therapy with ACE inhibitors should be administered cautiously in patients with preexisting blood dyscrasias or complications that may increase the risk of bone marrow depression during ACE inhibitor therapy.  Monitoring of blood counts, particularly white blood cells, should be considered."
+    },
+    {
+     "type": "condition",
+     "token": "diseases requiring hemodialysis",
+     "note": "Major. Anaphylactoid reactions have been reported in patients undergoing hemodialysis with high-flux polyacrylonitrile membranes and treated concomitantly with an ACE inhibitor.  The frequency and mechanism of this interaction have not been established, and it is not known whether the interaction occurs with other membrane types.  Therapy with ACE inhibitors should be administered cautiously in patients requiring hemodialysis."
+    },
+    {
+     "type": "condition",
+     "token": "heart failure",
+     "note": "Major. ACE inhibitors can cause marked renal impairment in patients whose renal function depends on the activity of the renin-angiotensin-aldosterone system.  In addition, symptomatic and sometimes excessive hypotension can occur in susceptible individuals, particularly during the initiation of treatment, which may compromise renal and myocardial perfusion.  In patients with severe congestive heart failure (CHF), treatment with ACE inhibitors may be associated with oliguria and/or progressive azotemia and, rarely, renal failure, myocardial ischemia and death.  Therapy with ACE inhibitors should be initiated under very close medical supervision in patients with severe CHF, especially when accompanied by volume and/or sodium depletion.  Patients should be monitored closely for several hours after an initial dose until blood pressure has stabilized, and followed closely for the first 2 weeks of treatment and whenever the dosage of ACE inhibitor or diuretic is increased.  If feasible, the risk of severe hypotension may be minimized by reducing or temporarily withholding the dosing of diuretics and/or liberalizing dietary sodium intake for 2 to 3 days prior to starting ACE inhibitor therapy.  In patients who experience a worsening of renal function, discontinuation of ACE inhibitor therapy is usually not required provided there is symptomatic improvement of the heart failure and renal deterioration is well-tolerated.  Transient hypotension is also not a contraindication to further treatment with ACE inhibitors.  After blood pressure stabilizes, therapy can usually be reinstated with caution, although a lower dosage of the ACE inhibitor and/or dosage reduction or discontinuation of concomitantly administered diuretics may be necessary."
+    },
+    {
+     "type": "condition",
+     "token": "hyperkalemia",
+     "note": "Major. In patients with hyperkalemia, especially those associated with impaired renal function or congestive heart failure, ACE inhibitors may further raise serum potassium levels.  Therapy with ACE inhibitors should be administered cautiously in patients with or predisposed to hyperkalemia, and serum potassium levels should be carefully monitored.  Risk factors for the development of hyperkalemia during ACE inhibitor therapy include renal insufficiency, diabetes mellitus, and the concomitant use of potassium-sparing diuretics, potassium supplements, and/or potassium-containing salt substitutes."
+    },
+    {
+     "type": "condition",
+     "token": "hypotension",
+     "note": "Major. ACE inhibitors can cause symptomatic hypotension, most often during the initiation of therapy and in patients who are volume- and/or sodium-depleted or treated for congestive heart failure (CHF).  Therapy with ACE inhibitors should be administered cautiously in such patients and in those predisposed to hypovolemic or hyponatremic states (e.g., patients on diuretic therapy, especially if it was recently instituted; those on dietary salt restriction; those with severe or prolonged diarrhea or vomiting; and renal dialysis patients).  Volume and/or sodium depletion should be corrected prior to initiating therapy with ACE inhibitors, and the patient should be hemodynamically stable.  If concomitant diuretics and/or dietary sodium restriction are employed, reducing or temporarily withholding the dosing of diuretics and/or liberalizing dietary sodium intake for 2 to 3 days in advance can help minimize the risk of severe hypotension in patients who are able to tolerate such adjustments.  ACE inhibitors should also be used cautiously in patients in whom excessive hypotension may have serious consequences, such as patients with coronary or cerebrovascular insufficiency.  Patients at risk for excessive hypotension should initiate ACE inhibitor therapy under very close medical supervision, and followed closely for the first 2 weeks of treatment and whenever the dosage of ACE inhibitor or diuretic is increased."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. With the exception of fosinopril, ACE inhibitors (and/or their active metabolites in some cases) are primarily eliminated by the kidney and may accumulate in patients with renal impairment.  ACE inhibitors can also worsen renal function in some patients by blocking the effect of angiotensin II-mediated efferent arteriolar vasoconstriction, thereby decreasing glomerular filtration.  Therapy with ACE inhibitors should be administered cautiously in patients with preexisting renal dysfunction, particularly those with renovascular disease.  Patients with moderate to severe renal impairment usually require lower or less frequent doses and smaller increments in dose.  In addition, a dosage reduction or discontinuation of any concomitantly administered diuretics may be helpful.  Fosinopril probably does not require dosage adjustments unless hepatic function is also significantly impaired.  \nIn patients with bilateral renal artery stenosis or renal artery stenosis in a solitary kidney, ACE inhibitors may reduce renal perfusion to a critically low level.  Renal function should be monitored closely for the first few weeks of therapy."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Moderate. Rarely, elevations of liver enzymes and/or serum bilirubin have occurred with the use of ACE inhibitors.  Patients receiving ACE inhibitors who develop jaundice or marked elevations of hepatic enzymes should discontinue the ACE inhibitor and receive appropriate medical follow-up."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -583,48 +949,68 @@
     "metformin hydrochloride"
    ],
    "atcCodes": [
-    "A10BD",
-    "A10BA"
+    "A10BA02"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Quinolone antibiotics may interfere with the therapeutic effects of insulin and other antidiabetic agents. The use of quinolones has been associated with disturbances in blood glucose homeostasis possibly stemming from effects on pancreatic beta cell ATP-sensitive potassium channels that regulate insulin secretion. Both hyperglycaemia and hypoglycemia have been reported, usually in diabetic patients receiving concomitant treatment with an oral hypoglycemic agent (e.g., sulfonylurea) or insulin. Although hyperglycaemia is significantly more common and infection itself may be an underlying risk factor, hypoglycemia may cause greater morbidity and mortality.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Moderate. Concomitant use of insulin and other antidiabetic agents with clarithromycin may cause significant hypoglycemia. There have been rare reports of hypoglycemia in patients treated with clarithromycin, some of whom were taking oral hypoglycemic agents or insulin. The exact mechanism of interaction has not been established. With certain hypoglycemic drugs such as nateglinide, pioglitazone, repaglinide and rosiglitazone, inhibition of the CYP450 3A4 isoenzyme by clarithromycin may be involved.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "digoxin",
      "note": "Moderate. Digoxin is a cationic drug and theoretically could decrease the excretion of metformin by competing for renal tubular transport. In addition, patients who are being pharmacologically treated for congestive heart failure appear to be at greater risk of developing lactic acidosis.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "ibuprofen",
      "note": "Moderate. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the risk of lactic acidosis associated with the use of metformin. The precise mechanism for this interaction has not been clearly delineated. Since NSAIDs have been shown to cause a deterioration in renal function, the likelihood of lactic acidosis occurring may be increased in patients with preexisting renal impairment.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "lisinopril",
      "note": "Moderate. Limited data suggest that ACE inhibitors may potentiate the hypoglycemic effects of oral antidiabetic drugs, including metformin. The mechanism is unknown. Symptomatic and sometimes severe hypoglycemia has occurred.",
-     "atc": "C09AA"
+     "atc": "C09AA03"
     },
     {
      "token": "spironolactone",
      "note": "Moderate. Diuretic-induced renal impairment and dehydration may increase the risk of lactic acidosis in patients who are concomitantly taking metformin. In addition, thiazides and other diuretics may interfere with glucose control by causing hyperglycemia, glucose intolerance, new-onset diabetes mellitus, and/or exacerbation of preexisting diabetes.",
-     "atc": "C03DA"
+     "atc": "C03DA01"
     },
     {
      "token": "warfarin",
      "note": "Moderate. Coadministration with metformin may decrease the anticoagulant effects of vitamin K antagonists (VKAs). The mechanism has not been delineated, but it may involve metformin-mediated increase in the elimination rate of VKAs. In addition, concomitant use of VKAs with metformin may increase the risk of severe hypoglycemia. The clinical significance of this interaction is unknown.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "lactic acidosis",
+     "note": "Major. The use of metformin is contraindicated in patients with renal dysfunction (serum creatinine >= 1.5 mg/dL in males and 1.4 mg/dL in females, or above the upper limit of normal for age); congestive heart failure requiring pharmacologic treatment (especially unstable or acute CHF where there is risk of hypoperfusion and hypoxemia); and any condition associated with hypoxemia (e.g., severe anemia, myocardial infarction, asphyxia, shock), dehydration (e.g., severe diarrhea or vomiting), or sepsis.  Patients with these conditions may be at increased risk for the development of lactic acidosis, which is a rare but serious metabolic complication associated with metformin accumulation in plasma usually at levels exceeding 5 mcg/mL.  Metformin should also not be administered to patients with acute or chronic metabolic acidosis.  In addition, metformin should generally be avoided in alcoholics and patients with clinical or laboratory evidence of hepatic disease, since alcohol potentiates the effects of metformin on lactate metabolism and impaired hepatic function may significantly limit the ability to clear lactate.  All patients treated with metformin should have renal function monitored regularly (at least annually or more frequently if necessary) and be advised of the significance of nonspecific symptoms such as malaise, myalgias, respiratory distress, increasing somnolence, and gastrointestinal disturbances that arise after stabilization of metformin dosage.  More marked acidosis may be associated with hypothermia, hypotension, and resistant bradyarrhythmias.  Immediate medical attention is necessary if these symptoms occur, and metformin therapy withheld until the situation can be clarified.  If lactic acidosis is diagnosed, prompt supportive measures and hemodialysis are recommended."
+    },
+    {
+     "type": "condition",
+     "token": "cardiovascular diseases",
+     "note": "Major. The use of oral hypoglycemic agents may be associated with an increased risk of cardiovascular mortality compared to treatment with diet alone or diet with insulin.  This warning is based on the University Group Diabetes Program (UGDP) study, a long-term prospective clinical trial designed to evaluate the effectiveness of glucose-lowering drugs in preventing or delaying vascular complications in patients with non-insulin-dependent diabetes.  Patients treated with diet plus a fixed dosage of either tolbutamide (a sulfonylurea) or phenformin (a biguanide) for 5 to 8 years had a cardiovascular mortality rate approximately 2.5 times that of patients treated with diet alone, resulting in discontinuation of both these treatments in the study.  Despite controversy regarding interpretation of these results, clinicians and patients should be aware of the potential risk when making treatment decisions for diabetes, particularly in the presence of underlying cardiovascular disease.  Data are not available for other sulfonylureas or biguanides, nor for hypoglycemic agents belonging to other classes.  However, given the similarities in chemical structure and/or mode of action, the same caution should be applied."
+    },
+    {
+     "type": "condition",
+     "token": "hypoglycemia",
+     "note": "Moderate. Hypoglycemia may commonly occur during treatment with insulin and/or oral hypoglycemic agents.  Care should be taken in patients who may be particularly susceptible to the development of hypoglycemic episodes during the use of these drugs, including those who are debilitated or malnourished, those with defective counterregulatory mechanisms (e.g., autonomic neuropathy and adrenal or pituitary insufficiency), and those receiving beta-adrenergic blocking agents."
+    },
+    {
+     "type": "condition",
+     "token": "vitamin b 12 deficiency",
+     "note": "Moderate. Metformin may interfere with vitamin B12 (cyanocobalamin) absorption from the B12-intrinsic factor complex.  A decrease to subnormal levels of previously normal serum B12 levels has been reported in approximately 7% of patients treated with metformin during controlled clinical trials.  Although the decrease is generally well-tolerated and rarely associated with clinical manifestations such as megaloblastic anemia, caution may be warranted when metformin therapy is administered in patients with preexisting B12 deficiency.  Vitamin B12 supplementation as well as annual measurements of hematologic parameters may be appropriate."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -635,63 +1021,89 @@
     "methotrexate, sodium salt"
    ],
    "atcCodes": [
-    "L01BA",
-    "L04AX"
+    "L01BA01",
+    "L04AX03"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Major. Salicylates may interfere with the renal elimination of methotrexate and may displace it from binding sites. The pharmacologic effect and toxicity of methotrexate may be increased. Patients receiving high-dose methotrexate are at a greater risk of developing toxicity.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "amiodarone",
      "note": "Moderate. A case report has suggested that amiodarone may increase the risk of methotrexate toxicity (particularly skin necrosis). The mechanism is unknown and causality could not be definitely determined.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Coadministration with ciprofloxacin or other quinolones may increase the plasma concentrations of methotrexate. The exact mechanism of interaction is unknown but may involve competitive inhibition of the renal tubular secretion of methotrexate.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "digoxin",
      "note": "Moderate. The use of some antineoplastic agents has been associated with decreased gastrointestinal absorption of digoxin. The suspected mechanism is alteration of the gastrointestinal mucosa. The risk of an interaction is expected to be less with digoxin solution in capsules because absorption occurs rapidly in the upper GI tract.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "fluconazole",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "ibuprofen",
      "note": "Major. Coadministration with nonsteroidal anti-inflammatory drugs (NSAIDs) may increase the plasma concentrations and toxicities of methotrexate. The proposed mechanism is NSAID inhibition of the renal elimination of methotrexate and its metabolite, 7-hydroxymethotrexate, although data from pharmacokinetic studies are inconsistent and conflicting. Displacement of methotrexate binding to serum albumin by certain NSAIDs may also play a secondary role. Unexpectedly severe and sometimes fatal bone marrow suppression, aplastic anemia, gastrointestinal toxicity, and nephrotoxicity have been reported during concomitant administration of methotrexate with NSAIDs. The risk is greatest in patients receiving high dosages of methotrexate and those with renal impairment.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "lisinopril",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "C09AA"
+     "atc": "C09AA03"
     },
     {
      "token": "omeprazole",
      "note": "Major. Coadministration with proton pump inhibitors (PPIs) may increase the serum concentrations of methotrexate (MTX) and its potentially active 7-hydroxy metabolite. The proposed mechanism is PPI inhibition of the active tubular secretion of MTX and 7-hydroxymethotrexate via renal H+/K+ ATPase pumps. Inhibition of the breast cancer resistance protein (BCRP)-mediated transport of methotrexate and 7-hydroxymethotrexate by the proton pump inhibitors has also been suggested.",
-     "atc": "A02BC"
+     "atc": "A02BC05"
     },
     {
      "token": "simvastatin",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "A10BH"
+     "atc": "C10AA01"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "bone marrow failure disorders",
+     "note": "Major. Methotrexate can induce myelosuppression causing leukopenia, thrombocytopenia, neutropenia, pancytopenia and anemia.  Therapy with methotrexate is contraindicated as treatment of psoriasis in patients with bone marrow suppression or preexisting blood dyscrasias.  Methotrexate should be discontinued immediately in patients with psoriasis or rheumatoid arthritis if there is a significant fall in blood cell counts.  If need outweighs risk, therapy with methotrexate should be administered cautiously in patients with malignancy and hematopoietic impairment.  Additionally, methotrexate should be used with extreme caution in patients with active infection, and it is usually contraindicated in patients with overt or laboratory evidence of immunodeficiency syndromes.  Patients should be instructed to immediately report any signs or symptoms suggesting bone marrow suppression or infection such as fever, sore throat, or bleeding.  Clinical monitoring of hematopoietic function is recommended."
+    },
+    {
+     "type": "condition",
+     "token": "infections",
+     "note": "Major. Because of their cytotoxic effects on rapidly proliferating tissues, antineoplastic agents frequently can, to varying extent, induce myelosuppression.  The use of these drugs may be contraindicated in patients with known infectious diseases.  All patients should be instructed to immediately report any signs or symptoms suggesting infection such as fever, sore throat, or local infection during antineoplastic therapy.  Close clinical monitoring of hematopoietic function is recommended."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Major. Methotrexate is primarily eliminated by the kidney via glomerular filtration and active secretion.  Clearance rates for methotrexate vary and at higher doses are generally decreased due to saturation of renal tubular reabsorption.  Renal impairment or third space effusion (ascites, pleural effusions), decrease elimination and increase methotrexate serum concentrations.  Therapy with methotrexate should be administered cautiously and at reduced dosages in patients with compromised renal function.  Administration of leucovorin reduces toxicity from high dose methotrexate regimens or delayed elimination.  Clinical monitoring of renal function is recommended."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Major. The use of methotrexate is contraindicated as treatment for psoriasis or rheumatoid arthritis in patients with alcoholism, alcoholic liver disease or other chronic liver diseases.  Methotrexate causes hepatotoxicity, fibrosis and cirrhosis, usually after long-term therapy.  Fibrosis and cirrhosis may not be preceded by symptoms or abnormal liver function tests.  If methotrexate is used, patients should be instructed to immediately report any signs or symptoms suggestive of hepatic dysfunction such as jaundice, dark urine, right upper quadrant pain, or anorexia.  Persistent liver function test abnormalities and/or depression of serum albumin may require evaluation, including a liver biopsy."
+    },
+    {
+     "type": "condition",
+     "token": "stomatitis",
+     "note": "Major. Methotrexate induces stomatitis within the oral mucosa and gastrointestinal tract.  Therapy with methotrexate should be administered with extreme caution in patients with peptic ulcer disease or ulcerative colitis.  If vomiting, diarrhea or ulcerative stomatitis occur, treatment should be discontinued until recovery to avoid the risk of hemorraghic enteritis or intestinal perforation which could be fatal."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -706,38 +1118,53 @@
     "esomeprazole magnesium"
    ],
    "atcCodes": [
-    "A02BC",
-    "M01AE"
+    "A02BC05"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "digoxin",
      "note": "Moderate. Proton pump inhibitors may increase the bioavailability of digoxin. The mechanism may involve a pH-dependent increase in gastrointestinal absorption of digoxin and/or inhibition by PPIs of the P-glycoprotein-mediated intestinal transport of digoxin. Coadministration with proton pump inhibitors (PPIs) for prolonged periods may increase the risk of digoxin toxicity. Chronic use of PPIs can induce hypomagnesemia. In patients with hypomagnesemia, toxicity may occur despite serum digoxin concentrations below 2.0 ng/mL because magnesium depletion sensitizes the myocardium to digoxin. The mechanism via which hypomagnesemia may occur during long-term PPI use is unknown, although changes in intestinal absorption of magnesium may be involved. Hypomagnesemia has been reported rarely in patients treated with PPIs for at least three months, but in most cases, after a year or more. Serious adverse events include tetany, seizures, tremor, carpopedal spasm, atrial fibrillation, supraventricular tachycardia, and abnormal QT interval; however, patients do not always exhibit these symptoms.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "fluconazole",
      "note": "Moderate. Coadministration with fluconazole may significantly increase the plasma concentrations of omeprazole and other proton pump inhibitors (PPIs). The proposed mechanism is fluconazole inhibition of PPI metabolism via CYP450 2C19 and 3A4.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "methotrexate",
      "note": "Major. Coadministration with proton pump inhibitors (PPIs) may increase the serum concentrations of methotrexate (MTX) and its potentially active 7-hydroxy metabolite. The proposed mechanism is PPI inhibition of the active tubular secretion of MTX and 7-hydroxymethotrexate via renal H+/K+ ATPase pumps. Inhibition of the breast cancer resistance protein (BCRP)-mediated transport of methotrexate and 7-hydroxymethotrexate by the proton pump inhibitors has also been suggested.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "simvastatin",
      "note": "Moderate. A case report suggests that coadministration with esomeprazole may increase the plasma concentrations of atorvastatin and the associated risk of myopathy. The proposed mechanism is competitive inhibition of intestinal P-glycoprotein, resulting in decreased drug secretion into the intestinal lumen and increased drug bioavailability. Another, perhaps minor mechanism is competitive inhibition of CYP450 3A4 metabolism.",
-     "atc": "A10BH"
+     "atc": "C10AA01"
     },
     {
      "token": "warfarin",
      "note": "Moderate. Coadministration with proton pump inhibitors (PPIs) has occasionally been associated with enhanced hypoprothrombinemic effect of warfarin. The exact mechanism is unknown but may involve PPI inhibition of CYP450 2C19 and/or 3A4, the isoenzymes partially responsible for the metabolic clearance of the biologically less active R(+) enantiomer of warfarin.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "clostridium infections",
+     "note": "Major. Published observational studies suggest that proton pump inhibitor (PPI) use may be associated with an increased risk of Clostridium difficile-associated diarrhea (CDAD), especially in hospitalized patients.  This diagnosis should be considered for diarrhea that does not improve.  It is recommended that patients should use the lowest dose and shortest duration of PPI therapy appropriate to the condition being treated.  Close monitoring is recommended in patients with diarrhea and in those taking antibacterial agents as CDAD has been reported with the use of nearly all these agents.  Treatment with antibacterial agents alters the normal flora of the colon, leading to overgrowth of C.  difficile.  C.  difficile produces toxins A and B, which contribute to the development of CDAD.  Appropriate fluid and electrolyte management, protein supplementation, antibiotic treatment of C.  difficile, and surgical evaluation should be instituted as clinically indicated."
+    },
+    {
+     "type": "condition",
+     "token": "bone fractures",
+     "note": "Moderate. Various published observational studies have reported that PPI therapy may be associated with an increased risk for osteoporosis related fractures of the hip, wrist or spine.  The risk was increased in patients who received high doses (multiple daily doses), and long term treatment (a year or longer).  Patients should use the lowest dose and shortest duration of PPI therapy appropriate to the condition being treated.  Caution should be used in patients at risk for osteoporosis related fractures and should be managed according to established treatment guidelines."
+    },
+    {
+     "type": "condition",
+     "token": "intestinal hypomagnesemia 1",
+     "note": "Moderate. Symptomatic and asymptomatic hypomagnesemia has been reported rarely in patients treated with PPIs for at least 3 months, in most cases after a year of therapy.  Serious adverse events can include tetany, seizures, and arrhythmias.  Caution should be used in patients prone to magnesium imbalances such as patients taking other medications that can cause hypomagnesemia (e.g., diuretics).  Regular monitoring is recommended."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -748,57 +1175,108 @@
     "sertraline hydrochloride"
    ],
    "atcCodes": [
-    "N06AB"
+    "N06AB06"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Moderate. Serotonin reuptake inhibitors (SRIs) may potentiate the risk of bleeding in patients treated with ulcerogenic agents and agents that affect hemostasis such as anticoagulants, platelet inhibitors, thrombin inhibitors, thrombolytic agents, or agents that commonly cause thrombocytopenia. The tricyclic antidepressant, clomipramine, is also a strong SRI and may interact similarly. Serotonin release by platelets plays an important role in hemostasis, thus SRIs may alter platelet function and induce bleeding.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "amiodarone",
      "note": "Major. Class IA (e.g., disopyramide, quinidine, procainamide) and class III (e.g., amiodarone, dofetilide, sotalol) antiarrhythmic agents can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Moderate. The use of some macrolide antibiotics has been associated with increased blood levels of some selective serotonin reuptake inhibitors (SSRIs), resulting in excessive serotonergic effects or serotonin syndrome. The mechanism is inhibition of the CYP450 3A4 isoenzyme, which metabolizes SSRIs.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "fluconazole",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "ibuprofen",
      "note": "Moderate. Serotonin reuptake inhibitors (SRIs) may potentiate the risk of bleeding in patients treated with ulcerogenic agents and agents that affect hemostasis such as anticoagulants, platelet inhibitors, thrombin inhibitors, thrombolytic agents, or agents that commonly cause thrombocytopenia. The tricyclic antidepressant, clomipramine, is also a strong SRI and may interact similarly. Serotonin release by platelets plays an important role in hemostasis, thus SRIs may alter platelet function and induce bleeding.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "spironolactone",
      "note": "Moderate. Coadministration with diuretics may potentiate the risk of hyponatremia associated with the use of selective serotonin reuptake inhibitors (SSRIs) and serotonin-norepinephrine reuptake inhibitors (SNRIs). Elderly patients and patients taking diuretics or who are otherwise volume-depleted may be at greater risk of developing hyponatremia with SSRIs and SNRIs. Antihypertensive agents such as diuretics may potentiate the orthostatic effect that is occasionally observed upon the initiation of SSRI or SNRI therapy. Syncope and orthostatic hypotension tend to occur within the first week of SNRI/SSRI therapy but can occur at any time during treatment, particularly after a dosage increase. The use of SSRIs or SNRIs may also cause sustained increases in blood pressure and heart rate, which may antagonize the therapeutic effects of antihypertensive medications.",
-     "atc": "C03DA"
+     "atc": "C03DA01"
     },
     {
      "token": "tramadol",
      "note": "Major. Due to its serotonergic activity, coadministration of tramadol with selective serotonin reuptake inhibitors (SSRIs) may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors. Symptoms of the serotonin syndrome may include mental status changes such as irritability, altered consciousness, confusion, hallucinations, and coma; autonomic dysfunction such as tachycardia, hyperthermia, diaphoresis, shivering, blood pressure lability, and mydriasis; neuromuscular abnormalities such as hyperreflexia, myoclonus, tremor, rigidity, and ataxia; and gastrointestinal symptoms such as abdominal cramping, nausea, vomiting, and diarrhea. Patients receiving tramadol with SSRIs may also have an increased risk of seizures due to additive epileptogenic effects of these agents. Pharmacokinetically, coadministration with certain SSRIs, namely fluoxetine, paroxetine and possibly sertraline, may decrease the plasma concentrations of the active O-demethylated (M1) metabolite of tramadol due to inhibition of CYP450 2D6, the isoenzyme responsible for the formation of the metabolite.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     },
     {
      "token": "warfarin",
      "note": "Moderate. Serotonin reuptake inhibitors (SRIs) may potentiate the risk of bleeding in patients treated with ulcerogenic agents and agents that affect hemostasis such as anticoagulants, platelet inhibitors, thrombin inhibitors, thrombolytic agents, or agents that commonly cause thrombocytopenia. The tricyclic antidepressant, clomipramine, is also a strong SRI and may interact similarly. Serotonin release by platelets plays an important role in hemostasis, thus SRIs may alter platelet function and induce bleeding.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "blood platelet disorders",
+     "note": "Moderate. The use of selective serotonin reuptake inhibitors (SSRIs) has been associated with altered platelet function.  Petechiae, purpura, ecchymosis, increased bleeding times, epistaxis and gastrointestinal hemorrhage have been reported.  Therapy with SSRIs should be administered cautiously in patients with severe active bleeding or a hemorrhagic diathesis."
+    },
+    {
+     "type": "condition",
+     "token": "depressive disorder",
+     "note": "Major. Adult and pediatric patients with depression and other psychiatric disorders may experience worsening of their symptoms and may have the emergence of suicidal thoughts and behavior.  Patients should be monitored appropriately and observed closely for worsening of their symptoms, suicidality or changes in their behavior, especially during the first few months of treatment, and at times of dose changes.  Families and caregivers should be advised of the need for close observation and communication with the treating physician.  Discontinuing the medication should be considered if symptoms are persistently worse, or abrupt in onset.  It may be prudent to refrain from dispensing large quantities of medication to these patients."
+    },
+    {
+     "type": "condition",
+     "token": "epilepsy",
+     "note": "Moderate. Selective serotonin reuptake inhibitors (SSRIs) may trigger seizures in approximately 0.2% of patients, and some of them are not recommended in patients with unstable epilepsy.  Therapy with SSRIs should be administered cautiously in patients with seizure disorders."
+    },
+    {
+     "type": "condition",
+     "token": "glaucoma",
+     "note": "Moderate. Some SSRI antidepressants such as fluoxetine, paroxetine and sertraline may have an effect on pupil size causing dilation.  This effect can potentially narrow the eye angle resulting in increased intraocular pressure and angle closure glaucoma, especially in predisposed patients.  These drugs should be used with caution in patients with angle-closure glaucoma or history of glaucoma."
+    },
+    {
+     "type": "condition",
+     "token": "hyponatremia",
+     "note": "Moderate. Treatment with SSRI antidepressants can cause hyponatremia.  Caution should be used when treating patients with hyponatremia or at greater risk of hyponatremia such as the elderly, patients taking diuretics or who are volume depleted."
+    },
+    {
+     "type": "condition",
+     "token": "inappropriate adh syndrome",
+     "note": "Moderate. The use of selective serotonin reuptake inhibitors (SSRIs) has rarely been associated with hyponatremia, sometimes secondary to development of the syndrome of inappropriate secretion of antidiuretic hormone (SIADH).  These events have generally been reversible following discontinuation of SSRI therapy and/or medical intervention.  SSRI-related hyponatremia may be more common in elderly female patients and those who are volume-depleted or receiving concomitant diuretic therapy.  Caution may be warranted when SSRI therapy is administered in these patients and patients with preexisting hyponatremia or SIADH.  Serum electrolytes, especially sodium as well as BUN and plasma creatinine, should be monitored regularly."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Minor. Sertraline is primarily metabolized by the liver.  Although renal excretion of unchanged drug appears to be a minor route of elimination, some metabolites are excreted in the urine to some extent.  The clinical significance of possible metabolite accumulation is unknown.  Caution may be warranted when sertraline therapy is administered in patients with severe renal dysfunction."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Moderate. Selective serotonin reuptake inhibitors (SSRIs) are primarily metabolized by the liver.  The plasma concentrations of SSRIs and their metabolites may be increased and the half-lives prolonged in patients with impaired hepatic function.  Dosage adjustments may be necessary in accordance with the individual product package labeling."
+    },
+    {
+     "type": "condition",
+     "token": "mania",
+     "note": "Moderate. Selective serotonin reuptake inhibitors (SSRIs), like other antidepressants, may occasionally cause or activate mania or hypomania.  The reported incidence ranged from 0.1% to 2% in premarketing testing of several SSRIs.  Patients with bipolar disorder are generally more likely to experience mania from antidepressants.  Therapy with SSRIs should be administered cautiously in patients with a history of mania or bipolar disorder.  Prior to initiating treatment, it is recommended to adequately screen patients for bipolar disorder, including a family history of suicide, bipolar disorder, and depression."
+    },
+    {
+     "type": "condition",
+     "token": "weight loss",
+     "note": "Minor. The use of selective serotonin reuptake inhibitors (SSRIs) may occasionally cause significant weight loss, which may be undesirable in patients suffering from anorexia, malnutrition or excessive weight loss.  Anorexia may occur in approximately 5% to 10% of patients.  Weight change should be monitored during therapy if an SSRI is used in these patients."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -809,44 +1287,73 @@
     "ezetimibe / simvastatin"
    ],
    "atcCodes": [
-    "A10BH",
-    "C10BA",
-    "C10AA"
+    "C10AA01"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "amiodarone",
      "note": "Major. The use of amiodarone with higher dosages of simvastatin or lovastatin may be associated with an increased risk of myopathy. The proposed mechanism is inhibition by amiodarone of intestinal and hepatic CYP450 3A4, resulting in enhanced bioavailability as well as reduced clearance of simvastatin and its active metabolite, simvastatin acid. Although not studied, the interaction is also expected to occur with lovastatin due to its similar metabolic profile to simvastatin. In general, the risk of myopathy associated with the statin class of drugs is thought to be dose-related and increased by high levels of HMG-CoA reductase inhibitory activity in plasma. Myopathy manifested as muscle pain and/or weakness associated with grossly elevated creatine kinase exceeding ten times the upper limit of normal has been reported occasionally. Rhabdomyolysis has also occurred rarely, which may be accompanied by acute renal failure secondary to myoglobinuria and may result in death.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Moderate. Coadministration with inhibitors of CYP450 3A4 may increase the plasma concentrations of HMG-CoA reductase inhibitors (i.e., statins) that are metabolized by the isoenzyme. Lovastatin and simvastatin are particularly susceptible because of their low oral bioavailability, but others such as atorvastatin and cerivastatin may also be affected.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Major. Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of simvastatin and lovastatin and their active acid metabolites, all of which are primarily metabolized by the isoenzyme.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "fluconazole",
      "note": "Major. Coadministration with potent inhibitors of CYP450 3A4 including azole antifungal agents may significantly increase the plasma concentrations of HMG-CoA reductase inhibitors (statins) that are substrates of the isoenzyme. High levels of HMG-CoA reductase inhibitory activity in plasma is associated with an increased risk of musculoskeletal toxicity. Myopathy manifested as muscle pain and/or weakness associated with grossly elevated creatine kinase exceeding ten times the upper limit of normal has been reported occasionally. Rhabdomyolysis has also occurred rarely, which may be accompanied by acute renal failure secondary to myoglobinuria and may result in death.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "methotrexate",
      "note": "Moderate. Coadministration of methotrexate with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Methotrexate, especially at higher doses or with prolonged treatment, has been associated with hepatotoxicity including acute hepatitis, chronic fibrosis, necrosis, cirrhosis, and liver enzyme elevations.",
-     "atc": "L01BA"
+     "atc": "L01BA01"
     },
     {
      "token": "omeprazole",
      "note": "Moderate. A case report suggests that coadministration with esomeprazole may increase the plasma concentrations of atorvastatin and the associated risk of myopathy. The proposed mechanism is competitive inhibition of intestinal P-glycoprotein, resulting in decreased drug secretion into the intestinal lumen and increased drug bioavailability. Another, perhaps minor mechanism is competitive inhibition of CYP450 3A4 metabolism.",
-     "atc": "A02BC"
+     "atc": "A02BC05"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "cognitive dysfunction",
+     "note": "Moderate. Cognitive impairment (e.g., memory loss, forgetfulness, amnesia, memory impairment, confusion) have been observed in patients receiving statins.  The reports are usually not serious, and reversible upon statin discontinuation.  Caution is recommended when using these agents in patients with cognitive impairment."
+    },
+    {
+     "type": "condition",
+     "token": "diabetes mellitus",
+     "note": "Moderate. Increases in HbA1c and fasting serum glucose levels have been reported with the use of certain HMG-CoA reductase inhibitors.  Caution should be exercised when using these agents in diabetic patients and close monitoring is recommended."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Major. Although simvastatin itself is not eliminated by the kidney, the plasma concentrations of total HMG-CoA reductase inhibitors after a single dose of simvastatin may be increased in patients with significant renal impairment, presumably due to the accumulation of active metabolites.  Increased HMG-CoA reductase inhibitory activity may be associated with a greater risk of adverse effects, including hepatic and musculoskeletal toxicities.  Therapy with simvastatin should be administered cautiously at a reduced dosage in patients with severe renal impairment.  Close clinical monitoring is recommended."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. Some HMG-CoA reductase inhibitors such as fluvastatin, have not been studied in patients with severe renal impairment or end-stage renal disease.  Some others such as pitavastatin and simvastatin, require a dose reduction when used in this group of patients.  Caution and close monitoring is advised when using these drugs in patients with renal impairment."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Major. The use of HMG-CoA reductase inhibitors is contraindicated in patients with active liver disease or unexplained, persistent elevations of serum transaminases.  HMG-CoA reductase inhibitors are extensively metabolized by the liver.  Decreased drug metabolism may lead to accumulation and increased risk of toxicity, including biochemical abnormalities of liver function and, rarely, jaundice, hepatitis, cirrhosis, fatty change in the liver, and fulminant hepatic necrosis.  Therapy with HMG-CoA reductase inhibitors should be administered cautiously in patients with a history of liver disease and/or heavy alcohol use.  A lower initial dosage may be appropriate, and clinical monitoring of liver transaminase levels according to the individual product package labeling is recommended.  Patients who develop elevated  ALT or AST levels during therapy should be monitored until abnormalities resolve.  If an increase above 3 times the upper limit of normal persists, consideration should be given to a reduction in dosage or withdrawal of therapy."
+    },
+    {
+     "type": "condition",
+     "token": "rhabdomyolysis",
+     "note": "Major. Severe myopathy, including rhabdomyolysis with acute renal failure secondary to myoglobinuria, has been reported rarely with the use of HMG-CoA reductase inhibitors.  The myopathy may be dose-related and is characterized by muscle aches and/or weakness in conjunction with increases in creatine phosphokinase (CPK) values exceeding 10 times the upper limit of normal.  Therapy with HMG-CoA reductase inhibitors should be administered cautiously in patients with preexisting myopathy, in those with predisposing factors for myopathy or with a history of myoneural disorder, since it may delay the recognition or confound the diagnosis of a drug-induced musculoskeletal effect.  Patients should be advised to report promptly any unusual muscle pain, tenderness or weakness, particularly if accompanied by malaise or fever.  Periodic CPK determinations may be considered in some patients, although the value of such monitoring is uncertain.  HMG-CoA reductase inhibitor therapy should be withdrawn if markedly elevated CPK levels occur or if drug-related myopathy is diagnosed or suspected."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -859,32 +1366,68 @@
     "hydroflumethiazide / spironolactone"
    ],
    "atcCodes": [
-    "C03DA"
+    "C03DA01"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "ibuprofen",
      "note": "Moderate. Concomitant use of nonsteroidal anti-inflammatory drugs (NSAIDs) and diuretics may adversely affect renal function due to NSAID inhibition of the renal synthesis of prostaglandins that help maintain renal perfusion in dehydrated states. The risk may be increased in patients on dietary sodium restriction. At the same time, hypotensive effect of the diuretics may be reduced because inhibition of prostaglandins can lead to unopposed pressor activity and, consequently, elevation in blood pressure. Natriuretic and diuretic effects may also be reduced, as NSAIDs have been reported to cause sodium and water retention, which may account for the increased risk of congestive heart failure associated with the combination. NSAIDs may also increase the risk of hyperkalemia associated with potassium-sparing diuretics.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "lisinopril",
      "note": "Major. Concomitant use of angiotensin converting enzyme (ACE) inhibitors and potassium-sparing diuretics may increase the risk of hyperkalemia. Inhibition of ACE results in decreased aldosterone secretion, which can lead to increases in serum potassium that may be additive with that induced by potassium-sparing diuretics. ACE inhibitors may also cause deterioration of renal function in patients with chronic heart failure, and the risk is increased if they are sodium-depleted or dehydrated after excessive diuresis.",
-     "atc": "C09AA"
+     "atc": "C09AA03"
     },
     {
      "token": "metformin",
      "note": "Moderate. Diuretic-induced renal impairment and dehydration may increase the risk of lactic acidosis in patients who are concomitantly taking metformin. In addition, thiazides and other diuretics may interfere with glucose control by causing hyperglycemia, glucose intolerance, new-onset diabetes mellitus, and/or exacerbation of preexisting diabetes.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "sertraline",
      "note": "Moderate. Coadministration with diuretics may potentiate the risk of hyponatremia associated with the use of selective serotonin reuptake inhibitors (SSRIs) and serotonin-norepinephrine reuptake inhibitors (SNRIs). Elderly patients and patients taking diuretics or who are otherwise volume-depleted may be at greater risk of developing hyponatremia with SSRIs and SNRIs. Antihypertensive agents such as diuretics may potentiate the orthostatic effect that is occasionally observed upon the initiation of SSRI or SNRI therapy. Syncope and orthostatic hypotension tend to occur within the first week of SNRI/SSRI therapy but can occur at any time during treatment, particularly after a dosage increase. The use of SSRIs or SNRIs may also cause sustained increases in blood pressure and heart rate, which may antagonize the therapeutic effects of antihypertensive medications.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "acidosis",
+     "note": "Major. Acidosis alters the ratio of extracellular to intracellular potassium and may commonly lead to rapid increases in serum potassium levels.  Conversely, high serum potassium concentrations may potentiate acidosis.  Because of their hyperkalemic effects, therapy with potassium-sparing diuretics should be avoided in patients with metabolic or respiratory acidosis.  These agents should be used cautiously in patients in whom acidosis may occur, such as patients with cardiopulmonary disease, severe respiratory disease, or poorly controlled diabetes.  Acid-base balance and serum potassium levels should be monitored at regular intervals."
+    },
+    {
+     "type": "condition",
+     "token": "diabetes mellitus",
+     "note": "Major. Potassium-sparing diuretics can cause hyperkalemia, which may result in life-threatening cardiac arrhythmias.  Patients with diabetes mellitus, with or without nephropathy, may be particularly susceptible to the hyperkalemic effect of these drugs due to a defect in the renin-angiotensin-aldosterone axis.  Therapy with potassium-sparing diuretics should be avoided, if possible, in patients with diabetes, especially uncontrolled or insulin-dependent diabetes mellitus.  If these drugs are used, serum potassium levels and renal function should be monitored at regular intervals.  Determination of serum electrolytes is especially important during initiation of therapy, after a dosage adjustment, and during illness that could alter renal function."
+    },
+    {
+     "type": "condition",
+     "token": "hyperkalemia",
+     "note": "Major. The use of potassium-sparing diuretics is contraindicated in the presence of elevated serum potassium concentrations (> 5.5 mEq/L).  Potassium-sparing diuretics can cause hyperkalemia, which may result in life-threatening cardiac arrhythmias.  Careful monitoring of serum potassium levels is necessary in all patients treated with potassium-sparing diuretics, especially during initiation of therapy, after dosage adjustment, and during illness that could alter renal function.  The diuretic should be withdrawn immediately if hyperkalemia develops, and measures should be initiated to lower serum potassium if it exceeds 6.5 mEq/L.  The combined use of a potassium-sparing diuretic with a kaliuretic diuretic (e.g., thiazides) may decrease the risk of hyperkalemia."
+    },
+    {
+     "type": "condition",
+     "token": "hyperuricemia",
+     "note": "Moderate. Potassium-sparing diuretics have been reported to elevate serum uric acid levels.  Therapy with these agents should be administered cautiously in patients with a history of gout."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Major. The use of potassium-sparing diuretics is contraindicated in patients with anuria, acute or progressive renal insufficiency, or diabetic nephropathy.  Potassium-sparing diuretics can cause hyperkalemia, which may result in life-threatening cardiac arrhythmias.  Patients with impaired renal function may be particularly susceptible to the hyperkalemic effect of these drugs.  Therapy with potassium-sparing diuretics should be administered cautiously in patients with evidence of renal function impairment (BUN > 30 mg/dL or serum creatinine > 1.5 mg/dL).  If these drugs are used, serum potassium levels and renal function should be monitored at regular intervals.  Determination of serum electrolytes is especially important during initiation of therapy, after a dosage adjustment, and during illness that could alter renal function."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Major. Rapid alterations in fluid and electrolyte balance may precipitate hepatic coma in patients with liver disease.  Hepatic encephalopathy has been associated with the use of diuretics, most frequently thiazides but also some potassium-sparing diuretics.  Therapy with all diuretics should be administered cautiously in patients with severely impaired hepatic function.  These patients should be monitored carefully for signs and symptoms of hepatic encephalopathy such as tremors, confusion, increased jaundice, and coma.  Since spironolactone and triamterene are primarily metabolized by the liver, reduced dosages of these drugs may also be necessary in severe hepatic impairment."
+    },
+    {
+     "type": "condition",
+     "token": "water-electrolyte imbalance",
+     "note": "Major. All diuretics may cause or aggravate fluid and electrolyte disturbances.  Potassium-sparing diuretics may cause hyperkalemia and, infrequently, hyponatremia.  The latter generally occurs when these agents are combined with other diuretics such as thiazides or used in markedly edematous patients with restricted sodium intake.  Therapy with potassium-sparing diuretics should be administered cautiously in patients with or predisposed to electrolyte abnormalities.  Electrolyte imbalances should be corrected prior to initiating therapy, and serum electrolyte concentrations should be monitored periodically and maintained at normal ranges during therapy.  Determination of serum electrolytes is especially important during initiation of therapy, after a dosage adjustment, and during illness that could alter renal function."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -896,48 +1439,108 @@
     "tramadol hydrochloride"
    ],
    "atcCodes": [
-    "N02AX",
-    "N02AJ"
+    "N02AX02"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "amiodarone",
      "note": "Major. Class IA (e.g., disopyramide, quinidine, procainamide) and class III (e.g., amiodarone, dofetilide, sotalol) antiarrhythmic agents can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Major. The risk of seizures may be increased during coadministration of tramadol with any substance that can reduce the seizure threshold, such as selective serotonin reuptake inhibitors (SSRI antidepressants or anorectics), monoamine oxidase inhibitors, neuroleptic agents, central nervous system stimulants, opioids, tricyclic antidepressants, other tricyclic compounds (e.g., cyclobenzaprine, phenothiazines), carbapenems, cholinergic agents, fluoroquinolones, interferons, chloroquine, mefloquine, lindane, and theophylline. These agents are often individually epileptogenic and may have additive effects when combined. Many of these agents also exhibit CNS- and/or respiratory-depressant effects, which may be enhanced during their concomitant use with tramadol.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "digoxin",
      "note": "Moderate. Rare cases of digoxin toxicity have been reported with concomitant use of tramadol. The mechanism of the interaction has not been described.",
-     "atc": "C01AA"
+     "atc": "C01AA05"
     },
     {
      "token": "fluconazole",
      "note": "Moderate. Theoretically, concurrent use of two or more drugs that can cause QT interval prolongation may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. The risk of an individual agent or a combination of these agents causing ventricular arrhythmia in association with QT prolongation is largely unpredictable but may be increased by certain underlying risk factors such as congenital long QT syndrome, cardiac disease, and electrolyte disturbances.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "sertraline",
      "note": "Major. Due to its serotonergic activity, coadministration of tramadol with selective serotonin reuptake inhibitors (SSRIs) may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors. Symptoms of the serotonin syndrome may include mental status changes such as irritability, altered consciousness, confusion, hallucinations, and coma; autonomic dysfunction such as tachycardia, hyperthermia, diaphoresis, shivering, blood pressure lability, and mydriasis; neuromuscular abnormalities such as hyperreflexia, myoclonus, tremor, rigidity, and ataxia; and gastrointestinal symptoms such as abdominal cramping, nausea, vomiting, and diarrhea. Patients receiving tramadol with SSRIs may also have an increased risk of seizures due to additive epileptogenic effects of these agents. Pharmacokinetically, coadministration with certain SSRIs, namely fluoxetine, paroxetine and possibly sertraline, may decrease the plasma concentrations of the active O-demethylated (M1) metabolite of tramadol due to inhibition of CYP450 2D6, the isoenzyme responsible for the formation of the metabolite.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "warfarin",
      "note": "Moderate. Coadministration with tramadol may potentiate the hypoprothrombinemic effect of warfarin. There have been rare reports of elevated prothrombin time or INR and bleeding in warfarin patients taking tramadol, and a return to normal anticoagulation following its discontinuation. The exact mechanism is unknown but may be related to reduced activity of CYP450 2D6, which can lead to increased plasma concentrations of tramadol.",
-     "atc": "B01AA"
+     "atc": "B01AA03"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "alcoholic intoxication",
+     "note": "Major. The CNS depressant effects of tramadol may be additive with those of alcohol and may lead to profound sedation, respiratory depression, coma, and death.  Therapy with tramadol should be administered cautiously (and only when alternative treatment options are inadequate) in patients who might be prone to acute alcohol intake.  Dosages and durations should be limited to the minimum required and patients should be monitored for signs and symptoms of respiratory depression and sedation.  Prescribing naloxone for the emergency treatment of opioid overdose should be considered; naloxone will reverse some, but not all, symptoms caused by overdosage with tramadol, but it also increases the risk of seizures."
+    },
+    {
+     "type": "condition",
+     "token": "depressive disorder",
+     "note": "Moderate. Tramadol should not be prescribed for patients who are suicidal or addiction-prone.  The use of nonnarcotic analgesics should be considered for patients who are suicidal or depressed.  Tramadol should be prescribed with caution for patients with history of misuse and/or are currently taking CNS-active drugs, antidepressant drugs, alcohol in excess, and patients who suffer from emotional disturbance or depression.  Patients should be advised not to exceed the recommended dose and to limit their intake of alcohol."
+    },
+    {
+     "type": "condition",
+     "token": "epilepsy",
+     "note": "Moderate. Seizures have been reported in patients receiving tramadol within the recommended dosage range.  The risk appears to increase with doses above the recommended range and with concomitant use of certain drugs (e.g., those that reduce the seizure threshold).  Risk of seizure may also increase in patients with epilepsy, those with a history of seizures, or in patients with a recognized risk for seizure (e.g., head trauma, metabolic disorders, alcohol and drug withdrawal, CNS infections).  In tramadol overdose, naloxone administration may increase the risk of seizures."
+    },
+    {
+     "type": "condition",
+     "token": "gastrointestinal diseases",
+     "note": "Moderate. Tramadol may cause spasm of the sphincter of Oddi.  Opioids may increase serum amylase.  Patients with biliary tract disease (including acute pancreatitis) should be monitored for worsening symptoms."
+    },
+    {
+     "type": "condition",
+     "token": "hypoglycemia",
+     "note": "Moderate. Cases of tramadol-associated hypoglycemia have been reported, some resulting in hospitalization.  In most cases, patients had predisposing risk factors (e.g., diabetes); caution is recommended in these patients.  If hypoglycemia is suspected, blood glucose levels should be monitored and discontinuation of therapy should be considered as appropriate."
+    },
+    {
+     "type": "condition",
+     "token": "hypotension",
+     "note": "Moderate. Tramadol may cause severe hypotension (including orthostatic hypotension, syncope) in ambulatory patients.  Risk is increased in patients whose ability to maintain blood pressure has already been compromised by reduced blood volume or coadministration of certain CNS depressant drugs; these patients should be monitored for signs of hypotension after starting or titrating tramadol.  In patients with circulatory shock, tramadol may cause vasodilation that can further reduce cardiac output and blood pressure; tramadol should be avoided in patients with circulatory shock."
+    },
+    {
+     "type": "condition",
+     "token": "intestinal obstruction",
+     "note": "Major. Opioid agonists are contraindicated in patients with known or suspected gastrointestinal obstruction, including paralytic ileus."
+    },
+    {
+     "type": "condition",
+     "token": "intracranial hypertension",
+     "note": "Moderate. Opioids may obscure the clinical course in a patient with a head injury.  The use of tramadol should be avoided in patients with impaired consciousness or coma."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. Tramadol and its metabolites, one of which (referred to as M1) is pharmacologically active and a more potent analgesic than tramadol itself, are primarily excreted in the urine.  The rate and extent of excretion of both tramadol and M1 have been shown to decrease in patients with impaired renal function.  Therapy with tramadol should be administered cautiously in such patients.  In patients with CrCl less than 30 mL/min, dosage reduction is recommended with the immediate-release formulations, while the extended-release formulations should not be used."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Moderate. Tramadol is converted by the liver to several metabolites, one of which (referred to as M1) is pharmacologically active and a more potent analgesic than tramadol itself.  The metabolism of both tramadol and M1 has been shown to decrease in patients with advanced cirrhosis of the liver, resulting in increased exposure to tramadol as well as substantially prolonged elimination half-lives for both tramadol and M1.  Therapy with tramadol should be administered cautiously in patients with liver dysfunction.  In patients with severe liver dysfunction, dosage reduction is recommended with the immediate-release formulations, while the extended-release formulations should not be used."
+    },
+    {
+     "type": "condition",
+     "token": "respiratory insufficiency",
+     "note": "Major. Tramadol is contraindicated in patients with significant respiratory depression.  Serious, life-threatening, or fatal respiratory depression may occur with tramadol.  Patients should be monitored closely for respiratory depression, especially within the first 24 to 72 hours of initiating therapy and after a dosage increase.The use of tramadol in patients with acute or severe bronchial asthma in an unmonitored setting or without resuscitative equipment is contraindicated.  Tramadol-treated patients with significant chronic obstructive pulmonary disease or cor pulmonale, and those with substantially decreased respiratory reserve, hypoxia, hypercapnia, or preexisting respiratory depression are at increased risk of decreased respiratory drive (including apnea), even at recommended dosages of tramadol.  In patients who may be susceptible to the intracranial effects of carbon dioxide (CO2) retention (e.g., those with evidence of increased intracranial pressure or brain tumors), tramadol may reduce respiratory drive, and the resulting CO2 retention can further increase intracranial pressure; these patients should be monitored for signs of sedation and respiratory depression, especially when starting tramadol.Life-threatening respiratory depression is more likely to occur in elderly, cachectic, or debilitated patients as they may have altered pharmacokinetics (or altered clearance) compared to younger, healthier patients.  These patients should be monitored closely, especially when starting and titrating tramadol and when coadministering with other drugs that depress respiration; alternatively, the use of nonopioid analgesics should be considered."
+    },
+    {
+     "type": "condition",
+     "token": "substance-related disorders",
+     "note": "Major. Tramadol exposes patients and other users to the risks of addiction, abuse, and misuse.  Each patient's risk should be assessed before prescribing tramadol, and all patients should be monitored regularly for development of such behaviors and conditions.  Risks are increased in patients with personal or family history of substance abuse (including drug or alcohol abuse or addiction) or mental illness (e.g., major depression); the potential for such risks should not prevent proper pain management in any given patient.  Patients at increased risk may be prescribed tramadol, but use in such patients requires intensive counseling about the risks and proper use of tramadol, as well as intensive monitoring for signs of addiction, abuse, and misuse; prescribing naloxone for the emergency treatment of opioid overdose should be considered.Opioids are sought by drug abusers and patients with addiction disorders and are subject to criminal diversion.  These risks should be considered when prescribing or dispensing tramadol.  Strategies to reduce such risks include prescribing the smallest appropriate quantity and advising the patient about proper disposal of unused drug."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   },
   {
@@ -949,62 +1552,103 @@
     "warfarin sodium"
    ],
    "atcCodes": [
-    "B01AA"
+    "B01AA03"
    ],
    "ageBands": [],
    "interactions": [
     {
      "token": "acetylsalicylic acid",
      "note": "Major. Aspirin, even in small doses, may increase the risk of bleeding in patients on oral anticoagulants by inhibiting platelet aggregation, prolonging bleeding time, and inducing gastrointestinal lesions. Analgesic/antipyretic doses of aspirin increase the risk of major bleeding more than low-dose aspirin; however bleeding has also occurred with low-dose aspirin.",
-     "atc": "A01AD"
+     "atc": "A01AD05"
     },
     {
      "token": "amiodarone",
      "note": "Major. Amiodarone may increase the pharmacologic effects of warfarin by inhibiting CYP450 2C9 hepatic metabolism of S-warfarin. Similar effects may also occur with other oral anticoagulants, resulting in significant hypoprothrombinemia and bleeding. When amiodarone is added to an anticoagulant regimen, increased anticoagulant effects may become apparent within one to several weeks and may persist for months after the amiodarone is discontinued. The effects of this interaction are highly variable - while some patients are asymptomatic, serious and life-threatening bleeding complications have been reported in others. Patients who are poor CYP450 2C9 metabolizers may have a higher risk of bleeding and a faster onset of the interaction.",
-     "atc": "C01BD"
+     "atc": "C01BD01"
     },
     {
      "token": "ciprofloxacin",
      "note": "Major. Some quinolone antibiotics have been reported to potentiate the hypoprothrombinemic effect of warfarin and other coumarin anticoagulants. The exact mechanism is unknown but may involve inhibition of coumarin metabolism and/or depletion of certain clotting factors due to suppression of vitamin K-producing intestinal flora.",
-     "atc": "J01MA"
+     "atc": "J01MA02"
     },
     {
      "token": "clarithromycin",
      "note": "Major. Coadministration with clarithromycin or erythromycin may infrequently but substantially enhance the hypoprothrombinemic effect of warfarin and other coumarin anticoagulants. The exact mechanism of interaction is unknown. Data from clinical studies have not supported a significant, predictable pharmacodynamic or pharmacokinetic interaction in general. Although both macrolides are potent inhibitors of CYP450 3A4 and can inhibit metabolism of the R(+) enantiomer of warfarin, the overall effect on racemic warfarin pharmacokinetics appears to be minor.",
-     "atc": "J01FA"
+     "atc": "J01FA09"
     },
     {
      "token": "fluconazole",
      "note": "Major. Coadministration with fluconazole may significantly increase the plasma concentrations and hypoprothrombinemic effect of warfarin. The mechanism is fluconazole inhibition of CYP450 2C9, the isoenzyme responsible for the metabolic clearance of the biologically more active S(-) enantiomer of warfarin. Additionally, fluconazole inhibits CYP450 2C19 and 3A4, which are responsible for the metabolism of R(+) warfarin.",
-     "atc": "D01AC"
+     "atc": "D01AC15"
     },
     {
      "token": "ibuprofen",
      "note": "Major. Nonsteroidal anti-inflammatory drugs (NSAIDs) may potentiate the hypoprothrombinemic effect and bleeding risk associated with oral anticoagulants.",
-     "atc": "N02AJ"
+     "atc": "C01EB16"
     },
     {
      "token": "metformin",
      "note": "Moderate. Coadministration with metformin may decrease the anticoagulant effects of vitamin K antagonists (VKAs). The mechanism has not been delineated, but it may involve metformin-mediated increase in the elimination rate of VKAs. In addition, concomitant use of VKAs with metformin may increase the risk of severe hypoglycemia. The clinical significance of this interaction is unknown.",
-     "atc": "A10BD"
+     "atc": "A10BA02"
     },
     {
      "token": "omeprazole",
      "note": "Moderate. Coadministration with proton pump inhibitors (PPIs) has occasionally been associated with enhanced hypoprothrombinemic effect of warfarin. The exact mechanism is unknown but may involve PPI inhibition of CYP450 2C19 and/or 3A4, the isoenzymes partially responsible for the metabolic clearance of the biologically less active R(+) enantiomer of warfarin.",
-     "atc": "A02BC"
+     "atc": "A02BC05"
     },
     {
      "token": "sertraline",
      "note": "Moderate. Serotonin reuptake inhibitors (SRIs) may potentiate the risk of bleeding in patients treated with ulcerogenic agents and agents that affect hemostasis such as anticoagulants, platelet inhibitors, thrombin inhibitors, thrombolytic agents, or agents that commonly cause thrombocytopenia. The tricyclic antidepressant, clomipramine, is also a strong SRI and may interact similarly. Serotonin release by platelets plays an important role in hemostasis, thus SRIs may alter platelet function and induce bleeding.",
-     "atc": "N06AB"
+     "atc": "N06AB06"
     },
     {
      "token": "tramadol",
      "note": "Moderate. Coadministration with tramadol may potentiate the hypoprothrombinemic effect of warfarin. There have been rare reports of elevated prothrombin time or INR and bleeding in warfarin patients taking tramadol, and a return to normal anticoagulation following its discontinuation. The exact mechanism is unknown but may be related to reduced activity of CYP450 2D6, which can lead to increased plasma concentrations of tramadol.",
-     "atc": "N02AX"
+     "atc": "N02AX02"
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "type": "condition",
+     "token": "coumarin resistance",
+     "note": "Moderate. Patients with edema, hereditary coumarin resistance, hyperlipidemia, hypothyroidism, or nephrotic syndrome may exhibit lower than expected hypoprothrombinemic response to oral anticoagulants.  Thus, more frequent laboratory (PT/INR) monitoring and dosage adjustment of anticoagulant may be required based on changes in the patient's condition."
+    },
+    {
+     "type": "condition",
+     "token": "coumarin sensitivity",
+     "note": "Moderate. Patients with a collagen vascular disease (e.g., systemic lupus erythematosus, rheumatoid arthritis, scleroderma), congestive heart failure (especially decompensated disease), severe or prolonged diarrhea, fever, hyperthyroidism, malabsorption, or steatorrhea may exhibit greater than expected hypoprothrombinemic response to oral anticoagulants.  Thus, more frequent laboratory (PT/INR) monitoring and dosage adjustment of anticoagulant may be required based on changes in the patient's condition.  Patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools."
+    },
+    {
+     "type": "condition",
+     "token": "diabetes mellitus",
+     "note": "Major. Therapy with oral anticoagulants should be administered cautiously in patients with severe diabetes because they may be at increased risk for hemorrhage.  The INR should be monitored closely, and patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools."
+    },
+    {
+     "type": "condition",
+     "token": "hemorrhage",
+     "note": "Major. In general, the use of oral anticoagulants is contraindicated in patients with active bleeding or a hemorrhagic diathesis or other significant risks for bleeding, including hemostatic and/or coagulation defects associated with hemophilia, hypoprothrombinemia, thrombocytopenia, thrombocytopathy, severe hepatic impairment, and myeloproliferative disorders such as leukemia or polycythemia vera.  Additionally, oral anticoagulants are usually contraindicated in the presence of any active ulceration of the gastrointestinal, respiratory, or genitourinary tracts; cerebrovascular hemorrhage; aneurysms (cerebral, dissecting aortic); pericarditis and pericardial effusions; bacterial endocarditis; and eclampsia, preeclampsia, or threatened abortion.  These patients may be at increased risk for uncontrollable hemorrhage or bleeding complications during therapy with oral anticoagulants.  Other potential contraindications include diverticulitis, vasculitis, malnutrition, and vitamin C or vitamin K deficiency.  The decision to administer anticoagulants must be based upon clinical judgment in which the risks are weighed against the benefits in each patient."
+    },
+    {
+     "type": "condition",
+     "token": "hypertension",
+     "note": "Major. In general, the use of oral anticoagulants is contraindicated in patients with malignant or severe, uncontrolled hypertension.  These patients may be at increased risk for cerebral hemorrhage.  Therapy with oral anticoagulants should be administered cautiously in patients with moderate hypertension."
+    },
+    {
+     "type": "condition",
+     "token": "kidney diseases",
+     "note": "Moderate. There is no evidence that hypoprothrombinemic response to oral anticoagulants (coumarin and indandione derivatives) is altered in renal impairment due to decreased plasma protein binding, thus dosage adjustments are generally not necessary.  However, patients with renal impairment may demonstrate platelet defects and may be at increased risk for bleeding.  Therapy with oral anticoagulants should be administered cautiously in patients with severe or moderate renal dysfunction.  The INR should be monitored closely, and patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools."
+    },
+    {
+     "type": "condition",
+     "token": "liver diseases",
+     "note": "Major. Oral anticoagulants (coumarin and indandione derivatives) are primarily metabolized by the liver.  Patients with hepatic impairment may have a heightened response to these agents due to decreased clearance of the drugs as well as defective hemostasis associated with impaired synthesis of clotting factors by the liver.  Therapy with oral anticoagulants should be administered cautiously in patients with severe or moderate liver disease.  The INR should be monitored closely, and patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools"
+    },
+    {
+     "type": "condition",
+     "token": "protein c deficiency",
+     "note": "Major. Tissue necrosis is a rare complication that develops during the initiation of oral anticoagulant therapy due to thrombotic occlusion of venules in the dermis and subcutaneous tissues.  Hereditary, familial, or clinical deficiencies of protein C or its cofactor, protein S, may be associated with a hypercoagulable state and an increased risk of the complication.  Therapy with oral anticoagulants should be administered cautiously in patients with known or suspected deficiency in protein C-mediated anticoagulant response.  Concomitant administration with heparin for the first 5 to 7 days of oral anticoagulant therapy may minimize the risk.  If tissue necrosis develops, oral anticoagulant therapy should be discontinued promptly and vitamin K or frozen plasma administered at once.  Heparin should then be considered for anticoagulation."
+    }
+   ],
    "source": "DDInter 2.0 (via openmrs-ddi-knowledge-base)"
   }
  ]

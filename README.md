@@ -6,7 +6,7 @@ It was built for the Chart Search AI DDI feature, but nothing about it is specif
 
 ## What it is
 
-The knowledge base is a single normalized JSON file, `ddi_knowledge_base.json` (~19 MB). It holds three tables joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, and 295,184 interaction rows carrying severity and a mechanism reference. Two things make it usable inside OpenMRS rather than just a data dump:
+The knowledge base is a single normalized JSON file, `ddi_knowledge_base.json` (~23 MB). It holds DDInter's two clinical tables, normalized and joined by id: a mechanisms table (each of the 8,234 descriptions stored once), a drugs table, 295,184 drug-drug interaction rows carrying severity and a mechanism reference, and 8,346 drug-disease rows (the conditions a drug is rated against, with their 3,942 descriptions and references stored once). Two things make it usable inside OpenMRS rather than just a data dump:
 
 - Every drug is resolved to an **RxNorm RxCUI**, so a drug named three different ways resolves to one identifier and an interaction is not missed on a spelling difference.
 - Every drug is cross-walked to the **CIEL concept dictionary**, so a medication recorded in a patient's chart maps directly to its interaction records.
@@ -18,6 +18,7 @@ It works offline. The interaction data is a bundled file, not a live API call, s
 - **Interaction checking at the point of prescribing.** When a clinician is about to add a drug, resolve the proposed drug and the patient's current medications to RxCUIs and look up each pair. Return the severity, the mechanism, and the citation.
 - **Screening an existing medication list.** Take a patient's active medications (recorded as CIEL concepts), resolve them through `ciel_index.json`, and check every pair among them for interactions already in play.
 - **Severity triage and alerting.** The four-level severity (`Major`, `Moderate`, `Minor`, `Unknown`) lets a module decide what to surface loudly, what to note quietly, and what to log.
+- **Condition-aware checking.** The drug-disease rows say which conditions a drug is contraindicated in or needs care with (metformin in lactic acidosis, the NRTIs in liver disease). Checked against a patient's condition list, they are contraindication warnings. Checked against each other, they surface pairs DDInter never rated as a pair: stavudine and metformin is `Unknown` as a drug-drug row, but stavudine's liver-disease text names lactic acidosis and metformin is `Major` for lactic acidosis, and the tooling reports that chain as a derived finding.
 - **Grounding an AI assistant's answers.** Chart Search AI uses it as a cited knowledge source so an interaction claim is backed by a real record, not a plausible-sounding guess. The same grounding works for any LLM-backed feature.
 - **Formulary coverage analysis.** The CIEL crosswalk lets an implementer see, for their own formulary, which drugs have interaction data and which are gaps to handle explicitly.
 
@@ -27,19 +28,20 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 
 | File | What it is |
 |---|---|
-| `out/ddi_knowledge_base.json` | **The knowledge base** (~19 MB): the canonical source of truth. Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), and 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`. `build_kb.py` validates it and refreshes the sample. |
+| `out/ddi_knowledge_base.json` | **The knowledge base** (~23 MB): the canonical source of truth. Normalized: a mechanisms table (8,234, stored once), a drugs table (name, RxCUI, ATC, CIEL), 295,184 interaction rows `[drug_a_id, drug_b_id, severity, group_id]`, and 8,346 drug-disease rows `[drug_id, condition, severity, note_id]` with their 3,942 notes stored once. `build_kb.py` validates it and refreshes the sample. |
 | `out/schema.json` | JSON Schema (draft 2020-12) for the knowledge base JSON. |
 | `out/sample.json` | A few reconstructed interaction rows for quick inspection. |
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
 | `out/rxcui_review.json` | Human-readable record of the RxNorm canonicalization and clinician curation review. |
 | `query_kb.py` | Command-line and importable query tool over the knowledge base (see "Asking it questions"). `tests/` exercises it against the built file. |
-| `src/` | The build inputs: DDInter facts (`drugs.jsonl`, `interactions.jsonl`, `ddi_mechanisms.json`), the RxNorm/RxClass/CIEL fetch results, and the clinician decisions (`curation.json`). `build_kb.py` turns these into the KB above. |
-| `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`). Run `adapt_to_chartsearchai.py full` to generate the full dataset (~180 MB, not committed). |
+| `fetch_disease_interactions.py` | The network step that refreshes `src/disease_interactions.jsonl` from DDInter's per-drug drug-disease endpoint (the table is not in DDInter's bulk downloads). |
+| `src/` | The build inputs: DDInter facts (`drugs.jsonl`, `interactions.jsonl`, `ddi_mechanisms.json`, `disease_interactions.jsonl`), the RxNorm/RxClass/CIEL fetch results, and the clinician decisions (`curation.json`). `build_kb.py` turns these into the KB above. |
+| `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`); drug-disease rows become the module's `condition` contraindications. Run `adapt_to_chartsearchai.py full` to generate the full dataset (~180 MB, not committed). |
 
 ## The record shape
 
-Three tables joined by id, so nothing is duplicated:
+Tables joined by id, so nothing is duplicated:
 
 ```json
 {
@@ -54,11 +56,19 @@ Three tables joined by id, so nothing is duplicated:
   ],
   "interactions": [
     ["DDInter1089", "DDInter1479", "Major", "34"]
+  ],
+  "disease_notes": {
+    "1": { "text": "The use of metformin is contraindicated in patients with renal dysfunction...", "references": ["Luft D, Schmulling RM, Eggstein M \"Lactic acidosis in biguanide-treated diabetics: a review of 330 cases.\" Diabetologia 14 (1978): 75-87", "..."] }
+  },
+  "disease_interactions": [
+    ["DDInter1164", "Acidosis, Lactic", "Major", "1"]
   ]
 }
 ```
 
 An interaction row is `[drug_a_id, drug_b_id, severity, group_id]`: join the ids to `drugs[]` for names/RxCUIs/CIEL, and the `group_id` to `mechanisms` for the description. A pair with no published mechanism references the sentinel group `-1` (null text).
+
+A drug-disease row is `[drug_id, condition, severity, note_id]`: the condition is DDInter's MeSH-style name (`Acidosis, Lactic`, `Liver Diseases`), and the `note_id` joins to `disease_notes` for the description and its citations. DDInter reuses one paragraph across a drug class (the NRTI hepatotoxicity text sits under didanosine, stavudine, and zalcitabine alike), which is why the notes are stored once.
 
 **The join key is the RxCUI.** A chart medication resolves CIEL concept to RxCUI (via `ciel_index.json`), and the RxCUI keys into the drugs table. That single key is what ties the patient's data, the drug vocabulary, and the interaction knowledge together.
 
@@ -71,6 +81,7 @@ python3 query_kb.py pair warfarin aspirin                              # do thes
 python3 query_kb.py check warfarin aspirin simvastatin clarithromycin  # every interacting pair in a medication list
 python3 query_kb.py partners warfarin --severity Major                 # a drug's interacting partners, most severe first
 python3 query_kb.py drug warfarin                                      # identifiers, ATC, CIEL concepts, partner counts
+python3 query_kb.py conditions metformin                               # the conditions a drug is rated against
 python3 query_kb.py mechanism 34                                       # a mechanism group's text and categories
 python3 query_kb.py search statin                                      # drugs whose name contains a string
 ```
@@ -79,11 +90,13 @@ A drug can be named by its DDInter name, its RxNorm name, or a CIEL concept name
 
 Two behaviors are deliberate. A misspelled drug gets close-match suggestions rather than a silent empty result, and a pair with no record is reported as a knowledge gap, in the words of the governing rule above, never as "no interaction." A CIEL name that covers a combination product (say, "Acetaminophen / aspirin") resolves to every ingredient it contains, so a question about it checks all of them.
 
+`pair` and `check` also report **derived** findings, kept in a separate, labelled section. A derived finding is a causal chain through the drug-disease table: one drug's rating text names a condition the other drug is rated for. Stavudine and metformin is the motivating case. DDInter's drug-drug row for them is `Unknown` with no text, but stavudine's `Liver Diseases` text names lactic acidosis and metformin is `Major` for `Acidosis, Lactic`, so the tool shows both rows side by side and says why they are linked. Two drugs merely sharing a precaution (both need care in kidney disease, as 667 drugs do) is not treated as a link; that is what `conditions` reports per drug, for checking against the patient's own condition list.
+
 ## How it was made
 
 Three public sources, layered so each does the job it is best at:
 
-- **DDInter 2.0** supplies the interactions: the pair, a severity, and a mechanism description. It is open-access, requires no implementer maintenance, and works offline. The full database (about 302K interactions) was assembled by walking DDInter's interaction groups, since the bulk CSV download carries only about half the pairs and no mechanism text.
+- **DDInter 2.0** supplies the interactions: the pair, a severity, and a mechanism description. It is open-access, requires no implementer maintenance, and works offline. The full database (about 302K interactions) was assembled by walking DDInter's interaction groups, since the bulk CSV downloads cover only eight of the fourteen ATC anatomical groups (no cardiovascular, anti-infective, or nervous-system files) and carry no mechanism text. DDInter's drug-disease table was fetched the same way, one request per drug, because it is not in the downloads at all: 8,346 rows across 1,480 drugs, every row with a description and nearly every one with literature or product-label references.
 - **RxNorm** (NLM) supplies drug-name normalization. 2,255 of 2,283 drugs resolved to a current RxNorm single-ingredient (`IN`) RxCUI, canonicalized so the key is consistent for joining. Distinct drugs that had been merged onto one identifier were separated under clinician review, and 28 concepts with no safe current mapping (obsolete, low-DDI-relevance items such as vaccines by age band, multivitamins, and IV fluids) were left as explicit gaps (`rxcui` null) rather than assigned a wrong identifier. The canonicalization and every clinician decision are recorded in `out/rxcui_review.json`.
 - **CIEL** supplies the OpenMRS bridge. CIEL's own concept-to-RxNorm mappings (from the v2026-07-20 export) link the dictionary a chart uses to the RxCUIs this knowledge base is keyed on. CIEL and KB drugs are matched at the RxNorm ingredient level, so a combination product resolves to its components without falsely bridging unrelated ingredients.
 
@@ -96,11 +109,14 @@ python3 build_kb.py            # src/ -> out/ddi_knowledge_base.json (+ sample, 
 python3 build_kb.py --check     # verify the rebuild matches the committed KB
 python3 -m unittest discover tests       # query the built KB and check every row joins
 python3 adapt_to_chartsearchai.py demo   # project into the Chart Search AI module format
+python3 fetch_disease_interactions.py    # network: refresh src/disease_interactions.jsonl from DDInter
 ```
 
 `build_kb.py` is offline and deterministic. Refreshing a source input from its
-external service is a separate, network-facing step; `derive_atc.py` is the one
-kept in-repo (it rebuilds `src/atc_cache.jsonl` from RxNorm). It must produce
+external service is a separate, network-facing step; two are kept in-repo.
+`fetch_disease_interactions.py` walks DDInter's per-drug drug-disease endpoint
+(resumable, one request per drug). `derive_atc.py` rebuilds `src/atc_cache.jsonl`
+from RxNorm. It must produce
 **level-5** ATC substance codes (via RxNorm's `propName=ATC`, e.g. `C09AA03`),
 not level-4 subgroups (`C09AA`) — the Chart Search AI validator keys on level-5,
 and a level-4 code silently fires a false duplicate-therapy warning on the
@@ -114,6 +130,8 @@ is not level-5, so the fix cannot regress through the pipeline.
 | Interactions | 295,184 pairs across 2,283 drugs |
 | Severity | 50,983 Major · 189,439 Moderate · 12,347 Minor · 42,415 Unknown |
 | Mechanism text | 252,766 interactions (86%) |
+| Drug-disease rows | 8,346 across 1,480 drugs (64.8%) and 470 conditions; 3,691 Major · 4,572 Moderate · 83 Minor |
+| Drug-disease text | 8,346 / 8,346 rows carry a description; 8,315 carry references |
 | RxNorm normalization | 2,255 / 2,283 drugs to a current ingredient RxCUI (28 obsolete, low-relevance concepts left as explicit gaps) |
 | CIEL bridge | 1,986 / 2,283 KB drugs (87%) carry a CIEL concept |
 | CIEL formulary overlap | 4,258 of 7,615 RxNorm-mapped CIEL drugs (55.9%) have interaction data |
@@ -126,6 +144,8 @@ Being honest about the edges matters more here than in most data, because the co
 
 - **It is not a management guide.** DDInter's text describes the mechanism and effect; it does not expose a discrete management recommendation, so `management` is null rather than filled with invented guidance.
 - **It is not complete in either direction.** About 14% of interactions have no written mechanism (DDInter lists the pair without a description), and 296 drugs that DDInter covers have no CIEL concept (recent approvals and supplements, mostly), while 44% of CIEL's RxNorm-mapped drugs have no DDInter interaction data (largely vaccines, venoms, and herbal preparations DDInter does not carry). A module must treat any absence as a gap, not a clearance.
+- **A derived finding is an inference, not a DDInter rating.** The tooling links two drugs through the drug-disease table only when one drug's text names a condition the other is rated for, and it shows both source rows and the reason. It never assigns the pair a severity of its own. A consumer that surfaces derived findings should label them the same way.
+- **Drug-food interactions are not included.** DDInter also publishes a drug-food table (metformin and alcohol, for example, which carries the only management text DDInter has). It is not ingested here.
 - **It is not a government-agency product.** DDInter is an academic database, peer-reviewed by pharmacists. That is a governance consideration for clinical deployment, not a data defect, and it is the one open sourcing question the design flags.
 - **A few RxCUIs are shared by design.** Drug RxCUIs are canonicalized to the RxNorm ingredient, and a clinician reviewed the cases where more than one drug shared an identifier. Genuinely distinct drugs that had been merged (for example the trastuzumab antibody-drug conjugates, or methscopolamine and scopolamine) were separated. The ~29 that remain shared are deliberate: stereoisomer and racemate pairs (omeprazole and esomeprazole, atropine and hyoscyamine) and prodrug/active-metabolite pairs, which share an interaction profile, plus formulation, salt, and vaccine-naming variants. The full review trail is in `out/rxcui_review.json`.
 

@@ -2,9 +2,9 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://openmrs.org/schemas/ddi-knowledge-base-1.0.json",
   "title": "OpenMRS DDI Knowledge Base (normalized)",
-  "description": "The drug-drug interaction knowledge base. Normalized into three tables joined by id: mechanisms (stored once), drugs, and interaction rows that reference both.",
+  "description": "The drug interaction knowledge base. Normalized tables joined by id: mechanisms (stored once), drugs, drug-drug interaction rows that reference both, and DDInter's drug-disease rows (disease_interactions) with their descriptions interned once in disease_notes.",
   "type": "object",
-  "required": ["metadata", "mechanisms", "drugs", "interactions"],
+  "required": ["metadata", "mechanisms", "drugs", "interactions", "disease_notes", "disease_interactions"],
   "properties": {
     "metadata": {
       "type": "object",
@@ -75,6 +75,33 @@
           {"type": "string", "description": "drug_b id"},
           {"enum": ["Major", "Moderate", "Minor", "Unknown"]},
           {"type": "string", "description": "group id -> mechanisms"}
+        ]
+      }
+    },
+    "disease_notes": {
+      "type": "object",
+      "description": "Keyed by note id. The description and references behind one or more drug-disease rows; DDInter reuses a class-level paragraph across the drugs in a class, so it is stored once.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["text", "references"],
+        "properties": {
+          "text": {"type": ["string", "null"], "description": "Free-text description from DDInter 2.0's drug-disease table."},
+          "references": {"type": "array", "items": {"type": "string"}, "description": "Literature and product-label citations as DDInter lists them."}
+        }
+      }
+    },
+    "disease_interactions": {
+      "type": "array",
+      "description": "Drug-disease rows: [drug_id, condition, severity, note_id]. Join drug_id -> drugs[].id and note_id -> disease_notes{}. The condition is DDInter's (MeSH-style) name, e.g. 'Acidosis, Lactic'. A consumer may derive a condition-mediated finding for two drugs from these rows; that is an inference, not a DDInter pairwise rating, and should be labelled as such.",
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "prefixItems": [
+          {"type": "string", "description": "drug id"},
+          {"type": "string", "description": "condition name"},
+          {"enum": ["Major", "Moderate", "Minor", "Unknown"]},
+          {"type": "string", "description": "note id -> disease_notes"}
         ]
       }
     }
