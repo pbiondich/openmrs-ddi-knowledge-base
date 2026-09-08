@@ -1,7 +1,8 @@
 # Scratch
 *.html
 __pycache__/
+.omc/
 
-# Full module-format file (~180 MB raw, over GitHub's 100 MB limit).
-# The gzipped copy is committed; regenerate with: python3 adapt_to_chartsearchai.py full
+# Full module-format file (~180 MB, over GitHub's 100 MB limit); not committed.
+# Regenerate with: python3 adapt_to_chartsearchai.py full
 dist/chartsearchai-drug-reference.json

@@ -33,6 +33,7 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
 | `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
 | `out/rxcui_review.json` | Human-readable record of the RxNorm canonicalization and clinician curation review. |
+| `query_kb.py` | Command-line and importable query tool over the knowledge base (see "Asking it questions"). `tests/` exercises it against the built file. |
 | `src/` | The build inputs: DDInter facts (`drugs.jsonl`, `interactions.jsonl`, `ddi_mechanisms.json`), the RxNorm/RxClass/CIEL fetch results, and the clinician decisions (`curation.json`). `build_kb.py` turns these into the KB above. |
 | `dist/chartsearchai-drug-reference-demo.json` | Chart Search AI module format, 16-drug demo (see `docs/INTEGRATION.md`). Run `adapt_to_chartsearchai.py full` to generate the full dataset (~180 MB, not committed). |
 
@@ -48,7 +49,7 @@ Three tables joined by id, so nothing is duplicated:
   },
   "drugs": [
     { "id": "DDInter1", "name": "Abacavir", "rxcui": "190521", "rxnorm_name": "abacavir",
-      "drugbank_id": "DB01048", "atc": ["J05AR", "J05AF"],
+      "drugbank_id": "DB01048", "atc": ["J05AF06"],
       "ciel": [ { "code": "103166", "uuid": "103166AAAA…", "name": "Abacavir / lamivudine" } ] }
   ],
   "interactions": [
@@ -60,6 +61,23 @@ Three tables joined by id, so nothing is duplicated:
 An interaction row is `[drug_a_id, drug_b_id, severity, group_id]`: join the ids to `drugs[]` for names/RxCUIs/CIEL, and the `group_id` to `mechanisms` for the description. A pair with no published mechanism references the sentinel group `-1` (null text).
 
 **The join key is the RxCUI.** A chart medication resolves CIEL concept to RxCUI (via `ciel_index.json`), and the RxCUI keys into the drugs table. That single key is what ties the patient's data, the drug vocabulary, and the interaction knowledge together.
+
+## Asking it questions
+
+Because the JSON is normalized, answering even a simple question by hand means two joins. `query_kb.py` does the joins and answers the questions a clinician or a module author actually asks, from the command line:
+
+```
+python3 query_kb.py pair warfarin aspirin                              # do these two interact? severity and mechanism
+python3 query_kb.py check warfarin aspirin simvastatin clarithromycin  # every interacting pair in a medication list
+python3 query_kb.py partners warfarin --severity Major                 # a drug's interacting partners, most severe first
+python3 query_kb.py drug warfarin                                      # identifiers, ATC, CIEL concepts, partner counts
+python3 query_kb.py mechanism 34                                       # a mechanism group's text and categories
+python3 query_kb.py search statin                                      # drugs whose name contains a string
+```
+
+A drug can be named by its DDInter name, its RxNorm name, or a CIEL concept name, or by identifier with a prefix (`rxcui:11289`, `ciel:86415`, `drugbank:DB00682`, `id:DDInter1951`). Add `--json` to any command for machine-readable output. The same logic is importable (`from query_kb import KB`) for scripts and notebooks, and it needs nothing beyond Python 3.
+
+Two behaviors are deliberate. A misspelled drug gets close-match suggestions rather than a silent empty result, and a pair with no record is reported as a knowledge gap, in the words of the governing rule above, never as "no interaction." A CIEL name that covers a combination product (say, "Acetaminophen / aspirin") resolves to every ingredient it contains, so a question about it checks all of them.
 
 ## How it was made
 
@@ -76,6 +94,7 @@ No step requires an implementer to curate drug data by hand, and the build is re
 ```
 python3 build_kb.py            # src/ -> out/ddi_knowledge_base.json (+ sample, CIEL index)
 python3 build_kb.py --check     # verify the rebuild matches the committed KB
+python3 -m unittest discover tests       # query the built KB and check every row joins
 python3 adapt_to_chartsearchai.py demo   # project into the Chart Search AI module format
 ```
 
