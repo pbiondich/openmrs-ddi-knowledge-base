@@ -2,6 +2,10 @@
   "description": "Clinician curation decisions applied after algorithmic RxNorm canonicalization. build_kb.py applies these overrides so the canonical KB is reproducible. Reasons: 'separation' = clinically distinct drugs the ingredient match had merged; 'remap' = obsolete concept remapped to its correct current RxCUI; 'gap' = obsolete/low-relevance concept with no safe current mapping, left null (surfaced as a knowledge gap).",
   "reviewed_by": "clinician (physician-informatician)",
   "date": "2026-07-21",
+  "brand_exclusions": {
+    "description": "Brand names fetch_brand_names.py drops beyond its dictionary rule (a brand of three characters or fewer, one whose every word is an ordinary dictionary word, or one that is a first name in the system proper-names list). These are first names the proper-names list does not carry; as an alias, a first name in a question ('Ella is asking about ibuprofen') would resolve a drug nobody named. Added 2026-09-08, open to review.",
+    "brands": ["Ella", "Kirsty", "Dotti"]
+  },
   "overrides": [
     {
       "id": "DDInter1075",

@@ -1,0 +1,1274 @@
+{
+ "description": "Brand names fetch_brand_names.py fetched from RxNorm and dropped, with the rule each fell to and the ingredient rxcuis it was fetched under. Kept beside src/brand_names.jsonl so the exclusion is inspectable and reversible (--refilter).",
+ "dictionary": "macOS /usr/share/dict/words (web2, lower-case entries) and /usr/share/dict/propernames, plus src/curation.json brand_exclusions",
+ "count": 203,
+ "excluded": {
+  "Acid Gone": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "29155",
+    "612"
+   ]
+  },
+  "Acne-Clear": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1418"
+   ]
+  },
+  "Advanced Eye Relief Redness Instant Relief": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "7247"
+   ]
+  },
+  "After banger": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Ala-Scalp": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5492"
+   ]
+  },
+  "Align": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "100213"
+   ]
+  },
+  "All Clear": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "7247"
+   ]
+  },
+  "Aller-Tec": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "20610"
+   ]
+  },
+  "Aller-Tec D": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "20610",
+    "8896"
+   ]
+  },
+  "Alo": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "5333"
+   ]
+  },
+  "Amidate": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4177"
+   ]
+  },
+  "Animi-3 with Vitamin D": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11248",
+    "2418",
+    "4511",
+    "684879"
+   ]
+  },
+  "Anti Bac": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1418"
+   ]
+  },
+  "Aqua Care": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11002"
+   ]
+  },
+  "Arthritis Hot Pain Relief": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "29787"
+   ]
+  },
+  "Atomic Balm": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1992",
+    "29787"
+   ]
+  },
+  "Azo Urinary Pain Relief": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8120"
+   ]
+  },
+  "Azo Urinary Tract Defense": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6832",
+    "9525"
+   ]
+  },
+  "BAL in Oil": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3445"
+   ]
+  },
+  "BOIL-EASE": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1399"
+   ]
+  },
+  "Band-Aid Hurt-Free": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1378",
+    "6387"
+   ]
+  },
+  "Barrier-Dyne": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5933"
+   ]
+  },
+  "Blink Dry Eye": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4910"
+   ]
+  },
+  "Brace Relief": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1399"
+   ]
+  },
+  "By Ache": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "161",
+    "33408"
+   ]
+  },
+  "C-Time": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1151"
+   ]
+  },
+  "Cal Gest": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1897"
+   ]
+  },
+  "Cal-Quick": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1897",
+    "2418"
+   ]
+  },
+  "Chew Q": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "21406"
+   ]
+  },
+  "Clear Proof Acne Medication": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "Clear Proof Acne Treatment": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1418"
+   ]
+  },
+  "Comfort Gel": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "612",
+    "6581",
+    "9796"
+   ]
+  },
+  "Compound W brand of salicylic acid": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "Correct (New Formula)": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1596"
+   ]
+  },
+  "CounterAct Pain": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "161"
+   ]
+  },
+  "Crest Mouthwash": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2286"
+   ]
+  },
+  "Critic-Aid Clear": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6932"
+   ]
+  },
+  "D-Cal": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1897"
+   ]
+  },
+  "DOK": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "82003"
+   ]
+  },
+  "Deep Sea": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9863"
+   ]
+  },
+  "Delta D3": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2418"
+   ]
+  },
+  "Derma Numb": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6387"
+   ]
+  },
+  "Dotti": {
+   "reason": "a first name",
+   "rxcuis": [
+    "4083"
+   ]
+  },
+  "Doxy": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3640"
+   ]
+  },
+  "Dragon": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "29787"
+   ]
+  },
+  "Duo Fusion": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1897",
+    "4278",
+    "6581"
+   ]
+  },
+  "E-Con": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "E-Z Scrub": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2358"
+   ]
+  },
+  "E.E.S.": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4053"
+   ]
+  },
+  "Ella": {
+   "reason": "a first name",
+   "rxcuis": [
+    "1005921"
+   ]
+  },
+  "Emend": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "358255"
+   ]
+  },
+  "Emend Injection": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1731071"
+   ]
+  },
+  "Encore": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "114202"
+   ]
+  },
+  "Ery": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "4053"
+   ]
+  },
+  "Ex-lax Ultra": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1596"
+   ]
+  },
+  "Exoderm": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "Exodus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8984"
+   ]
+  },
+  "FML": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "4491"
+   ]
+  },
+  "Factive": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "138099"
+   ]
+  },
+  "Fatal-Plus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8004"
+   ]
+  },
+  "Fiber Choice": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5924"
+   ]
+  },
+  "Fiber Choice Weight Management": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5924",
+    "59308"
+   ]
+  },
+  "Fire Out": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1399"
+   ]
+  },
+  "Flector": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3355"
+   ]
+  },
+  "Forane": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6026"
+   ]
+  },
+  "Four-Way": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "7812"
+   ]
+  },
+  "Fungoid": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6932"
+   ]
+  },
+  "Gas Aide": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9796"
+   ]
+  },
+  "Gas-X": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9796"
+   ]
+  },
+  "Gas-X Total Relief": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1897",
+    "9796"
+   ]
+  },
+  "Gel-One": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "62372"
+   ]
+  },
+  "Genesis": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10759"
+   ]
+  },
+  "Glutamic-500": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "70602"
+   ]
+  },
+  "Glutose": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4850"
+   ]
+  },
+  "H2Q": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "21406"
+   ]
+  },
+  "Hematogen": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11248",
+    "1151",
+    "24941",
+    "4511"
+   ]
+  },
+  "Hemocyte": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "24941"
+   ]
+  },
+  "Hemocyte Plus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11248",
+    "24941",
+    "29268",
+    "39954",
+    "4511",
+    "6585",
+    "684879",
+    "7405"
+   ]
+  },
+  "Hemocyte-F": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "24941",
+    "4511"
+   ]
+  },
+  "Her Style": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Humate-P": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11274",
+    "4257"
+   ]
+  },
+  "Hydro 35": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11002"
+   ]
+  },
+  "Hydro 40": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11002"
+   ]
+  },
+  "Hyper-Sal": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9863"
+   ]
+  },
+  "Ibu": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "5640"
+   ]
+  },
+  "Interceptor Plus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8628"
+   ]
+  },
+  "Io-Blend": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5933"
+   ]
+  },
+  "Io-Shield": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5933"
+   ]
+  },
+  "Jet-Alert": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1886"
+   ]
+  },
+  "Julie": {
+   "reason": "a first name",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "K-Phos Neutral": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "235496"
+   ]
+  },
+  "K-Phos No 2": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "235496"
+   ]
+  },
+  "K-Tab": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8591"
+   ]
+  },
+  "Keto-C": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2358",
+    "6135"
+   ]
+  },
+  "Keystone": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1378"
+   ]
+  },
+  "Kirsty": {
+   "reason": "a first name",
+   "rxcuis": [
+    "51428"
+   ]
+  },
+  "Kitabis": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10627"
+   ]
+  },
+  "LMX": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "6387"
+   ]
+  },
+  "Legend": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "62372"
+   ]
+  },
+  "Levo-T": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10582"
+   ]
+  },
+  "Lido King": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6387"
+   ]
+  },
+  "Ling Nam Ultra Balm": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "29787"
+   ]
+  },
+  "Lite 'N Foamy": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1378"
+   ]
+  },
+  "Mag 64": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6579"
+   ]
+  },
+  "Mag-G": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "52358"
+   ]
+  },
+  "Mag-Ox 400": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6582"
+   ]
+  },
+  "Mag-Tab": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "214688"
+   ]
+  },
+  "Mal-A-Ket": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2358",
+    "6135"
+   ]
+  },
+  "Marten-Tab": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "161",
+    "19860"
+   ]
+  },
+  "Maximum D3": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2418"
+   ]
+  },
+  "Mi-Acid Gas Relief": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9796"
+   ]
+  },
+  "Micro-Guard": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6932"
+   ]
+  },
+  "Morning After": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Muse": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "598"
+   ]
+  },
+  "My Choice": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "My Way": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "N Ice with Vitamin C": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1151"
+   ]
+  },
+  "Na-zone": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9863"
+   ]
+  },
+  "Neffy": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3992"
+   ]
+  },
+  "New Day": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Next Choice One Dose": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Nitro-Bid": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4917"
+   ]
+  },
+  "Ocean brand of sodium chloride": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9863"
+   ]
+  },
+  "Option 2": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Os-Cal 500 with D": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1897",
+    "2418"
+   ]
+  },
+  "Oxy Deep Pore": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "P & S": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "Pep-Back": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1886"
+   ]
+  },
+  "Picot": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "36676"
+   ]
+  },
+  "Plan B One-Step": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Poly Iron 150 Forte": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11248",
+    "4511"
+   ]
+  },
+  "Prolate": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "161",
+    "7804"
+   ]
+  },
+  "Pronto Plus Lice Egg Remover": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1378"
+   ]
+  },
+  "Pur-Oxy": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "114202"
+   ]
+  },
+  "Q-Fed": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8896"
+   ]
+  },
+  "Q-Gel": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11256",
+    "21406"
+   ]
+  },
+  "Q-Up": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11256",
+    "21406"
+   ]
+  },
+  "Quarter Mate": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5933"
+   ]
+  },
+  "Quartermaster": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "7980"
+   ]
+  },
+  "Quest Plus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8628"
+   ]
+  },
+  "R A Acne": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "35382"
+   ]
+  },
+  "RECONCILE": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4493"
+   ]
+  },
+  "RFD": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "8984"
+   ]
+  },
+  "Rash Relief Antibacterial": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1291"
+   ]
+  },
+  "Rea-Lo": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11002"
+   ]
+  },
+  "React": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Rebalance": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10171",
+    "9010"
+   ]
+  },
+  "Red Cross Canker Sore": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1399"
+   ]
+  },
+  "Red Hot": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1992"
+   ]
+  },
+  "Resinol": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "35382"
+   ]
+  },
+  "Rest Simply": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3498"
+   ]
+  },
+  "Restart": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Retin-A": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10753"
+   ]
+  },
+  "S-2": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "66887"
+   ]
+  },
+  "SSD": {
+   "reason": "three characters or fewer",
+   "rxcuis": [
+    "9793"
+   ]
+  },
+  "Safeguard Antibacterial Foaming": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1378"
+   ]
+  },
+  "Salix - substance": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "4603"
+   ]
+  },
+  "Samson 8": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5640"
+   ]
+  },
+  "Sea Soft": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9863"
+   ]
+  },
+  "Sentinel Spectrum": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8628"
+   ]
+  },
+  "Simply Saline": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9863"
+   ]
+  },
+  "Simply Sleep": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3498"
+   ]
+  },
+  "Sloan's Liniment": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1992"
+   ]
+  },
+  "Slow-Fe": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "24947"
+   ]
+  },
+  "Sojourn": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "36453"
+   ]
+  },
+  "Soma": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2101"
+   ]
+  },
+  "Soothe Mineral Oil": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6972"
+   ]
+  },
+  "Soothe Night Time": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6972"
+   ]
+  },
+  "Sting-Kill": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1399"
+   ]
+  },
+  "Suffusion": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2358",
+    "6135"
+   ]
+  },
+  "Super Spot Remover": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "Supreme": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2358"
+   ]
+  },
+  "Sure Shot 2X": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8984"
+   ]
+  },
+  "Surpass Anti-Inflammatory": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3355"
+   ]
+  },
+  "Sustain": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10178"
+   ]
+  },
+  "T8 Keto Flush": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6135"
+   ]
+  },
+  "TANDEM": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "24941"
+   ]
+  },
+  "Tabloid": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "10485"
+   ]
+  },
+  "Tact": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3498"
+   ]
+  },
+  "Take Action": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Tandem Plus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11248",
+    "24941",
+    "29268",
+    "39954",
+    "4511",
+    "684879",
+    "7405"
+   ]
+  },
+  "Tannic-12 S": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "20217"
+   ]
+  },
+  "Tenuate": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3389"
+   ]
+  },
+  "The Itch Eraser": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3498"
+   ]
+  },
+  "The Magic Bullet": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1596"
+   ]
+  },
+  "Today": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2238"
+   ]
+  },
+  "Tomorrow": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "2238"
+   ]
+  },
+  "Tri-Heart Plus": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6069",
+    "8984"
+   ]
+  },
+  "Triple Wormer": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8628",
+    "8984"
+   ]
+  },
+  "Triumph": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5933"
+   ]
+  },
+  "Ultra Mide": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11002"
+   ]
+  },
+  "Unburn": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6387"
+   ]
+  },
+  "Valiant Barrier": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "114202"
+   ]
+  },
+  "Valiant Shield": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "114202"
+   ]
+  },
+  "Vanquish": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "1191",
+    "161",
+    "1886"
+   ]
+  },
+  "Veta-K1": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8308"
+   ]
+  },
+  "Vital E- A + D3": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "11246",
+    "2418"
+   ]
+  },
+  "West Dip": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "5933"
+   ]
+  },
+  "Worm Protector 2X": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "8984"
+   ]
+  },
+  "Your Choice": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "6373"
+   ]
+  },
+  "Z-Sleep": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "3498"
+   ]
+  },
+  "clear days ahead": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "9525"
+   ]
+  },
+  "iDose": {
+   "reason": "every word is an ordinary dictionary word",
+   "rxcuis": [
+    "283809"
+   ]
+  }
+ }
+}

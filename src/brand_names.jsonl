@@ -1,9 +1,9 @@
 {"rxcui": "1000577", "brand_names": []}
-{"rxcui": "100213", "brand_names": ["Align", "Evivo"]}
+{"rxcui": "100213", "brand_names": ["Evivo"]}
 {"rxcui": "100272", "brand_names": []}
 {"rxcui": "100278", "brand_names": ["Rephresh Pro-B"]}
 {"rxcui": "10032", "brand_names": []}
-{"rxcui": "1005921", "brand_names": ["Ella"]}
+{"rxcui": "1005921", "brand_names": []}
 {"rxcui": "1006510", "brand_names": []}
 {"rxcui": "1009", "brand_names": ["ATryn", "Thrombate III"]}
 {"rxcui": "10106", "brand_names": []}
@@ -19,9 +19,9 @@
 {"rxcui": "10156", "brand_names": ["Carafate"]}
 {"rxcui": "10167", "brand_names": ["Unasyn", "Xacduro"]}
 {"rxcui": "10169", "brand_names": ["Avar", "BP 10-Wash", "BP Cleansing Wash", "Blephamide", "Carmol Scalp", "Clenia", "Klaron", "Ovace", "Plexion", "Rosanil", "Rosula", "Sumadan Wash", "Sumaxin"]}
-{"rxcui": "10171", "brand_names": ["Equisul SDT", "Rebalance", "Uniprim"]}
+{"rxcui": "10171", "brand_names": ["Equisul SDT", "Uniprim"]}
 {"rxcui": "10173", "brand_names": []}
-{"rxcui": "10178", "brand_names": ["Sustain"]}
+{"rxcui": "10178", "brand_names": []}
 {"rxcui": "10179", "brand_names": []}
 {"rxcui": "10205", "brand_names": []}
 {"rxcui": "10207", "brand_names": []}
@@ -51,18 +51,18 @@
 {"rxcui": "10471", "brand_names": []}
 {"rxcui": "10472", "brand_names": []}
 {"rxcui": "10473", "brand_names": ["Tepadina", "Tepylute"]}
-{"rxcui": "10485", "brand_names": ["Tabloid"]}
+{"rxcui": "10485", "brand_names": []}
 {"rxcui": "10493", "brand_names": []}
 {"rxcui": "10502", "brand_names": []}
 {"rxcui": "10510", "brand_names": []}
 {"rxcui": "1056", "brand_names": []}
 {"rxcui": "105694", "brand_names": ["Epogen", "Procrit", "Retacrit"]}
-{"rxcui": "10582", "brand_names": ["Ermeza", "Euthyrox", "Levo-T", "Levoxyl", "Synthroid", "Thyquidity", "Thyro-Tabs", "ThyroKare", "Thyrocryn", "Thyrolar", "Tirosint", "Unithroid"]}
+{"rxcui": "10582", "brand_names": ["Ermeza", "Euthyrox", "Levoxyl", "Synthroid", "Thyquidity", "Thyro-Tabs", "ThyroKare", "Thyrocryn", "Thyrolar", "Tirosint", "Unithroid"]}
 {"rxcui": "10591", "brand_names": []}
 {"rxcui": "10594", "brand_names": []}
 {"rxcui": "10600", "brand_names": ["Betimol", "Combigan", "Cosopt", "Istalol", "Timoptic"]}
 {"rxcui": "10612", "brand_names": ["Tindamax"]}
-{"rxcui": "10627", "brand_names": ["Bethkis", "Kitabis", "Tobi", "Tobradex", "Tobrex", "Zylet"]}
+{"rxcui": "10627", "brand_names": ["Bethkis", "Tobi", "Tobradex", "Tobrex", "Zylet"]}
 {"rxcui": "10633", "brand_names": []}
 {"rxcui": "10634", "brand_names": []}
 {"rxcui": "10635", "brand_names": []}
@@ -72,8 +72,8 @@
 {"rxcui": "10691", "brand_names": ["Cyklokapron", "Lysteda"]}
 {"rxcui": "10734", "brand_names": ["Parnate"]}
 {"rxcui": "10737", "brand_names": ["Raldesy"]}
-{"rxcui": "10753", "brand_names": ["Altreno", "Atralin", "Avita", "Refissa", "Renova", "Retin-A", "Tretin X", "Tri-Luma", "Twyneo", "Veltin", "Ziana"]}
-{"rxcui": "10759", "brand_names": ["Aller-Cort", "AllerNaze", "Genesis", "Hexatrione", "Kenalog", "Kourzeq", "Nasacort", "Oralone", "Trianex", "Triderm", "Triesence", "Xipere", "Zilretta"]}
+{"rxcui": "10753", "brand_names": ["Altreno", "Atralin", "Avita", "Refissa", "Renova", "Tretin X", "Tri-Luma", "Twyneo", "Veltin", "Ziana"]}
+{"rxcui": "10759", "brand_names": ["Aller-Cort", "AllerNaze", "Hexatrione", "Kenalog", "Kourzeq", "Nasacort", "Oralone", "Trianex", "Triderm", "Triesence", "Xipere", "Zilretta"]}
 {"rxcui": "10763", "brand_names": ["Dyazide", "Dyrenium", "Maxzide"]}
 {"rxcui": "10767", "brand_names": ["Halcion"]}
 {"rxcui": "10772", "brand_names": []}
@@ -113,7 +113,7 @@
 {"rxcui": "1099933", "brand_names": []}
 {"rxcui": "110", "brand_names": ["Fem pH", "Relagard", "Trimo San"]}
 {"rxcui": "1100072", "brand_names": ["Abirtega", "Akeega", "Yonsa", "Zytiga"]}
-{"rxcui": "11002", "brand_names": ["Aluvea", "Aqua Care", "Aquaphilic with Urea", "Atrac-Tain", "CEM-Urea", "Carmol", "Epimide 50", "Gormel", "Gormel 10", "Hydrasyn25", "Hydro 35", "Hydro 40", "Kera Nail", "Kera-42", "Keralac", "Nutraplus", "Rea-Lo", "U-Kera", "U-Lactin", "Ultra Mide", "Umecta", "Uramaxin", "Ureacin-10", "Ureacin-20", "Utopic"]}
+{"rxcui": "11002", "brand_names": ["Aluvea", "Aquaphilic with Urea", "Atrac-Tain", "CEM-Urea", "Carmol", "Epimide 50", "Gormel", "Gormel 10", "Hydrasyn25", "Kera Nail", "Kera-42", "Keralac", "Nutraplus", "U-Kera", "U-Lactin", "Umecta", "Uramaxin", "Ureacin-10", "Ureacin-20", "Utopic"]}
 {"rxcui": "1100699", "brand_names": ["Glyxambi", "Jentadueto", "Tradjenta", "Trijardy"]}
 {"rxcui": "1102129", "brand_names": []}
 {"rxcui": "1102261", "brand_names": []}
@@ -133,15 +133,15 @@
 {"rxcui": "11196", "brand_names": ["Qelbree"]}
 {"rxcui": "11198", "brand_names": []}
 {"rxcui": "11202", "brand_names": ["Marqibo", "Vincasar"]}
-{"rxcui": "11246", "brand_names": ["Aquasol A", "Infuvite", "Infuvite Pediatric", "Lactocal", "MVC-Fluoride", "Multi-Delyn", "Poly-Vi-Sol", "Tri-Vi-Sol", "Vitafol-One", "Vital E- A + D3", "Vital E- Newborn", "Vital E- Repro"]}
-{"rxcui": "11248", "brand_names": ["Animi-3 with Vitamin D", "Concept OB", "Dodex", "Eldertonic", "Ellis Tonic", "Ferocon", "Ferralet 90", "Ferraplus", "Ferrex 150 Forte", "Ferrex 150 Forte Plus", "Folbecal", "Folbee", "Folbic", "Folgard", "Folgard OS", "Foltabs", "Foltrate", "Hematogen", "Hemax", "Hemocyte Plus", "Icar-C Plus", "Iferex 150 Forte", "Infuvite", "Infuvite Pediatric", "Irospan Tablet", "Lactocal", "MTX Support", "MVC-Fluoride", "Multi-Delyn", "Multigen", "Multigen Plus", "Nascobal", "Niva-Fol", "Poly Iron 150 Forte", "Poly-Vi-Sol", "Rena-Vite", "Tandem Plus", "Vita-Respa", "Vitafol-One"]}
+{"rxcui": "11246", "brand_names": ["Aquasol A", "Infuvite", "Infuvite Pediatric", "Lactocal", "MVC-Fluoride", "Multi-Delyn", "Poly-Vi-Sol", "Tri-Vi-Sol", "Vitafol-One", "Vital E- Newborn", "Vital E- Repro"]}
+{"rxcui": "11248", "brand_names": ["Concept OB", "Dodex", "Eldertonic", "Ellis Tonic", "Ferocon", "Ferralet 90", "Ferraplus", "Ferrex 150 Forte", "Ferrex 150 Forte Plus", "Folbecal", "Folbee", "Folbic", "Folgard", "Folgard OS", "Foltabs", "Foltrate", "Hemax", "Icar-C Plus", "Iferex 150 Forte", "Infuvite", "Infuvite Pediatric", "Irospan Tablet", "Lactocal", "MTX Support", "MVC-Fluoride", "Multi-Delyn", "Multigen", "Multigen Plus", "Nascobal", "Niva-Fol", "Poly-Vi-Sol", "Rena-Vite", "Vita-Respa", "Vitafol-One"]}
 {"rxcui": "11253", "brand_names": []}
-{"rxcui": "11256", "brand_names": ["Aquasol E", "Encora Capsule", "Hemax", "Lactocal", "Liq-10", "MVC-Fluoride", "Macuvite with Lutein", "Multi-Delyn", "NeoQ10", "Ocuvite", "Ocuvite Lutein", "Poly-Vi-Sol", "PreserVision", "PreserVision with Lutein", "Q-Gel", "Q-Gel with Lipoic Acid", "Q-Up", "Replesta NX", "Vitafol-One"]}
-{"rxcui": "11274", "brand_names": ["Alphanate", "Humate-P", "Wilate"]}
+{"rxcui": "11256", "brand_names": ["Aquasol E", "Encora Capsule", "Hemax", "Lactocal", "Liq-10", "MVC-Fluoride", "Macuvite with Lutein", "Multi-Delyn", "NeoQ10", "Ocuvite", "Ocuvite Lutein", "Poly-Vi-Sol", "PreserVision", "PreserVision with Lutein", "Q-Gel with Lipoic Acid", "Replesta NX", "Vitafol-One"]}
+{"rxcui": "11274", "brand_names": ["Alphanate", "Wilate"]}
 {"rxcui": "11289", "brand_names": ["Coumadin", "Jantoven"]}
 {"rxcui": "11359", "brand_names": ["Macuvite with Lutein", "Ocuvite", "Ocuvite Lutein", "PreserVision with Lutein"]}
 {"rxcui": "11413", "brand_names": ["Combivir", "Retrovir", "Trizivir"]}
-{"rxcui": "114202", "brand_names": ["4XLA Activator", "AmLactin AP", "Amlactin", "Astri-UC", "Atrac-Tain", "Dermaplex", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "Encore", "Extraneal", "Geri-Hydrolac", "Ionosol-MB", "Lac-Hydrin", "Lacticare", "Lactinol", "Oxy Gard", "Phexx", "Phexxi", "Pur-Oxy", "U-Lactin", "Valiant Barrier", "Valiant Shield"]}
+{"rxcui": "114202", "brand_names": ["4XLA Activator", "AmLactin AP", "Amlactin", "Astri-UC", "Atrac-Tain", "Dermaplex", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "Extraneal", "Geri-Hydrolac", "Ionosol-MB", "Lac-Hydrin", "Lacticare", "Lactinol", "Oxy Gard", "Phexx", "Phexxi", "U-Lactin"]}
 {"rxcui": "114289", "brand_names": []}
 {"rxcui": "114477", "brand_names": ["Elepsia", "Keppra", "Roweepra", "Spritam"]}
 {"rxcui": "1147220", "brand_names": ["Zelboraf"]}
@@ -153,7 +153,7 @@
 {"rxcui": "114934", "brand_names": ["Iprivask"]}
 {"rxcui": "114970", "brand_names": ["Accolate"]}
 {"rxcui": "114979", "brand_names": ["Aciphex"]}
-{"rxcui": "1151", "brand_names": ["Ascor", "C-Time", "Cemill 1000", "Concept OB", "Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Ferocon", "Ferralet 90", "Ferraplus", "Ferrex 150 Plus", "Folitab", "Folivane-F", "Halls Defense", "Hematogen", "Hemax", "Icar C", "Icar-C Plus", "Infuvite", "Infuvite Pediatric", "Integra F", "Irospan Tablet", "Lactocal", "MVC-Fluoride", "Macuvite with Lutein", "MoviPrep", "Multi-Delyn", "N Ice with Vitamin C", "Ocuvite", "Ocuvite Lutein", "Poly-Vi-Sol", "PreserVision", "PreserVision with Lutein", "Rena-Vite", "Tri-Vi-Sol", "Vitafol-One", "Vitron-C Reformulated Jul 2016"]}
+{"rxcui": "1151", "brand_names": ["Ascor", "Cemill 1000", "Concept OB", "Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Ferocon", "Ferralet 90", "Ferraplus", "Ferrex 150 Plus", "Folitab", "Folivane-F", "Halls Defense", "Hemax", "Icar C", "Icar-C Plus", "Infuvite", "Infuvite Pediatric", "Integra F", "Irospan Tablet", "Lactocal", "MVC-Fluoride", "Macuvite with Lutein", "MoviPrep", "Multi-Delyn", "Ocuvite", "Ocuvite Lutein", "Poly-Vi-Sol", "PreserVision", "PreserVision with Lutein", "Rena-Vite", "Tri-Vi-Sol", "Vitafol-One", "Vitron-C Reformulated Jul 2016"]}
 {"rxcui": "11516", "brand_names": ["Hectorol"]}
 {"rxcui": "115264", "brand_names": ["Boniva"]}
 {"rxcui": "115452", "brand_names": []}
@@ -164,7 +164,7 @@
 {"rxcui": "11645", "brand_names": ["Ferriprox"]}
 {"rxcui": "117055", "brand_names": ["Campath", "Lemtrada"]}
 {"rxcui": "118886", "brand_names": ["Visudyne"]}
-{"rxcui": "1191", "brand_names": ["Alka-Seltzer", "Anacin", "Anacin Advanced Headache Formula", "Anacin Aspirin Regimen", "Arthriten Inflammatory Pain", "Ascomp", "Aspergum", "Aspi-Cor", "BC Arthritis", "BC Original Formula", "Backaid IPF", "Bayer Aspirin", "Bromo Seltzer Antacid Pain Reliever", "Bufferin", "Durlaza", "Ecotrin", "Equagesic", "Exaprin", "Exaprin Plus", "Excedrin", "Excedrin PM Triple Action", "Miniprin", "Norgesic", "Norwich Aspirin", "Orphengesic", "Pamprin Max Formula", "Saleto", "St. Joseph Aspirin", "Stanback Headache Powder Reformulated Jan 2011", "Vanquish", "Vazalore", "Yosprala"]}
+{"rxcui": "1191", "brand_names": ["Alka-Seltzer", "Anacin", "Anacin Advanced Headache Formula", "Anacin Aspirin Regimen", "Arthriten Inflammatory Pain", "Ascomp", "Aspergum", "Aspi-Cor", "BC Arthritis", "BC Original Formula", "Backaid IPF", "Bayer Aspirin", "Bromo Seltzer Antacid Pain Reliever", "Bufferin", "Durlaza", "Ecotrin", "Equagesic", "Exaprin", "Exaprin Plus", "Excedrin", "Excedrin PM Triple Action", "Miniprin", "Norgesic", "Norwich Aspirin", "Orphengesic", "Pamprin Max Formula", "Saleto", "St. Joseph Aspirin", "Stanback Headache Powder Reformulated Jan 2011", "Vazalore", "Yosprala"]}
 {"rxcui": "119246", "brand_names": []}
 {"rxcui": "1193326", "brand_names": ["Jakafi", "Opzelura"]}
 {"rxcui": "119565", "brand_names": ["Detrol"]}
@@ -188,7 +188,7 @@
 {"rxcui": "12574", "brand_names": ["Avgemsi", "Infugem", "Inlexzo"]}
 {"rxcui": "125933", "brand_names": []}
 {"rxcui": "1272", "brand_names": ["Azactam", "Cayston", "Emblaveo"]}
-{"rxcui": "1291", "brand_names": ["Baciguent", "Bactine Antibiotic", "Cuadriderma", "Lanabiotic", "Mycitracin Plus Pain Reliever", "Neo-Polycin", "Neo-Polycin HC", "Polycin", "Polysporin", "Rash Relief Antibacterial", "Spectrocin Plus", "Tri Biozene"]}
+{"rxcui": "1291", "brand_names": ["Baciguent", "Bactine Antibiotic", "Cuadriderma", "Lanabiotic", "Mycitracin Plus Pain Reliever", "Neo-Polycin", "Neo-Polycin HC", "Polycin", "Polysporin", "Spectrocin Plus", "Tri Biozene"]}
 {"rxcui": "1291301", "brand_names": ["Stendra"]}
 {"rxcui": "1292", "brand_names": ["Fleqsuvy", "Gablofen", "Lioresal", "Lyvispah", "Ozobax"]}
 {"rxcui": "1292422", "brand_names": ["ProQuad", "Varivax"]}
@@ -263,14 +263,14 @@
 {"rxcui": "1372255", "brand_names": []}
 {"rxcui": "1373458", "brand_names": ["Invokamet", "Invokana"]}
 {"rxcui": "1373478", "brand_names": ["Tecfidera"]}
-{"rxcui": "1378", "brand_names": ["Allercaine", "Alocane Max Strength", "Alocane Plus", "Bactine", "Bactine Wound Wash", "Band-Aid Hurt-Free", "Cicloferon", "DigiSan E Foam", "Horseman's Dream Fung-A-Way", "Keepan", "Keystone", "Lite 'N Foamy", "Mane 'N Tail Pro-Tect", "Pheneen", "Pronto Plus Lice Egg Remover", "ReadyBath", "Releev Cold Sore", "RevitaDERM Wound Care", "Safeguard Antibacterial Foaming", "Servo Stat Bac", "Shing-Releev", "Softsoap Antibacterial", "Tridergel", "Zephiran"]}
-{"rxcui": "138099", "brand_names": ["Factive"]}
+{"rxcui": "1378", "brand_names": ["Allercaine", "Alocane Max Strength", "Alocane Plus", "Bactine", "Bactine Wound Wash", "Cicloferon", "DigiSan E Foam", "Horseman's Dream Fung-A-Way", "Keepan", "Mane 'N Tail Pro-Tect", "Pheneen", "ReadyBath", "Releev Cold Sore", "RevitaDERM Wound Care", "Servo Stat Bac", "Shing-Releev", "Softsoap Antibacterial", "Tridergel", "Zephiran"]}
+{"rxcui": "138099", "brand_names": []}
 {"rxcui": "1388", "brand_names": []}
 {"rxcui": "139462", "brand_names": ["Avelox", "Vigamox"]}
 {"rxcui": "139778", "brand_names": ["Zelnorm"]}
 {"rxcui": "139825", "brand_names": ["Levemir"]}
 {"rxcui": "139896", "brand_names": ["Fuzeon"]}
-{"rxcui": "1399", "brand_names": ["Alpha-caine", "Americaine", "Americaine Hemorrhoidal", "Anacaine", "Anbesol", "Anbesol Cold Sore Therapy", "BOIL-EASE", "Bactimicina Sore Throat", "Bencocaine", "Benz-O-Sthetic", "Benzo-Jel", "Benzodent", "Brace Relief", "Bucalsep", "Candee Caine", "Cepacol", "Cepacol Sore Throat Pain Relief", "Cepacol Sore Throat Plus Cough", "Cepastat Sore Throat & Cough", "Cetacaine", "Chloraseptic", "Chloraseptic Sore Throat", "Chloraseptic Sore Throat + Cough", "Comfort Caine", "Dermawound Benzocaine", "Dermoplast", "Dermoplast Antibacterial", "Dermoplast Pain", "Enemeez Plus", "Finafta Multi Oral", "Fire Out", "Foille", "Freez Eez", "Gelato Anesthetic", "Gingicaine", "Hurricaine", "Kolorz Anesthetic", "Lanacane", "Little Ouchies", "LolliCaine", "Medicaine Sting", "Medicone", "Monistat Care", "Numstat", "OraMagic Plus", "Orabase", "Orajel", "Orasep Reformulated Dec 2013", "Outgro Pain Relief", "Red Cross Canker Sore", "Salinocaine", "Solarcaine Plus Aloe", "Sting-Kill", "StingX", "Tanac Liquid", "Topicale", "Vagisil Original Formula", "Zilactin B"]}
+{"rxcui": "1399", "brand_names": ["Alpha-caine", "Americaine", "Americaine Hemorrhoidal", "Anacaine", "Anbesol", "Anbesol Cold Sore Therapy", "Bactimicina Sore Throat", "Bencocaine", "Benz-O-Sthetic", "Benzo-Jel", "Benzodent", "Bucalsep", "Candee Caine", "Cepacol", "Cepacol Sore Throat Pain Relief", "Cepacol Sore Throat Plus Cough", "Cepastat Sore Throat & Cough", "Cetacaine", "Chloraseptic", "Chloraseptic Sore Throat", "Chloraseptic Sore Throat + Cough", "Comfort Caine", "Dermawound Benzocaine", "Dermoplast", "Dermoplast Antibacterial", "Dermoplast Pain", "Enemeez Plus", "Finafta Multi Oral", "Foille", "Freez Eez", "Gelato Anesthetic", "Gingicaine", "Hurricaine", "Kolorz Anesthetic", "Lanacane", "Little Ouchies", "LolliCaine", "Medicaine Sting", "Medicone", "Monistat Care", "Numstat", "OraMagic Plus", "Orabase", "Orajel", "Orasep Reformulated Dec 2013", "Outgro Pain Relief", "Salinocaine", "Solarcaine Plus Aloe", "StingX", "Tanac Liquid", "Topicale", "Vagisil Original Formula", "Zilactin B"]}
 {"rxcui": "139953", "brand_names": ["Symlin"]}
 {"rxcui": "139994", "brand_names": ["Neumega"]}
 {"rxcui": "140108", "brand_names": ["Cancidas"]}
@@ -278,7 +278,7 @@
 {"rxcui": "141366", "brand_names": []}
 {"rxcui": "141626", "brand_names": ["Welchol"]}
 {"rxcui": "141704", "brand_names": ["Afinitor", "Torpenz", "Yulithira", "Zortress"]}
-{"rxcui": "1418", "brand_names": ["Acanya", "Acne-Clear", "Anti Bac", "Benzac", "Benzamycin", "Benzefoam", "Benzepro", "Cabtreo", "Clear Proof Acne Treatment", "Clearplex", "Clearskin", "Clenziderm Lotion", "Del-Aqua", "Desquam", "Differin Epiduo", "Effaclar Duo", "Epiduo", "Epsolay", "Fostex", "Inova", "Inova 8-2", "Myhelper", "NeoBenz Micro", "NeoBenz Micro Wash", "Neuac", "NuOx", "Onexton", "Oscion", "Pacnex", "Persa-Gel", "Phisoderm Clear Confidence Spot Treatment", "Relovox", "Seba-Gel", "Soluclenz", "Triaz", "Twyneo", "Vanoxide-HC"]}
+{"rxcui": "1418", "brand_names": ["Acanya", "Benzac", "Benzamycin", "Benzefoam", "Benzepro", "Cabtreo", "Clearplex", "Clearskin", "Clenziderm Lotion", "Del-Aqua", "Desquam", "Differin Epiduo", "Effaclar Duo", "Epiduo", "Epsolay", "Fostex", "Inova", "Inova 8-2", "Myhelper", "NeoBenz Micro", "NeoBenz Micro Wash", "Neuac", "NuOx", "Onexton", "Oscion", "Pacnex", "Persa-Gel", "Phisoderm Clear Confidence Spot Treatment", "Relovox", "Seba-Gel", "Soluclenz", "Triaz", "Twyneo", "Vanoxide-HC"]}
 {"rxcui": "142131", "brand_names": ["Maginex"]}
 {"rxcui": "1422", "brand_names": []}
 {"rxcui": "1423803", "brand_names": ["Glycophos"]}
@@ -371,7 +371,7 @@
 {"rxcui": "1592257", "brand_names": ["Folixate"]}
 {"rxcui": "1592737", "brand_names": ["Ofev"]}
 {"rxcui": "1593128", "brand_names": ["Bexsero", "Penbraya", "Penmenvy", "Trumenba"]}
-{"rxcui": "1596", "brand_names": ["Alophen Reformulated Jan 2008", "Bisac-Evac", "Correct (New Formula)", "Correctol laxative Reformulated Feb 2008", "Dulcolax", "Evac-U-Gen Reformulated Jan 2008", "Ex-lax Ultra", "Feen-A-Mint Reformulated Jan 2008", "Laxomil", "The Magic Bullet"]}
+{"rxcui": "1596", "brand_names": ["Alophen Reformulated Jan 2008", "Bisac-Evac", "Correctol laxative Reformulated Feb 2008", "Dulcolax", "Evac-U-Gen Reformulated Jan 2008", "Feen-A-Mint Reformulated Jan 2008", "Laxomil"]}
 {"rxcui": "1596450", "brand_names": ["Garasol", "Genone", "GentaVed", "Gentacalm", "Gentak", "Mometamax", "Mometamax Single", "Mometavet", "Motazol", "Otomax"]}
 {"rxcui": "1597258", "brand_names": ["Blincyto"]}
 {"rxcui": "1597371", "brand_names": []}
@@ -395,7 +395,7 @@
 {"rxcui": "1606274", "brand_names": ["Unituxin"]}
 {"rxcui": "1607976", "brand_names": ["Triferic"]}
 {"rxcui": "1608322", "brand_names": ["Cresemba"]}
-{"rxcui": "161", "brand_names": ["Acephen", "Acetadryl", "Allzital", "Anabar", "Anacin AF", "Anacin Advanced Headache Formula", "Apadaz", "Arthriten Inflammatory Pain", "Backaid", "Backaid IPF", "Backprin", "Bactimicina", "Bupap", "By Ache", "Capacet", "Cetafen", "Combogesic", "Comtrex Sore Throat Relief", "Contragesic", "CounterAct Pain", "Dologesic", "Ed Flex", "Endocet", "Esgic", "Exaprin", "Exaprin Plus", "Excedrin", "Excedrin Mild Headache", "Excedrin PM", "Excedrin PM Triple Action", "Excedrin Quick Tab", "Excedrin Tension Headache", "Feverall", "Fioricet", "Fioricet with Codeine", "Frenadol", "Hycet", "Legatrin PM", "Little Fevers", "Mapap", "Marten-Tab", "Nalocet", "Ninjacof A", "Norco", "Nortemp", "Pamprin Cramp Formula", "Pamprin Max Formula", "Pamprin Multi-Symptom", "Panadol", "Panadol Extra", "Panadol PM", "Percocet", "Percogesic Reformulated Jan 2011", "Pharbetol", "Premsyn PMS", "Primlev", "Prolate", "Redutemp", "Relagesic", "Repan", "Ringl", "Saleto", "Sed-Max", "Tactinal", "Tempra Quicklets", "Tencon", "Trezix", "Tycolene", "Tylenol", "Tylenol Gelcap Extra Strength", "Tylenol PM", "Tylenol with Codeine", "Ultracet", "Unisom with Pain Relief", "Vanatol", "Vanquish", "Verdrocet", "Vtol", "Zebutal"]}
+{"rxcui": "161", "brand_names": ["Acephen", "Acetadryl", "Allzital", "Anabar", "Anacin AF", "Anacin Advanced Headache Formula", "Apadaz", "Arthriten Inflammatory Pain", "Backaid", "Backaid IPF", "Backprin", "Bactimicina", "Bupap", "Capacet", "Cetafen", "Combogesic", "Comtrex Sore Throat Relief", "Contragesic", "Dologesic", "Ed Flex", "Endocet", "Esgic", "Exaprin", "Exaprin Plus", "Excedrin", "Excedrin Mild Headache", "Excedrin PM", "Excedrin PM Triple Action", "Excedrin Quick Tab", "Excedrin Tension Headache", "Feverall", "Fioricet", "Fioricet with Codeine", "Frenadol", "Hycet", "Legatrin PM", "Little Fevers", "Mapap", "Nalocet", "Ninjacof A", "Norco", "Nortemp", "Pamprin Cramp Formula", "Pamprin Max Formula", "Pamprin Multi-Symptom", "Panadol", "Panadol Extra", "Panadol PM", "Percocet", "Percogesic Reformulated Jan 2011", "Pharbetol", "Premsyn PMS", "Primlev", "Redutemp", "Relagesic", "Repan", "Ringl", "Saleto", "Sed-Max", "Tactinal", "Tempra Quicklets", "Tencon", "Trezix", "Tycolene", "Tylenol", "Tylenol Gelcap Extra Strength", "Tylenol PM", "Tylenol with Codeine", "Ultracet", "Unisom with Pain Relief", "Vanatol", "Verdrocet", "Vtol", "Zebutal"]}
 {"rxcui": "1622", "brand_names": []}
 {"rxcui": "1649480", "brand_names": ["Corlanor"]}
 {"rxcui": "16521", "brand_names": ["Hepsera"]}
@@ -441,7 +441,7 @@
 {"rxcui": "173", "brand_names": []}
 {"rxcui": "17300", "brand_names": ["UroXatral"]}
 {"rxcui": "1731031", "brand_names": []}
-{"rxcui": "1731071", "brand_names": ["Emend Injection", "Focinvez", "Navitrux"]}
+{"rxcui": "1731071", "brand_names": ["Focinvez", "Navitrux"]}
 {"rxcui": "1734628", "brand_names": ["Zepatier"]}
 {"rxcui": "1734630", "brand_names": ["Zepatier"]}
 {"rxcui": "1739745", "brand_names": ["Briviact"]}
@@ -496,12 +496,12 @@
 {"rxcui": "1876597", "brand_names": ["Symproic"]}
 {"rxcui": "1876905", "brand_names": ["Austedo"]}
 {"rxcui": "187832", "brand_names": ["Bonqat", "Lyrica"]}
-{"rxcui": "1886", "brand_names": ["Anacin", "Anacin Advanced Headache Formula", "Arthriten Inflammatory Pain", "Ascomp", "BC Arthritis", "BC Original Formula", "Backaid IPF", "Backprin", "Cafcit", "Cafergot", "Capacet", "Esgic", "Exaprin", "Exaprin Plus", "Excedrin", "Excedrin Mild Headache", "Excedrin Quick Tab", "Excedrin Tension Headache", "Fioricet", "Fioricet with Codeine", "Jet-Alert", "Migergot", "No Doz", "Norgesic", "Orphengesic", "Pamprin Max Formula", "Panadol Extra", "Pep-Back", "Repan", "Saleto", "Sed-Max", "Stanback Headache Powder Reformulated Jan 2011", "Trezix", "Vanatol", "Vanquish", "Vivarin", "Vtol", "Zebutal"]}
+{"rxcui": "1886", "brand_names": ["Anacin", "Anacin Advanced Headache Formula", "Arthriten Inflammatory Pain", "Ascomp", "BC Arthritis", "BC Original Formula", "Backaid IPF", "Backprin", "Cafcit", "Cafergot", "Capacet", "Esgic", "Exaprin", "Exaprin Plus", "Excedrin", "Excedrin Mild Headache", "Excedrin Quick Tab", "Excedrin Tension Headache", "Fioricet", "Fioricet with Codeine", "Migergot", "No Doz", "Norgesic", "Orphengesic", "Pamprin Max Formula", "Panadol Extra", "Repan", "Saleto", "Sed-Max", "Stanback Headache Powder Reformulated Jan 2011", "Trezix", "Vanatol", "Vivarin", "Vtol", "Zebutal"]}
 {"rxcui": "18867", "brand_names": ["Cardalis", "Lotensin", "Lotensin HCT", "Lotrel"]}
 {"rxcui": "18889", "brand_names": ["Altafluor"]}
 {"rxcui": "1889", "brand_names": ["Rayaldee"]}
 {"rxcui": "1894", "brand_names": ["Rocaltrol", "Vectical"]}
-{"rxcui": "1897", "brand_names": ["Alka-Mints", "Alkums", "Cal Gest", "Cal-Quick", "Caltrate", "Caltrate Plus D", "Chooz", "D-Cal", "Duo Fusion", "Encora AM Tablet", "Encora PM Tablet", "Florical", "Folbecal", "Folgard OS", "Gas-X Total Relief", "Gas-X with Maalox", "Healthy Mama", "Lactocal", "Maalox Max Quick Dissolve", "MagneBind", "MagneBind 400 Rx", "Monocal", "Mylicon Children's", "Nutralox", "Os-Cal 500 with D", "OsCal 500", "Osteo-Poretical", "Ostercal-D", "Oysco 500 with D", "Oysco D", "Pepcid Complete", "Pepto-Bismol Children's", "Phazyme Gas & Acid", "Rolaids Reformulated Aug 2006", "Slow-Mag Reformulated Feb 2012", "Titralac", "Titralac Plus", "Tums", "Tums Dual Action", "Tums with Gas Relief", "Viactiv Calcium Plus D"]}
+{"rxcui": "1897", "brand_names": ["Alka-Mints", "Alkums", "Caltrate", "Caltrate Plus D", "Chooz", "Encora AM Tablet", "Encora PM Tablet", "Florical", "Folbecal", "Folgard OS", "Gas-X with Maalox", "Healthy Mama", "Lactocal", "Maalox Max Quick Dissolve", "MagneBind", "MagneBind 400 Rx", "Monocal", "Mylicon Children's", "Nutralox", "OsCal 500", "Osteo-Poretical", "Ostercal-D", "Oysco 500 with D", "Oysco D", "Pepcid Complete", "Pepto-Bismol Children's", "Phazyme Gas & Acid", "Rolaids Reformulated Aug 2006", "Slow-Mag Reformulated Feb 2012", "Titralac", "Titralac Plus", "Tums", "Tums Dual Action", "Tums with Gas Relief", "Viactiv Calcium Plus D"]}
 {"rxcui": "18993", "brand_names": ["Tessalon Perles"]}
 {"rxcui": "18994", "brand_names": []}
 {"rxcui": "19008", "brand_names": []}
@@ -557,7 +557,7 @@
 {"rxcui": "197", "brand_names": ["Acetadote"]}
 {"rxcui": "19737", "brand_names": ["Bromsite", "Prolensa"]}
 {"rxcui": "19831", "brand_names": ["Airsupra", "Breyna", "Breztri", "Entocort", "Eohilia", "Ortikos", "Pulmicort", "Rhinocort", "Symbicort", "Tarpeyo", "Uceris"]}
-{"rxcui": "19860", "brand_names": ["Allzital", "Ascomp", "Bupap", "Capacet", "Esgic", "Fioricet", "Fioricet with Codeine", "Marten-Tab", "Repan", "Tencon", "Vanatol", "Vtol", "Zebutal"]}
+{"rxcui": "19860", "brand_names": ["Allzital", "Ascomp", "Bupap", "Capacet", "Esgic", "Fioricet", "Fioricet with Codeine", "Repan", "Tencon", "Vanatol", "Vtol", "Zebutal"]}
 {"rxcui": "1986438", "brand_names": ["Kymriah"]}
 {"rxcui": "1986808", "brand_names": ["Calquence"]}
 {"rxcui": "1986821", "brand_names": ["Shingrix"]}
@@ -567,7 +567,7 @@
 {"rxcui": "1989100", "brand_names": ["Fasenra"]}
 {"rxcui": "1989794", "brand_names": ["Hemlibra"]}
 {"rxcui": "1991302", "brand_names": ["Ozempic", "Rybelsus", "Wegovy"]}
-{"rxcui": "1992", "brand_names": ["Arth-RX", "Arthricare for Women Moisturizing", "Arthricare for Women Ultra Strength", "Arthur Itis", "Atomic Balm", "Capzasin Quick Relief", "Capzasin-HP", "Capzasin-P", "Cartilade", "Castiva Warming", "Dendracin Neurodendraxcin", "Doloracin with Lidocaine", "Equi-Block Original", "LidoPro", "Medi-Derm", "Medi-Derm with Lidocaine", "Medrox", "Menthac Arthritis Cream with Capsaicin", "Qutenza", "Red Hot", "Satogesic Hot", "Sloan's Liniment", "WellPatch", "Xoten-C", "ZIKS Pain Relief", "Zostrix", "Zostrix Joint & Arthritis Pain Relief", "Zostrix Sports"]}
+{"rxcui": "1992", "brand_names": ["Arth-RX", "Arthricare for Women Moisturizing", "Arthricare for Women Ultra Strength", "Arthur Itis", "Capzasin Quick Relief", "Capzasin-HP", "Capzasin-P", "Cartilade", "Castiva Warming", "Dendracin Neurodendraxcin", "Doloracin with Lidocaine", "Equi-Block Original", "LidoPro", "Medi-Derm", "Medi-Derm with Lidocaine", "Medrox", "Menthac Arthritis Cream with Capsaicin", "Qutenza", "Satogesic Hot", "WellPatch", "Xoten-C", "ZIKS Pain Relief", "Zostrix", "Zostrix Joint & Arthritis Pain Relief", "Zostrix Sports"]}
 {"rxcui": "1992672", "brand_names": ["Segluromet", "Steglatro", "Steglujan"]}
 {"rxcui": "19959", "brand_names": []}
 {"rxcui": "1998", "brand_names": []}
@@ -580,7 +580,7 @@
 {"rxcui": "2002", "brand_names": ["Carbatrol", "Epitol", "Equetro", "Tegretol"]}
 {"rxcui": "2015", "brand_names": []}
 {"rxcui": "2019", "brand_names": ["Crexont", "Dhivy", "Duopa", "Lodosyn", "Rytary", "Sinemet", "Stalevo", "Vyalev"]}
-{"rxcui": "20217", "brand_names": ["Allfen CX", "Tannic-12 S"]}
+{"rxcui": "20217", "brand_names": ["Allfen CX"]}
 {"rxcui": "20220", "brand_names": ["Carbzah", "Karbinal", "Ryvent"]}
 {"rxcui": "202912", "brand_names": []}
 {"rxcui": "203219", "brand_names": []}
@@ -623,7 +623,7 @@
 {"rxcui": "2058849", "brand_names": ["Vizimpro"]}
 {"rxcui": "2059018", "brand_names": ["Seysara"]}
 {"rxcui": "2059269", "brand_names": ["Nuzyra"]}
-{"rxcui": "20610", "brand_names": ["Aller-Tec", "Aller-Tec D", "Alleroff", "Quzyttir", "Wal Zyr 24 Hour Allergy", "Wal Zyr D", "Wal-Zyr", "Zerviate", "Zyrtec", "Zyrtec-D"]}
+{"rxcui": "20610", "brand_names": ["Alleroff", "Quzyttir", "Wal Zyr 24 Hour Allergy", "Wal Zyr D", "Wal-Zyr", "Zerviate", "Zyrtec", "Zyrtec-D"]}
 {"rxcui": "20859", "brand_names": ["Clorotekal", "Iheezo", "Nesacaine"]}
 {"rxcui": "20976", "brand_names": []}
 {"rxcui": "2099289", "brand_names": ["Tegsedi"]}
@@ -631,7 +631,7 @@
 {"rxcui": "2099704", "brand_names": ["Talzenna"]}
 {"rxcui": "2099995", "brand_names": ["Xofluza"]}
 {"rxcui": "21009", "brand_names": ["Multitrace-4", "Multitrace-5"]}
-{"rxcui": "2101", "brand_names": ["Soma", "Vanadom"]}
+{"rxcui": "2101", "brand_names": ["Vanadom"]}
 {"rxcui": "2102775", "brand_names": ["Yupelri"]}
 {"rxcui": "2103164", "brand_names": ["Lorbrena"]}
 {"rxcui": "2104604", "brand_names": ["Gamifant"]}
@@ -661,7 +661,7 @@
 {"rxcui": "21249", "brand_names": ["Cloderm"]}
 {"rxcui": "21254", "brand_names": ["Ninjacof", "Ninjacof A", "Vanacof AC"]}
 {"rxcui": "2129", "brand_names": ["Venelex"]}
-{"rxcui": "21406", "brand_names": ["Carni Q-Gel Forte", "Chew Q", "H2Q", "LiQsorb", "Liq-10", "NeoQ10", "Q-Gel", "Q-Gel with Lipoic Acid", "Q-Sorb Co Q-10", "Q-Up", "QuinZyme"]}
+{"rxcui": "21406", "brand_names": ["Carni Q-Gel Forte", "LiQsorb", "Liq-10", "NeoQ10", "Q-Gel with Lipoic Acid", "Q-Sorb Co Q-10", "QuinZyme"]}
 {"rxcui": "214342", "brand_names": ["Calphron", "Domeboro", "Nutrilyte", "Phoslo", "Phoslyra", "ProcalAmine 3"]}
 {"rxcui": "214354", "brand_names": ["Atacand", "Atacand HCT"]}
 {"rxcui": "214355", "brand_names": []}
@@ -671,7 +671,7 @@
 {"rxcui": "214549", "brand_names": ["Covaryx", "Estratest", "Menest"]}
 {"rxcui": "214555", "brand_names": ["Enbrel", "Eticovo"]}
 {"rxcui": "214582", "brand_names": ["Copaxone", "Glatopa"]}
-{"rxcui": "214688", "brand_names": ["Mag-Tab"]}
+{"rxcui": "214688", "brand_names": []}
 {"rxcui": "214824", "brand_names": ["RenaGel", "Renvela"]}
 {"rxcui": "2166040", "brand_names": ["Skyrizi"]}
 {"rxcui": "2167673", "brand_names": ["Myobloc"]}
@@ -716,7 +716,7 @@
 {"rxcui": "22299", "brand_names": ["Cubicin", "Dapzura"]}
 {"rxcui": "2231", "brand_names": ["Keflex", "Rilexine"]}
 {"rxcui": "2236", "brand_names": []}
-{"rxcui": "2238", "brand_names": ["Today", "Tomorrow"]}
+{"rxcui": "2238", "brand_names": []}
 {"rxcui": "2239", "brand_names": []}
 {"rxcui": "22396", "brand_names": ["Emflaza", "Jaythari", "Kymbee", "Pyquvi"]}
 {"rxcui": "224905", "brand_names": ["Enhertu", "Herceptin", "Herceptin Hylecta", "Hercessi", "Herzuma", "KADCYLA", "Kanjinti", "Ogivri", "Ontruzant", "Phesgo", "Trazimera"]}
@@ -751,7 +751,7 @@
 {"rxcui": "2282660", "brand_names": ["Vyepti"]}
 {"rxcui": "2284718", "brand_names": ["Veklury"]}
 {"rxcui": "228476", "brand_names": ["Zymaxid"]}
-{"rxcui": "2286", "brand_names": ["Bucalsep", "Cepacol Antibacterial Mouthwash", "Colgate Total Mouthwash", "Crest Mouthwash", "DuoCare Clinical", "Orasep Reformulated Dec 2013"]}
+{"rxcui": "2286", "brand_names": ["Bucalsep", "Cepacol Antibacterial Mouthwash", "Colgate Total Mouthwash", "DuoCare Clinical", "Orasep Reformulated Dec 2013"]}
 {"rxcui": "2286252", "brand_names": ["Isturisa"]}
 {"rxcui": "228656", "brand_names": []}
 {"rxcui": "228783", "brand_names": ["Frova"]}
@@ -783,9 +783,9 @@
 {"rxcui": "2353", "brand_names": ["Tranxene"]}
 {"rxcui": "2354", "brand_names": ["Ahist Antihistamine", "Dallergy Reformulated Nov 2011", "Stahist AD"]}
 {"rxcui": "235479", "brand_names": []}
-{"rxcui": "235496", "brand_names": ["Ionosol-MB", "K-Phos Neutral", "K-Phos No 2", "Phospha 250 Neutral", "Phosphasal", "Urelle", "Uretron DS", "Uribel", "Urimar Reformulated Oct 2013", "Urin DS", "Uro-Blue", "Urogesic Blue Reformulated Apr 2012", "Uroqid-Acid No.2", "Ustell", "Utira"]}
+{"rxcui": "235496", "brand_names": ["Ionosol-MB", "Phospha 250 Neutral", "Phosphasal", "Urelle", "Uretron DS", "Uribel", "Urimar Reformulated Oct 2013", "Urin DS", "Uro-Blue", "Urogesic Blue Reformulated Apr 2012", "Uroqid-Acid No.2", "Ustell", "Utira"]}
 {"rxcui": "2356", "brand_names": ["Librax"]}
-{"rxcui": "2358", "brand_names": ["Avagard", "Bactoshield", "Betasept", "CHG Teat Dip", "Calgon Vesta", "ChloraPrep", "Dyna-Hex", "E-Z Scrub", "Exidine", "Hibiclens", "Keto-C", "Ketochlor", "Mal-A-Ket", "Mal-A-Ket Wipes", "Malaseb", "Maxiclens", "MiconaHex+Triz", "Nolvadent", "Nolvasan", "Nupro Chlorhexidine", "Oro Clense", "Otodine", "Paroex", "Peridex", "PerioChip", "Periogard", "Prevantics", "Scrub-Stat", "Soluprep", "Stomodine F", "Suffusion", "Supreme", "Tru-Blu C-Hex 110", "Tru-Blu Chlor Hex-Wash"]}
+{"rxcui": "2358", "brand_names": ["Avagard", "Bactoshield", "Betasept", "CHG Teat Dip", "Calgon Vesta", "ChloraPrep", "Dyna-Hex", "Exidine", "Hibiclens", "Ketochlor", "Mal-A-Ket Wipes", "Malaseb", "Maxiclens", "MiconaHex+Triz", "Nolvadent", "Nolvasan", "Nupro Chlorhexidine", "Oro Clense", "Otodine", "Paroex", "Peridex", "PerioChip", "Periogard", "Prevantics", "Scrub-Stat", "Soluprep", "Stomodine F", "Tru-Blu C-Hex 110", "Tru-Blu Chlor Hex-Wash"]}
 {"rxcui": "2359268", "brand_names": ["Pemazyre"]}
 {"rxcui": "2360231", "brand_names": ["Trodelvy"]}
 {"rxcui": "2360598", "brand_names": []}
@@ -828,7 +828,7 @@
 {"rxcui": "2404", "brand_names": []}
 {"rxcui": "2409", "brand_names": ["Edarbyclor", "Hemiclor", "Tenoretic", "Thalitone"]}
 {"rxcui": "2410", "brand_names": ["Lorzone"]}
-{"rxcui": "2418", "brand_names": ["Animi-3 with Vitamin D", "Cal-Quick", "Calcet", "Caltrate Gummy Bites", "Caltrate Plus D", "D-Vi-Sol", "D3 Dots", "Decalcitrol", "Decara", "Delta D3", "Dialyvite Vitamin D3 Max", "Encora AM Tablet", "Encora PM Tablet", "Folditam", "Folgard OS", "Folixate", "Fosamax Plus D", "Infuvite", "Infuvite Pediatric", "Lactocal", "MVC-Fluoride", "Maximum D3", "Multi-Delyn", "Os-Cal 500 with D", "Osteo-Poretical", "Ostercal-D", "Oysco 500 with D", "Oysco D", "Poly-Vi-Sol", "ReliOn Glucose", "Replesta NX", "Thera-D", "Tri-Vi-Sol", "Viactiv Calcium Plus D", "Vitafol-One", "Vital E- A + D3", "Vital E- Newborn", "Vital E- Repro"]}
+{"rxcui": "2418", "brand_names": ["Calcet", "Caltrate Gummy Bites", "Caltrate Plus D", "D-Vi-Sol", "D3 Dots", "Decalcitrol", "Decara", "Dialyvite Vitamin D3 Max", "Encora AM Tablet", "Encora PM Tablet", "Folditam", "Folgard OS", "Folixate", "Fosamax Plus D", "Infuvite", "Infuvite Pediatric", "Lactocal", "MVC-Fluoride", "Multi-Delyn", "Osteo-Poretical", "Ostercal-D", "Oysco 500 with D", "Oysco D", "Poly-Vi-Sol", "ReliOn Glucose", "Replesta NX", "Thera-D", "Tri-Vi-Sol", "Viactiv Calcium Plus D", "Vitafol-One", "Vital E- Newborn", "Vital E- Repro"]}
 {"rxcui": "24464", "brand_names": []}
 {"rxcui": "2447", "brand_names": ["Prevalite", "Questran"]}
 {"rxcui": "2449", "brand_names": []}
@@ -858,9 +858,9 @@
 {"rxcui": "24812", "brand_names": ["Felbatol"]}
 {"rxcui": "24853", "brand_names": ["Corlopam"]}
 {"rxcui": "24909", "brand_names": ["Venofer"]}
-{"rxcui": "24941", "brand_names": ["Concept OB", "Dialyvite 800 with Iron", "Ferocon", "Ferrimin 150", "Ferrocite", "Folivane-F", "Hematogen", "Hemocyte", "Hemocyte Plus", "Hemocyte-F", "Integra F", "Lactocal", "Multigen Plus", "TANDEM", "Tandem Plus"]}
+{"rxcui": "24941", "brand_names": ["Concept OB", "Dialyvite 800 with Iron", "Ferocon", "Ferrimin 150", "Ferrocite", "Folivane-F", "Integra F", "Lactocal", "Multigen Plus"]}
 {"rxcui": "24942", "brand_names": ["Ferate", "Fergon"]}
-{"rxcui": "24947", "brand_names": ["Feosol", "Fer-in-Sol", "Folitab", "Slow-Fe"]}
+{"rxcui": "24947", "brand_names": ["Feosol", "Fer-in-Sol", "Folitab"]}
 {"rxcui": "25025", "brand_names": ["Entadfi", "Propecia", "Proscar"]}
 {"rxcui": "25033", "brand_names": ["Suprax"]}
 {"rxcui": "25037", "brand_names": []}
@@ -1058,7 +1058,7 @@
 {"rxcui": "283578", "brand_names": []}
 {"rxcui": "283742", "brand_names": ["Nexium", "Vimovo"]}
 {"rxcui": "283753", "brand_names": []}
-{"rxcui": "283809", "brand_names": ["Travatan", "iDose"]}
+{"rxcui": "283809", "brand_names": ["Travatan"]}
 {"rxcui": "283810", "brand_names": ["Durysta", "Latisse", "Lumigan", "Zolymbus"]}
 {"rxcui": "283821", "brand_names": ["Elitek"]}
 {"rxcui": "283838", "brand_names": ["Aranesp"]}
@@ -1080,10 +1080,10 @@
 {"rxcui": "29046", "brand_names": ["Prinivil", "Qbrelis", "Zestoretic", "Zestril"]}
 {"rxcui": "2907", "brand_names": []}
 {"rxcui": "29151", "brand_names": ["Ri-Mag Plus"]}
-{"rxcui": "29155", "brand_names": ["Acid Gone", "Gaviscon", "MagneBind", "MagneBind 400 Rx", "Magonate Reformulated May 2022", "Medi-Lyte", "Renacidin"]}
+{"rxcui": "29155", "brand_names": ["Gaviscon", "MagneBind", "MagneBind 400 Rx", "Magonate Reformulated May 2022", "Medi-Lyte", "Renacidin"]}
 {"rxcui": "29170", "brand_names": ["Gaviscon Chewable"]}
 {"rxcui": "29261", "brand_names": []}
-{"rxcui": "29268", "brand_names": ["Concept OB", "Eldertonic", "Ellis Tonic", "Hemocyte Plus", "Multitrace-4", "Multitrace-5", "Multrys", "Tandem Plus", "Tralement"]}
+{"rxcui": "29268", "brand_names": ["Concept OB", "Eldertonic", "Ellis Tonic", "Multitrace-4", "Multitrace-5", "Multrys", "Tralement"]}
 {"rxcui": "29365", "brand_names": ["Attero", "Calcitrene", "Dovonex", "Enstilar", "Pellix", "Sorilux", "Taclonex", "Wynzora"]}
 {"rxcui": "29418", "brand_names": []}
 {"rxcui": "29421", "brand_names": ["Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc"]}
@@ -1094,7 +1094,7 @@
 {"rxcui": "29648", "brand_names": []}
 {"rxcui": "2970", "brand_names": []}
 {"rxcui": "2977", "brand_names": []}
-{"rxcui": "29787", "brand_names": ["Arthricare for Women Pain Relieving Nighttime", "Arthritis Hot Pain Relief", "Atomic Balm", "Castiva Cooling", "Cramergesic", "Dendracin Neurodendraxcin", "Doloracin with Lidocaine", "Dragon", "Eagle Brand Medicated Oil", "Flexall Ultra Plus", "Gordogesic", "Katinko", "Kofal", "LidoPro", "LidoPro Patch", "Ling Nam Ultra Balm", "Listerine Antiseptic", "Listerine Ultraclean", "Medi-Derm", "Medi-Derm with Lidocaine", "Medrox", "Methagual", "Rocainol", "Thera-Gesic", "Thera-Gesic Plus", "Tricylate", "Veneno de Abeja Aceite de Vibora", "Wong To Yick", "Xoten", "Xoten-C", "ZIKS Pain Relief"]}
+{"rxcui": "29787", "brand_names": ["Arthricare for Women Pain Relieving Nighttime", "Castiva Cooling", "Cramergesic", "Dendracin Neurodendraxcin", "Doloracin with Lidocaine", "Eagle Brand Medicated Oil", "Flexall Ultra Plus", "Gordogesic", "Katinko", "Kofal", "LidoPro", "LidoPro Patch", "Listerine Antiseptic", "Listerine Ultraclean", "Medi-Derm", "Medi-Derm with Lidocaine", "Medrox", "Methagual", "Rocainol", "Thera-Gesic", "Thera-Gesic Plus", "Tricylate", "Veneno de Abeja Aceite de Vibora", "Wong To Yick", "Xoten", "Xoten-C", "ZIKS Pain Relief"]}
 {"rxcui": "298665", "brand_names": ["Ilevro", "Nevanac"]}
 {"rxcui": "298869", "brand_names": ["Inspra"]}
 {"rxcui": "29899", "brand_names": ["Relistor"]}
@@ -1188,9 +1188,9 @@
 {"rxcui": "33283", "brand_names": []}
 {"rxcui": "33309", "brand_names": []}
 {"rxcui": "3339", "brand_names": ["Nupercainal"]}
-{"rxcui": "33408", "brand_names": ["Anabar", "By Ache", "Contragesic", "Digex", "Dologesic", "Ed Flex", "Relagesic"]}
+{"rxcui": "33408", "brand_names": ["Anabar", "Contragesic", "Digex", "Dologesic", "Ed Flex", "Relagesic"]}
 {"rxcui": "3353", "brand_names": ["Keveyis", "Ormalvi"]}
-{"rxcui": "3355", "brand_names": ["Aleve Arthritis Pain", "Arthrotec", "Cambia", "Cataflam", "Flector", "Licart", "Lofena", "Pennsaid", "Surpass Anti-Inflammatory", "Trifena", "Voltaren", "Xiclo", "Zipsor", "Zorvolex"]}
+{"rxcui": "3355", "brand_names": ["Aleve Arthritis Pain", "Arthrotec", "Cambia", "Cataflam", "Licart", "Lofena", "Pennsaid", "Trifena", "Voltaren", "Xiclo", "Zipsor", "Zorvolex"]}
 {"rxcui": "3356", "brand_names": []}
 {"rxcui": "33562", "brand_names": ["Foscavir"]}
 {"rxcui": "3361", "brand_names": ["Bentyl"]}
@@ -1206,7 +1206,7 @@
 {"rxcui": "33767", "brand_names": []}
 {"rxcui": "338036", "brand_names": ["Armlupeg", "Fulphila", "Fylnetra", "Neulasta", "Nyvepria", "Stimufend", "Udenyca", "Ziextenzo"]}
 {"rxcui": "338817", "brand_names": ["Fabrazyme"]}
-{"rxcui": "3389", "brand_names": ["Tenuate"]}
+{"rxcui": "3389", "brand_names": []}
 {"rxcui": "3390", "brand_names": []}
 {"rxcui": "33910", "brand_names": []}
 {"rxcui": "3393", "brand_names": ["Dolobid"]}
@@ -1229,13 +1229,13 @@
 {"rxcui": "34369", "brand_names": ["Dermatop"]}
 {"rxcui": "3443", "brand_names": ["Cardizem", "Cartia", "Dilt", "Diltzac", "Matzim", "Taztia", "Tiadylt", "Tiazac"]}
 {"rxcui": "3444", "brand_names": ["Airmit", "Dramamine", "Driminate", "Gravol", "TripTone", "Wal-Dram"]}
-{"rxcui": "3445", "brand_names": ["BAL in Oil"]}
+{"rxcui": "3445", "brand_names": []}
 {"rxcui": "3446", "brand_names": ["Chemet"]}
 {"rxcui": "3455", "brand_names": ["Fungizyl", "Rimso-50", "Synotic"]}
 {"rxcui": "3478", "brand_names": ["Cervidil", "Prepidil"]}
 {"rxcui": "3489", "brand_names": ["Vasoflex D1"]}
 {"rxcui": "34905", "brand_names": ["Alcaine", "Flucaine", "Fluoracaine"]}
-{"rxcui": "3498", "brand_names": ["Acetadryl", "Aleve PM", "Banophen", "Banophen Cream", "Benadryl", "Benadryl Allergy Plus Congestion", "Benadryl Itch Stopping", "Benadryl-D Allergy and Sinus", "Buckley's Bedtime Formula", "Calagel", "Calagel Reformulated Jun 2019", "Compoz", "Dermamycin", "Diphedryl", "Diphenhist", "Doans PM", "Dormin", "Excedrin PM", "Excedrin PM Triple Action", "Genahist", "Kids-Eeze Allergy", "Legatrin PM", "Motrin PM", "Nytol", "Panadol PM", "Pediaclear Cough", "Percogesic Reformulated Jan 2011", "Rest Simply", "Scot-Tussin Allergy", "Siladryl", "Simply Sleep", "Sleep-Eze", "Sleepinal", "Sominex", "Somnapure", "Tact", "The Itch Eraser", "Twilite", "Tylenol PM", "Unisom Sleep", "Unisom with Pain Relief", "Vanamine", "Vetadryl", "Wal-Dryl", "Wal-Dryl Allergy", "Wal-Dryl Childrens", "Wal-Dryl PE", "Wal-Dryl-D", "Wal-Sleep Z", "Wal-Som", "Wal-Som Maximum Strength", "Z-Sleep", "ZZZ Sleep", "Zzzquil"]}
+{"rxcui": "3498", "brand_names": ["Acetadryl", "Aleve PM", "Banophen", "Banophen Cream", "Benadryl", "Benadryl Allergy Plus Congestion", "Benadryl Itch Stopping", "Benadryl-D Allergy and Sinus", "Buckley's Bedtime Formula", "Calagel", "Calagel Reformulated Jun 2019", "Compoz", "Dermamycin", "Diphedryl", "Diphenhist", "Doans PM", "Dormin", "Excedrin PM", "Excedrin PM Triple Action", "Genahist", "Kids-Eeze Allergy", "Legatrin PM", "Motrin PM", "Nytol", "Panadol PM", "Pediaclear Cough", "Percogesic Reformulated Jan 2011", "Scot-Tussin Allergy", "Siladryl", "Sleep-Eze", "Sleepinal", "Sominex", "Somnapure", "Twilite", "Tylenol PM", "Unisom Sleep", "Unisom with Pain Relief", "Vanamine", "Vetadryl", "Wal-Dryl", "Wal-Dryl Allergy", "Wal-Dryl Childrens", "Wal-Dryl PE", "Wal-Dryl-D", "Wal-Sleep Z", "Wal-Som", "Wal-Som Maximum Strength", "ZZZ Sleep", "Zzzquil"]}
 {"rxcui": "3500", "brand_names": ["Lomotil"]}
 {"rxcui": "350141", "brand_names": []}
 {"rxcui": "3510", "brand_names": []}
@@ -1248,7 +1248,7 @@
 {"rxcui": "35296", "brand_names": ["Altace", "Vostally"]}
 {"rxcui": "35302", "brand_names": ["Felycin", "Fyarro", "Hyftor", "Rapamune"]}
 {"rxcui": "353497", "brand_names": []}
-{"rxcui": "35382", "brand_names": ["Acnomel", "R A Acne", "Resinol", "Rezamid", "Vagisil Original Formula"]}
+{"rxcui": "35382", "brand_names": ["Acnomel", "Rezamid", "Vagisil Original Formula"]}
 {"rxcui": "3541", "brand_names": ["Norpace"]}
 {"rxcui": "35465", "brand_names": ["HyperRHO", "MICRhoGAM", "RhoGAM", "Rhophylac", "WinRho"]}
 {"rxcui": "354770", "brand_names": ["Tyruko", "Tysabri"]}
@@ -1263,7 +1263,7 @@
 {"rxcui": "35780", "brand_names": ["Naropin"]}
 {"rxcui": "357977", "brand_names": ["Sutent"]}
 {"rxcui": "35825", "brand_names": ["Fyremadel"]}
-{"rxcui": "358255", "brand_names": ["Aponvie", "Cinvanti", "Emend"]}
+{"rxcui": "358255", "brand_names": ["Aponvie", "Cinvanti"]}
 {"rxcui": "358257", "brand_names": ["Jynarque", "Samsca"]}
 {"rxcui": "358258", "brand_names": ["Boruzu", "Velcade"]}
 {"rxcui": "358262", "brand_names": ["Lexiva"]}
@@ -1282,14 +1282,14 @@
 {"rxcui": "3637", "brand_names": ["Dopram"]}
 {"rxcui": "3638", "brand_names": ["Prudoxin", "Silenor", "Zonalon"]}
 {"rxcui": "3639", "brand_names": ["Adriamycin", "Caelyx", "Doxil"]}
-{"rxcui": "3640", "brand_names": ["Acticlate", "Adoxa", "Alodox", "Avidoxy", "Doryx", "Doxy", "Mondoxyne", "Monodox", "Morgidox", "Okebo", "Oracea", "Periostat", "Targadox", "Vibramycin"]}
+{"rxcui": "3640", "brand_names": ["Acticlate", "Adoxa", "Alodox", "Avidoxy", "Doryx", "Mondoxyne", "Monodox", "Morgidox", "Okebo", "Oracea", "Periostat", "Targadox", "Vibramycin"]}
 {"rxcui": "3642", "brand_names": ["Aldex AN", "Bonjesta", "Diclegis", "Nocto", "Unisom", "Wal-Som (doxylamine)", "Zzzquil Ultra"]}
 {"rxcui": "36437", "brand_names": ["Zoloft"]}
-{"rxcui": "36453", "brand_names": ["Petrem", "SevoFlo", "Sevospire", "Sojourn", "Ultane"]}
+{"rxcui": "36453", "brand_names": ["Petrem", "SevoFlo", "Sevospire", "Ultane"]}
 {"rxcui": "3648", "brand_names": []}
 {"rxcui": "36514", "brand_names": []}
 {"rxcui": "36567", "brand_names": ["Flolipid", "Vytorin", "Zocor"]}
-{"rxcui": "36676", "brand_names": ["Alka-Seltzer", "Bromo Seltzer Antacid Pain Reliever", "Ceo-Two", "Desempacho", "E-Z-Gas II", "GaviLyte-C", "GaviLyte-N", "Gavilyte-G", "Gavilyte-H", "Golytely", "Konvomep", "Neut brand of sodium bicarbonate", "Picot", "Sinucleanse", "TriLyte", "Zegerid Reformulated Aug 2006"]}
+{"rxcui": "36676", "brand_names": ["Alka-Seltzer", "Bromo Seltzer Antacid Pain Reliever", "Ceo-Two", "Desempacho", "E-Z-Gas II", "GaviLyte-C", "GaviLyte-N", "Gavilyte-G", "Gavilyte-H", "Golytely", "Konvomep", "Neut brand of sodium bicarbonate", "Sinucleanse", "TriLyte", "Zegerid Reformulated Aug 2006"]}
 {"rxcui": "36721", "brand_names": ["GaviLyte-C", "Gavilyte-G", "Golytely", "MoviPrep", "Sutab"]}
 {"rxcui": "3714", "brand_names": []}
 {"rxcui": "37418", "brand_names": ["Imitrex", "Onzetra", "Tosymra", "Treximet", "Zembrace"]}
@@ -1324,10 +1324,10 @@
 {"rxcui": "3966", "brand_names": ["Akovaz", "Bronkaid", "Bronkaid Max", "Emerphed", "Primatene with ephedrine", "Primatene with ephedrine & guaifenesin", "Rezipres"]}
 {"rxcui": "39786", "brand_names": ["Effexor"]}
 {"rxcui": "39841", "brand_names": []}
-{"rxcui": "3992", "brand_names": ["Adrenalin", "Articadent", "Auvi-Q", "Citanest Forte", "Epipen", "Flavalta", "Lignospan", "Marcaine with Epinephrine", "Neffy", "Orabloc", "Primatene Mist Inhaler", "Sensorcaine with Epinephrine", "Septocaine", "Symjepi", "Ultacan", "Vivacaine", "Xylocaine with Epinephrine", "Zorcaine"]}
+{"rxcui": "3992", "brand_names": ["Adrenalin", "Articadent", "Auvi-Q", "Citanest Forte", "Epipen", "Flavalta", "Lignospan", "Marcaine with Epinephrine", "Orabloc", "Primatene Mist Inhaler", "Sensorcaine with Epinephrine", "Septocaine", "Symjepi", "Ultacan", "Vivacaine", "Xylocaine with Epinephrine", "Zorcaine"]}
 {"rxcui": "39937", "brand_names": ["Bucalsep"]}
 {"rxcui": "3995", "brand_names": ["Ellence"]}
-{"rxcui": "39954", "brand_names": ["Concept OB", "Eldertonic", "Ellis Tonic", "Hemocyte Plus", "Lactocal", "Multitrace-4", "Multitrace-5", "Multrys", "Orazinc", "Tandem Plus", "Tralement"]}
+{"rxcui": "39954", "brand_names": ["Concept OB", "Eldertonic", "Ellis Tonic", "Lactocal", "Multitrace-4", "Multitrace-5", "Multrys", "Orazinc", "Tralement"]}
 {"rxcui": "39993", "brand_names": ["Ambien", "Edluar"]}
 {"rxcui": "39998", "brand_names": ["Zonegran", "Zonisade"]}
 {"rxcui": "400008", "brand_names": ["Apidra"]}
@@ -1343,12 +1343,12 @@
 {"rxcui": "4024", "brand_names": []}
 {"rxcui": "4025", "brand_names": ["Cafergot", "Ergomar", "Migergot"]}
 {"rxcui": "40254", "brand_names": ["Depakote"]}
-{"rxcui": "4053", "brand_names": ["Benzamycin", "E.E.S.", "Emcin Clear", "Emgel", "Ery", "Ery-Tab", "EryPed", "Erygel", "Erythrocin", "Erythrocin Stearate", "Eyemycin", "Maracyn", "Theramycin"]}
+{"rxcui": "4053", "brand_names": ["Benzamycin", "Emcin Clear", "Emgel", "Ery-Tab", "EryPed", "Erygel", "Erythrocin", "Erythrocin Stearate", "Eyemycin", "Maracyn", "Theramycin"]}
 {"rxcui": "40575", "brand_names": ["Zyflo"]}
 {"rxcui": "4077", "brand_names": []}
 {"rxcui": "40790", "brand_names": ["Protonix"]}
 {"rxcui": "407990", "brand_names": ["Sensipar"]}
-{"rxcui": "4083", "brand_names": ["Alora", "Bijuva", "Climara", "Climara Pro", "Combipatch", "Compudose", "Delestrogen", "Depo-estradiol", "Divigel", "Dotti", "Elestrin", "Estrace", "Estring", "Estrogel", "Evamist", "Femring", "Imvexxy", "Lyllana", "Menostar", "Minivelle", "Myfembree", "Revalor", "Synovex", "Synovex C", "Synovex H", "Synovex S", "Vagifem", "Vivelle", "Yuvafem"]}
+{"rxcui": "4083", "brand_names": ["Alora", "Bijuva", "Climara", "Climara Pro", "Combipatch", "Compudose", "Delestrogen", "Depo-estradiol", "Divigel", "Elestrin", "Estrace", "Estring", "Estrogel", "Evamist", "Femring", "Imvexxy", "Lyllana", "Menostar", "Minivelle", "Myfembree", "Revalor", "Synovex", "Synovex C", "Synovex H", "Synovex S", "Vagifem", "Vivelle", "Yuvafem"]}
 {"rxcui": "4089", "brand_names": ["Emcyt"]}
 {"rxcui": "4099", "brand_names": ["Duavee", "Premarin"]}
 {"rxcui": "4103", "brand_names": []}
@@ -1367,7 +1367,7 @@
 {"rxcui": "4136", "brand_names": []}
 {"rxcui": "41493", "brand_names": ["Alloxate", "Anjeso", "Loxicom", "Meloxidyl", "Meloxivet", "Metacam", "Mobic", "Ostilox", "Qamzova", "Qmiiz", "Symbravo", "Vivlodex", "Xifyrm", "Zybic", "Zynrelef"]}
 {"rxcui": "4171", "brand_names": []}
-{"rxcui": "4177", "brand_names": ["Amidate"]}
+{"rxcui": "4177", "brand_names": []}
 {"rxcui": "4179", "brand_names": ["Avopef", "Etopophos", "Toposar", "Vepesid"]}
 {"rxcui": "4182", "brand_names": []}
 {"rxcui": "42316", "brand_names": ["Astagraf", "Envarsus", "Prograf"]}
@@ -1387,7 +1387,7 @@
 {"rxcui": "4249", "brand_names": ["Alphanine SD", "Balfaxar", "BeneFIX", "IDELVION", "Ixinity", "Kcentra", "Rebinyn", "Rixubis"]}
 {"rxcui": "42547", "brand_names": []}
 {"rxcui": "4256", "brand_names": ["Novoseven", "Sevenfact"]}
-{"rxcui": "4257", "brand_names": ["Advate", "Adynovate", "Afstyla", "Alphanate", "Esperoct", "Helixate", "Hemofil", "Humate-P", "Koate", "Kogenate", "Kovaltry", "Monoclate", "Novoeight", "Nuwiq", "Obizur", "Recombinate", "Wilate", "Xyntha"]}
+{"rxcui": "4257", "brand_names": ["Advate", "Adynovate", "Afstyla", "Alphanate", "Esperoct", "Helixate", "Hemofil", "Koate", "Kogenate", "Kovaltry", "Monoclate", "Novoeight", "Nuwiq", "Obizur", "Recombinate", "Wilate", "Xyntha"]}
 {"rxcui": "42588", "brand_names": ["Chenodal", "Ctexli"]}
 {"rxcui": "42612", "brand_names": ["Gastrocrom", "Nasalcrom"]}
 {"rxcui": "4262", "brand_names": ["Balfaxar", "Coagadex", "Kcentra"]}
@@ -1397,7 +1397,7 @@
 {"rxcui": "42682", "brand_names": []}
 {"rxcui": "4271", "brand_names": ["Corifact", "Tretten"]}
 {"rxcui": "42736", "brand_names": ["Totect"]}
-{"rxcui": "4278", "brand_names": ["Calmicid", "Duexis", "Duo Fusion", "Pepcid", "Pepcid Complete", "Tums Dual Action", "Zantac Reformulated Aug 2022"]}
+{"rxcui": "4278", "brand_names": ["Calmicid", "Duexis", "Pepcid", "Pepcid Complete", "Tums Dual Action", "Zantac Reformulated Aug 2022"]}
 {"rxcui": "42781", "brand_names": []}
 {"rxcui": "42955", "brand_names": ["Carni Q-Gel Forte", "Carnitor"]}
 {"rxcui": "430", "brand_names": ["Albendamax", "Albenza", "Valbazen"]}
@@ -1420,20 +1420,20 @@
 {"rxcui": "4462", "brand_names": ["Vanos"]}
 {"rxcui": "448", "brand_names": ["Avagard"]}
 {"rxcui": "4488", "brand_names": []}
-{"rxcui": "4491", "brand_names": ["FML", "FML Forte Liquifilm", "Flarex"]}
+{"rxcui": "4491", "brand_names": ["FML Forte Liquifilm", "Flarex"]}
 {"rxcui": "4492", "brand_names": ["Adrucil", "Carac", "Efudex", "Favlyxa", "Fluoroplex", "Tolak"]}
-{"rxcui": "4493", "brand_names": ["Prozac", "RECONCILE", "Symbyax"]}
+{"rxcui": "4493", "brand_names": ["Prozac", "Symbyax"]}
 {"rxcui": "4494", "brand_names": []}
 {"rxcui": "4496", "brand_names": []}
 {"rxcui": "4500", "brand_names": ["Cordran"]}
 {"rxcui": "4501", "brand_names": []}
 {"rxcui": "4502", "brand_names": ["Ansaid", "Lurbipr", "Lurbiro", "Ocufen"]}
 {"rxcui": "4508", "brand_names": ["Eulexin"]}
-{"rxcui": "4511", "brand_names": ["Animi-3 with Vitamin D", "Concept OB", "Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Encora AM Tablet", "Encora PM Tablet", "Ferocon", "Ferralet 90", "Ferraplus", "Ferrex 150 Forte", "Ferrex 150 Forte Plus", "Folacin", "Folbecal", "Folbee", "Folbic", "Folditam", "Folgard", "Folgard OS", "Folitab", "Folivane-F", "Foltabs", "Foltrate", "Hematogen", "Hemax", "Hemocyte Plus", "Hemocyte-F", "Icar-C Plus", "Iferex 150 Forte", "Infuvite", "Infuvite Pediatric", "Integra F", "Irospan Tablet", "Lactocal", "MTX Support", "MVC-Fluoride", "MagneBind 400 Rx", "Multigen Plus", "NicAzel", "Nicomide", "Niva-Fol", "Poly Iron 150 Forte", "Pregnitude", "Quiofic", "Rena-Vite", "Tandem Plus", "Vita-Respa", "Vitafol-One"]}
+{"rxcui": "4511", "brand_names": ["Concept OB", "Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Encora AM Tablet", "Encora PM Tablet", "Ferocon", "Ferralet 90", "Ferraplus", "Ferrex 150 Forte", "Ferrex 150 Forte Plus", "Folacin", "Folbecal", "Folbee", "Folbic", "Folditam", "Folgard", "Folgard OS", "Folitab", "Folivane-F", "Foltabs", "Foltrate", "Hemax", "Icar-C Plus", "Iferex 150 Forte", "Infuvite", "Infuvite Pediatric", "Integra F", "Irospan Tablet", "Lactocal", "MTX Support", "MVC-Fluoride", "MagneBind 400 Rx", "Multigen Plus", "NicAzel", "Nicomide", "Niva-Fol", "Pregnitude", "Quiofic", "Rena-Vite", "Vita-Respa", "Vitafol-One"]}
 {"rxcui": "4550", "brand_names": ["Contepo"]}
 {"rxcui": "4601", "brand_names": []}
 {"rxcui": "460132", "brand_names": ["Prezcobix", "Prezista", "Symtuza"]}
-{"rxcui": "4603", "brand_names": ["Disal", "Furoscix", "Lasix", "Salix - substance"]}
+{"rxcui": "4603", "brand_names": ["Disal", "Furoscix", "Lasix"]}
 {"rxcui": "46041", "brand_names": ["Binosto", "Fosamax", "Fosamax Plus D"]}
 {"rxcui": "461016", "brand_names": ["Lunesta"]}
 {"rxcui": "4626", "brand_names": []}
@@ -1464,11 +1464,11 @@
 {"rxcui": "4821", "brand_names": ["Glucotrol"]}
 {"rxcui": "4832", "brand_names": ["Baqsimi", "GlucaGen", "Gvoke"]}
 {"rxcui": "4845", "brand_names": ["Cidaflex", "Cosamin", "Novipet Joint Support", "Novipet Magic Bites", "Optiflex-G", "Osteo Bi-Flex", "Schiff"]}
-{"rxcui": "4850", "brand_names": ["Clinimix 4.25/10", "Clinimix 4.25/25", "Clinimix 4.25/5", "Clinimix 5/15", "Clinimix 5/20", "Clinimix 5/25", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Dex4", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "Emetrol", "Enfamil Glucose", "Glucoburst", "Glutose", "Insta-Glucose", "Ionosol-MB", "Isolyte P", "Isolyte S in 5 % Dextrose", "Normosol-M", "Normosol-R in 5 % Dextrose", "Plasma-Lyte 56 in 5 % Dextrose", "ReliOn Glucose"]}
+{"rxcui": "4850", "brand_names": ["Clinimix 4.25/10", "Clinimix 4.25/25", "Clinimix 4.25/5", "Clinimix 5/15", "Clinimix 5/20", "Clinimix 5/25", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Dex4", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "Emetrol", "Enfamil Glucose", "Glucoburst", "Insta-Glucose", "Ionosol-MB", "Isolyte P", "Isolyte S in 5 % Dextrose", "Normosol-M", "Normosol-R in 5 % Dextrose", "Plasma-Lyte 56 in 5 % Dextrose", "ReliOn Glucose"]}
 {"rxcui": "485853", "brand_names": []}
 {"rxcui": "48937", "brand_names": ["Dexased", "Dexdomitor", "Dexmedesed", "Dexmedvet", "Dexvetra", "Igalmi", "Precedex", "Sedexodine", "Sileo"]}
-{"rxcui": "4910", "brand_names": ["Abreva Rapid Pain Relief", "Blink Dry Eye", "Chloraseptic Max Spray", "Minica", "Oasis Tears", "Pedia-Lax Liquid Glycerin Suppositories", "Pretz", "ProcalAmine 3", "Recticare Wipes", "Regener-Eyes", "Sani-Supp", "Soothe Lubricant Eye Drops", "Tears Naturale Forte"]}
-{"rxcui": "4917", "brand_names": ["Gonitro", "Nitro-Bid", "Nitro-Dur", "NitroMist", "Nitrolingual", "Nitrostat", "Rectiv"]}
+{"rxcui": "4910", "brand_names": ["Abreva Rapid Pain Relief", "Chloraseptic Max Spray", "Minica", "Oasis Tears", "Pedia-Lax Liquid Glycerin Suppositories", "Pretz", "ProcalAmine 3", "Recticare Wipes", "Regener-Eyes", "Sani-Supp", "Soothe Lubricant Eye Drops", "Tears Naturale Forte"]}
+{"rxcui": "4917", "brand_names": ["Gonitro", "Nitro-Dur", "NitroMist", "Nitrolingual", "Nitrostat", "Rectiv"]}
 {"rxcui": "49247", "brand_names": ["Tikosyn"]}
 {"rxcui": "49276", "brand_names": ["Cardura"]}
 {"rxcui": "4952", "brand_names": ["Thyrogen"]}
@@ -1490,7 +1490,7 @@
 {"rxcui": "5095", "brand_names": []}
 {"rxcui": "50975", "brand_names": ["Supprelin"]}
 {"rxcui": "51272", "brand_names": ["Seroquel"]}
-{"rxcui": "51428", "brand_names": ["Fiasp", "Garzulys", "Kirsty", "Merilog", "NovoLog", "NovoLog Mix"]}
+{"rxcui": "51428", "brand_names": ["Fiasp", "Garzulys", "Merilog", "NovoLog", "NovoLog Mix"]}
 {"rxcui": "51499", "brand_names": ["Camptosar", "Onivyde"]}
 {"rxcui": "5175", "brand_names": ["Panhematin"]}
 {"rxcui": "519", "brand_names": ["Aloprim", "Zyloprim"]}
@@ -1498,13 +1498,13 @@
 {"rxcui": "52177", "brand_names": ["Alrex", "Eysuvis", "Inveltys", "Lotemax", "Zylet"]}
 {"rxcui": "5224", "brand_names": ["Defencath"]}
 {"rxcui": "52356", "brand_names": ["Citroma"]}
-{"rxcui": "52358", "brand_names": ["Mag-G", "Magonate", "Magtrate"]}
+{"rxcui": "52358", "brand_names": ["Magonate", "Magtrate"]}
 {"rxcui": "52364", "brand_names": ["Backprin", "Doans", "Doans PM", "MST 600", "Nuprin Backache", "Pamprin Cramp Formula", "Percogesic Backache"]}
 {"rxcui": "52582", "brand_names": ["Apriso", "Canasa", "Delzicol", "Lialda", "Pentasa", "Rowasa"]}
 {"rxcui": "52769", "brand_names": []}
 {"rxcui": "5293", "brand_names": []}
 {"rxcui": "5296", "brand_names": []}
-{"rxcui": "5333", "brand_names": ["ActivOn Arthritis", "Alo"]}
+{"rxcui": "5333", "brand_names": ["ActivOn Arthritis"]}
 {"rxcui": "5363", "brand_names": []}
 {"rxcui": "53654", "brand_names": ["Viramune"]}
 {"rxcui": "54214", "brand_names": []}
@@ -1514,7 +1514,7 @@
 {"rxcui": "5470", "brand_names": ["Bidil"]}
 {"rxcui": "5487", "brand_names": ["Accuretic", "Atacand HCT", "Avalide", "Benicar HCT", "Diovan HCT", "Dyazide", "Exforge HCT", "Hyzaar", "Inzirqo", "Lopressor HCT", "Lotensin HCT", "Maxzide", "Micardis-HCT", "Tekturna HCT", "Tribenzor", "Vaseretic", "Zestoretic", "Ziac"]}
 {"rxcui": "5489", "brand_names": ["Hy-KXP", "Hycet", "Hycodan", "Hycofenix", "Hydromet", "Hysingla", "Ibudone", "Norco", "Obredon", "Reprexain", "Tussionex", "Ventuss", "Verdrocet", "Vicoprofen", "Zohydro"]}
-{"rxcui": "5492", "brand_names": ["Ala-Cort", "Ala-Scalp", "Alcortin", "Alcortin A", "Alkindi", "Alocane Anti-Itch", "Ana-Lex", "Analpram HC", "Anucort-HC", "Anusol HC", "Aquanil HC", "Aquaphor Itch Relief", "Beta-HC", "Caldecort", "Cipro HC", "Cortaid", "Cortane-B", "Cortef", "Cortenema", "Corticool", "Cortifoam", "Cortisporin", "Cortisporin-TC", "Cortizone", "Dermacort", "Dermazene", "Dermtex HC", "Epifoam", "Evesse", "Gynecort", "Hemmorex", "Hemorrodil Plus", "Hemril", "Instacort", "Kera-HC", "Khindivi", "Locoid", "Malacetic", "MiCort-HC", "Monistat Itch Relief", "Neo-Polycin HC", "Novacort", "Nucort", "Oticin HC", "Pandel", "Pramosone", "Procort 1.85/1.15", "Procto-Kit", "Procto-Med", "Procto-Pak", "Proctocort", "Proctofoam-HC", "Proctosol", "Proctozone HC", "Recort Plus", "Sarnol-HC", "Scalacort", "Scalpicin Itch Relief", "Solu-Cortef", "Texacort", "U-Cort", "Vagisil Satin", "Vanoxide-HC", "Vytone", "Westcort", "Xerese"]}
+{"rxcui": "5492", "brand_names": ["Ala-Cort", "Alcortin", "Alcortin A", "Alkindi", "Alocane Anti-Itch", "Ana-Lex", "Analpram HC", "Anucort-HC", "Anusol HC", "Aquanil HC", "Aquaphor Itch Relief", "Beta-HC", "Caldecort", "Cipro HC", "Cortaid", "Cortane-B", "Cortef", "Cortenema", "Corticool", "Cortifoam", "Cortisporin", "Cortisporin-TC", "Cortizone", "Dermacort", "Dermazene", "Dermtex HC", "Epifoam", "Evesse", "Gynecort", "Hemmorex", "Hemorrodil Plus", "Hemril", "Instacort", "Kera-HC", "Khindivi", "Locoid", "Malacetic", "MiCort-HC", "Monistat Itch Relief", "Neo-Polycin HC", "Novacort", "Nucort", "Oticin HC", "Pandel", "Pramosone", "Procort 1.85/1.15", "Procto-Kit", "Procto-Med", "Procto-Pak", "Proctocort", "Proctofoam-HC", "Proctosol", "Proctozone HC", "Recort Plus", "Sarnol-HC", "Scalacort", "Scalpicin Itch Relief", "Solu-Cortef", "Texacort", "U-Cort", "Vagisil Satin", "Vanoxide-HC", "Vytone", "Westcort", "Xerese"]}
 {"rxcui": "5495", "brand_names": []}
 {"rxcui": "54987", "brand_names": ["Aminosyn 3.5 % M, Sulfite Free", "Normosol-M", "Nutrilyte", "Nutrilyte II", "Plasma-Lyte 56 in 5 % Dextrose"]}
 {"rxcui": "54993", "brand_names": ["Cytra-3", "Cytra-K", "Urocit-K"]}
@@ -1527,7 +1527,7 @@
 {"rxcui": "55681", "brand_names": []}
 {"rxcui": "55685", "brand_names": []}
 {"rxcui": "56188", "brand_names": []}
-{"rxcui": "5640", "brand_names": ["Addaprin", "Advil", "Caldolor", "Combogesic", "Counteract IB", "Duexis", "Genpril", "Ibu", "Ibudone", "Ibuprohm", "Motrin", "Motrin PM", "Neoprofen", "Proprinal", "Reprexain", "Samson 8", "Vicoprofen", "Wal-Profen"]}
+{"rxcui": "5640", "brand_names": ["Addaprin", "Advil", "Caldolor", "Combogesic", "Counteract IB", "Duexis", "Genpril", "Ibudone", "Ibuprohm", "Motrin", "Motrin PM", "Neoprofen", "Proprinal", "Reprexain", "Vicoprofen", "Wal-Profen"]}
 {"rxcui": "56443", "brand_names": ["BSS Ophthalmic Solution", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Isolyte P", "Isolyte S", "Isolyte S in 5 % Dextrose", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte", "Nutrilyte II", "Physiolyte", "Physiosol", "Plasma-lyte 148", "Plasmalyte A", "ProcalAmine 3", "Trophamine 10 %", "Trophamine 6 %"]}
 {"rxcui": "56466", "brand_names": ["BSS Ophthalmic Solution", "Cytra 2", "Cytra-3", "Emetrol Chewables", "Emetrol Powder", "Oracit", "Regiocit"]}
 {"rxcui": "5650", "brand_names": ["Idamycin"]}
@@ -1553,11 +1553,11 @@
 {"rxcui": "59078", "brand_names": ["Skelaxin"]}
 {"rxcui": "591622", "brand_names": ["Chantix", "Tyrvaya"]}
 {"rxcui": "591781", "brand_names": ["Bkemv", "Epysqli", "Soliris"]}
-{"rxcui": "5924", "brand_names": ["Benefiber Fiber", "Fiber Choice", "Fiber Choice Weight Management", "Metamucil Clear & Natural"]}
+{"rxcui": "5924", "brand_names": ["Benefiber Fiber", "Metamucil Clear & Natural"]}
 {"rxcui": "592464", "brand_names": ["Articadent", "Orabloc", "Septocaine", "Ultacan", "Zorcaine"]}
 {"rxcui": "5928", "brand_names": []}
-{"rxcui": "59308", "brand_names": ["Fiber Choice Weight Management"]}
-{"rxcui": "5933", "brand_names": ["Absorbine Veterinary Liniment", "Barrier-Dyne", "BovaPro", "Bovadine", "ChoreMate One-Shot", "Dairyland Brand Controlled Iodine Teat Dip", "Defend II", "Della Soft", "Dermafive", "EDX-1000", "EDX-502", "Eco-Gard", "Eco-Plus", "Io-Blend", "Io-Shield", "Iodip", "Iodoshield", "Optima Plus", "Quarter Mate", "QuarterMate Concentrate", "Teat-Glo", "Triumph", "UdderBlend", "Udderdine", "West Dip"]}
+{"rxcui": "59308", "brand_names": []}
+{"rxcui": "5933", "brand_names": ["Absorbine Veterinary Liniment", "BovaPro", "Bovadine", "ChoreMate One-Shot", "Dairyland Brand Controlled Iodine Teat Dip", "Defend II", "Della Soft", "Dermafive", "EDX-1000", "EDX-502", "Eco-Gard", "Eco-Plus", "Iodip", "Iodoshield", "Optima Plus", "QuarterMate Concentrate", "Teat-Glo", "UdderBlend", "Udderdine"]}
 {"rxcui": "593411", "brand_names": ["Brynovin", "Janumet", "Januvia", "Steglujan", "Zituvimet", "Zituvio"]}
 {"rxcui": "5936", "brand_names": []}
 {"rxcui": "5942", "brand_names": []}
@@ -1575,7 +1575,7 @@
 {"rxcui": "5975", "brand_names": []}
 {"rxcui": "59763", "brand_names": []}
 {"rxcui": "59768", "brand_names": []}
-{"rxcui": "598", "brand_names": ["Caverject", "Edex", "Muse", "Prostin VR"]}
+{"rxcui": "598", "brand_names": ["Caverject", "Edex", "Prostin VR"]}
 {"rxcui": "59839", "brand_names": ["Denavir"]}
 {"rxcui": "5992", "brand_names": ["InFed", "Irospan Tablet", "Uniferon"]}
 {"rxcui": "59943", "brand_names": ["Zyclara"]}
@@ -1584,7 +1584,7 @@
 {"rxcui": "60212", "brand_names": ["Malarone", "Mepron"]}
 {"rxcui": "60223", "brand_names": ["Cabtreo", "Differin", "Differin Epiduo", "Epiduo"]}
 {"rxcui": "6023", "brand_names": []}
-{"rxcui": "6026", "brand_names": ["Fluriso", "Forane", "IsoSol", "Isospire", "Terrell"]}
+{"rxcui": "6026", "brand_names": ["Fluriso", "IsoSol", "Isospire", "Terrell"]}
 {"rxcui": "6027", "brand_names": []}
 {"rxcui": "60307", "brand_names": ["Comtan", "Stalevo"]}
 {"rxcui": "6038", "brand_names": []}
@@ -1595,17 +1595,17 @@
 {"rxcui": "606396", "brand_names": ["Chirhostim"]}
 {"rxcui": "6064", "brand_names": ["Absorica", "Accutane", "Amnesteem", "Claravis", "Myorisan", "Sotret", "Zenatane"]}
 {"rxcui": "6066", "brand_names": []}
-{"rxcui": "6069", "brand_names": ["Agrimectin", "Bimectin", "Bimectin Plus", "DuraMectin", "Equimax", "Heartgard Plus", "Iverhart", "Iverhart Plus", "Ivermax", "Ivermax Plus", "Ivomec", "Ivomec Plus", "Noromectin", "Noromectin Plus", "Prazimectin", "Privermectin", "Promectin", "Sklice", "Soolantra", "Strideguard", "Stromectol", "Tri-Heart Plus", "Vetrimec", "Vetrimec Plus", "Zimecterin", "Zimecterin Gold"]}
+{"rxcui": "6069", "brand_names": ["Agrimectin", "Bimectin", "Bimectin Plus", "DuraMectin", "Equimax", "Heartgard Plus", "Iverhart", "Iverhart Plus", "Ivermax", "Ivermax Plus", "Ivomec", "Ivomec Plus", "Noromectin", "Noromectin Plus", "Prazimectin", "Privermectin", "Promectin", "Sklice", "Soolantra", "Strideguard", "Stromectol", "Vetrimec", "Vetrimec Plus", "Zimecterin", "Zimecterin Gold"]}
 {"rxcui": "60819", "brand_names": ["Angiomax"]}
 {"rxcui": "6099", "brand_names": []}
 {"rxcui": "6102", "brand_names": ["Pet Pectillin"]}
 {"rxcui": "61148", "brand_names": ["Genotropin", "Humatrope", "Norditropin", "Nutropin", "Omnitrope", "Saizen", "Serostim", "Zomacton", "Zorbtive"]}
-{"rxcui": "612", "brand_names": ["Acid Gone", "Almacone", "Comfort Gel", "Derma Gran", "Gaviscon", "Gaviscon Chewable", "Gelusil", "Maalox Max", "Maalox Plus", "Milantex", "Mintox Plus"]}
+{"rxcui": "612", "brand_names": ["Almacone", "Derma Gran", "Gaviscon", "Gaviscon Chewable", "Gelusil", "Maalox Max", "Maalox Plus", "Milantex", "Mintox Plus"]}
 {"rxcui": "612865", "brand_names": ["Actemra", "Avtozma", "Tofidence", "Tyenne"]}
 {"rxcui": "612937", "brand_names": ["Alferon N"]}
 {"rxcui": "6130", "brand_names": ["Ketalar", "Ketaset", "Zetamine"]}
 {"rxcui": "613391", "brand_names": ["Effient"]}
-{"rxcui": "6135", "brand_names": ["Extina", "Keto-C", "Ketochlor", "Ketodan", "Kuric", "Mal-A-Ket", "Mal-A-Ket Wipes", "Malacetic", "Nizoral", "Recorlev", "Suffusion", "T8 Keto Flush", "Xolegel"]}
+{"rxcui": "6135", "brand_names": ["Extina", "Ketochlor", "Ketodan", "Kuric", "Mal-A-Ket Wipes", "Malacetic", "Nizoral", "Recorlev", "Xolegel"]}
 {"rxcui": "61381", "brand_names": ["Lybalvi", "Symbyax", "Zyprexa"]}
 {"rxcui": "6142", "brand_names": ["Draxxin KP", "Ketofen", "Ketomed", "Kiprofen", "Orudis"]}
 {"rxcui": "614373", "brand_names": ["Exjade", "Jadenu"]}
@@ -1631,17 +1631,17 @@
 {"rxcui": "623033", "brand_names": ["Amitiza"]}
 {"rxcui": "623400", "brand_names": ["Motpoly", "Vimpat"]}
 {"rxcui": "62349", "brand_names": ["Edecrin"]}
-{"rxcui": "62372", "brand_names": ["Amvisc", "Biolon", "Bionect", "DisCoVisc", "Durolane", "Euflexxa", "Gel-One", "Gel-Syn", "Genvisc", "HYALOVET", "Healon", "Healon5", "Hyalgan", "Hylira", "Hymovis", "Hyvisc", "IPM Wound", "Legend", "Monovisc", "Nexha", "Orthovisc", "Provisc", "Supartz", "Triluron", "Trivisc", "Visco-3", "Viscoat"]}
+{"rxcui": "62372", "brand_names": ["Amvisc", "Biolon", "Bionect", "DisCoVisc", "Durolane", "Euflexxa", "Gel-Syn", "Genvisc", "HYALOVET", "Healon", "Healon5", "Hyalgan", "Hylira", "Hymovis", "Hyvisc", "IPM Wound", "Monovisc", "Nexha", "Orthovisc", "Provisc", "Supartz", "Triluron", "Trivisc", "Visco-3", "Viscoat"]}
 {"rxcui": "62427", "brand_names": ["Reltone", "Urso", "Urso Forte", "Ursolign"]}
 {"rxcui": "6313", "brand_names": ["Vykoura"]}
 {"rxcui": "632", "brand_names": ["Jelmyto", "Mitosol", "Mutamycin", "Zusduri"]}
 {"rxcui": "636827", "brand_names": ["Hy-KXP"]}
 {"rxcui": "6371", "brand_names": ["Valcor"]}
-{"rxcui": "6373", "brand_names": ["After banger", "AfterPlan", "Aftera", "Afterpill", "Climara Pro", "Curae", "E-Con", "EContra", "Fem Choice", "Her Style", "Ithappenz", "Julie", "Kyleena", "Liletta", "Mirena", "Morning After", "My Choice", "My Way", "New Day", "Next Choice One Dose", "Opcicon One-Step", "Option 2", "Plan B One-Step", "PostDay One-Step", "Preventeza", "React", "Restart", "Shewise", "Skyla", "Take Action", "Twirla", "Your Choice"]}
+{"rxcui": "6373", "brand_names": ["AfterPlan", "Aftera", "Afterpill", "Climara Pro", "Curae", "EContra", "Fem Choice", "Ithappenz", "Kyleena", "Liletta", "Mirena", "Opcicon One-Step", "PostDay One-Step", "Preventeza", "Shewise", "Skyla", "Twirla"]}
 {"rxcui": "6375", "brand_names": ["Crexont", "Dhivy", "Duopa", "Inbrija", "Rytary", "Sinemet", "Stalevo", "Vyalev"]}
 {"rxcui": "6378", "brand_names": ["Xyvona"]}
 {"rxcui": "6384", "brand_names": ["Cystorelin", "Factrel", "Fertagyl", "Gonabreed", "Ovacyst"]}
-{"rxcui": "6387", "brand_names": ["Abreva Rapid Pain Relief", "Akten", "Allercaine", "Alocane", "Alocane Max Strength", "Alocane Plus", "Ana-Lex", "AneCream", "Bactine", "Bactine Antibiotic", "Band-Aid Hurt-Free", "Bio-Kool", "Bruselix", "Burn Jel Plus", "Cicloferon", "Comfortcaine", "Cutiecaine", "Derma Numb", "Doloracin with Lidocaine", "Dr. Numb", "Flavalta", "Glydo", "Hexa-Caine", "Keepan", "Kool-Down", "LMX", "Lenzagel", "Lenzapatch", "Lido King", "LidoPro", "LidoPro Pain Relieving Patch", "LidoPro Patch", "Lidocan", "Lidocare", "Lidocream", "Lidoderm", "Lidoguard", "Lidoguard Pain Relief", "Lidopatch", "Lidostat", "Lidotral", "Lidotran", "Lidozen", "Lidum", "Lignospan", "Lipocaine", "Lydexa", "Medi-Derm with Lidocaine", "Oraqix", "Pliaglis", "Puroxcin", "RadiaGuard", "RectiCare Advance Cream", "Recticare", "Recticare Wipes", "Regenecare", "Relador", "Solarcaine", "Sonacaine", "StaphAseptic", "Synera", "Topicaine", "Topicaine Ultra", "Tranzarel", "Tridacaine", "Trifena", "Uber Numb", "Unburn", "Workvie", "Xolido", "Xylocaine", "Xylocaine with Epinephrine", "ZTlido", "Zcaine", "Zensa", "Zingo", "Zionodil"]}
+{"rxcui": "6387", "brand_names": ["Abreva Rapid Pain Relief", "Akten", "Allercaine", "Alocane", "Alocane Max Strength", "Alocane Plus", "Ana-Lex", "AneCream", "Bactine", "Bactine Antibiotic", "Bio-Kool", "Bruselix", "Burn Jel Plus", "Cicloferon", "Comfortcaine", "Cutiecaine", "Doloracin with Lidocaine", "Dr. Numb", "Flavalta", "Glydo", "Hexa-Caine", "Keepan", "Kool-Down", "Lenzagel", "Lenzapatch", "LidoPro", "LidoPro Pain Relieving Patch", "LidoPro Patch", "Lidocan", "Lidocare", "Lidocream", "Lidoderm", "Lidoguard", "Lidoguard Pain Relief", "Lidopatch", "Lidostat", "Lidotral", "Lidotran", "Lidozen", "Lidum", "Lignospan", "Lipocaine", "Lydexa", "Medi-Derm with Lidocaine", "Oraqix", "Pliaglis", "Puroxcin", "RadiaGuard", "RectiCare Advance Cream", "Recticare", "Recticare Wipes", "Regenecare", "Relador", "Solarcaine", "Sonacaine", "StaphAseptic", "Synera", "Topicaine", "Topicaine Ultra", "Tranzarel", "Tridacaine", "Trifena", "Uber Numb", "Workvie", "Xolido", "Xylocaine", "Xylocaine with Epinephrine", "ZTlido", "Zcaine", "Zensa", "Zingo", "Zionodil"]}
 {"rxcui": "6398", "brand_names": ["Lincobac", "Lincocin", "Lincomed"]}
 {"rxcui": "640062", "brand_names": []}
 {"rxcui": "6406", "brand_names": ["Creon", "PanaKare", "PancrePlus", "Pancreaze", "Pertzye", "Viokace", "Zenpep"]}
@@ -1656,10 +1656,10 @@
 {"rxcui": "6472", "brand_names": ["Altoprev"]}
 {"rxcui": "6475", "brand_names": ["Adasuve"]}
 {"rxcui": "657797", "brand_names": ["Torisel"]}
-{"rxcui": "6579", "brand_names": ["Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "BSS Ophthalmic Solution", "Chloromag", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "Extraneal", "Ionosol-MB", "Isolyte P", "Isolyte S", "Isolyte S in 5 % Dextrose", "Mag 64", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte II", "Physiolyte", "Physiosol", "Plasma-lyte 148", "Plasmalyte A", "Slow-Mag Reformulated Feb 2012"]}
-{"rxcui": "6581", "brand_names": ["Almacone", "Comfort Gel", "Duo Fusion", "Gelusil", "Inon Ace Solution", "Inon Ace Tablet", "Maalox Max", "Maalox Plus", "Milantex", "Mintox Plus", "Mirafast", "Pedia-Lax Chewable", "Pepcid Complete", "Phillips Milk of Magnesia", "Rolaids Reformulated Aug 2006", "Tums Dual Action"]}
-{"rxcui": "6582", "brand_names": ["Beelith", "Clenpiq", "Folgard OS", "Lactocal", "Mag-Ox 400", "Magmilax", "Phillips' Cramp-free", "Somnicin", "Uro-Mag", "Vitafol-One"]}
-{"rxcui": "6585", "brand_names": ["Concept OB", "Eldertonic", "Ellis Tonic", "Hemocyte Plus", "Sutab", "Tis-U-Sol"]}
+{"rxcui": "6579", "brand_names": ["Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "BSS Ophthalmic Solution", "Chloromag", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "Extraneal", "Ionosol-MB", "Isolyte P", "Isolyte S", "Isolyte S in 5 % Dextrose", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte II", "Physiolyte", "Physiosol", "Plasma-lyte 148", "Plasmalyte A", "Slow-Mag Reformulated Feb 2012"]}
+{"rxcui": "6581", "brand_names": ["Almacone", "Gelusil", "Inon Ace Solution", "Inon Ace Tablet", "Maalox Max", "Maalox Plus", "Milantex", "Mintox Plus", "Mirafast", "Pedia-Lax Chewable", "Pepcid Complete", "Phillips Milk of Magnesia", "Rolaids Reformulated Aug 2006", "Tums Dual Action"]}
+{"rxcui": "6582", "brand_names": ["Beelith", "Clenpiq", "Folgard OS", "Lactocal", "Magmilax", "Phillips' Cramp-free", "Somnicin", "Uro-Mag", "Vitafol-One"]}
+{"rxcui": "6585", "brand_names": ["Concept OB", "Eldertonic", "Ellis Tonic", "Sutab", "Tis-U-Sol"]}
 {"rxcui": "662019", "brand_names": ["Folotyn"]}
 {"rxcui": "662281", "brand_names": ["Cavhanza", "Danziten", "Tasigna"]}
 {"rxcui": "6628", "brand_names": ["Bronchitol", "Osmitrol"]}
@@ -1670,7 +1670,7 @@
 {"rxcui": "6674", "brand_names": ["Valchlor"]}
 {"rxcui": "6676", "brand_names": ["Antivert", "Bonine", "Dramamine Less Drowsy", "Dramamine Nausea Relief", "Pepto Nausea", "Verticalm", "Wal-Dram 2", "Zentrip"]}
 {"rxcui": "6678", "brand_names": []}
-{"rxcui": "66887", "brand_names": ["Asthmanefrin", "S-2"]}
+{"rxcui": "66887", "brand_names": ["Asthmanefrin"]}
 {"rxcui": "6691", "brand_names": ["Depo-Provera", "Provera", "depo-subQ provera"]}
 {"rxcui": "6694", "brand_names": []}
 {"rxcui": "6703", "brand_names": []}
@@ -1701,13 +1701,13 @@
 {"rxcui": "68244", "brand_names": ["Cimduo", "Combivir", "Delstrigo", "Dovato", "Epivir", "Epzicom", "Symfi", "Temixys", "Triumeq", "Trizivir"]}
 {"rxcui": "6826", "brand_names": []}
 {"rxcui": "683", "brand_names": ["Ameluz"]}
-{"rxcui": "6832", "brand_names": ["Azo Urinary Tract Defense", "Cystex", "Hiprex", "Hyophen", "Phosphasal", "Urelle", "Uretron DS", "Urex", "Uribel", "Uribel Tabs", "Urimar Reformulated Oct 2013", "Urin DS", "Uro-Blue", "Urogesic Blue Reformulated Apr 2012", "Uroqid-Acid No.2", "Ustell", "Utira"]}
+{"rxcui": "6832", "brand_names": ["Cystex", "Hiprex", "Hyophen", "Phosphasal", "Urelle", "Uretron DS", "Urex", "Uribel", "Uribel Tabs", "Urimar Reformulated Oct 2013", "Urin DS", "Uro-Blue", "Urogesic Blue Reformulated Apr 2012", "Uroqid-Acid No.2", "Ustell", "Utira"]}
 {"rxcui": "6835", "brand_names": ["Felanorm", "Felimazole", "Reguzol"]}
 {"rxcui": "68442", "brand_names": ["Filkri", "Granix", "Neupogen", "Nivestym", "Nypozi", "Releuko", "Zarxio"]}
 {"rxcui": "68446", "brand_names": ["Alimta", "Axtle", "Pemfexy", "Pemrydi Rtu"]}
 {"rxcui": "6845", "brand_names": ["Atmeksi", "Robaxin", "Tanlor"]}
 {"rxcui": "6847", "brand_names": ["Brevital"]}
-{"rxcui": "684879", "brand_names": ["Animi-3 with Vitamin D", "Beelith", "Bonjesta", "Concept OB", "Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Diclegis", "Eldertonic", "Ellis Tonic", "Encora AM Tablet", "Encora PM Tablet", "Folbecal", "Folgard OS", "Hemocyte Plus", "Infuvite", "Infuvite Pediatric", "Irospan Tablet", "Lactocal", "Melatonex", "Multi-Delyn", "NicAzel", "Rena-Vite", "Tandem Plus", "Vita-Respa", "Vitafol-One"]}
+{"rxcui": "684879", "brand_names": ["Beelith", "Bonjesta", "Concept OB", "Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Diclegis", "Eldertonic", "Ellis Tonic", "Encora AM Tablet", "Encora PM Tablet", "Folbecal", "Folgard OS", "Infuvite", "Infuvite Pediatric", "Irospan Tablet", "Lactocal", "Melatonex", "Multi-Delyn", "NicAzel", "Rena-Vite", "Vita-Respa", "Vitafol-One"]}
 {"rxcui": "68503", "brand_names": ["Prialt"]}
 {"rxcui": "6851", "brand_names": ["Jylamvo", "Otrexup", "Rasuvo", "Reditrex", "Trexall", "Xatmep"]}
 {"rxcui": "6852", "brand_names": []}
@@ -1735,13 +1735,13 @@
 {"rxcui": "6926", "brand_names": []}
 {"rxcui": "692620", "brand_names": []}
 {"rxcui": "6927", "brand_names": []}
-{"rxcui": "6932", "brand_names": ["Aloe Vesta Antifungal", "Baza", "Conazol Miconazole", "Critic-Aid Clear", "Cruex Prescription Strength", "DermaFungal", "Dermagran", "Desenex", "Femmesil", "Fungizyl", "Fungoid", "Hongo Killer Ultra", "Inzo", "Lagicam", "Lasolex", "MacerRx", "Malaseb", "Micaderm", "Micatin", "MiconaHex+Triz", "Micro-Guard", "Monistat", "Ony-Clear", "Oravig", "Rash Relief Antifungal", "Silka Powder", "Surolan", "Terpenicol Antifungal", "Tetterine", "Triple Paste AF", "Vagistat", "Vusion", "Zeasorb"]}
+{"rxcui": "6932", "brand_names": ["Aloe Vesta Antifungal", "Baza", "Conazol Miconazole", "Cruex Prescription Strength", "DermaFungal", "Dermagran", "Desenex", "Femmesil", "Fungizyl", "Hongo Killer Ultra", "Inzo", "Lagicam", "Lasolex", "MacerRx", "Malaseb", "Micaderm", "Micatin", "MiconaHex+Triz", "Monistat", "Ony-Clear", "Oravig", "Rash Relief Antifungal", "Silka Powder", "Surolan", "Terpenicol Antifungal", "Tetterine", "Triple Paste AF", "Vagistat", "Vusion", "Zeasorb"]}
 {"rxcui": "6960", "brand_names": ["Nayzilam"]}
 {"rxcui": "6963", "brand_names": []}
 {"rxcui": "69634", "brand_names": ["Leukine"]}
 {"rxcui": "6964", "brand_names": ["Korlym", "Mifeprex"]}
 {"rxcui": "69646", "brand_names": []}
-{"rxcui": "6972", "brand_names": ["Altalube", "Kondremul Plain", "Lubrifresh P.M.", "Moisture Eyes PM", "RectiCare Advance Cream", "Soothe Mineral Oil", "Soothe Night Time", "Stye", "Tears Naturale PM"]}
+{"rxcui": "6972", "brand_names": ["Altalube", "Kondremul Plain", "Lubrifresh P.M.", "Moisture Eyes PM", "RectiCare Advance Cream", "Stye", "Tears Naturale PM"]}
 {"rxcui": "69722", "brand_names": ["Relenza"]}
 {"rxcui": "69749", "brand_names": ["Byvalson", "Diovan", "Diovan HCT", "Entresto", "Exforge", "Exforge HCT"]}
 {"rxcui": "6980", "brand_names": ["Amzeeq", "Arestin", "Cleeravue-M", "Emrosi", "Minocin", "Minolira", "Solodyn", "Ximino", "Zilxi"]}
@@ -1756,7 +1756,7 @@
 {"rxcui": "704", "brand_names": ["Elavil"]}
 {"rxcui": "7052", "brand_names": ["Duramorph", "Infumorph", "Kadian", "MS Contin", "Mitigo"]}
 {"rxcui": "70561", "brand_names": ["Akynzeo", "Posfrea"]}
-{"rxcui": "70602", "brand_names": ["Aminosyn II 10 %", "Aminosyn II 15%", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 %, Sulfite-Free", "Aminosyn-PF 10 %, Sulfite-Free", "Aminosyn-PF 7%", "Clinisol 15", "Glutamic-500", "Plenamine", "PremaSol", "Prosol", "Trophamine 10 %", "Trophamine 6 %"]}
+{"rxcui": "70602", "brand_names": ["Aminosyn II 10 %", "Aminosyn II 15%", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 %, Sulfite-Free", "Aminosyn-PF 10 %, Sulfite-Free", "Aminosyn-PF 7%", "Clinisol 15", "Plenamine", "PremaSol", "Prosol", "Trophamine 10 %", "Trophamine 6 %"]}
 {"rxcui": "70619", "brand_names": ["Ammonul"]}
 {"rxcui": "709271", "brand_names": ["Cimzia"]}
 {"rxcui": "711942", "brand_names": ["Alvaiz", "Promacta"]}
@@ -1782,7 +1782,7 @@
 {"rxcui": "7243", "brand_names": ["Contrave", "ReVia", "Vivitrol"]}
 {"rxcui": "72435", "brand_names": ["Kineret"]}
 {"rxcui": "7244", "brand_names": []}
-{"rxcui": "7247", "brand_names": ["Advanced Eye Relief Redness Instant Relief", "All Clear", "Naphcon A", "Opcon-A", "Privine"]}
+{"rxcui": "7247", "brand_names": ["Naphcon A", "Opcon-A", "Privine"]}
 {"rxcui": "7258", "brand_names": ["Aleve", "Aleve PM", "Anaprox", "Naprelan", "Naprosyn", "Treximet", "Vimovo", "Wal-Proxen"]}
 {"rxcui": "72610", "brand_names": []}
 {"rxcui": "72625", "brand_names": ["Cymbalta", "Drizalma", "Irenka"]}
@@ -1810,7 +1810,7 @@
 {"rxcui": "7396", "brand_names": ["Cardene"]}
 {"rxcui": "74", "brand_names": ["SwineAid"]}
 {"rxcui": "7402", "brand_names": []}
-{"rxcui": "7405", "brand_names": ["Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Eldertonic", "Ellis Tonic", "Hemocyte Plus", "Infuvite", "Infuvite Pediatric", "Integra F", "Lactocal", "Multi-Delyn", "NicAzel", "Nicomide", "Rena-Vite", "Tandem Plus"]}
+{"rxcui": "7405", "brand_names": ["Dialyvite 800", "Dialyvite 800 with Iron", "Dialyvite 800 with Zinc", "Eldertonic", "Ellis Tonic", "Infuvite", "Infuvite Pediatric", "Integra F", "Lactocal", "Multi-Delyn", "NicAzel", "Nicomide", "Rena-Vite"]}
 {"rxcui": "7417", "brand_names": ["Afeditab CR", "Procardia"]}
 {"rxcui": "742", "brand_names": []}
 {"rxcui": "7421", "brand_names": ["Lampit"]}
@@ -1851,9 +1851,9 @@
 {"rxcui": "7778", "brand_names": []}
 {"rxcui": "7779", "brand_names": []}
 {"rxcui": "7781", "brand_names": []}
-{"rxcui": "7804", "brand_names": ["Endocet", "Nalocet", "Oxaydo", "Oxycontin", "Percocet", "Primlev", "Prolate", "Roxicodone", "Roxybond", "Xtampza"]}
+{"rxcui": "7804", "brand_names": ["Endocet", "Nalocet", "Oxaydo", "Oxycontin", "Percocet", "Primlev", "Roxicodone", "Roxybond", "Xtampza"]}
 {"rxcui": "7806", "brand_names": []}
-{"rxcui": "7812", "brand_names": ["Afrin", "Allerest 12 Hour Nasal Spray", "Dristan 12-Hour Nasal Spray", "Duramist Plus", "Four-Way", "Kovanaze", "Neo-Synephrine 12 Hour", "Nostrilla", "Qlearquil Nasal Decongestant", "Rhofade", "Sinex Long-Acting", "Sinufrin Plus", "Sudafed OM", "Upneeq", "Zicam Sinus Relief"]}
+{"rxcui": "7812", "brand_names": ["Afrin", "Allerest 12 Hour Nasal Spray", "Dristan 12-Hour Nasal Spray", "Duramist Plus", "Kovanaze", "Neo-Synephrine 12 Hour", "Nostrilla", "Qlearquil Nasal Decongestant", "Rhofade", "Sinex Long-Acting", "Sinufrin Plus", "Sudafed OM", "Upneeq", "Zicam Sinus Relief"]}
 {"rxcui": "7813", "brand_names": []}
 {"rxcui": "7814", "brand_names": []}
 {"rxcui": "7821", "brand_names": ["Agrimycin", "Bio-Mycin", "Compudose", "Liquamycin", "Noromycin", "Terra-Vet", "Terramycin", "Vetrimycin"]}
@@ -1875,7 +1875,7 @@
 {"rxcui": "7975", "brand_names": ["Aagylur", "Cuprimine", "Depen"]}
 {"rxcui": "797629", "brand_names": ["Menactra"]}
 {"rxcui": "797752", "brand_names": ["Engerix-B", "Heplisav-B", "PEDIARIX", "Prehevbrio", "Recombivax", "Twinrix", "Vaxelis"]}
-{"rxcui": "7980", "brand_names": ["Albadry", "Bactracillin G", "Bicillin", "Bicillin L-A", "Extencilline", "Lentocilin", "Norocillin", "Pfizerpen", "Quartermaster"]}
+{"rxcui": "7980", "brand_names": ["Albadry", "Bactracillin G", "Bicillin", "Bicillin L-A", "Extencilline", "Lentocilin", "Norocillin", "Pfizerpen"]}
 {"rxcui": "798228", "brand_names": ["Prevnar 13", "Prevnar 20", "Vaxneuvance"]}
 {"rxcui": "798230", "brand_names": ["Prevnar 13", "Prevnar 20", "Vaxneuvance"]}
 {"rxcui": "798262", "brand_names": ["Gardasil", "Gardasil 9"]}
@@ -1888,7 +1888,7 @@
 {"rxcui": "798444", "brand_names": ["PedvaxHIB", "Vaxelis"]}
 {"rxcui": "7994", "brand_names": ["NebuPent", "Pentam"]}
 {"rxcui": "8001", "brand_names": []}
-{"rxcui": "8004", "brand_names": ["Euthaphen", "Euthasol", "Fatal-Plus", "Nembutal", "Pentobarsol"]}
+{"rxcui": "8004", "brand_names": ["Euthaphen", "Euthasol", "Nembutal", "Pentobarsol"]}
 {"rxcui": "8011", "brand_names": ["Nipent"]}
 {"rxcui": "8013", "brand_names": []}
 {"rxcui": "802624", "brand_names": []}
@@ -1899,7 +1899,7 @@
 {"rxcui": "807219", "brand_names": ["Typhim VI"]}
 {"rxcui": "8076", "brand_names": []}
 {"rxcui": "8080", "brand_names": []}
-{"rxcui": "8120", "brand_names": ["Azo Urinary Pain Relief", "Baridium", "Pyridium", "Uricalm", "Uristat"]}
+{"rxcui": "8120", "brand_names": ["Baridium", "Pyridium", "Uricalm", "Uristat"]}
 {"rxcui": "8121", "brand_names": []}
 {"rxcui": "8123", "brand_names": ["Nardil"]}
 {"rxcui": "8132", "brand_names": ["Alahist D", "Naphcon A", "Opcon-A"]}
@@ -1915,7 +1915,7 @@
 {"rxcui": "8183", "brand_names": ["Dilantin", "Euthaphen", "Euthasol", "Phenytek"]}
 {"rxcui": "81864", "brand_names": ["Panretin"]}
 {"rxcui": "819300", "brand_names": ["Simponi"]}
-{"rxcui": "82003", "brand_names": ["Colace", "Colace w/Sennosides", "DOK", "Doculase", "Docusol", "Enemeez", "Enemeez Plus", "Ferralet 90", "Ferraplus", "Hemax", "Laxacin", "Pedia-Lax Liquid", "Pet-ema", "Phillips Stool Softener", "Prolaxa", "Promolaxin", "SENOKOT-S", "Senexon S", "SenoSol-SS", "Surfak Stool Softener"]}
+{"rxcui": "82003", "brand_names": ["Colace", "Colace w/Sennosides", "Doculase", "Docusol", "Enemeez", "Enemeez Plus", "Ferralet 90", "Ferraplus", "Hemax", "Laxacin", "Pedia-Lax Liquid", "Pet-ema", "Phillips Stool Softener", "Prolaxa", "Promolaxin", "SENOKOT-S", "Senexon S", "SenoSol-SS", "Surfak Stool Softener"]}
 {"rxcui": "82088", "brand_names": []}
 {"rxcui": "82122", "brand_names": ["Levaquin"]}
 {"rxcui": "82819", "brand_names": []}
@@ -1924,7 +1924,7 @@
 {"rxcui": "83008", "brand_names": ["Casodex"]}
 {"rxcui": "830457", "brand_names": ["RabAvert"]}
 {"rxcui": "830464", "brand_names": ["Imovax"]}
-{"rxcui": "8308", "brand_names": ["Infuvite", "Infuvite Pediatric", "Mephyton", "Veta-K1"]}
+{"rxcui": "8308", "brand_names": ["Infuvite", "Infuvite Pediatric", "Mephyton"]}
 {"rxcui": "83171", "brand_names": []}
 {"rxcui": "83213", "brand_names": []}
 {"rxcui": "8328", "brand_names": ["Isoptocarpine", "Pilocar", "Qlosi", "Salagen", "Vuity"]}
@@ -1964,12 +1964,12 @@
 {"rxcui": "85762", "brand_names": ["Kaletra", "Norvir"]}
 {"rxcui": "85763", "brand_names": []}
 {"rxcui": "857974", "brand_names": ["Kombiglyze", "Onglyza", "Qtern"]}
-{"rxcui": "8591", "brand_names": ["Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "BSS Ophthalmic Solution", "GaviLyte-C", "GaviLyte-N", "Gavilyte-G", "Gavilyte-H", "Golytely", "Ionosol-MB", "Isolyte P", "Isolyte S", "Isolyte S in 5 % Dextrose", "K-Tab", "Klor-Con", "Medi-Lyte", "MoviPrep", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte", "Physiolyte", "Physiosol", "Plasma-lyte 148", "Plasmalyte A", "Pokonza", "ProcalAmine 3", "Sutab", "Thermotabs", "Tis-U-Sol", "TriLyte"]}
+{"rxcui": "8591", "brand_names": ["Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "BSS Ophthalmic Solution", "GaviLyte-C", "GaviLyte-N", "Gavilyte-G", "Gavilyte-H", "Golytely", "Ionosol-MB", "Isolyte P", "Isolyte S", "Isolyte S in 5 % Dextrose", "Klor-Con", "Medi-Lyte", "MoviPrep", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte", "Physiolyte", "Physiosol", "Plasma-lyte 148", "Plasmalyte A", "Pokonza", "ProcalAmine 3", "Sutab", "Thermotabs", "Tis-U-Sol", "TriLyte"]}
 {"rxcui": "8597", "brand_names": ["Iosat", "Lactocal", "SSKI brand of Potassium Iodide", "ThyroSafe", "ThyroShield", "Vitafol-One"]}
 {"rxcui": "86009", "brand_names": ["Admelog", "Humalog", "Humalog Mix", "Lyumjev"]}
 {"rxcui": "8611", "brand_names": ["Betadine", "Clinidine", "Dermawound", "Efodine", "Ovadine", "Summer's Eve Medicated"]}
 {"rxcui": "861634", "brand_names": ["Livalo", "Nikita", "Zypitamag"]}
-{"rxcui": "8628", "brand_names": ["Biltricide", "Droncit", "Drontal", "Drontal Plus", "Equimax", "Giarcidia", "Interceptor Plus", "Iverhart", "NexGard Combo", "Prazimectin", "Profender", "Quest Plus", "Sentinel Spectrum", "Sentry HC Worm X Plus", "Triple Wormer", "Virbantel", "Zimecterin Gold"]}
+{"rxcui": "8628", "brand_names": ["Biltricide", "Droncit", "Drontal", "Drontal Plus", "Equimax", "Giarcidia", "Iverhart", "NexGard Combo", "Prazimectin", "Profender", "Sentry HC Worm X Plus", "Virbantel", "Zimecterin Gold"]}
 {"rxcui": "8629", "brand_names": ["Minipress"]}
 {"rxcui": "8638", "brand_names": ["Blephamide", "Cortamine", "MILLIPRED", "Orapred", "Pediapred", "Pred Forte", "Pred Mild", "Prednistab", "Surolan", "Temaril-P", "Veripred"]}
 {"rxcui": "8640", "brand_names": ["Deltasone", "Rayos"]}
@@ -2006,7 +2006,7 @@
 {"rxcui": "8834", "brand_names": ["Balfaxar", "Ceprotin", "Kcentra"]}
 {"rxcui": "885189", "brand_names": ["CroFab"]}
 {"rxcui": "8886", "brand_names": []}
-{"rxcui": "8896", "brand_names": ["A-Phedrin", "Alavert D", "Allegra-D", "Aller-Tec D", "Allerclear", "Ambifed CD", "Ambifed-G CD", "Aphedrid", "Biotussin", "Bromfed DM", "Clarinex-D", "Claritin-D", "Contac Cold", "Genac brand of pseudoephedrine/triprolidine", "Genaphed", "Hycofenix", "Lortuss EX", "M-End Max D", "Mar-cof BP", "Nexafed", "Q-Fed", "Stahist AD", "Sudafed", "Sudogest", "Vi-Sudo", "Wal Zyr D", "Wal-Act", "Wal-Fex D", "Wal-Phed", "Wal-itin D", "Zephrex-D", "Zodryl DAC", "Zodryl DEC", "Zyrtec-D"]}
+{"rxcui": "8896", "brand_names": ["A-Phedrin", "Alavert D", "Allegra-D", "Allerclear", "Ambifed CD", "Ambifed-G CD", "Aphedrid", "Biotussin", "Bromfed DM", "Clarinex-D", "Claritin-D", "Contac Cold", "Genac brand of pseudoephedrine/triprolidine", "Genaphed", "Hycofenix", "Lortuss EX", "M-End Max D", "Mar-cof BP", "Nexafed", "Stahist AD", "Sudafed", "Sudogest", "Vi-Sudo", "Wal Zyr D", "Wal-Act", "Wal-Fex D", "Wal-Phed", "Wal-itin D", "Zephrex-D", "Zodryl DAC", "Zodryl DEC", "Zyrtec-D"]}
 {"rxcui": "89013", "brand_names": ["Abilify", "Opipza"]}
 {"rxcui": "891658", "brand_names": ["Palforzia"]}
 {"rxcui": "8948", "brand_names": ["Aplisol", "Tubersol"]}
@@ -2014,7 +2014,7 @@
 {"rxcui": "89778", "brand_names": ["Phospholine Iodide"]}
 {"rxcui": "89781", "brand_names": []}
 {"rxcui": "89785", "brand_names": ["Pamine"]}
-{"rxcui": "8984", "brand_names": ["Ascarel", "Drontal", "Drontal Plus", "Equistrength", "Exodus", "GiarcidiaZap-Wormer", "Heartgard Plus", "Iverhart", "Iverhart Plus", "Liqui-Vict 2X", "Nemex", "NexGard Plus", "Pyramax", "RFD", "Sentry HC Worm X DS", "Sentry HC Worm X Plus", "Simparica TRIO", "Strongid", "Sure Shot 2X", "Tri-Heart Plus", "Triple Wormer", "Virbantel", "Worm Protector 2X"]}
+{"rxcui": "8984", "brand_names": ["Ascarel", "Drontal", "Drontal Plus", "Equistrength", "GiarcidiaZap-Wormer", "Heartgard Plus", "Iverhart", "Iverhart Plus", "Liqui-Vict 2X", "Nemex", "NexGard Plus", "Pyramax", "Sentry HC Worm X DS", "Sentry HC Worm X Plus", "Simparica TRIO", "Strongid", "Virbantel"]}
 {"rxcui": "898492", "brand_names": ["Xiaflex"]}
 {"rxcui": "89858", "brand_names": []}
 {"rxcui": "8987", "brand_names": []}
@@ -2023,7 +2023,7 @@
 {"rxcui": "89903", "brand_names": ["RenaKare", "Renaplus"]}
 {"rxcui": "9000", "brand_names": ["Mestinon", "Regonol"]}
 {"rxcui": "9009", "brand_names": ["Ninjacof", "Ninjacof A", "Pamprin Multi-Symptom", "Pediaclear", "Poly Hist PD", "Premsyn PMS", "Vanacof AC"]}
-{"rxcui": "9010", "brand_names": ["Daraprim", "Rebalance"]}
+{"rxcui": "9010", "brand_names": ["Daraprim"]}
 {"rxcui": "901620", "brand_names": ["Prevnar 13", "Prevnar 20", "Vaxneuvance"]}
 {"rxcui": "90176", "brand_names": []}
 {"rxcui": "9061", "brand_names": []}
@@ -2040,7 +2040,7 @@
 {"rxcui": "9392", "brand_names": []}
 {"rxcui": "94", "brand_names": ["Somnicin"]}
 {"rxcui": "9524", "brand_names": ["Azulfidine"]}
-{"rxcui": "9525", "brand_names": ["AcneWorx", "Acneclir", "Acnevir", "Ala Seb T", "Azo Urinary Tract Defense", "Bensal", "Broda Acne Spa", "Clear Proof Acne Medication", "Clearskin Blemish", "Clearskin Pore Penetrating Black Mineral Mask", "Clearskin Professional Daily Correcting", "Clenziderm", "Compound W brand of salicylic acid", "Cornstick", "Cystex", "DHS Salicylic Acid 3%", "Denorex Extra Strength Reformulated Aug 2012", "DermalZone", "Dermoneen", "Differin Acne Clearing", "Dream Pure BB", "Duofilm", "Duoplant", "Everclean", "Exoderm", "Fostex Bar", "Freezone", "Glycylic", "Gordofilm", "Inova 8-2", "Ionil Plus", "Keralyt", "Keralyt 5", "Kleer Plex", "MG217 Psoriasis Salicylic Acid", "Mediplast", "Mosco Corn & Callus Remover", "Mosco One Step Corn Remover", "Nizoral Psoriasis", "Noxzema Clean", "Oxy Deep Pore", "P & S", "Pernox Scrub Cleanser", "Phisoderm Clear Confidence Body Wash", "Phisoderm Clear Confidence Daily Gel Face Wash", "Propa P.H.", "Propa P.H. Acne Mask", "Psoriasin Wash", "Rayasal", "Rogaine Anti-Dandruff", "Salinocaine", "Salvax", "Salycim", "Salyntra", "Scalpicin Scalp Relief", "Sebasorb", "Sebex", "Sebobalance", "Sebulex", "Selsun Blue Naturals", "Skinmedica Purifying Foaming Wash", "St. Ives Blemish & Blackhead Control", "Stri-Dex", "Stri-Dex Clear Gel", "Stridex", "Super Spot Remover", "Ultrasal", "Verruguin", "Verrustat", "Versiclear", "Virasal", "WARTICIDE", "Wartstick", "X-Seb T Pearl", "Xalix", "Zapzyt Acne Wash", "Zit Stick", "clear days ahead"]}
+{"rxcui": "9525", "brand_names": ["AcneWorx", "Acneclir", "Acnevir", "Ala Seb T", "Bensal", "Broda Acne Spa", "Clearskin Blemish", "Clearskin Pore Penetrating Black Mineral Mask", "Clearskin Professional Daily Correcting", "Clenziderm", "Cornstick", "Cystex", "DHS Salicylic Acid 3%", "Denorex Extra Strength Reformulated Aug 2012", "DermalZone", "Dermoneen", "Differin Acne Clearing", "Dream Pure BB", "Duofilm", "Duoplant", "Everclean", "Fostex Bar", "Freezone", "Glycylic", "Gordofilm", "Inova 8-2", "Ionil Plus", "Keralyt", "Keralyt 5", "Kleer Plex", "MG217 Psoriasis Salicylic Acid", "Mediplast", "Mosco Corn & Callus Remover", "Mosco One Step Corn Remover", "Nizoral Psoriasis", "Noxzema Clean", "Pernox Scrub Cleanser", "Phisoderm Clear Confidence Body Wash", "Phisoderm Clear Confidence Daily Gel Face Wash", "Propa P.H.", "Propa P.H. Acne Mask", "Psoriasin Wash", "Rayasal", "Rogaine Anti-Dandruff", "Salinocaine", "Salvax", "Salycim", "Salyntra", "Scalpicin Scalp Relief", "Sebasorb", "Sebex", "Sebobalance", "Sebulex", "Selsun Blue Naturals", "Skinmedica Purifying Foaming Wash", "St. Ives Blemish & Blackhead Control", "Stri-Dex", "Stri-Dex Clear Gel", "Stridex", "Ultrasal", "Verruguin", "Verrustat", "Versiclear", "Virasal", "WARTICIDE", "Wartstick", "X-Seb T Pearl", "Xalix", "Zapzyt Acne Wash", "Zit Stick"]}
 {"rxcui": "9601", "brand_names": ["Donnatal", "Phenohytro", "Transderm Scop"]}
 {"rxcui": "9624", "brand_names": []}
 {"rxcui": "9639", "brand_names": ["Anipryl", "Emsam", "Zelapar"]}
@@ -2049,10 +2049,10 @@
 {"rxcui": "974779", "brand_names": ["Gazyva"]}
 {"rxcui": "978673", "brand_names": []}
 {"rxcui": "9789", "brand_names": ["Avoca", "Styptstix"]}
-{"rxcui": "9793", "brand_names": ["Baytril Otic", "Enropro Silver", "Enrosite Silver", "SSD", "Silvadene", "Thermazene"]}
+{"rxcui": "9793", "brand_names": ["Baytril Otic", "Enropro Silver", "Enrosite Silver", "Silvadene", "Thermazene"]}
 {"rxcui": "979384", "brand_names": []}
-{"rxcui": "9796", "brand_names": ["Almacone", "Bicarsim", "Comfort Gel", "E-Z-Gas II", "Gas Aide", "Gas-X", "Gas-X Total Relief", "Gas-X with Maalox", "Gelusil", "Imodium Advanced", "Imodium Multi-Symptom Relief", "Inon Ace Tablet", "Little Tummys", "Maalox Max", "Maalox Max Quick Dissolve", "Maalox Plus", "Mi-Acid Gas Relief", "Milantex", "Mintox Plus", "Mylicon", "Mylicon Children's", "Pepto Gas", "Phazyme", "Phazyme Gas & Acid", "Ri-Mag Plus", "Titralac Plus", "Tums with Gas Relief"]}
-{"rxcui": "9863", "brand_names": ["Altamist", "Aminosyn 3.5 % M, Sulfite Free", "Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "Ayr Saline Nasal", "BSS Ophthalmic Solution", "Broncho Saline", "Cleanoz Saline", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Deep Sea", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "ENTsol", "Extraneal", "GaviLyte-C", "GaviLyte-N", "Gavilyte-G", "Gavilyte-H", "Golytely", "Hydra-Neb", "Hyper-Sal", "Isolyte S", "Isolyte S in 5 % Dextrose", "Little Noses", "MoviPrep", "Muro 128", "Mycinaire", "Na-zone", "Nasadrops", "Nebusal", "Normosol-M", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte II", "Ocean brand of sodium chloride", "Physiolyte", "Physiosol", "Plasma-Lyte 56 in 5 % Dextrose", "Plasma-lyte 148", "Plasmalyte A", "Pretz", "ProcalAmine 3", "PulmoSal", "Regiocit", "Rhinaris", "Rhinomel", "Saljet", "SaltAire", "Sea Soft", "Simply Saline", "Sinucleanse", "Thermotabs", "Tis-U-Sol", "TriLyte", "Trophamine 10 %", "Trophamine 6 %"]}
+{"rxcui": "9796", "brand_names": ["Almacone", "Bicarsim", "E-Z-Gas II", "Gas-X with Maalox", "Gelusil", "Imodium Advanced", "Imodium Multi-Symptom Relief", "Inon Ace Tablet", "Little Tummys", "Maalox Max", "Maalox Max Quick Dissolve", "Maalox Plus", "Milantex", "Mintox Plus", "Mylicon", "Mylicon Children's", "Pepto Gas", "Phazyme", "Phazyme Gas & Acid", "Ri-Mag Plus", "Titralac Plus", "Tums with Gas Relief"]}
+{"rxcui": "9863", "brand_names": ["Altamist", "Aminosyn 3.5 % M, Sulfite Free", "Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "Ayr Saline Nasal", "BSS Ophthalmic Solution", "Broncho Saline", "Cleanoz Saline", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinimix E 5/25", "Dianeal Low Calcium 1.5", "Dianeal Low Calcium 2.5", "Dianeal Low Calcium 4.25", "Dianeal PD-2/1.5", "Dianeal PD-2/2.5", "Dianeal PD-2/4.25", "ENTsol", "Extraneal", "GaviLyte-C", "GaviLyte-N", "Gavilyte-G", "Gavilyte-H", "Golytely", "Hydra-Neb", "Isolyte S", "Isolyte S in 5 % Dextrose", "Little Noses", "MoviPrep", "Muro 128", "Mycinaire", "Nasadrops", "Nebusal", "Normosol-M", "Normosol-R", "Normosol-R in 5 % Dextrose", "Nutrilyte II", "Physiolyte", "Physiosol", "Plasma-Lyte 56 in 5 % Dextrose", "Plasma-lyte 148", "Plasmalyte A", "Pretz", "ProcalAmine 3", "PulmoSal", "Regiocit", "Rhinaris", "Rhinomel", "Saljet", "SaltAire", "Sinucleanse", "Thermotabs", "Tis-U-Sol", "TriLyte", "Trophamine 10 %", "Trophamine 6 %"]}
 {"rxcui": "9884", "brand_names": ["Iodopen"]}
 {"rxcui": "99", "brand_names": ["Amicar"]}
 {"rxcui": "993449", "brand_names": ["Aukelso", "Bildyos", "Bilprevda", "Bomyntra", "Boncresa", "Bosaya", "Conexxence", "Enoby", "Jubbonti", "Jubereq", "Osenvelt", "Ospomyv", "Osvyrti", "Oziltus", "Prolia", "Stoboclo", "Wyost", "Xbryk", "Xgeva", "Xtrenbo"]}
