@@ -11,6 +11,7 @@ takes one line instead of a script:
   python3 query_kb.py conditions metformin                 a drug's disease interactions (DDInter drug-disease table)
   python3 query_kb.py mechanism 34                         a mechanism group's text and categories
   python3 query_kb.py search statin                        drugs whose name contains a string
+  python3 query_kb.py coverage                             drugs and interaction rows per ATC group
 
 Name a drug by its DDInter name, RxNorm name, or CIEL concept name (case-insensitive),
 or by identifier with a prefix: rxcui:11289, ciel:86415, drugbank:DB00682, id:DDInter1951.
@@ -31,6 +32,13 @@ DEFAULT_KB = os.path.join(HERE, "out", "ddi_knowledge_base.json")
 SEVERITIES = ["Major", "Moderate", "Minor", "Unknown"]
 RANK = {s: i for i, s in enumerate(SEVERITIES)}
 PREFIXES = ("rxcui", "ciel", "drugbank", "id")
+ATC_GROUPS = {"A": "Alimentary tract and metabolism", "B": "Blood and blood forming organs",
+              "C": "Cardiovascular system", "D": "Dermatologicals",
+              "G": "Genito-urinary system and sex hormones", "H": "Systemic hormonal preparations",
+              "J": "Anti-infectives for systemic use", "L": "Antineoplastic and immunomodulating agents",
+              "M": "Musculo-skeletal system", "N": "Nervous system", "P": "Antiparasitic products",
+              "R": "Respiratory system", "S": "Sensory organs", "V": "Various"}
+BULK_DOWNLOAD_GROUPS = set("ABDHLPRV")     # the only groups DDInter's download page offers, as of 2026-09
 
 
 class Unresolved(LookupError):
@@ -269,6 +277,23 @@ class KB:
                             condition_counts=conds, conditions_total=sum(conds.values())))
         return out
 
+    def coverage(self):
+        """Drugs and interaction rows per ATC first-level (anatomical) group, plus the drugs carrying
+        no ATC code. A row counts toward every group either drug belongs to, so rows sum to more than
+        the KB total. Exists to show at a glance that the groups DDInter's bulk downloads omit are
+        covered: the downloads carry only A, B, D, H, L, P, R, and V."""
+        groups = {}
+        for d in self.drugs:
+            for c in d["atc"]:
+                groups.setdefault(c[0], set()).add(d["id"])
+        out = []
+        for letter in sorted(ATC_GROUPS):
+            ds = groups.get(letter, set())
+            rows = sum(1 for a, b in self.rows if a in ds or b in ds)
+            out.append({"atc": letter, "group": ATC_GROUPS[letter], "drugs": len(ds), "interaction_rows": rows,
+                        "in_bulk_downloads": letter in BULK_DOWNLOAD_GROUPS})
+        return {"groups": out, "drugs_without_atc": sum(1 for d in self.drugs if not d["atc"])}
+
     def search(self, text):
         """Drugs whose DDInter, RxNorm, or CIEL name contains the text. A hit found only through a
         CIEL combination name (say "Imipenem / cilastatin" for "statin") carries that name in
@@ -368,6 +393,13 @@ def run(kb, args):
         if m is None:
             return None, f"No mechanism group {args.gid}."
         return m, f"group {m['group_id']}  [{', '.join(m['categories']) or 'no category'}]\n{m['text'] or '(sentinel: pairs listed without a mechanism description)'}"
+    if args.cmd == "coverage":
+        cov = kb.coverage()
+        lines = ["| ATC | Group | Drugs | Interaction rows | In DDInter's bulk downloads |", "|---|---|---|---|---|"]
+        for g in cov["groups"]:
+            lines.append(f"| {g['atc']} | {g['group']} | {g['drugs']:,} | {g['interaction_rows']:,} | {'yes' if g['in_bulk_downloads'] else 'no'} |")
+        lines.append(f"\nA row counts toward every group either drug belongs to. {cov['drugs_without_atc']} drugs carry no ATC code.")
+        return cov, "\n".join(lines)
     if args.cmd == "search":
         hits = kb.search(args.text)
         lines = [f"{d['name']:<40} rxcui:{d['rxcui'] or '-':<8} {d['id']:<14}"
@@ -393,6 +425,7 @@ def main(argv=None):
     sub.add_parser("conditions", help="a drug's disease interactions (DDInter drug-disease table)").add_argument("term")
     sub.add_parser("mechanism", help="a mechanism group's text and categories").add_argument("gid")
     sub.add_parser("search", help="drugs whose name contains text").add_argument("text")
+    sub.add_parser("coverage", help="drugs and interaction rows per ATC group (markdown table)")
     args = p.parse_args(argv)
 
     kb = KB.load(args.kb)

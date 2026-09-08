@@ -138,6 +138,29 @@ is not level-5, so the fix cannot regress through the pipeline.
 
 The 55.9% is measured at the ingredient level: a naive exact-RxCUI match reports only 23%, because CIEL maps concepts to product-level RxCUIs while this knowledge base is ingredient-level, so both sides must be reduced to their RxNorm ingredient before matching.
 
+### Coverage by ATC group
+
+DDInter's bulk downloads offer files for only eight of the fourteen ATC anatomical groups, leaving out cardiovascular, anti-infective, and nervous-system drugs among others. This knowledge base was assembled by walking DDInter's interaction groups instead, so every ATC group is covered. The table is the output of `python3 query_kb.py coverage`; regenerate it rather than editing it.
+
+| ATC | Group | Drugs | Interaction rows | In DDInter's bulk downloads |
+|---|---|---|---|---|
+| A | Alimentary tract and metabolism | 248 | 58,386 | yes |
+| B | Blood and blood forming organs | 117 | 18,563 | yes |
+| C | Cardiovascular system | 205 | 66,182 | no |
+| D | Dermatologicals | 189 | 31,880 | yes |
+| G | Genito-urinary system and sex hormones | 112 | 27,147 | no |
+| H | Systemic hormonal preparations | 61 | 15,625 | yes |
+| J | Anti-infectives for systemic use | 239 | 52,622 | no |
+| L | Antineoplastic and immunomodulating agents | 345 | 97,492 | yes |
+| M | Musculo-skeletal system | 65 | 18,996 | no |
+| N | Nervous system | 291 | 102,180 | no |
+| P | Antiparasitic products | 39 | 6,694 | yes |
+| R | Respiratory system | 145 | 32,050 | yes |
+| S | Sensory organs | 209 | 38,357 | no |
+| V | Various | 71 | 9,359 | yes |
+
+A row counts toward every group either drug belongs to. 444 drugs carry no ATC code (RxNorm publishes none for them), so they appear in no group here while still carrying their interactions.
+
 ## What it is not
 
 Being honest about the edges matters more here than in most data, because the consequences are clinical.

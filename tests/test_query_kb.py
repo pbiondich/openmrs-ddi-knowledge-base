@@ -93,6 +93,19 @@ class QueryKbTest(unittest.TestCase):
         self.assertEqual(len(self.kb.partners("warfarin")), prof["partners_total"])
         self.assertIn("Acetylsalicylic acid", [r["partner"]["name"] for r in major])
 
+    def test_coverage_includes_groups_missing_from_bulk_downloads(self):
+        cov = self.kb.coverage()
+        by = {g["atc"]: g for g in cov["groups"]}
+        self.assertEqual(sorted(by), sorted("ABCDGHJLMNPRSV"))
+        for letter in "CGJMNS":                       # absent from DDInter's downloads, present here
+            self.assertFalse(by[letter]["in_bulk_downloads"])
+            self.assertGreater(by[letter]["drugs"], 50, letter)
+            self.assertGreater(by[letter]["interaction_rows"], 10000, letter)
+        self.assertGreater(cov["drugs_without_atc"], 0)
+        r = self.run_cli("coverage")
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("| N | Nervous system |", r.stdout)
+
     def test_search(self):
         names = [d["name"] for d in self.kb.search("statin")]
         self.assertIn("Simvastatin", names)
