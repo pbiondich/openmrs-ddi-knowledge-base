@@ -25,7 +25,7 @@ Lactic"). Those are inferences, labelled as such, not DDInter pairwise ratings.
 Importable: from query_kb import KB; kb = KB.load(); kb.pair("warfarin", "aspirin").
 A pair with no record is a knowledge gap, never a clearance (see README).
 """
-import argparse, difflib, json, os, sys
+import argparse, difflib, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_KB = os.path.join(HERE, "out", "ddi_knowledge_base.json")
@@ -68,20 +68,46 @@ def condition_terms(name):
     return forms
 
 
+# A sentence establishes a causal chain only when it says the drug CAUSES or WORSENS the condition.
+# "Use with caution in patients with hypertension" names hypertension but is a precaution about
+# patients who already have it, which is the shared-precaution noise this deliberately excludes.
+# Measured on the full KB: dropping the causal test triples the derived pairs, and the extra ones are
+# dominated by exactly that phrasing.
+CAUSAL = re.compile(r"\b(cause[sd]?|causing|induce[sd]?|inducing|associated with|risk of|result(?:s|ed)? in"
+                    r"|precipitat\w+|exacerbat\w+|worsen\w*|aggravat\w+|produce[sd]?|lead(?:s|ing)? to"
+                    r"|develop(?:ment)? of|(?:been|were|was) reported)\b")   # "have been reported with", not "in reported cases"
+PRECAUTION = re.compile(r"\b(patients? with|history of|pre-?existing|underlying|susceptible"
+                        r"|caution(?:ed|ary|sly)? in|contraindicated in|compromised|impair(?:ed|ment))\b")
+_SENTENCES = re.compile(r"(?<=[.;])\s+")
+
+
+def _condition_pattern(name):
+    terms = sorted(condition_terms(name), key=len, reverse=True)
+    return re.compile(r"\b(?:" + "|".join(re.escape(t) for t in terms) + r")\b")   # whole words: "tics" is not in "antibiotics"
+
+
+def names_as_caused(text, condition):
+    """True when some sentence of a drug-disease text says the drug causes or worsens the condition."""
+    pat = _condition_pattern(condition)
+    for sentence in _SENTENCES.split((text or "").lower()):
+        if pat.search(sentence) and CAUSAL.search(sentence) and not PRECAUTION.search(sentence):
+            return True
+    return False
+
+
 def condition_link(ra, rb):
-    """Why two drug-disease rows form a causal chain, or None: one row's text names the OTHER row's
-    condition (stavudine's "Liver Diseases" text names lactic acidosis; metformin is rated for
-    "Acidosis, Lactic"). Two rows about the same condition are deliberately not a link: 667 drugs
-    carry a "Kidney Diseases" row, so "both rated for it" would fire on most pairs and says only that
-    each drug needs care in that condition, which `conditions` already reports per drug.
-    Returns (condition, basis)."""
-    ta, tb = condition_terms(ra["condition"]), condition_terms(rb["condition"])
-    if ta & tb:
+    """Why two drug-disease rows form a causal chain, or None: one row's text says its drug causes
+    the OTHER row's condition (stavudine's "Liver Diseases" text: hepatotoxicity including lactic
+    acidosis is associated with NRTIs; metformin is rated Major for "Acidosis, Lactic"). Two rows
+    about the same condition are deliberately not a link: 667 drugs carry a "Kidney Diseases" row, so
+    "both rated for it" would fire on most pairs and says only that each drug needs care in that
+    condition, which `conditions` already reports per drug. Returns (condition, basis)."""
+    if condition_terms(ra["condition"]) & condition_terms(rb["condition"]):
         return None
-    if any(t in (ra["text"] or "").lower() for t in tb):
-        return rb["condition"], f"{ra['drug']['name']}'s \"{ra['condition']}\" text names this condition"
-    if any(t in (rb["text"] or "").lower() for t in ta):
-        return ra["condition"], f"{rb['drug']['name']}'s \"{rb['condition']}\" text names this condition"
+    if names_as_caused(ra["text"], rb["condition"]):
+        return rb["condition"], f"{ra['drug']['name']}'s \"{ra['condition']}\" text says it causes this condition"
+    if names_as_caused(rb["text"], ra["condition"]):
+        return ra["condition"], f"{rb['drug']['name']}'s \"{rb['condition']}\" text says it causes this condition"
     return None
 
 
@@ -203,14 +229,19 @@ class KB:
         return out
 
     def _derived_for(self, a, b):
-        out = []
-        for ra in self._conditions_for(a):
+        out, seen = [], set()
+        for ra in self._conditions_for(a):          # most severe first, so the first hit per chain wins
             for rb in self._conditions_for(b):
                 link = condition_link(ra, rb)
-                if link:
-                    out.append({"drug_a": brief(a), "drug_b": brief(b), "condition": link[0], "basis": link[1],
-                                "a": {k: ra[k] for k in ("condition", "severity", "text")},
-                                "b": {k: rb[k] for k in ("condition", "severity", "text")}})
+                if not link:
+                    continue
+                key = (link[0], ra["condition"], rb["condition"])   # a drug rated twice for one condition is one chain
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append({"drug_a": brief(a), "drug_b": brief(b), "condition": link[0], "basis": link[1],
+                            "a": {k: ra[k] for k in ("condition", "severity", "text")},
+                            "b": {k: rb[k] for k in ("condition", "severity", "text")}})
         return out
 
     def derived(self, term_a, term_b):

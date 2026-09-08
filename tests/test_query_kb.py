@@ -9,7 +9,7 @@ import json, os, subprocess, sys, unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-from query_kb import KB, Unresolved, Ambiguous, SEVERITIES, condition_terms  # noqa: E402
+from query_kb import KB, Unresolved, Ambiguous, SEVERITIES, condition_terms, names_as_caused  # noqa: E402
 
 SCRIPT = os.path.join(ROOT, "query_kb.py")
 
@@ -150,6 +150,18 @@ class QueryKbTest(unittest.TestCase):
     def test_condition_terms(self):
         self.assertIn("lactic acidosis", condition_terms("Acidosis, Lactic"))
         self.assertIn("liver disease", condition_terms("Liver Diseases"))
+
+    def test_names_as_caused_requires_whole_word_and_causal_sentence(self):
+        self.assertTrue(names_as_caused("Hepatotoxicity including lactic acidosis has been associated with NRTIs.", "Acidosis, Lactic"))
+        self.assertTrue(names_as_caused("These agents may cause hypertension.", "Hypertension"))
+        self.assertFalse(names_as_caused("Therapy with antibiotics should be monitored.", "Tics"))            # substring, not a word
+        self.assertFalse(names_as_caused("Use with caution in patients with hypertension.", "Hypertension"))  # precaution, not causation
+        self.assertFalse(names_as_caused("Hypertension is common. The drug is well tolerated.", "Hypertension"))  # no causal cue
+        self.assertFalse(names_as_caused(None, "Hypertension"))
+
+    def test_derived_excludes_shared_precautions(self):
+        # warfarin and aspirin both carry Kidney Diseases and Liver Diseases rows; that is not a chain
+        self.assertEqual(self.kb.derived("warfarin", "aspirin"), [])
 
     # --- command line ---
     def run_cli(self, *args):
