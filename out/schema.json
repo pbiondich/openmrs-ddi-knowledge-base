@@ -4,7 +4,7 @@
   "title": "OpenMRS DDI Knowledge Base (normalized)",
   "description": "The drug interaction knowledge base. Normalized tables joined by id: mechanisms (stored once), drugs, drug-drug interaction rows that reference both, and DDInter's drug-disease rows (disease_interactions) with their descriptions interned once in disease_notes.",
   "type": "object",
-  "required": ["metadata", "mechanisms", "drugs", "interactions", "disease_notes", "disease_interactions"],
+  "required": ["metadata", "mechanisms", "drugs", "interactions", "disease_notes", "disease_interactions", "derived_interactions"],
   "properties": {
     "metadata": {
       "type": "object",
@@ -102,6 +102,25 @@
           {"type": "string", "description": "condition name"},
           {"enum": ["Major", "Moderate", "Minor", "Unknown"]},
           {"type": "string", "description": "note id -> disease_notes"}
+        ]
+      }
+    },
+    "derived_interactions": {
+      "type": "array",
+      "description": "AN INFERENCE TIER, NOT DDINTER RATINGS. One row per directional chain: a sentence in the cause drug's drug-disease text says it causes or worsens a condition (whole-word match, causal cue, no precaution phrasing), and the rated drug carries a drug-disease row for that condition. Rows: [cause_drug_id, cause_condition, cause_severity, cause_note_id, rated_drug_id, condition, rated_severity, rated_note_id]. Join drug ids -> drugs[].id and note ids -> disease_notes{}. Consumers must present these as derived, below DDInter's pairwise ratings, and never assign the pair a severity of their own.",
+      "items": {
+        "type": "array",
+        "minItems": 8,
+        "maxItems": 8,
+        "prefixItems": [
+          {"type": "string", "description": "cause drug id"},
+          {"type": "string", "description": "the cause drug's own condition row whose text names the condition"},
+          {"enum": ["Major", "Moderate", "Minor", "Unknown"], "description": "severity of that cause row"},
+          {"type": "string", "description": "cause row's note id -> disease_notes"},
+          {"type": "string", "description": "rated drug id"},
+          {"type": "string", "description": "the condition linking the two"},
+          {"enum": ["Major", "Moderate", "Minor", "Unknown"], "description": "the rated drug's severity for the condition"},
+          {"type": "string", "description": "rated row's note id -> disease_notes"}
         ]
       }
     }

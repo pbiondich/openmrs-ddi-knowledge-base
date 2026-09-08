@@ -159,6 +159,36 @@ class QueryKbTest(unittest.TestCase):
         self.assertFalse(names_as_caused("Hypertension is common. The drug is well tolerated.", "Hypertension"))  # no causal cue
         self.assertFalse(names_as_caused(None, "Hypertension"))
 
+    def test_derived_table_is_present_and_joins(self):
+        kb = self.kb
+        self.assertIsNotNone(kb.derived_rows, "build_kb.py should materialize the derived tier")
+        self.assertGreater(len(kb.derived_rows), 50000)
+        rated = {(d, c) for d, rows in kb.conditions_of.items() for c, _, _ in rows}
+        for cause, ccond, csev, cnote, rated_id, cond, rsev, rnote in kb.derived_rows:
+            self.assertIn(cause, kb.by_id); self.assertIn(rated_id, kb.by_id)
+            self.assertNotEqual(cause, rated_id)
+            self.assertIn((cause, ccond), rated, "cause row must be one of the cause drug's own rows")
+            self.assertIn((rated_id, cond), rated, "rated drug must actually be rated for the condition")
+            self.assertIn(csev, SEVERITIES); self.assertIn(rsev, SEVERITIES)
+            self.assertIn(cnote, kb.disease_notes); self.assertIn(rnote, kb.disease_notes)
+        self.assertIn(("DDInter1710", "DDInter1164"), kb.derived_of)          # stavudine -> metformin
+
+    def test_derived_table_matches_the_matcher(self):
+        """The shipped table and the on-the-fly matcher must agree, or a consumer reading the KB and a
+        user of query_kb.py would see different findings for the same pair."""
+        import random
+        kb = self.kb
+        random.seed(11)
+        with_rows = [kb.by_id[d] for d in kb.conditions_of]
+        sample = [(kb.by_id[r[0]], kb.by_id[r[4]]) for r in random.sample(kb.derived_rows, 40)]
+        sample += [(random.choice(with_rows), random.choice(with_rows)) for _ in range(40)]
+        for a, b in sample:
+            if a["id"] == b["id"]:
+                continue
+            table = {(r["condition"], r["a"]["condition"], r["b"]["condition"]) for r in kb._derived_for(a, b)}
+            computed = {(r["condition"], r["a"]["condition"], r["b"]["condition"]) for r in kb._derived_compute(a, b)}
+            self.assertEqual(table, computed, (a["name"], b["name"]))
+
     def test_derived_excludes_shared_precautions(self):
         # warfarin and aspirin both carry Kidney Diseases and Liver Diseases rows; that is not a chain
         self.assertEqual(self.kb.derived("warfarin", "aspirin"), [])

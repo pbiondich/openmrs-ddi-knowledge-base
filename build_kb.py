@@ -14,6 +14,7 @@ Pipeline:
   5. CIEL bridge          src/ciel_crosswalk.json (ingredient-level match)
   6. ATC                  src/atc_cache.jsonl (pre-derived from RxNorm, level-5)
   7. drug-disease rows    src/disease_interactions.jsonl (DDInter's drug-disease table)
+  8. derived tier         condition-mediated chains inferred from step 7 (query_kb.py's matcher)
 
 Usage: python3 build_kb.py [--check]   (--check verifies against the committed file)
 """
@@ -131,17 +132,51 @@ if bad_sev:
     print("BUILD FAILED: drug-disease rows carry a severity outside the DDInter scale:", bad_sev)
     sys.exit(1)
 
+# --- 8. derived tier: one drug's text says it causes a condition another drug is rated for ---
+# An inference over the drug-disease rows (stavudine's "Liver Diseases" text: lactic acidosis is
+# associated with NRTIs; metformin is rated Major for "Acidosis, Lactic"), kept in its own table so it
+# can never be mistaken for a DDInter pairwise rating. The matcher is query_kb.py's, imported rather
+# than copied, so the shipped table and the query tool cannot disagree. One row per directional chain
+# (cause drug, rated drug, condition); a drug rated twice for one condition contributes its most
+# severe row, and a drug whose several rows name the condition contributes its most severe.
+from query_kb import condition_terms, names_as_caused, RANK
+drug_pos = {d["id"]: i for i, d in enumerate(drugs)}
+most_severe = {}                                   # (drug, condition) -> (severity, note)
+for did, cond, sev, nid in disease_rows:
+    if (did, cond) not in most_severe or RANK[sev] < RANK[most_severe[(did, cond)][0]]:
+        most_severe[(did, cond)] = (sev, nid)
+rated_for = {}                                     # condition -> [(drug, severity, note)]
+for (did, cond), (sev, nid) in most_severe.items():
+    rated_for.setdefault(cond, []).append((did, sev, nid))
+derived, seen = [], set()
+for did, cond, sev, nid in sorted(disease_rows, key=lambda r: (drug_pos[r[0]], RANK[r[2]], r[1])):
+    text, own = disease_notes[nid]["text"], condition_terms(cond)
+    for c2, targets in rated_for.items():
+        if c2 == cond or (condition_terms(c2) & own) or not names_as_caused(text, c2):
+            continue
+        for b, bsev, bnid in targets:
+            if b != did and (did, b, c2) not in seen:
+                seen.add((did, b, c2))
+                derived.append([did, cond, sev, nid, b, c2, bsev, bnid])
+derived.sort(key=lambda r: (drug_pos[r[0]], drug_pos[r[4]], r[5]))
+
 kb = {
     "metadata": {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "title": "OpenMRS DDI knowledge base (normalized)",
         "source": {"name": "DDInter 2.0", "url": "https://ddinter2.scbdd.com/",
                    "tables": "drug-drug interactions; drug-disease interactions",
                    "normalization": "RxNorm (NLM)", "bridge": "CIEL v2026-07-20"},
         "shape": {"drugs": len(drugs), "mechanisms": len(mechanisms), "interactions": len(interactions),
-                  "disease_notes": len(disease_notes), "disease_interactions": len(disease_rows)},
+                  "disease_notes": len(disease_notes), "disease_interactions": len(disease_rows),
+                  "derived_interactions": len(derived)},
         "format": {"interactions": "[drug_a_id, drug_b_id, severity, group_id]",
                    "disease_interactions": "[drug_id, condition, severity, note_id]",
+                   "derived_interactions": "[cause_drug_id, cause_condition, cause_severity, cause_note_id, "
+                                           "rated_drug_id, condition, rated_severity, rated_note_id]",
+                   "derived_note": "An inference tier, not DDInter ratings: a causal sentence in the cause drug's "
+                                   "drug-disease text names the condition the rated drug is rated for. Label it as "
+                                   "derived wherever it is shown.",
                    "note": "Reproducible build from src/ via build_kb.py; clinician decisions in src/curation.json."},
     },
     "mechanisms": mechanisms,
@@ -149,12 +184,13 @@ kb = {
     "interactions": interactions,
     "disease_notes": disease_notes,
     "disease_interactions": disease_rows,
+    "derived_interactions": derived,
 }
 
 if "--check" in sys.argv:
     cur = json.load(open("out/ddi_knowledge_base.json"))
     ok = True
-    for key in ("drugs", "mechanisms", "interactions", "disease_notes", "disease_interactions"):
+    for key in ("drugs", "mechanisms", "interactions", "disease_notes", "disease_interactions", "derived_interactions"):
         if kb[key] != cur.get(key):
             ok = False
             if key == "drugs":
@@ -185,4 +221,4 @@ sample = [{"drug_a": {"id": a, "name": by_id[a]["name"], "rxcui": by_id[a]["rxcu
 json.dump({"note": "Illustrative reconstructed rows from ddi_knowledge_base.json.", "interactions": sample},
           open("out/sample.json", "w"), ensure_ascii=False, indent=2)
 print(f"built out/ddi_knowledge_base.json  drugs {len(drugs)} | mechanisms {len(mechanisms)} | interactions {len(interactions)}"
-      f" | disease rows {len(disease_rows)} ({len(disease_notes)} notes)")
+      f" | disease rows {len(disease_rows)} ({len(disease_notes)} notes) | derived chains {len(derived)}")
