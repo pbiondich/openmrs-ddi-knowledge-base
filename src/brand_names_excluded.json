@@ -268,7 +268,7 @@
    ]
   },
   "Dotti": {
-   "reason": "a first name",
+   "reason": "listed in src/curation.json brand_exclusions",
    "rxcuis": [
     "4083"
    ]
@@ -312,7 +312,7 @@
    ]
   },
   "Ella": {
-   "reason": "a first name",
+   "reason": "listed in src/curation.json brand_exclusions",
    "rxcuis": [
     "1005921"
    ]
@@ -603,7 +603,7 @@
    ]
   },
   "Kirsty": {
-   "reason": "a first name",
+   "reason": "listed in src/curation.json brand_exclusions",
    "rxcuis": [
     "51428"
    ]
@@ -836,7 +836,7 @@
    ]
   },
   "Propel": {
-   "reason": "a first name",
+   "reason": "listed in src/curation.json brand_exclusions",
    "rxcuis": [
     "108118"
    ]
@@ -1061,7 +1061,7 @@
    ]
   },
   "Stye": {
-   "reason": "a first name",
+   "reason": "listed in src/curation.json brand_exclusions",
    "rxcuis": [
     "6972"
    ]

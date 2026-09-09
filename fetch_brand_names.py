@@ -43,10 +43,12 @@ def load_words(path, keep):
     return {w.strip() for w in open(path, encoding="utf-8", errors="ignore") if w.strip() and keep(w.strip())}
 common = {w.lower() for w in load_words(WORDS, lambda w: w[0].islower())}      # ordinary words only
 first_names = {w.lower() for w in load_words(NAMES, lambda w: True)}
-first_names |= {b.lower() for b in json.load(open("src/curation.json")).get("brand_exclusions", {}).get("brands", [])}
+curated = {b.lower() for b in json.load(open("src/curation.json")).get("brand_exclusions", {}).get("brands", [])}
 
 def exclusion_reason(brand):
     words = re.findall(r"[A-Za-z]+", brand)
+    if brand.lower() in curated:
+        return "listed in src/curation.json brand_exclusions"
     if len(brand) <= 3:
         return "three characters or fewer"
     if words and all(w.lower() in common for w in words):
