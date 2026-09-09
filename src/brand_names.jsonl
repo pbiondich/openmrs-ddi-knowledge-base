@@ -85,7 +85,7 @@
 {"rxcui": "10805", "brand_names": []}
 {"rxcui": "108088", "brand_names": []}
 {"rxcui": "10811", "brand_names": []}
-{"rxcui": "108118", "brand_names": ["Asmanex", "Dulera", "Klentz", "Mometamax", "Mometamax Single", "Mometavet", "Motazol", "Nasonex", "Posatex", "Propel", "Ryaltris", "Simplera", "Sinuva"]}
+{"rxcui": "108118", "brand_names": ["Asmanex", "Dulera", "Klentz", "Mometamax", "Mometamax Single", "Mometavet", "Motazol", "Nasonex", "Posatex", "Ryaltris", "Simplera", "Sinuva"]}
 {"rxcui": "10814", "brand_names": ["Cytomel", "Liomny", "Thyrolar"]}
 {"rxcui": "10824", "brand_names": []}
 {"rxcui": "10825", "brand_names": ["Cortamine", "Temaril-P"]}
@@ -1741,7 +1741,7 @@
 {"rxcui": "69634", "brand_names": ["Leukine"]}
 {"rxcui": "6964", "brand_names": ["Korlym", "Mifeprex"]}
 {"rxcui": "69646", "brand_names": []}
-{"rxcui": "6972", "brand_names": ["Altalube", "Kondremul Plain", "Lubrifresh P.M.", "Moisture Eyes PM", "RectiCare Advance Cream", "Stye", "Tears Naturale PM"]}
+{"rxcui": "6972", "brand_names": ["Altalube", "Kondremul Plain", "Lubrifresh P.M.", "Moisture Eyes PM", "RectiCare Advance Cream", "Tears Naturale PM"]}
 {"rxcui": "69722", "brand_names": ["Relenza"]}
 {"rxcui": "69749", "brand_names": ["Byvalson", "Diovan", "Diovan HCT", "Entresto", "Exforge", "Exforge HCT"]}
 {"rxcui": "6980", "brand_names": ["Amzeeq", "Arestin", "Cleeravue-M", "Emrosi", "Minocin", "Minolira", "Solodyn", "Ximino", "Zilxi"]}

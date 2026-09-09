@@ -3,8 +3,8 @@
   "reviewed_by": "clinician (physician-informatician)",
   "date": "2026-07-21",
   "brand_exclusions": {
-    "description": "Brand names fetch_brand_names.py drops beyond its dictionary rule (a brand of three characters or fewer, one whose every word is an ordinary dictionary word, or one that is a first name in the system proper-names list). These are first names the proper-names list does not carry; as an alias, a first name in a question ('Ella is asking about ibuprofen') would resolve a drug nobody named. Added 2026-09-08, open to review.",
-    "brands": ["Ella", "Kirsty", "Dotti"]
+    "description": "Brand names fetch_brand_names.py drops beyond its dictionary rule (a brand of three characters or fewer, one whose every word is an ordinary dictionary word, or one that is a first name in the system proper-names list). Ella, Kirsty and Dotti are first names the proper-names list does not carry; as an alias, a first name in a question ('Ella is asking about ibuprofen') would resolve a drug nobody named. Stye (a mineral-oil eye ointment) and Propel (mometasone) are ordinary clinical words the dictionary lacks (it carries 'sty' and 'propeller'); measured live by dkayiwa on openmrs-module-chartsearchai#392, 'the patient has a stye' resolved mineral oil and raised a laxative interaction finding. Added 2026-09-08 and 2026-09-09, open to review.",
+    "brands": ["Ella", "Kirsty", "Dotti", "Stye", "Propel"]
   },
   "overrides": [
     {

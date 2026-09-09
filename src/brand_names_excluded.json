@@ -1,7 +1,7 @@
 {
  "description": "Brand names fetch_brand_names.py fetched from RxNorm and dropped, with the rule each fell to and the ingredient rxcuis it was fetched under. Kept beside src/brand_names.jsonl so the exclusion is inspectable and reversible (--refilter).",
  "dictionary": "macOS /usr/share/dict/words (web2, lower-case entries) and /usr/share/dict/propernames, plus src/curation.json brand_exclusions",
- "count": 203,
+ "count": 205,
  "excluded": {
   "Acid Gone": {
    "reason": "every word is an ordinary dictionary word",
@@ -835,6 +835,12 @@
     "1378"
    ]
   },
+  "Propel": {
+   "reason": "a first name",
+   "rxcuis": [
+    "108118"
+   ]
+  },
   "Pur-Oxy": {
    "reason": "every word is an ordinary dictionary word",
    "rxcuis": [
@@ -1052,6 +1058,12 @@
    "reason": "every word is an ordinary dictionary word",
    "rxcuis": [
     "1399"
+   ]
+  },
+  "Stye": {
+   "reason": "a first name",
+   "rxcuis": [
+    "6972"
    ]
   },
   "Suffusion": {
