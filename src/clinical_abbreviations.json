@@ -1,0 +1,104 @@
+{
+ "note": "Curated clinical abbreviations for single-ingredient drugs, as clinicians write them in questions and notes (chartsearchai: 'Can I give her TDF?' resolved to nothing). Keyed by the ingredient RxCUI, as international_names is, so every row of the substance carries them. Listed one by one, only where the abbreviation names that one substance in clinical use and is not also an ordinary word or a common clinical acronym: left out are ddI (didanosine) because 'DDI' is the abbreviation for a drug-drug interaction and aliases are matched case-insensitively against prose, ABC (abacavir; airway-breathing-circulation), ASA (aspirin; the anaesthesia physical-status class), CTX (co-trimoxazole and ceftriaxone both), RIF/RMP and EMB (rifampicin, ethambutol; ambiguous in prose), LPV/r (a combination). This departs from the brand-name rule that excludes names of three characters or fewer: that rule guards against brands that are short words, and each abbreviation here is a drug-only token checked by hand. build_kb.py fails if an entry no longer matches its RxCUI and RxNorm name, or if an abbreviation is already an alias of any drug.",
+ "entries": [
+  {
+   "rxcui": "300195",
+   "rxnorm_name": "tenofovir disoproxil",
+   "abbreviations": [
+    "TDF"
+   ]
+  },
+  {
+   "rxcui": "1721603",
+   "rxnorm_name": "tenofovir alafenamide",
+   "abbreviations": [
+    "TAF"
+   ]
+  },
+  {
+   "rxcui": "276237",
+   "rxnorm_name": "emtricitabine",
+   "abbreviations": [
+    "FTC"
+   ]
+  },
+  {
+   "rxcui": "68244",
+   "rxnorm_name": "lamivudine",
+   "abbreviations": [
+    "3TC"
+   ]
+  },
+  {
+   "rxcui": "11413",
+   "rxnorm_name": "zidovudine",
+   "abbreviations": [
+    "AZT",
+    "ZDV"
+   ]
+  },
+  {
+   "rxcui": "59763",
+   "rxnorm_name": "stavudine",
+   "abbreviations": [
+    "d4T"
+   ]
+  },
+  {
+   "rxcui": "195085",
+   "rxnorm_name": "efavirenz",
+   "abbreviations": [
+    "EFV"
+   ]
+  },
+  {
+   "rxcui": "53654",
+   "rxnorm_name": "nevirapine",
+   "abbreviations": [
+    "NVP"
+   ]
+  },
+  {
+   "rxcui": "1433868",
+   "rxnorm_name": "dolutegravir",
+   "abbreviations": [
+    "DTG"
+   ]
+  },
+  {
+   "rxcui": "6038",
+   "rxnorm_name": "isoniazid",
+   "abbreviations": [
+    "INH"
+   ]
+  },
+  {
+   "rxcui": "8987",
+   "rxnorm_name": "pyrazinamide",
+   "abbreviations": [
+    "PZA"
+   ]
+  },
+  {
+   "rxcui": "6851",
+   "rxnorm_name": "methotrexate",
+   "abbreviations": [
+    "MTX"
+   ]
+  },
+  {
+   "rxcui": "161",
+   "rxnorm_name": "acetaminophen",
+   "abbreviations": [
+    "APAP"
+   ]
+  },
+  {
+   "rxcui": "5487",
+   "rxnorm_name": "hydrochlorothiazide",
+   "abbreviations": [
+    "HCTZ"
+   ]
+  }
+ ]
+}

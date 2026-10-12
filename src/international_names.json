@@ -1,0 +1,181 @@
+{
+ "note": "Curated international (WHO INN, or the older British Approved Name still in clinical use) names for drugs whose knowledge-base names are the US ones (issue #8). Keyed by the ingredient RxCUI, as brand_names is, so every row of the substance carries them. A name is listed only where it is a drug name and not an ordinary word or a lab-test name (so 'thyroxine' is left out, and scopolamine is named 'Hyoscine hydrobromide' and never bare 'Hyoscine', which most often means hyoscine butylbromide, a different drug), and only for a single substance (so co-trimoxazole is left out). Chlorphenamine is left out while issue #6 stands: the Chlorpheniramine row carries chlorine's RxCUI. build_kb.py fails if an entry's RxCUI or name does not match the built drugs, or if a name is already an alias of any drug.",
+ "entries": [
+  {
+   "rxcui": "161",
+   "rxnorm_name": "acetaminophen",
+   "international_names": [
+    "Paracetamol"
+   ]
+  },
+  {
+   "rxcui": "281",
+   "rxnorm_name": "acyclovir",
+   "international_names": [
+    "Aciclovir"
+   ]
+  },
+  {
+   "rxcui": "723",
+   "rxnorm_name": "amoxicillin",
+   "international_names": [
+    "Amoxycillin"
+   ]
+  },
+  {
+   "rxcui": "1347",
+   "rxnorm_name": "beclomethasone",
+   "international_names": [
+    "Beclometasone"
+   ]
+  },
+  {
+   "rxcui": "1369",
+   "rxnorm_name": "bendroflumethiazide",
+   "international_names": [
+    "Bendrofluazide"
+   ]
+  },
+  {
+   "rxcui": "1828",
+   "rxnorm_name": "busulfan",
+   "international_names": [
+    "Busulphan"
+   ]
+  },
+  {
+   "rxcui": "2231",
+   "rxnorm_name": "cephalexin",
+   "international_names": [
+    "Cefalexin"
+   ]
+  },
+  {
+   "rxcui": "2447",
+   "rxnorm_name": "cholestyramine resin",
+   "international_names": [
+    "Colestyramine"
+   ]
+  },
+  {
+   "rxcui": "42612",
+   "rxnorm_name": "cromolyn",
+   "international_names": [
+    "Sodium cromoglicate",
+    "Sodium cromoglycate"
+   ]
+  },
+  {
+   "rxcui": "3008",
+   "rxnorm_name": "cyclosporine",
+   "international_names": [
+    "Ciclosporin"
+   ]
+  },
+  {
+   "rxcui": "3361",
+   "rxnorm_name": "dicyclomine",
+   "international_names": [
+    "Dicycloverine"
+   ]
+  },
+  {
+   "rxcui": "3992",
+   "rxnorm_name": "epinephrine",
+   "international_names": [
+    "Adrenaline"
+   ]
+  },
+  {
+   "rxcui": "4083",
+   "rxnorm_name": "estradiol",
+   "international_names": [
+    "Oestradiol"
+   ]
+  },
+  {
+   "rxcui": "4603",
+   "rxnorm_name": "furosemide",
+   "international_names": [
+    "Frusemide"
+   ]
+  },
+  {
+   "rxcui": "4815",
+   "rxnorm_name": "glyburide",
+   "international_names": [
+    "Glibenclamide"
+   ]
+  },
+  {
+   "rxcui": "6387",
+   "rxnorm_name": "lidocaine",
+   "international_names": [
+    "Lignocaine"
+   ]
+  },
+  {
+   "rxcui": "6754",
+   "rxnorm_name": "meperidine",
+   "international_names": [
+    "Pethidine"
+   ]
+  },
+  {
+   "rxcui": "6835",
+   "rxnorm_name": "methimazole",
+   "international_names": [
+    "Thiamazole"
+   ]
+  },
+  {
+   "rxcui": "4917",
+   "rxnorm_name": "nitroglycerin",
+   "international_names": [
+    "Glyceryl trinitrate"
+   ]
+  },
+  {
+   "rxcui": "7512",
+   "rxnorm_name": "norepinephrine",
+   "international_names": [
+    "Noradrenaline"
+   ]
+  },
+  {
+   "rxcui": "8134",
+   "rxnorm_name": "phenobarbital",
+   "international_names": [
+    "Phenobarbitone"
+   ]
+  },
+  {
+   "rxcui": "9601",
+   "rxnorm_name": "scopolamine",
+   "international_names": [
+    "Hyoscine hydrobromide"
+   ]
+  },
+  {
+   "rxcui": "9624",
+   "rxnorm_name": "secobarbital",
+   "international_names": [
+    "Quinalbarbitone"
+   ]
+  },
+  {
+   "rxcui": "9524",
+   "rxnorm_name": "sulfasalazine",
+   "international_names": [
+    "Sulphasalazine"
+   ]
+  },
+  {
+   "rxcui": "10811",
+   "rxnorm_name": "trihexyphenidyl",
+   "international_names": [
+    "Benzhexol"
+   ]
+  }
+ ]
+}

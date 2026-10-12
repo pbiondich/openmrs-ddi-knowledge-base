@@ -29,6 +29,8 @@ def aliases(d):
     if d.get("rxnorm_name"):
         al.append(d["rxnorm_name"])
     al.extend(d.get("brand_names", []))        # clinicians ask in brand names (issue #5)
+    al.extend(d.get("international_names", []))  # ... and in international names (issue #8)
+    al.extend(d.get("abbreviations", []))        # ... and in clinical abbreviations (TDF, 3TC, INH)
     for c in d.get("ciel", []):
         if c.get("name"):
             al.append(c["name"])
