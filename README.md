@@ -32,7 +32,7 @@ The governing rule for all of these: when a drug or a pair is not in the knowled
 | `out/schema.json` | JSON Schema (draft 2020-12) for the knowledge base JSON. |
 | `out/sample.json` | A few reconstructed interaction rows for quick inspection. |
 | `out/ciel_index.json` | Reverse lookup for module use: a patient's CIEL concept UUID maps to the KB drug(s) to check. |
-| `out/ciel_ddinter_coverage_summary.json` | Aggregate CIEL-to-DDInter coverage. |
+| `out/ciel_ddinter_coverage_summary.json` | Historical CIEL-to-DDInter coverage snapshot (2026-07-21); the rebuilt `ciel_index.json` records the current covered-concept count. |
 | `out/rxcui_review.json` | Human-readable record of the RxNorm canonicalization and clinician curation review. |
 | `query_kb.py` | Command-line and importable query tool over the knowledge base (see "Asking it questions"). `tests/` exercises it against the built file. |
 | `fetch_disease_interactions.py` | The network step that refreshes `src/disease_interactions.jsonl` from DDInter's per-drug drug-disease endpoint (the table is not in DDInter's bulk downloads). |
@@ -109,6 +109,11 @@ Three public sources, layered so each does the job it is best at:
 
 No step requires an implementer to curate drug data by hand, and the build is reproducible and offline. The committed `src/` inputs hold the facts fetched once from DDInter, RxNorm, RxClass, and CIEL, together with the clinician decisions captured as explicit data (`src/curation.json`: 5 separations, 4 remaps, 28 gaps). `build_kb.py` deterministically assembles `ddi_knowledge_base.json` from those inputs: RxNorm base match, canonicalization to the single-ingredient (`IN`) concept, the clinician overrides, the CIEL ingredient-level bridge, and ATC. Because the human decisions are data rather than re-derived, the build reproduces the exact curated knowledge base — confirm with `python3 build_kb.py --check`. Only the one-time acquisition of `src/` (the network fetches from those four sources) lives outside the repo, in the git history.
 
+Three incorrect frozen RxNorm ingredient identities were corrected using NLM
+source records; their ATC and brand-name cache entries were populated at the
+same time. See [the source provenance and CIEL bridge corrections](docs/RXNORM-CORRECTIONS.md).
+These corrections do not change the existing clinician-review history.
+
 ### Reproducing the build
 
 ```
@@ -132,6 +137,11 @@ and a level-4 code silently fires a false duplicate-therapy warning on the
 patient's own drug. `build_kb.py` enforces this: the build fails if any ATC code
 is not level-5, so the fix cannot regress through the pipeline.
 
+Every resolved ingredient must also have an entry in both the ATC and brand-name
+caches. A missing entry fails the build; an explicit empty list is valid when
+the source returned no data. This prevents a corrected ingredient mapping from
+silently losing its enrichment.
+
 ## Coverage
 
 | Dimension | Figure |
@@ -144,9 +154,9 @@ is not level-5, so the fix cannot regress through the pipeline.
 | Derived tier | 111,138 chains linking 97,493 drug pairs through 185 conditions (923 cause drugs, 1,318 rated drugs) |
 | Derived tier vs DDInter's pairwise rows | 65,406 of those pairs DDInter does not list; 5,021 it rates `Unknown`; 27,066 it already rates |
 | RxNorm normalization | 2,255 / 2,283 drugs to a current ingredient RxCUI (28 obsolete, low-relevance concepts left as explicit gaps) |
-| Brand names | 1,642 / 2,283 drugs (71.9%) carry at least one RxNorm brand name; 3,863 distinct brands, 6,760 links, after 203 exclusions (`src/brand_names_excluded.json`) |
-| CIEL bridge | 1,986 / 2,283 KB drugs (87%) carry a CIEL concept |
-| CIEL formulary overlap | 4,258 of 7,615 RxNorm-mapped CIEL drugs (55.9%) have interaction data |
+| Brand names | 1,645 / 2,283 drugs (72.1%) carry at least one RxNorm brand name; 3,864 distinct brands, 6,799 links, after 206 exclusions (`src/brand_names_excluded.json`) |
+| CIEL bridge | 1,987 / 2,283 KB drugs (87%) carry a CIEL concept |
+| CIEL formulary overlap | 4,255 of 7,615 RxNorm-mapped CIEL drugs (55.9%) have interaction data |
 
 The 55.9% is measured at the ingredient level: a naive exact-RxCUI match reports only 23%, because CIEL maps concepts to product-level RxCUIs while this knowledge base is ingredient-level, so both sides must be reduced to their RxNorm ingredient before matching.
 
@@ -167,11 +177,11 @@ DDInter's bulk downloads offer files for only eight of the fourteen ATC anatomic
 | M | Musculo-skeletal system | 65 | 18,996 | no |
 | N | Nervous system | 291 | 102,180 | no |
 | P | Antiparasitic products | 39 | 6,694 | yes |
-| R | Respiratory system | 145 | 32,050 | yes |
+| R | Respiratory system | 146 | 32,390 | yes |
 | S | Sensory organs | 209 | 38,357 | no |
-| V | Various | 71 | 9,359 | yes |
+| V | Various | 72 | 9,364 | yes |
 
-A row counts toward every group either drug belongs to. 444 drugs carry no ATC code (RxNorm publishes none for them), so they appear in no group here while still carrying their interactions.
+A row counts toward every group either drug belongs to. 442 drugs carry no ATC code (RxNorm publishes none for them), so they appear in no group here while still carrying their interactions.
 
 ## What it is not
 

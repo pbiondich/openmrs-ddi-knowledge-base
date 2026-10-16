@@ -96,6 +96,15 @@ for d in drugs_raw:
         "ciel": ciel_for(rx),
     })
 
+# Missing fetch results are not the same as a source explicitly returning no data.
+# A new ingredient mapping must bring both enrichment caches with it (issue #6).
+for filename, cache in (("atc_cache.jsonl", atc), ("brand_names.jsonl", brands)):
+    missing = sorted({d["rxcui"] for d in drugs if d["rxcui"] and d["rxcui"] not in cache})
+    if missing:
+        print(f"BUILD FAILED: src/{filename} missing ingredient RxCUIs: {missing}")
+        print("  Fetch the missing entries; an explicit empty list is valid when the source returns no data.")
+        sys.exit(1)
+
 # --- invariant: ATC codes must be RxNorm level-5 substance codes (7 chars, e.g. C09AA03) ---
 # The chartsearchai validator's same-drug skip and order matcher key on level-5 codes; a level-4
 # subgroup (5 chars, e.g. C09AA) silently breaks them (false duplicate-therapy on the patient's

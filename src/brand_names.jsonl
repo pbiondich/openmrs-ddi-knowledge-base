@@ -23,6 +23,7 @@
 {"rxcui": "10173", "brand_names": []}
 {"rxcui": "10178", "brand_names": []}
 {"rxcui": "10179", "brand_names": []}
+{"rxcui": "10180", "brand_names": ["Bactrim", "Sulfatrim"]}
 {"rxcui": "10205", "brand_names": []}
 {"rxcui": "10207", "brand_names": []}
 {"rxcui": "10237", "brand_names": []}
@@ -824,6 +825,7 @@
 {"rxcui": "2396443", "brand_names": []}
 {"rxcui": "2397", "brand_names": []}
 {"rxcui": "2399", "brand_names": []}
+{"rxcui": "2400", "brand_names": ["Chlor-Trimeton", "Clorrelief", "Poly Hist PD", "Tussionex", "Tuxarin", "Ventuss", "Wal-finate", "Zodryl AC", "Zodryl DAC"]}
 {"rxcui": "2403", "brand_names": []}
 {"rxcui": "2404", "brand_names": []}
 {"rxcui": "2409", "brand_names": ["Edarbyclor", "Hemiclor", "Tenoretic", "Thalitone"]}
@@ -1703,6 +1705,7 @@
 {"rxcui": "683", "brand_names": ["Ameluz"]}
 {"rxcui": "6832", "brand_names": ["Cystex", "Hiprex", "Hyophen", "Phosphasal", "Urelle", "Uretron DS", "Urex", "Uribel", "Uribel Tabs", "Urimar Reformulated Oct 2013", "Urin DS", "Uro-Blue", "Urogesic Blue Reformulated Apr 2012", "Uroqid-Acid No.2", "Ustell", "Utira"]}
 {"rxcui": "6835", "brand_names": ["Felanorm", "Felimazole", "Reguzol"]}
+{"rxcui": "6837", "brand_names": ["Aminosyn 10%, Sulfite-Free", "Aminosyn 3.5 % M, Sulfite Free", "Aminosyn 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn 8.5%, Sulfite-Free", "Aminosyn II 10 %", "Aminosyn II 15%", "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free", "Aminosyn II 8.5 %, Sulfite-Free", "Aminosyn-HBC 7 %, Sulfite-Free", "Aminosyn-PF 10 %, Sulfite-Free", "Aminosyn-PF 7%", "Clinimix 4.25/10", "Clinimix 4.25/25", "Clinimix 4.25/5", "Clinimix 5/15", "Clinimix 5/20", "Clinimix 5/25", "Clinimix E 2.75/5", "Clinimix E 4.25/10", "Clinimix E 4.25/5", "Clinimix E 5/15", "Clinimix E 5/20", "Clinisol 15", "Freamine III 10", "Hepatamine 8", "Plenamine", "PremaSol", "ProcalAmine 3", "Prosol", "Travasol 10", "Trophamine 10 %", "Trophamine 6 %"]}
 {"rxcui": "68442", "brand_names": ["Filkri", "Granix", "Neupogen", "Nivestym", "Nypozi", "Releuko", "Zarxio"]}
 {"rxcui": "68446", "brand_names": ["Alimta", "Axtle", "Pemfexy", "Pemrydi Rtu"]}
 {"rxcui": "6845", "brand_names": ["Atmeksi", "Robaxin", "Tanlor"]}

@@ -189,7 +189,7 @@
 {"ddinter_id": "DDInter1168", "name": "Methdilazine", "rxcui": "29648", "rxnorm_name": "methdilazine", "match_type": "exact"}
 {"ddinter_id": "DDInter1169", "name": "Methenamine", "rxcui": "6832", "rxnorm_name": "methenamine", "match_type": "exact"}
 {"ddinter_id": "DDInter117", "name": "Argatroban", "rxcui": "15202", "rxnorm_name": "argatroban", "match_type": "exact"}
-{"ddinter_id": "DDInter1171", "name": "Methionine", "rxcui": "1426463", "rxnorm_name": "N-acetylmethionine", "match_type": "exact"}
+{"ddinter_id": "DDInter1171", "name": "Methionine", "rxcui": "6837", "rxnorm_name": "methionine", "match_type": "exact"}
 {"ddinter_id": "DDInter1170", "name": "Methimazole", "rxcui": "6835", "rxnorm_name": "methimazole", "match_type": "exact"}
 {"ddinter_id": "DDInter1172", "name": "Methocarbamol", "rxcui": "6845", "rxnorm_name": "methocarbamol", "match_type": "exact"}
 {"ddinter_id": "DDInter1173", "name": "Methohexital", "rxcui": "6847", "rxnorm_name": "methohexital", "match_type": "exact"}
@@ -802,7 +802,7 @@
 {"ddinter_id": "DDInter1720", "name": "Sulfacetamide (ophthalmic)", "rxcui": "10169", "rxnorm_name": "sulfacetamide", "match_type": "exact_stripped"}
 {"ddinter_id": "DDInter1722", "name": "Sulfadoxine", "rxcui": "10173", "rxnorm_name": "sulfadoxine", "match_type": "exact"}
 {"ddinter_id": "DDInter1723", "name": "Sulfamethizole", "rxcui": "10179", "rxnorm_name": "sulfamethizole", "match_type": "exact"}
-{"ddinter_id": "DDInter1724", "name": "Sulfamethoxazole", "rxcui": "10178", "rxnorm_name": "sulfamethazine", "match_type": "exact"}
+{"ddinter_id": "DDInter1724", "name": "Sulfamethoxazole", "rxcui": "10180", "rxnorm_name": "sulfamethoxazole", "match_type": "exact"}
 {"ddinter_id": "DDInter1725", "name": "Sulfasalazine", "rxcui": "9524", "rxnorm_name": "sulfasalazine", "match_type": "exact"}
 {"ddinter_id": "DDInter1727", "name": "Sulfisoxazole", "rxcui": "10207", "rxnorm_name": "sulfisoxazole", "match_type": "exact"}
 {"ddinter_id": "DDInter1726", "name": "Sulfinpyrazone", "rxcui": "10205", "rxnorm_name": "sulfinpyrazone", "match_type": "exact"}
@@ -1574,7 +1574,7 @@
 {"ddinter_id": "DDInter360", "name": "Chlorothiazide", "rxcui": "2396", "rxnorm_name": "chlorothiazide", "match_type": "exact"}
 {"ddinter_id": "DDInter359", "name": "Chloroquine", "rxcui": "203119", "rxnorm_name": "chloroquine sulfate", "match_type": "exact"}
 {"ddinter_id": "DDInter361", "name": "Chlorphenesin", "rxcui": "2399", "rxnorm_name": "chlorphenesin", "match_type": "exact"}
-{"ddinter_id": "DDInter362", "name": "Chlorpheniramine", "rxcui": "1310122", "rxnorm_name": "chlorine", "match_type": "exact"}
+{"ddinter_id": "DDInter362", "name": "Chlorpheniramine", "rxcui": "2400", "rxnorm_name": "chlorpheniramine", "match_type": "exact"}
 {"ddinter_id": "DDInter363", "name": "Chlorpromazine", "rxcui": "104728", "rxnorm_name": "chlorpromazine hydrochloride", "match_type": "exact"}
 {"ddinter_id": "DDInter364", "name": "Chlorpropamide", "rxcui": "2404", "rxnorm_name": "chlorpropamide", "match_type": "exact"}
 {"ddinter_id": "DDInter365", "name": "Chlorthalidone", "rxcui": "2409", "rxnorm_name": "chlorthalidone", "match_type": "exact"}
