@@ -49,6 +49,7 @@
           "drugbank_id": {"type": ["string", "null"]},
           "atc": {"type": "array", "items": {"type": "string"}, "description": "RxNorm level-5 ATC substance codes (7 characters, e.g. C09AA03)."},
           "brand_names": {"type": "array", "items": {"type": "string"}, "description": "RxNorm brand-name (BN) concepts related to the ingredient, including brands of combination products that contain it (Vytorin lists under simvastatin and ezetimibe). US-centric: Panadol is present, Calpol is not. Intended as aliases for matching clinician text."},
+          "international_names": {"type": "array", "items": {"type": "string"}, "description": "Curated international names (WHO INN, or the older British Approved Name still in clinical use) for the ingredient where the knowledge base's names are the US ones: Paracetamol under acetaminophen, Glibenclamide under glyburide (src/international_names.json; schema 1.4, issue #8). Intended, like brand_names, as aliases for matching clinician text; no name is an ordinary word, and none is an alias of any other drug."},
           "ciel": {
             "type": "array",
             "description": "Linked CIEL concepts (ingredient-level match).",

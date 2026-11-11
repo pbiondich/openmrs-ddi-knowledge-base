@@ -135,18 +135,21 @@ class KB:
                 self.by_drugbank.setdefault(d["drugbank_id"].upper(), []).append(d)
             for c in d["ciel"]:
                 self.by_ciel.setdefault(c["code"], []).append(d)
-        # --- name indexes, in precedence order: DDInter name, RxNorm name, brand name, CIEL concept name ---
-        self.by_name, self.by_rxname, self.by_brand, self.by_cielname = {}, {}, {}, {}
+        # --- name indexes, in precedence order: DDInter name, RxNorm name, brand name, international name,
+        # CIEL concept name ---
+        self.by_name, self.by_rxname, self.by_brand, self.by_intl, self.by_cielname = {}, {}, {}, {}, {}
         for d in self.drugs:
             self.by_name.setdefault(d["name"].lower(), []).append(d)
             if d["rxnorm_name"]:
                 self.by_rxname.setdefault(d["rxnorm_name"].lower(), []).append(d)
             for b in d.get("brand_names", []):
                 self.by_brand.setdefault(b.lower(), []).append(d)
+            for n in d.get("international_names", []):       # issue #8; .get: a schema 1.3 KB still loads
+                self.by_intl.setdefault(n.lower(), []).append(d)
             for c in d["ciel"]:
                 if c["name"]:
                     self.by_cielname.setdefault(c["name"].lower(), []).append(d)
-        self.all_names = sorted(set(self.by_name) | set(self.by_rxname) | set(self.by_brand))
+        self.all_names = sorted(set(self.by_name) | set(self.by_rxname) | set(self.by_brand) | set(self.by_intl))
         # --- interaction indexes: one row per unordered pair; partners per drug ---
         self.rows, self.partners_of = {}, {}
         for a, b, sev, gid in data["interactions"]:
@@ -173,7 +176,8 @@ class KB:
     # --- resolution ---
     def resolve(self, term):
         """All drugs a term names. Identifier prefixes are exact; a bare name tries the DDInter
-        name, then the RxNorm name, then RxNorm brand names, then CIEL concept names. Raises
+        name, then the RxNorm name, then RxNorm brand names, then international (INN/BAN) names, then CIEL
+        concept names. Raises
         Unresolved when nothing matches."""
         t = term.strip()
         if ":" in t:
@@ -190,7 +194,7 @@ class KB:
         if t in self.by_id:
             return [self.by_id[t]]
         low = t.lower()
-        for index in (self.by_name, self.by_rxname, self.by_brand, self.by_cielname):
+        for index in (self.by_name, self.by_rxname, self.by_brand, self.by_intl, self.by_cielname):
             if low in index:
                 return list(index[low])
         raise Unresolved(t, difflib.get_close_matches(low, self.all_names, n=5, cutoff=0.6))
@@ -369,6 +373,7 @@ class KB:
                 hits.append(dict(d, matched_via=None))
                 continue
             via = [f'brand "{b}"' for b in d.get("brand_names", []) if low in b.lower()]
+            via += [f'international name "{n}"' for n in d.get("international_names", []) if low in n.lower()]
             via += [f'CIEL "{c["name"]}"' for c in d["ciel"] if c["name"] and low in c["name"].lower()]
             if via:
                 hits.append(dict(d, matched_via=via[0]))
@@ -387,6 +392,7 @@ def fmt_drug(d):
              f"  DrugBank  {d['drugbank_id'] or 'none'}",
              f"  ATC       {', '.join(d['atc']) or 'none'}",
              f"  Brands    {', '.join(brands[:6]) or 'none'}{bmore}",
+             f"  INN/BAN   {', '.join(d.get('international_names', [])) or 'none'}",
              f"  CIEL      {ciel or 'none'}{more}"]
     if "partner_counts" in d:
         c = d["partner_counts"]

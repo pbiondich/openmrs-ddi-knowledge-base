@@ -57,6 +57,26 @@ class QueryKbTest(unittest.TestCase):
         hit = [d for d in self.kb.search("zocor") if d["name"] == "Simvastatin"][0]
         self.assertEqual(hit["matched_via"], 'brand "Zocor"')
 
+    def test_international_names_resolve(self):
+        # Issue #8: an INN/BAN name resolves to the drug its US name does, every row of the substance.
+        kb = self.kb
+        self.assertEqual([d["name"] for d in kb.resolve("paracetamol")], [d["name"] for d in kb.resolve("acetaminophen")])
+        self.assertEqual(sorted(d["name"] for d in kb.resolve("Adrenaline")),
+                         ["Epinephrine", "Epinephrine (ophthalmic)", "Epinephrine (topical)"])
+        self.assertEqual([d["name"] for d in kb.resolve("glibenclamide")], ["Glyburide"])
+        self.assertEqual([d["name"] for d in kb.resolve("PETHIDINE")], ["Meperidine"])
+
+    def test_every_international_name_names_only_its_own_substance(self):
+        # The build refuses a name already an alias of any drug; this pins that each curated name resolves to the
+        # rows of the RxCUI it is listed under and to nothing else.
+        import json as _json
+        doc = _json.load(open(os.path.join(ROOT, "src", "international_names.json")))
+        for e in doc["entries"]:
+            for n in e["international_names"]:
+                found = self.kb.resolve(n)
+                self.assertTrue(found, n)
+                self.assertEqual({d["rxcui"] for d in found}, {e["rxcui"]}, n)
+
     def test_unresolved_offers_suggestions(self):
         with self.assertRaises(Unresolved) as cm:
             self.kb.resolve("warfarine")

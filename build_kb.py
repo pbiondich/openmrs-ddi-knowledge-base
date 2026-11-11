@@ -14,6 +14,7 @@ Pipeline:
   5. CIEL bridge          src/ciel_crosswalk.json (ingredient-level match)
   6. ATC                  src/atc_cache.jsonl (pre-derived from RxNorm, level-5)
   6b. brand names         src/brand_names.jsonl (RxNorm BN concepts per ingredient; issue #5)
+  6c. international names src/international_names.json (curated INN/BAN names per ingredient; issue #8)
   7. drug-disease rows    src/disease_interactions.jsonl (DDInter's drug-disease table)
   8. derived tier         condition-mediated chains inferred from step 7 (query_kb.py's matcher)
 
@@ -33,6 +34,11 @@ if not os.path.exists(S + "brand_names.jsonl"):
     print("BUILD FAILED: src/brand_names.jsonl missing; run fetch_brand_names.py")
     sys.exit(1)
 brands = {r["rxcui"]: r["brand_names"] for r in jsonl(S + "brand_names.jsonl")}
+# 6c. Curated, not fetched: RxNorm carries no international (INN/BAN) name where it differs from the US one, and
+# the CIEL synonyms that do carry them also carry ordinary words ("Pain Reliever", "Non-Aspirin"), so they are
+# listed by hand and checked against the built drugs below (issue #8).
+intl_doc = json.load(open(S + "international_names.json"))
+intl = {e["rxcui"]: e["international_names"] for e in intl_doc["entries"]}
 curation = {o["id"]: o for o in json.load(open(S + "curation.json"))["overrides"]}
 drugs_raw = jsonl(S + "drugs.jsonl")
 interactions = [json.loads(l) for l in open(S + "interactions.jsonl")]
@@ -93,6 +99,7 @@ for d in drugs_raw:
         "drugbank_id": d.get("drugbank_id"),
         "atc": atc.get(rx, []) if rx else [],
         "brand_names": brands.get(rx, []) if rx else [],
+        "international_names": intl.get(rx, []) if rx else [],
         "ciel": ciel_for(rx),
     })
 
@@ -104,6 +111,32 @@ bad_atc = sorted({c for d in drugs for c in d["atc"] if len(c) != 7})
 if bad_atc:
     print("BUILD FAILED: ATC codes must be level-5 (7 chars); found non-level-5:", bad_atc[:10])
     print("  Re-run derive_atc.py (uses RxNorm propName=ATC), not the level-4 RxClass endpoint.")
+    sys.exit(1)
+
+# --- invariant: every international name is the curated entry's own and no other drug's (issue #8) ---
+# An entry whose RxCUI or name matches no built drug is a typo or a drifted canonicalization; a name that is
+# already any drug's alias (DDInter name, RxNorm name, brand, CIEL concept name) is either redundant or, worse,
+# a second drug the name would put in play. Either fails the build rather than shipping.
+def names_of(d):
+    return ({d["name"].lower(), (d["rxnorm_name"] or "").lower()} | {b.lower() for b in d["brand_names"]}
+            | {c["name"].lower() for c in d["ciel"] if c["name"]})
+by_rx = {}
+for d in drugs:
+    by_rx.setdefault(d["rxcui"], []).append(d)
+alias_owner = {}
+for d in drugs:
+    for n in names_of(d):
+        alias_owner.setdefault(n, set()).add(d["id"])
+bad_intl = []
+for e in intl_doc["entries"]:
+    rows = by_rx.get(e["rxcui"], [])
+    if not rows or any((r["rxnorm_name"] or "").lower() != e["rxnorm_name"].lower() for r in rows):
+        bad_intl.append(f'{e["rxcui"]} {e["rxnorm_name"]}: matches no built drug of that RxCUI and name')
+    for n in e["international_names"]:
+        if n.lower() in alias_owner:
+            bad_intl.append(f'{n}: already an alias of {sorted(alias_owner[n.lower()])}')
+if bad_intl:
+    print("BUILD FAILED: src/international_names.json:", "; ".join(bad_intl))
     sys.exit(1)
 
 # --- mechanisms: used groups only, stored once ---
@@ -168,7 +201,7 @@ derived.sort(key=lambda r: (drug_pos[r[0]], drug_pos[r[4]], r[5]))
 
 kb = {
     "metadata": {
-        "schema_version": "1.3",
+        "schema_version": "1.4",
         "title": "OpenMRS DDI knowledge base (normalized)",
         "source": {"name": "DDInter 2.0", "url": "https://ddinter2.scbdd.com/",
                    "tables": "drug-drug interactions; drug-disease interactions",
